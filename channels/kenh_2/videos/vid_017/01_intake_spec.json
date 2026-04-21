@@ -5,12 +5,12 @@
     "topic_cluster": "living alone routines",
     "topic_angle": "ひとり暮らしで安心につながる毎日の確認習慣",
     "viewer_problem": "Japanese senior viewers want practical, safety-oriented daily-life guidance that reduces anxiety and helps them prepare calmly.",
-    "target_duration_min": 6,
-    "target_duration_max": 8
+    "target_duration_min": 15,
+    "target_duration_max": 20
   },
   "tts_config": {
     "tts_voice_name": "ja_female_soft_01",
-    "tts_chars_per_min": 300
+    "tts_chars_per_min": 320
   },
   "evidence_scope": {
     "min_sources": 5,

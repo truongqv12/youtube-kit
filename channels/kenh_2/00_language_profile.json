@@ -1,0 +1,36 @@
+{
+  "language_profile_id": "jp_senior_health_neutral",
+  "base_language_mode": "national_neutral",
+  "register_profile": "warm_polite_educational",
+  "addressing_profile": "senior_respectful_neutral",
+  "preferred_audience_address": [
+    "あなた",
+    "60代・70代",
+    "シニア世代"
+  ],
+  "preferred_narrator_patterns": [
+    "～ですね",
+    "丁寧に～していきましょう",
+    "～してみてはいかがでしょうか"
+  ],
+  "preferred_softening_patterns": [
+    "少しでも",
+    "ゆっくりと",
+    "無理のない範囲で",
+    "一つずつ落ち着いて"
+  ],
+  "avoid_patterns": [
+    "絶対",
+    "確実",
+    "～すべきだ",
+    "直ちに～しろ"
+  ],
+  "banned_phrases": [
+    "確実に治る",
+    "今すぐやめろ",
+    "医者に行くな",
+    "手遅れになる"
+  ],
+  "region_handling": "national_neutral_default",
+  "lexicon_priority": "safety_senior_home"
+}
