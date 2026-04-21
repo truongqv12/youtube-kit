@@ -1,0 +1,56 @@
+{
+  "project_id": "kenh_3_vid_013",
+  "channel_id": "kenh_3",
+  "project_scope": {
+    "topic_cluster": "meals and routines",
+    "topic_angle": "朝ごはんを軽くしすぎた日のこと",
+    "viewer_problem": "Japanese senior viewers want slow, easy-to-follow story-based health guidance that feels gentle, relatable, and memorable.",
+    "target_duration_min": 5,
+    "target_duration_max": 7
+  },
+  "tts_config": {
+    "tts_voice_name": "ja_female_soft_01",
+    "tts_chars_per_min": 280
+  },
+  "evidence_scope": {
+    "min_sources": 5,
+    "min_official_or_primary": 3,
+    "target_country_priority": [
+      "Japan"
+    ],
+    "allow_non_japan_supporting_sources": true
+  },
+  "publication_goals": {
+    "long_form_primary": true,
+    "derive_shorts": 0
+  },
+  "inherited_constraints": {
+    "visual_constraints": {
+      "visual_style_id": "kamishibai_paper_theater",
+      "visual_substyle_id": "gouache_watercolor_storytelling",
+      "non_dialogue_mode": true,
+      "host_usage_policy": "host_optional_reference_first"
+    },
+    "language_constraints": {
+      "language_profile_id": "jp_senior_health_storytelling_neutral",
+      "base_language_mode": "national_neutral",
+      "register_profile": "warm_polite_storytelling"
+    },
+    "editorial_constraints": {
+      "promise_style": "gentle_story_based_realization",
+      "story_bias": "story_first_then_soft_takeaway"
+    }
+  },
+  "production_schedule": {
+    "month": 1,
+    "week": 3,
+    "weekday_slot": "Wed"
+  },
+  "special_notes": [
+    "story-first format; do not convert into listicle structure",
+    "one main situation per video",
+    "slow page-turn rhythm, calm narration, soft takeaway",
+    "avoid overt disease diagnosis or cure framing",
+    "long-form only; do not derive shorts"
+  ]
+}

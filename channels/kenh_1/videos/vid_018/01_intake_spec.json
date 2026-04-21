@@ -1,0 +1,56 @@
+{
+  "project_id": "kenh_1_vid_018",
+  "channel_id": "kenh_1",
+  "project_scope": {
+    "topic_cluster": "daily wellness routines",
+    "topic_angle": "朝食を軽く整えるだけでラクになる習慣",
+    "viewer_problem": "Japanese senior viewers want practical daily advice that feels useful, calm, and non-alarmist.",
+    "target_duration_min": 8,
+    "target_duration_max": 12
+  },
+  "tts_config": {
+    "tts_voice_name": "ja_female_soft_01",
+    "tts_chars_per_min": 320
+  },
+  "evidence_scope": {
+    "min_sources": 5,
+    "min_official_or_primary": 3,
+    "target_country_priority": [
+      "Japan"
+    ],
+    "allow_non_japan_supporting_sources": true
+  },
+  "publication_goals": {
+    "long_form_primary": true,
+    "derive_shorts": 0
+  },
+  "inherited_constraints": {
+    "visual_constraints": {
+      "visual_style_id": "manga_editorial_clean",
+      "visual_substyle_id": "seinen_soft_educational",
+      "non_dialogue_mode": true,
+      "host_usage_policy": "host_optional_reference_first"
+    },
+    "language_constraints": {
+      "language_profile_id": "jp_senior_health_neutral",
+      "base_language_mode": "national_neutral",
+      "register_profile": "warm_polite_educational"
+    },
+    "editorial_constraints": {
+      "promise_style": "calm_practical_caution",
+      "story_bias": "everyday_example_then_explanation"
+    }
+  },
+  "production_schedule": {
+    "month": 1,
+    "week": 4,
+    "weekday_slot": "Wed"
+  },
+  "special_notes": [
+    "video is explanatory, not dialogue",
+    "no lip sync needed",
+    "prompts must work with uploaded host reference image if available",
+    "avoid disease-cure framing unless the policy gate clearly allows it",
+    "long-form only; do not derive shorts"
+  ]
+}
