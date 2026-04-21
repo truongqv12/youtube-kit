@@ -1,0 +1,13 @@
+{
+  "language_profile_id": "jp_senior_health_neutral",
+  "base_language_mode": "national_neutral",
+  "register_profile": "warm_polite_educational",
+  "addressing_profile": "senior_respectful_neutral",
+  "preferred_audience_address": ["みなさん", "60代・70代の方", "シニア世代の方", "ご家族の方"],
+  "preferred_narrator_patterns": ["この動画では、", "一緒に確認していきましょう。", "無理のない範囲で見直してみましょう。"],
+  "preferred_softening_patterns": ["〜かもしれません。", "〜してみましょう。", "気になる場合は、"],
+  "avoid_patterns": ["絶対に", "必ず治る", "医者が隠している", "youth slang", "talking down to viewers", "overfamiliar tone"],
+  "banned_phrases": ["絶対に治る", "必ず防げる", "医者が隠している", "薬はやめて大丈夫"],
+  "region_handling": "national_neutral_default",
+  "lexicon_priority": "health_senior"
+}

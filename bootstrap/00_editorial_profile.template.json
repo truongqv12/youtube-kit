@@ -1,0 +1,48 @@
+{
+  "editorial_profile_id": "your_editorial_profile_id",
+  "channel_positioning": "japanese senior daily-wellness manga explainer",
+  "promise_style": "calm_practical_caution",
+  "fear_intensity_ceiling": "low_to_moderate",
+  "story_bias": "everyday_example_then_explanation",
+  "host_trust_role": "gentle_guide",
+  "episode_scope_bias": "one_micro_topic_per_video",
+  "preferred_hook_patterns": [
+    "what changes after 65",
+    "morning habit reset",
+    "easier walking without overdoing it",
+    "small daily mistake that increases discomfort",
+    "3 practical habits for steadier daily life"
+  ],
+  "preferred_topic_clusters": [
+    "morning habits",
+    "walking and knee-friendly movement",
+    "hydration and night bathroom routines",
+    "breakfast and meal timing",
+    "falls and balance",
+    "fatigue and recovery",
+    "chewing and oral comfort",
+    "gentle breathing and relaxation"
+  ],
+  "forbidden_hook_patterns": [
+    "secret cure",
+    "doctor conspiracy",
+    "guaranteed prevention",
+    "disease-name shock bait",
+    "miracle reversal promise",
+    "medication replacement promise"
+  ],
+  "story_structure_bias": [
+    "soft hook",
+    "everyday senior scenario",
+    "why this matters",
+    "3 to 5 practical adjustments",
+    "when to ask a clinician",
+    "calm positive close"
+  ],
+  "softener_rules": [
+    "prefer caution over certainty",
+    "use educational framing instead of cure framing",
+    "avoid absolute promises",
+    "encourage consultation when symptoms or risk factors are concerning"
+  ]
+}

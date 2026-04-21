@@ -1,0 +1,77 @@
+{
+  "search_gate_summary": {
+    "observed_patterns": [
+      "Thumbnail text density varies, but successful ones highlight one core pain point (e.g., 'morning dizziness') with 3-4 words.",
+      "Emotional tone often swings between alarmist ('NG habits') and strictly medical.",
+      "Many videos feature a physical therapist or caregiver in a clinical or home-care setting demonstrating techniques.",
+      "Danger framing is common in clickbait ('Do this or you will fall'), while clinics use calm educational framing.",
+      "Number usage ('3 habits', '5 NG actions') is extremely common to structure the content.",
+      "Promise style ranges from 'prevent falls' to 'cure dizziness'."
+    ],
+    "likely_fit_for_channel": [
+      "Calm educational framing rather than danger/alarmist framing.",
+      "Simple visual manga illustration of a cozy Japanese bedroom rather than clinical sets.",
+      "Low text density on thumbnails (focusing on 'morning habits' or 'safely waking up').",
+      "Number usage to cleanly structure the viewer's expectations."
+    ],
+    "likely_mismatch_for_channel": [
+      "Danger framing (e.g., '絶対にやってはいけない', 'NG行動').",
+      "Overpromising language like 'Cures dizziness instantly'.",
+      "Realistic medical settings or lab coats (violates the manga educational substyle)."
+    ],
+    "things_to_avoid": [
+      "Fear-mongering titles and thumbnails.",
+      "Cluttered text over the thumbnail subject.",
+      "Mimicking the layout of high-stress medical clickbait channels."
+    ]
+  },
+  "title_candidates": [
+    "65歳から朝いちばんに見直したい3つの習慣。起き抜けの体を守る工夫",
+    "朝の起き上がり方、間違っていませんか？シニアのための朝の整え方",
+    "朝のふらつきを防ぐ。布団の中で無理なくできる「体を守る3つの習慣」"
+  ],
+  "thumbnail_candidates": [
+    {
+      "id": "concept_1",
+      "visual": "An older Japanese person sitting calmly and safely on the edge of the bed in soft morning light, looking steady and relieved. Clean manga style.",
+      "text": "朝の体を守る"
+    },
+    {
+      "id": "concept_2",
+      "visual": "An older Japanese person lying in bed, softly stretching their arms under a warm futon, bathed in gentle morning sunlight. Clean manga style.",
+      "text": "65歳からの朝習慣"
+    },
+    {
+      "id": "concept_3",
+      "visual": "A gentle split view: a clock showing early morning on one side, and an older person drinking a glass of warm water peacefully on the other. Clean manga style.",
+      "text": "朝のふらつき予防"
+    }
+  ],
+  "selected_package": {
+    "title_ja": "65歳から朝いちばんに見直したい3つの習慣。起き抜けの体を守る工夫",
+    "title_vi": "3 thói quen cần điều chỉnh vào buổi sáng sớm dành cho tuổi 65. Cách bảo vệ cơ thể khi thức dậy",
+    "thumbnail_concept_ja": "柔らかい朝の光の中、ベッドの端に静かに安全に腰掛けているシニア。穏やかでホッとした表情。クリーンなマンガ風スタイル。テキスト：「朝の体を守る」",
+    "thumbnail_concept_vi": "Một người cao tuổi ngồi tĩnh lặng và an toàn trên mép giường trong ánh sáng buổi sáng dịu nhẹ. Biểu cảm bình tĩnh và an tâm. Phong cách manga sạch sẽ. Text: 'Bảo vệ cơ thể buổi sáng'",
+    "description_ja": "朝、起き上がろうとした時に体が重だるく感じたり、ふらっとした経験はありませんか？\n年齢を重ねると、寝起き直後の体には気づかないうちに大きな負担がかかりやすくなっています。\n\nこの動画では、朝の体を守るために今日からできる「3つの簡単な習慣」をご紹介します。\n\n1. ゆっくり起き上がる（血圧を安定させる）\n2. お布団の中で軽く体を動かす（関節と筋肉を温める）\n3. コップ一杯の水を飲む（失われた水分を補う）\n\nどれも無理なく始められる、体に優しい工夫ばかりです。明日の朝から、ご自身のペースで少しずつ試してみてくださいね。\n\n※毎日ゆっくり起き上がっても立ちくらみが続く場合や、関節に痛みを感じる場合は、無理をせずかかりつけのお医者さんにご相談ください。\n\n#シニアの健康 #朝の習慣 #起立性低血圧 #健康づくり",
+    "description_vi": "Bạn có bao giờ cảm thấy cơ thể nặng nề hay hơi loạng choạng khi vừa thức dậy vào buổi sáng không?\nKhi lớn tuổi, cơ thể vào lúc mới ngủ dậy rất dễ phải chịu những tổn thương lớn mà chúng ta không nhận ra.\n\nVideo này giới thiệu '3 thói quen đơn giản' mà bạn có thể làm ngay từ hôm nay để bảo vệ cơ thể buổi sáng.\n\n1. Thức dậy từ từ (Giúp ổn định huyết áp)\n2. Cử động nhẹ nhàng trong chăn (Làm ấm khớp và cơ bắp)\n3. Uống một cốc nước (Bù lại lượng nước đã mất)\n\nTất cả đều là những cách nhẹ nhàng với cơ thể, không gượng ép. Hãy thử từng chút một theo nhịp độ của riêng bạn từ sáng ngày mai nhé.\n\n※Nếu bạn bị chóng mặt liên tục dù đã dậy từ từ, hoặc cảm thấy đau khớp, hãy đừng gắng sức mà hãy tham khảo ý kiến bác sĩ gia đình.\n\n#SuckhoeNguoiCaoTuoi #ThoiquenBuoisang #HuyetApThap #ChamsocSuckhoe",
+    "rationale": "Title 1 is selected because it directly targets the 65+ demographic as specified, uses a non-alarmist tone ('re-evaluate/review' instead of 'stop doing this'), and sets a calm educational promise. Concept 1 matches this by showing the steady, safe outcome of the first key habit."
+  },
+  "shorts_derivatives": [
+    {
+      "short_title_ja": "朝、急に起き上がるのは危険？シニアの正しい起き上がり方",
+      "short_title_vi": "Thức dậy đột ngột vào buổi sáng có nguy hiểm không? Cách thức dậy đúng cho người cao tuổi",
+      "hook_line_ja": "朝、目覚ましが鳴って慌てて起きていませんか？実はそれ、体にとってすごく負担なんです。",
+      "cut_angle": "Focuses on the risk of orthostatic hypotension and demonstrates the single most important action: sitting on the edge of the bed for 2-3 minutes.",
+      "bridge_to_longform_ja": "朝の体を守る習慣は、起き上がり方以外にもあります。詳しくは本編動画をご覧ください。",
+      "why_it_can_pull_new_viewers": "Addresses a very common, immediate morning anxiety (dizziness when standing up) with a fast, actionable 2-step solution, creating trust to watch the long-form for the full routine."
+    },
+    {
+      "short_title_ja": "シニアの朝に「コップ1杯の水」が必要な本当の理由",
+      "short_title_vi": "Lý do thực sự tại sao người cao tuổi cần '1 cốc nước' vào buổi sáng",
+      "hook_line_ja": "朝起きてすぐ、熱いコーヒーを飲んでいませんか？その前に「水」が必要な理由を知っていますか。",
+      "cut_angle": "Highlights the hidden dehydration occurring during sleep and explains why a glass of warm/room-temperature water should precede other morning drinks.",
+      "bridge_to_longform_ja": "水分補給のほかにも、朝にするべき大切な習慣があります。本編で一緒に確認しましょう。",
+      "why_it_can_pull_new_viewers": "Challenges an established popular routine (morning coffee) gently, replacing it with a compelling, easy-to-understand health fact that drives curiosity for the complete routine."
+    }
+  ]
+}

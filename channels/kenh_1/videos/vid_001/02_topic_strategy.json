@@ -1,0 +1,41 @@
+{
+  "project_id": "kenh_1_vid_001",
+  "topic_cluster": "morning habits",
+  "topic_angle": "65歳から朝いちばんに見直したい習慣3つ",
+  "target_viewer": "Japanese senior viewers 60+ seeking calm, practical daily wellness advice",
+  "viewer_problem": "Mornings can feel unsteady or sluggish as we age. Small, rushed habits right after waking up can increase the risk of dizziness, falls, or unnecessary fatigue.",
+  "working_promise": "We will review three simple morning habits to adjust, which can make the start of your day feel a little steadier and gentler on your body.",
+  "safe_claim_boundary": "Can claim these habits reduce early morning strain or stiffness; cannot claim they will reverse aging or cure specific diseases.",
+  "forbidden_claims": [
+    "cures osteoporosis",
+    "guarantees no falls",
+    "replaces the need for morning medication",
+    "miracle morning routine"
+  ],
+  "research_questions": [
+    "What are the common physical challenges (e.g., blood pressure drops, joint stiffness) for seniors immediately upon waking?",
+    "What are safe, officially recommended practices for getting out of bed to prevent orthostatic hypotension or dizziness?",
+    "What is an appropriate gentle movement or stretching routine for seniors to do in bed before standing up?",
+    "How does immediate morning hydration specifically benefit seniors after a night's sleep?",
+    "When should morning stiffness or dizziness prompt a consultation with a clinician?"
+  ],
+  "planned_sections": [
+    "Soft Hook: Relatable scenario of waking up feeling stiff or experiencing a slight dizzy spell when rushing to get up.",
+    "Why it matters: Brief explanation of how the body changes after 60 (blood pressure adjustments, joint fluid, overnight dehydration).",
+    "Habit Adjustment 1: Waking up and rising off the bed slowly in stages (preventing dizziness / orthostatic hypotension).",
+    "Habit Adjustment 2: Gentle stretches in bed before standing (easing joint stiffness and signaling the body to wake up).",
+    "Habit Adjustment 3: Having a gentle glass of room-temperature water (replenishing hydration safely).",
+    "When to ask a clinician: Warning signs like persistent dizziness, irregular heartbeat, or sharp pain.",
+    "Positive Close: Encouraging message to take mornings gently."
+  ],
+  "packaging_seeds_longform": [
+    "Title Idea 1: 65歳から朝いちばんに見直したい3つの習慣。起き抜けの体を守る工夫",
+    "Title Idea 2: 朝の起き上がり方、間違っていませんか？シニアのための朝の整え方",
+    "Thumbnail: Clean, simple manga-style illustration of a senior sitting calmly on the edge of the bed in soft morning light. Emphasize calm concern, low text density."
+  ],
+  "packaging_seeds_shorts": [
+    "Short 1 (Focus on rising): Hook about the unseen stress of jumping right out of bed, demonstrating the safe 2-step way to sit up.",
+    "Short 2 (Focus on hydration): Why that first gentle glass of water is crucial for seniors, pulling the viewer to watch the full routine video."
+  ],
+  "notes_for_research": "Focus on Japanese primary sources regarding orthostatic hypotension, senior hydration, and morning mobility. Ensure advice is extremely gentle and practical. Avoid fear-mongering framing."
+}

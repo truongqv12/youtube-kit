@@ -1,0 +1,87 @@
+{
+  "project_id": "kenh_1_vid_001",
+  "target_duration_mins": "10-15",
+  "target_chars_range": "3200-4800",
+  "outline_sections": [
+    {
+      "section_number": 1,
+      "purpose": "Soft Hook & Relatable Introduction",
+      "spoken_focus": "Speak directly but gently to the viewer's morning experience. Describe the physical sensation of waking up feeling stiff, a bit heavy, or experiencing a slight dizzy spell when rushing out of bed at age 65+.",
+      "key_points": [
+        "Welcome viewers gently.",
+        "Paint a relatable picture of a morning where the body feels 'slower' to start than the mind.",
+        "Introduce the central idea: the way we get out of bed in the first 5 minutes sets the tone for the entire day's physical comfort.",
+        "Set the working promise without overclaiming: let's look at 3 gentle habit adjustments to make mornings steadier."
+      ],
+      "estimated_chars_proportion": "about 400-500 characters"
+    },
+    {
+      "section_number": 2,
+      "purpose": "Context: Why the Morning Body Needs Extra Care",
+      "spoken_focus": "Educational, warm explanation. Avoid medical jargon; use simple metaphors about the body 'waking up' and 'warming its engine' after a long sleep.",
+      "key_points": [
+        "Explain invisible overnight changes: natural fluid loss (we sweat and breathe out water) leading to slight dehydration.",
+        "Explain joint stiffness: joints naturally stiffen after hours of inactivity.",
+        "Explain blood pressure: rising too fast means leg muscles haven't yet helped pump blood back up, causing orthostatic hypotension (that lightheaded feeling)."
+      ],
+      "estimated_chars_proportion": "about 600-800 characters"
+    },
+    {
+      "section_number": 3,
+      "purpose": "Habit Adjustment 1: The 'Slow Rise' Technique",
+      "spoken_focus": "Highly practical, step-by-step guidance. Speak slowly, allowing the viewer to imagine doing the actions.",
+      "key_points": [
+        "Address the bad habit: hearing the alarm and jumping straight to a standing position.",
+        "Introduce the fix: rolling gently onto the side first.",
+        "Explain the critical pause: sitting on the edge of the bed for 2 to 3 minutes.",
+        "Explain why this matters: it gives the autonomic nervous system time to adjust blood pressure safely."
+      ],
+      "estimated_chars_proportion": "about 600-800 characters"
+    },
+    {
+      "section_number": 4,
+      "purpose": "Habit Adjustment 2: Bed-Bound Gentle Stretches",
+      "spoken_focus": "Reassuring and safe. Ensure these stretches are described as effortless, not as a 'workout'.",
+      "key_points": [
+        "Address the bad habit: standing up on stiff 'cold' joints.",
+        "Introduce the fix: light movement while still lying down.",
+        "Describe 'Ankle Rotations' and 'Toe Clenching (グーパー)': how they wake up the leg veins to act as a blood pump.",
+        "Describe the 'Starfish Stretch (大の字)': gently spreading arms and legs to untangle upper body tension."
+      ],
+      "estimated_chars_proportion": "about 600-800 characters"
+    },
+    {
+      "section_number": 5,
+      "purpose": "Habit Adjustment 3: The First Glass of Water",
+      "spoken_focus": "Comforting advice. Frame it as nourishing the body rather than a strict chore.",
+      "key_points": [
+        "Address the bad habit: skipping water and going straight to coffee, or ignoring morning thirst because thirst sensors weaken with age.",
+        "Introduce the fix: drinking a gentle glass of room-temperature or warm water.",
+        "Explain the benefit: replenishes overnight fluid loss, thins viscous blood, and supports stable blood pressure."
+      ],
+      "estimated_chars_proportion": "about 500-700 characters"
+    },
+    {
+      "section_number": 6,
+      "purpose": "Crucial Exception: When to Ask a Clinician",
+      "spoken_focus": "A serious but calm tone. Must feel like caring caution, not alarmist fear.",
+      "key_points": [
+        "Acknowledge that while these habits help, they don't replace medical care.",
+        "Detail the 'when to consult' warning: If morning dizziness happens every day anyway, or if there is sharp joint pain.",
+        "Add the mandatory softener: If restricted on water intake by a doctor (e.g., for heart/kidney conditions), follow their precise guidance over generic advice."
+      ],
+      "estimated_chars_proportion": "about 300-400 characters"
+    },
+    {
+      "section_number": 7,
+      "purpose": "A Calm, Positive Close",
+      "spoken_focus": "Warm encouragement. End on a note of empowerment and peace.",
+      "key_points": [
+        "Summarize the 3 key takeaways briefly.",
+        "Encourage the viewer to try just one of these habits tomorrow morning.",
+        "Thank them for prioritizing their health, closing with a gentle goodbye."
+      ],
+      "estimated_chars_proportion": "200-300 characters"
+    }
+  ]
+}

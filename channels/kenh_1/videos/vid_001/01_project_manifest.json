@@ -1,0 +1,12 @@
+{
+  "project_id": "kenh_1_vid_001",
+  "status": "intake_complete",
+  "channel_identifier": "kenh_1",
+  "artifacts_generated": [
+    "01_video_intake.json",
+    "01_intake_spec.json",
+    "01_project_manifest.json"
+  ],
+  "constraints_locked": true,
+  "next_step": "02_run_topic_strategy.md"
+}

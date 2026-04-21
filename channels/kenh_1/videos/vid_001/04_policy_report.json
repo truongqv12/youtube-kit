@@ -1,0 +1,28 @@
+{
+  "overall_risk": "low",
+  "allowed_angles": [
+    "Providing practical daily adjustments for seniors to wake up feeling steady.",
+    "Explaining normal aging body phenomena such as overnight dehydration and stiffer joints.",
+    "Promoting gentle movement and cautious standing to prevent sudden morning dizziness."
+  ],
+  "forbidden_angles": [
+    "Claiming these habits replace morning medications, especially for blood pressure.",
+    "Over-promising that these habits guarantee the prevention of strokes, falls, or heart attacks.",
+    "Framing the advice as a cure for specific medical conditions like osteoporosis or diagnosed orthostatic hypotension."
+  ],
+  "mandatory_softeners": [
+    "Use softer verbs such as 'help ease', 'support', 'make it a bit gentler'.",
+    "Add situational disclaimers: 'if you feel dizzy everyday despite this, please consult your doctor.'",
+    "Include medical restriction disclaimers: 'if you are on fluid restrictions, follow your physician's advice above all.'"
+  ],
+  "visual_restrictions": [
+    "Prohibit alarming, hyper-realistic portrayals of seniors falling, fainting, or in pain.",
+    "Maintain the editorial profile's simple, soft manga-style aesthetic.",
+    "Avoid mimicking medical authority elements: no realistic stethoscopes, diagnostic screens, or red cross symbols."
+  ],
+  "disclosure_notes": "The video provides general lifestyle education, not individualized medical advice or diagnosis. Should be clearly positioned as daily wellness tips.",
+  "warnings_for_outline": "The outline must explicitly allocate space to the 'when to ask a clinician' section. Do not let the habit adjustments consume the entire timeframe.",
+  "warnings_for_script": "The script must strictly maintain the 'warm polite educational' register. Avoid imperative, commanding language like 'You must do this'. Instead use 'Let's try to X' or 'It is recommended to Y'. Ensure narration-only execution.",
+  "warnings_for_prompt_builders": "Keep image generation prompts (prompt_img_nano) peaceful and domestic. Ensure Veo motion prompts (prompt_video_veo3) do not add sudden, violent movements or unauthorized spoken dialogue/lip-syncs.",
+  "warnings_for_publication_assets": "Ensure titles use age anchors (e.g., '65歳から') without reverting to clickbait. Thumbnails must reflect 'concern_not_panic', strictly adhering to the 4-word max Japanese text density and featuring a calm aesthetic."
+}

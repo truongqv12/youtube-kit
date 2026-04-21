@@ -1,0 +1,23 @@
+{
+  "project_id": "kenh_1_vid_001",
+  "facts": [
+    "Seniors naturally have a lower percentage of body water and reduced thirst sensitivity, making them highly susceptible to unrecognized overnight dehydration.",
+    "During sleep, the body continuously loses water through respiration and subtle sweating, which leads to reduced circulating blood volume by morning.",
+    "Orthostatic hypotension (a sudden drop in blood pressure when standing) is a common cause of morning dizziness and falls in the elderly, partly due to delayed autonomic nervous system responses.",
+    "The leg muscles act as a 'second heart' pump to return blood to the upper body; when muscles are stiff and inactive upon waking, they fail to assist blood pressure regulation effectively if the person stands too quickly."
+  ],
+  "practical_guidance": [
+    "Habit 1 (Rising Carefully): Never jump straight out of bed. Roll to the side gently, sit up on the edge of the bed for 2 to 3 minutes, and ensure you feel steady before fully standing up.",
+    "Habit 2 (Pre-Rise Stretches): While still lying down, slowly rotate the ankles, clench and open the toes, and stretch the limbs like a starfish. This safely stimulates the leg muscles to prepare them for pumping blood back to the heart.",
+    "Habit 3 (Morning Hydration): Drink a glass of room-temperature or warm water shortly after waking up. This safely restores the blood volume lost during sleep and can soften blood pressure drops upon standing."
+  ],
+  "unknowns": [
+    "The exact volume of overnight fluid loss varies significantly based on season, bedroom humidity, and individual conditions, so 'one glass' is a safe practical baseline rather than an exact medical prescription.",
+    "How individual blood pressure medications interact with morning dizziness varies; patients taking antihypertensives may have different morning blood pressure dynamics."
+  ],
+  "when_to_consult": [
+    "If dizzy spells or lightheadedness occur every morning despite getting up slowly.",
+    "If the viewer is under a doctor's strict water-intake restriction (e.g., for heart failure or severe kidney disease), they must confirm safe morning hydration volumes with their physician.",
+    "If gentle lying-down stretches cause sharp joint pain or nerve numbness."
+  ]
+}
