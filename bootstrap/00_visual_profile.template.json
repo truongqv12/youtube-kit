@@ -86,6 +86,25 @@
       "generic Western hospital-stock imagery when the line is not clinical"
     ]
   },
+  "demographic_anchors": {
+    "default_age_range": "65-75",
+    "age_lock_priority": "HIGH",
+    "age_presentation_keywords": [
+      "visibly elderly",
+      "silver-gray hair",
+      "gentle wrinkles around eyes and mouth",
+      "slightly weathered face",
+      "natural age spots on hands",
+      "relaxed mature posture"
+    ],
+    "age_negative_keywords": [
+      "DO NOT make the character look younger than 60",
+      "avoid smooth youthful skin",
+      "avoid thick dark hair unless character design requires it",
+      "avoid athletic or youthful posture"
+    ],
+    "manga_age_compensation": "Because manga illustration naturally smooths aging features, EXPLICITLY include at least 2-3 visible aging cues in every human character: wrinkles, gray/white hair, age-appropriate body language"
+  },
   "visible_text_governance": {
     "default_policy": "avoid_readable_text",
     "channel_language": "ja-JP",

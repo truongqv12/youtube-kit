@@ -27,6 +27,7 @@ Before writing a final prompt, resolve each line into:
 - continuity anchors
 - visible text need
 - risk guardrails
+- demographic_lock: resolve the character's visible age to match channel audience (60+), include at least 2 concrete aging visual cues
 
 A prompt fails if it jumps directly from topic to image without resolving the line's meaning.
 
@@ -129,6 +130,8 @@ Build each `prompt_img_nano` in this order:
 - if host is not needed, do not force the host into the scene
 - if editing from a source image, explicitly state what to preserve and what may change
 - if readable text is needed, specify the exact text and add `no other readable text`
+- if the character is a senior (60+), EXPLICITLY describe aging features: gray/silver hair, wrinkles, age-appropriate posture, weathered hands — do not rely on the word "older" alone
+- manga/illustration style naturally reduces aging cues, so OVER-describe age features to compensate
 
 ## Veo 3 image-to-video grammar
 The source image already provides subject, setting, lighting, style, and visible text.

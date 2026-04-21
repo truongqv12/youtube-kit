@@ -15,3 +15,5 @@
 - no decorative clutter that weakens explanatory clarity
 - no audio generation cue in Veo prompts (audio handled by external TTS)
 - no ambience, foley, or room tone requests in video prompts
+- no youth drift: characters described as elderly or senior MUST show visible aging features (wrinkles, gray hair, mature posture) — never render them as middle-aged or younger
+- no smooth-skin bias for senior characters in manga/illustration style

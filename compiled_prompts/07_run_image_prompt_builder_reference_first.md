@@ -49,6 +49,8 @@ Return:
 - default visible text policy is `no_readable_text`
 - if readable text is truly required, write the exact short text in `channel_language` only and say `no other readable text`
 - `prompt_img_nano` should be written in clear English for workflow consistency, but any visible text inside the image must remain exact `channel_language` text
+- demographic fidelity: when audience_age is 60+, every human character must show visible aging features — the word "older" alone is insufficient for Nano Banana; explicitly describe gray/silver hair, facial wrinkles, age-appropriate posture, and mature body language
+- for reference_first host scenes, append: "The character MUST appear the SAME age as the reference. NO youth reduction."
 
 ## Prompt construction formula
 Build each `prompt_img_nano` in this order:
