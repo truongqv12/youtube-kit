@@ -13,3 +13,5 @@
 - no subtitle-like baked text
 - no repetitive stock-template rows across adjacent lines
 - no decorative clutter that weakens explanatory clarity
+- no audio generation cue in Veo prompts (audio handled by external TTS)
+- no ambience, foley, or room tone requests in video prompts

@@ -6,7 +6,7 @@
   "non_dialogue_mode": true,
   "lip_sync": false,
   "talking_head_bias": false,
-  "audio_prompt_mode": "ambience_only_if_supported",
+  "audio_prompt_mode": "silent_motion_only",
   "style_lock": {
     "family_prompt_phrase": "editorial manga illustration",
     "substyle_prompt_phrase": "seinen soft educational style",
@@ -28,7 +28,8 @@
     "avoid doctor costume unless required",
     "avoid photorealistic rendering",
     "avoid lip sync",
-    "avoid direct-to-camera speech"
+    "avoid direct-to-camera speech",
+    "no generated audio track"
   ],
   "reference_anchor_policy": [
     "same host as uploaded reference",
@@ -99,6 +100,8 @@
     "forbid_voiceover": true,
     "forbid_lip_sync": true,
     "forbid_direct_to_camera_speech": true,
+    "veo_audio_policy": "silent",
+    "audio_prompt_directive": "(Silent video, no audio).",
     "scene_archetype_motion_bias": {
       "host_anchor": [
         "host_gentle_push",

@@ -23,3 +23,4 @@
 13. Visible text that appears inside the generated image or video must follow `channel_language` and locale governance.
 14. If `non_dialogue_mode=true` or `voiceover_mode=narration_only`, on-screen spoken dialogue must remain disabled unless the config explicitly opts in.
 15. Prompt builders must resolve line context before writing final prompts. Never jump directly from a raw script line to a generic topic illustration.
+16. If `veo_audio_mode=silent` or `audio_prompt_mode=silent_motion_only`, Veo prompts must include `(Silent video, no audio).` and must NOT request ambience, foley, room tone, or any generated soundscape. Audio is handled entirely by external TTS. This policy reduces `PUBLIC_ERROR_AUDIO_FILTERED` from Veo 3.1 safety system.

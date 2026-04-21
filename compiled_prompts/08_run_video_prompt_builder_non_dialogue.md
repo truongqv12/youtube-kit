@@ -44,15 +44,17 @@ Return:
   - environmental micro-motion
   - mood preservation
   - visible text preservation if needed
-  - audio rule
-  - negative motion and performance constraints
+  - audio rule: `(Silent video, no audio).`
+  - negative motion, performance, and audio constraints
 - do not rewrite the full image description
 - use general subject terms
 - preserve readable text from the source image exactly as-is when it exists
 - do not ask Veo to generate new readable text
 - motion must vary according to `scene_archetype` and line meaning
 - if `non_dialogue_mode=true` or `voiceover_mode=narration_only`, forbid spoken dialogue, on-screen narration, lip sync, direct-to-camera speech, singing, chanting, and mouth-performance acting
-- if audio prompting is supported, allow only ambience, foley, or ASMR cues appropriate to the current scene
+- audio directive must be exactly: `(Silent video, no audio).`
+- do NOT request ambience, foley, room tone, or any soundscape — audio is handled by external TTS
+- this policy reduces `PUBLIC_ERROR_AUDIO_FILTERED` from Veo 3.1 safety system
 - the spoken script is handled by external TTS, not by on-screen performance
 - if a line needs stronger transformation, choose `first_last_frame_transition` instead of overloading a first-frame-only prompt
 
@@ -89,8 +91,8 @@ Build each `prompt_video_veo3` in this order:
 3. environmental micro-motion
 4. mood preservation
 5. text preservation if visible text exists
-6. audio rule
-7. negative motion and performance constraints
+6. silent audio directive: `(Silent video, no audio).`
+7. negative motion, performance, and audio constraints
 
 ## Procedure
 1. Read all required files.
@@ -116,6 +118,7 @@ A row fails if any of the following are true:
 - the prompt asks for new readable text
 - the prompt uses a repeated stock template with no scene-specific variation
 - the prompt implies character redesign or scene redesign
+- the prompt requests ambient audio, foley, room tone, or any generated soundscape
 
 ## Output contract
 After preflight, return exactly:

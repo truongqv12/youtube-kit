@@ -40,11 +40,5 @@
       "promise_style": "calm_practical_caution",
       "story_bias": "everyday_example_then_explanation"
     }
-  },
-  "special_notes": [
-    "video is explanatory, not dialogue",
-    "no lip sync needed",
-    "prompts must work with uploaded host reference image if available",
-    "avoid disease-cure framing unless the policy gate clearly allows it"
-  ]
+  }
 }

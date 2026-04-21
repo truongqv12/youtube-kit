@@ -6,5 +6,5 @@
   "target_country": "Japan",
   "channel_niche": "Japanese senior health daily wellness",
   "image_style": "editorial manga, old-school 2D anime influence, soft educational, senior-friendly, clean ink lines, warm low-saturation colors, low clutter, Japanese everyday life",
-  "video_style": "narration-led explainer, slow push-ins, gentle pans, object-focus, daily-life comparisons, no lip sync, no direct-to-camera speech"
+  "video_style": "narration-led explainer, slow push-ins, gentle pans, object-focus, daily-life comparisons, no lip sync, no direct-to-camera speech, silent video (audio handled by external TTS)"
 }

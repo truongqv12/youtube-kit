@@ -32,11 +32,14 @@ Nhiệm vụ là biến từng keyframe thành prompt chuyển động ngắn, c
   - environmental micro-motion
   - mood preservation
   - text preservation
-  - audio rule
+  - audio rule: `(Silent video, no audio).`
   - negative constraints
 - Không mô tả lại full image.
 - Không yêu cầu tạo readable text mới.
 - Nếu non-dialogue, phải cấm dialogue / lip sync / direct-to-camera speech / singing / chanting.
+- Audio directive bắt buộc: `(Silent video, no audio).` — KHÔNG yêu cầu ambience, foley, room tone
+- Audio do TTS bên ngoài xử lý, Veo không được sinh audio
+- Policy này giảm lỗi `PUBLIC_ERROR_AUDIO_FILTERED` từ Veo 3.1
 - Nếu line cần biến chuyển mạnh hơn thì chọn `first_last_frame_transition`.
 
 ## i2v modes

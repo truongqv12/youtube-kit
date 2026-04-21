@@ -140,8 +140,8 @@ Build each `prompt_video_veo3` in this order:
 3. environmental micro-motion
 4. mood preservation
 5. visible text preservation if applicable
-6. audio rule
-7. negative motion and performance constraints
+6. silent audio directive: `(Silent video, no audio).`
+7. negative motion, performance, and audio constraints
 
 ### Motion prompt rules
 - one clip = one focused motion beat
@@ -154,12 +154,12 @@ Build each `prompt_video_veo3` in this order:
 - if a line needs stronger transformation, prefer first-and-last-frame mode rather than overloading a single first-frame prompt
 
 ### Motion biases by scene archetype
-- `host_anchor`: gentle push, slight lateral drift, blink, breath, small head turn, subtle room-tone ambience
-- `everyday_example`: observational follow, weight shift, hand adjustment, garment movement, natural localized ambience
+- `host_anchor`: gentle push, slight lateral drift, blink, breath, small head turn
+- `everyday_example`: observational follow, weight shift, hand adjustment, garment movement
 - `object_focus`: inspection push, hand interaction, page tilt, steam drift, label preservation
 - `process_metaphor`: layered parallax, signal pulse, symbolic drift, restrained particle motion
 - `comparison_pair`: controlled parallax across the comparison, emphasis shift without changing the composition
-- `environment_bridge`: breathing pan or tilt, leaves, curtains, rain, dust, distant traffic, room airflow
+- `environment_bridge`: breathing pan or tilt, leaves, curtains, rain, dust, distant movement
 
 ## Non-dialogue audio policy
 If `non_dialogue_mode=true` or `voiceover_mode=narration_only`:
@@ -168,8 +168,9 @@ If `non_dialogue_mode=true` or `voiceover_mode=narration_only`:
 - no lip sync
 - no direct-to-camera speech
 - no singing, chanting, or vocal performance
-- if audio prompting is supported, allow only ambience, foley, or ASMR cues that match the scene
-- if audio prompting is not supported, keep the same negative speech rule in text form
+- audio directive must be `(Silent video, no audio).` — do NOT request ambience, foley, or room tone
+- audio is handled entirely by external TTS; Veo must not generate any audio content
+- this policy reduces `PUBLIC_ERROR_AUDIO_FILTERED` from Veo 3.1 safety system
 
 ## Negative defaults
 - no mouth-open speaking pose unless explicitly required
@@ -197,4 +198,4 @@ Possible Nano Banana prompt:
 Using the provided reference image(s) when available, generate a clean editorial manga illustration in a seinen soft educational style. The same older Japanese woman slows during an early-morning neighborhood walk before breakfast and lightly steadies one hand on a park bench rail, calm but slightly lightheaded expression. Ordinary Japanese residential park path, practical senior walking clothes and shoes, soft morning light, same calm health-explainer visual language. Keep the same character identity and wardrobe family when reference continuity exists. No readable text. Avoid speech pose, avoid doctor costume, avoid photorealistic drift.
 
 Possible Veo 3 i2v prompt:
-Gentle forward drift. The woman slows one step and makes a small balancing hand adjustment while her jacket hem and nearby leaves move in the morning breeze. Preserve the calm observational mood, the exact character identity, and the existing appearance of the source image. Ambient audio only: soft footsteps, distant birds. No lip sync, no direct-to-camera speech, no new readable text.
+Gentle forward drift. The woman slows one step and makes a small balancing hand adjustment while her jacket hem and nearby leaves move in the morning breeze. Preserve the calm observational mood, the exact character identity, and the existing appearance of the source image. (Silent video, no audio). No lip sync, no direct-to-camera speech, no new readable text.

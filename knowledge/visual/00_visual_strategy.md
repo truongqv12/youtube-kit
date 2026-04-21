@@ -10,3 +10,4 @@ Default visual philosophy:
 - readable text should be avoided by default and only used when the line truly needs it
 - style must be resolved from `visual_style_id` and `visual_substyle_id`, never from a vague label like `manga-style`
 - motion defaults to calm, explanatory, non-dialogue support for external TTS
+- Veo prompts must use `(Silent video, no audio).` — do not request ambience, foley, or room tone; audio is handled entirely by external TTS
