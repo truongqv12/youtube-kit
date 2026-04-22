@@ -1,0 +1,212 @@
+{
+  "project_id": "kenh_2_vid_001",
+  "channel_id": "kenh_2",
+  "pipeline_step": "02_topic_strategy",
+  "generated_at": "2026-04-22T11:30:36+07:00",
+  "source_files": [
+    "core/system_principles.md",
+    "core/topic_strategy_standard.md",
+    "core/policy_guardrails.md",
+    "channels/kenh_2/videos/vid_001/01_intake_spec.json",
+    "channels/kenh_2/00_editorial_profile.json",
+    "channels/kenh_2/00_publication_profile.json"
+  ],
+
+  "topic_cluster": "bath safety",
+  "topic_angle": "お風呂で転ばないために見直したいこと3つ",
+  "topic_angle_en": "Three things to review so you do not slip and fall in the bath",
+
+  "target_viewer": {
+    "age_band": "60+",
+    "living_situation": "lives alone or with minimal daily support",
+    "locale": "Japan, national neutral",
+    "daily_context": "bathes daily in a standard Japanese unit bath (ユニットバス or traditional 浴室), may already have minor balance or mobility concerns but is still independent",
+    "information_need": "wants a calm, plain-language checklist of specific things to inspect and adjust in the bathroom to reduce fall risk without major renovation"
+  },
+
+  "viewer_problem": "多くのシニアの方は、毎日のお風呂が少し不安になっても、具体的にどこを確認すればいいのか分からないまま入浴を続けています。大きなリフォームではなく、すぐにできる見直しポイントを知りたいと感じています。",
+  "viewer_problem_en": "Many seniors continue bathing with growing unease but do not know exactly which spots to check. They want actionable review points they can handle without major renovation.",
+
+  "working_promise": "お風呂まわりで見直しておきたいポイントを3つに絞って、ひとつずつ一緒に確認していきます。大掛かりな工事ではなく、今日からできる小さな見直しが中心です。",
+  "working_promise_en": "We will walk through three specific review points around the bath, one by one. The focus is on small adjustments you can start today — not major renovation.",
+
+  "safe_claim_boundary": {
+    "this_video_claims": [
+      "浴室には転倒リスクを高めるポイントがいくつかある",
+      "足元・手すり・温度差の3つは、自分で見直せる代表的なチェック項目",
+      "小さな見直しでも安心感につながることがある",
+      "不安が大きい場合は、家族や専門家に相談するとよい"
+    ],
+    "this_video_does_NOT_claim": [
+      "これで転倒を完全に防げる",
+      "手すりをつければ絶対安全",
+      "ヒートショックはこの方法で防げる",
+      "医師の指導なしでも十分",
+      "リフォーム不要で全て解決"
+    ]
+  },
+
+  "forbidden_claims": [
+    "「これで事故ゼロ」—guaranteed accident prevention",
+    "「絶対に転ばない」—absolute fall prevention promise",
+    "「ヒートショックを防げます」—heat shock prevention certainty",
+    "「医者は教えてくれない浴室の秘密」—anti-doctor conspiracy framing",
+    "「薬いらずのお風呂術」—medication replacement framing",
+    "「これだけで十分です」—sufficiency guarantee"
+  ],
+
+  "research_questions": [
+    {
+      "id": "RQ1",
+      "question": "日本の高齢者における浴室内転倒の主な原因と発生状況（消費者庁・厚生労働省・東京消防庁等の統計）",
+      "question_en": "Leading causes and incidence of bathroom falls among Japanese seniors — statistics from Consumer Affairs Agency, MHLW, Tokyo Fire Department",
+      "source_type_expected": "official statistics, government white paper"
+    },
+    {
+      "id": "RQ2",
+      "question": "浴室の床材・滑り止めマットの転倒予防効果に関するエビデンスまたは推奨（住宅改修ガイドライン等）",
+      "question_en": "Evidence or recommendations on anti-slip flooring and bath mats for fall prevention — housing modification guidelines",
+      "source_type_expected": "government guideline, academic review"
+    },
+    {
+      "id": "RQ3",
+      "question": "浴室手すりの設置位置・種類に関する介護保険制度の推奨と自治体支援制度",
+      "question_en": "Recommended grab bar placement and types under the long-term care insurance system and municipal support programs",
+      "source_type_expected": "MHLW care insurance guideline, municipal government page"
+    },
+    {
+      "id": "RQ4",
+      "question": "ヒートショックのメカニズムと予防のための浴室・脱衣所の温度管理の推奨（日本救急医学会等）",
+      "question_en": "Heat shock mechanism and recommended bathroom/changing room temperature management — Japan Association for Acute Medicine etc.",
+      "source_type_expected": "medical society guideline, NHK health article"
+    },
+    {
+      "id": "RQ5",
+      "question": "高齢者が自分でできる浴室安全チェックリスト（自治体や介護予防事業の配布資料）",
+      "question_en": "Self-check bathroom safety checklists distributed by municipalities or fall prevention programs",
+      "source_type_expected": "municipal pamphlet, care prevention program material"
+    },
+    {
+      "id": "RQ6",
+      "question": "浴室リフォーム・住宅改修の介護保険適用範囲と自己負担の概要",
+      "question_en": "Scope of long-term care insurance coverage for bathroom renovation and out-of-pocket cost overview",
+      "source_type_expected": "government official page, care manager resource"
+    }
+  ],
+
+  "planned_sections": [
+    {
+      "section_id": "S01",
+      "label": "オープニング — 身近なお風呂の不安",
+      "label_en": "Opening — the familiar worry about bath time",
+      "purpose": "soft hook with a relatable domestic scene",
+      "estimated_duration_sec": 90,
+      "editorial_note": "shared universal experience of feeling the floor is slippery; no fear framing"
+    },
+    {
+      "section_id": "S02",
+      "label": "なぜ浴室で転びやすいのか — 背景を軽く整理",
+      "label_en": "Why the bathroom is slip-prone — brief background",
+      "purpose": "provide brief factual context from statistics without dramatizing",
+      "estimated_duration_sec": 120,
+      "editorial_note": "cite Consumer Affairs Agency or Tokyo Fire Dept stats; keep tone calm"
+    },
+    {
+      "section_id": "S03",
+      "label": "見直し①：足元の滑りやすさ",
+      "label_en": "Check 1: Slipperiness underfoot",
+      "purpose": "first of three check items — floor surface and mats",
+      "estimated_duration_sec": 180,
+      "editorial_note": "object-focused shots of floor tiles, bath mat, suction-cup anti-slip mat"
+    },
+    {
+      "section_id": "S04",
+      "label": "見直し②：つかまる場所はあるか",
+      "label_en": "Check 2: Is there something to hold on to?",
+      "purpose": "second check item — grab bars and stable supports",
+      "estimated_duration_sec": 180,
+      "editorial_note": "show placement zones (bathtub edge, wall next to shower stool); mention care insurance support"
+    },
+    {
+      "section_id": "S05",
+      "label": "見直し③：温度差への備え",
+      "label_en": "Check 3: Preparing for temperature difference",
+      "purpose": "third check item — heat shock prevention through temperature management",
+      "estimated_duration_sec": 180,
+      "editorial_note": "changing room heater, lukewarm water first, avoid very hot water; cite recommended temperature ranges from medical society"
+    },
+    {
+      "section_id": "S06",
+      "label": "before-after イメージ — 見直し前と見直し後",
+      "label_en": "Before-after image — pre-review vs post-review",
+      "purpose": "visual comparison showing the bathroom corner improvements",
+      "estimated_duration_sec": 90,
+      "editorial_note": "illustrated before-after side by side; no exaggeration of improvement claims"
+    },
+    {
+      "section_id": "S07",
+      "label": "一人で難しい場合は — 相談先の整理",
+      "label_en": "When it is hard to do alone — where to consult",
+      "purpose": "when to ask family, care manager, or municipality for help",
+      "estimated_duration_sec": 90,
+      "editorial_note": "mention care insurance, municipal consultation desk; soft consult-a-professional framing"
+    },
+    {
+      "section_id": "S08",
+      "label": "まとめ — 今日できることから始めましょう",
+      "label_en": "Wrap-up — start with what you can do today",
+      "purpose": "calm reassuring close with recap of three points",
+      "estimated_duration_sec": 60,
+      "editorial_note": "encourage partial progress; acknowledge that changes take time"
+    }
+  ],
+
+  "total_estimated_duration_sec": 990,
+  "total_estimated_duration_min": 16.5,
+  "duration_within_target": true,
+  "duration_target": "15–20 min",
+
+  "packaging_seeds_longform": {
+    "title_candidates": [
+      "お風呂で転ばないために見直したいこと3つ【60代・70代の暮らし】",
+      "シニアのお風呂 安全チェック3つのポイント",
+      "浴室の危ない場所、見直しませんか？【ひとり暮らしのシニアへ】"
+    ],
+    "thumbnail_concept": {
+      "scene": "illustrated close-up of a Japanese bathroom corner: anti-slip mat on the floor, a grab bar on the wall, a small temperature indicator — warm tones, retro-clean 2D style",
+      "text_overlay": "お風呂 3つの見直し",
+      "text_word_count": 4,
+      "emotion": "warm_reassuring",
+      "host_presence": "optional — may appear in small corner or absent"
+    },
+    "description_seed": "お風呂場で転ばないために、今日からできる見直しポイントを3つに絞ってお話しします。足元の滑り・つかまる場所・温度差、それぞれ確認してみましょう。※この動画は情報提供を目的としたものです。体調に不安がある方は、かかりつけ医にご相談ください。"
+  },
+
+  "packaging_seeds_shorts": {
+    "enabled": false,
+    "count": 0,
+    "override_reason": "video-level directive: long-form only, do not derive shorts",
+    "placeholder_concepts": [
+      {
+        "shorts_id": "placeholder_S1",
+        "concept": "「滑り止めマット、吸盤ついてますか？」— 15-second object-focus quick check",
+        "note": "NOT produced for this video; retained as future reference only"
+      },
+      {
+        "shorts_id": "placeholder_S2",
+        "concept": "「お風呂の前に脱衣所を暖めていますか？」— 15-second temperature prep quick tip",
+        "note": "NOT produced for this video; retained as future reference only"
+      }
+    ]
+  },
+
+  "notes_for_research": [
+    "RQ1 — prioritize Consumer Affairs Agency (消費者庁) accident statistics and Tokyo Fire Dept (東京消防庁) rescue data for bathroom falls",
+    "RQ2 — check if JIS standards exist for bathroom anti-slip flooring in residential settings",
+    "RQ3 — confirm current care insurance (介護保険) coverage rate for grab bar installation (typically 1割 self-pay)",
+    "RQ4 — use Japan Circulation Society or Japan Association for Acute Medicine guidelines on safe bathing temperature; cite 41°C recommendation",
+    "RQ5 — look for municipal PDF checklists (e.g., Tokyo Metropolitan Government, Osaka City) as visual reference for script structure",
+    "RQ6 — do NOT frame renovation as mandatory; present as an option with professional consultation emphasis",
+    "General — all statistics should be from the last 5 years when possible; older data acceptable if it is the most recent official source"
+  ]
+}

@@ -1,6 +1,6 @@
 {
-  "visual_style_id": "manga_editorial_clean",
-  "visual_substyle_id": "josei_warm_lifestyle",
+  "visual_style_id": "illustrated_lifestyle_handbook",
+  "visual_substyle_id": "retro_clean_2d_domestic",
   "host_mode": "host_optional",
   "host_reference_mode": "reference_first",
   "non_dialogue_mode": true,
@@ -8,29 +8,33 @@
   "talking_head_bias": false,
   "audio_prompt_mode": "silent_motion_only",
   "style_lock": {
-    "family_prompt_phrase": "editorial manga illustration",
-    "substyle_prompt_phrase": "josei warm lifestyle style",
-    "render_medium": "illustrated lifestyle handbook retro-clean 2D",
-    "line_treatment": "clean ink line art, controlled line weight, minimal clutter",
-    "color_system": "flat soft colors, gentle warm accents, low-saturation domestic palette",
-    "composition_bias": "panel-like clarity, readable anatomy, object clarity, room walkthrough feeling",
-    "emotion_ceiling": "reassuring, gentle, practical, observant"
+    "family_prompt_phrase": "illustrated lifestyle handbook",
+    "substyle_prompt_phrase": "retro-clean 2D, warm domestic scenes, senior-friendly",
+    "render_medium": "retro-clean 2D illustration",
+    "line_treatment": "clean flat outlines, minimal detail, object clarity",
+    "color_system": "flat soft colors, warm earth tones, low saturation, selective accent",
+    "composition_bias": "practical domestic scene focus, object clarity, minimal clutter, checklist-friendly layout",
+    "emotion_ceiling": "warm, reassuring, trustworthy, practical",
+    "seed_image_style_raw": "illustrated lifestyle handbook, retro-clean 2D, warm domestic scenes, senior-friendly, practical Japanese home details, flat soft colors, object clarity, minimal clutter"
   },
   "positive_style_anchors": [
-    "clean ink line art",
-    "flat soft colors",
-    "editorial manga illustration",
+    "illustrated lifestyle handbook feel",
+    "retro-clean 2D illustration",
     "warm domestic scenes",
+    "senior-friendly visual clarity",
     "practical Japanese home details",
-    "retro-clean 2D"
+    "flat soft colors",
+    "object clarity and readability",
+    "minimal clutter"
   ],
   "negative_style_anchors": [
-    "avoid moe anime drift",
-    "avoid glossy poster rendering",
     "avoid photorealistic rendering",
     "avoid lip sync",
     "avoid direct-to-camera speech",
-    "no generated audio track"
+    "no generated audio track",
+    "avoid decorative excess",
+    "avoid complex gradients or glossy effects",
+    "avoid cluttered compositions"
   ],
   "reference_anchor_policy": [
     "same host as uploaded reference",
@@ -41,10 +45,11 @@
   ],
   "host_usage_policy": "host_optional_reference_first",
   "no_host_strategy": [
-    "object-focus scenes",
-    "room walkthrough feeling",
-    "before-after comparisons",
-    "panel-like educational composition"
+    "object-focused domestic scenes",
+    "room walkthrough compositions",
+    "before-after comparison layouts",
+    "close-up of safety-relevant objects and areas",
+    "everyday Japanese home environments"
   ],
   "continuity_governance": {
     "scene_group_continuity": true,
@@ -53,10 +58,11 @@
       "location_family",
       "primary_prop_family",
       "wardrobe_family",
-      "time_of_day_family"
+      "time_of_day_family",
+      "room_identity"
     ],
     "anchor_count_per_row": "2_to_4",
-    "variation_rule": "keep continuity anchors but change the line-specific semantic action, object, or comparison"
+    "variation_rule": "keep continuity anchors but change the line-specific semantic action, object, or safety check focus"
   },
   "locale_governance": {
     "target_country": "Japan",
@@ -64,14 +70,19 @@
     "region_target": "",
     "allowed_location_families": [
       "ordinary Japanese apartment interiors",
-      "Japanese neighborhood parks",
-      "Japanese pharmacies and household storage",
-      "hallways, bathrooms, living rooms"
+      "Japanese bathroom and bath areas",
+      "Japanese kitchen and dining spaces",
+      "Japanese entryway and genkan areas",
+      "Japanese bedroom and futon spaces",
+      "Japanese neighborhood streets and crossings",
+      "Japanese pharmacies and household-goods stores",
+      "Japanese clinic waiting areas only when the line truly needs them"
     ],
     "wardrobe_rules": [
       "ordinary Japanese senior casualwear",
       "seasonally appropriate layers",
-      "practical shoes and bags common in Japan"
+      "indoor slippers and practical footwear",
+      "aprons and household gloves when relevant"
     ],
     "signage_rules": [
       "readable text only when required",
@@ -81,7 +92,9 @@
     "forbidden_cross_locale_cues": [
       "US suburban mailbox scenes",
       "European-only street furniture or road signs",
-      "Chinese-only packaging drift when the setting is Japan"
+      "Chinese-only packaging drift when the setting is Japan",
+      "Korean signage drift when the setting is Japan",
+      "generic Western hospital-stock imagery when the line is not clinical"
     ]
   },
   "demographic_anchors": {
@@ -91,14 +104,18 @@
       "visibly elderly",
       "silver-gray hair",
       "gentle wrinkles around eyes and mouth",
+      "slightly weathered face",
       "natural age spots on hands",
-      "relaxed mature posture"
+      "relaxed mature posture",
+      "comfortable domestic clothing"
     ],
     "age_negative_keywords": [
       "DO NOT make the character look younger than 60",
-      "avoid smooth youthful skin"
+      "avoid smooth youthful skin",
+      "avoid thick dark hair unless character design requires it",
+      "avoid athletic or youthful posture"
     ],
-    "manga_age_compensation": "Because manga illustration naturally smooths aging features, EXPLICITLY include at least 2-3 visible aging cues in every human character: wrinkles, gray/white hair, age-appropriate body language"
+    "illustration_age_compensation": "Because 2D illustration can soften aging features, EXPLICITLY include at least 2-3 visible aging cues in every human character: wrinkles, gray/white hair, age-appropriate body language, weathered hands"
   },
   "visible_text_governance": {
     "default_policy": "avoid_readable_text",
@@ -117,6 +134,22 @@
     "veo_audio_policy": "silent",
     "audio_prompt_directive": "(Silent video, no audio).",
     "scene_archetype_motion_bias": {
+      "room_walkthrough": [
+        "slow_pan_across_room",
+        "gentle_dolly_into_corner"
+      ],
+      "object_focus": [
+        "object_inspection_push",
+        "object_in_use_micro"
+      ],
+      "before_after_comparison": [
+        "comparison_parallax_hold",
+        "comparison_reveal_shift"
+      ],
+      "checklist_item": [
+        "highlight_push_on_item",
+        "item_reveal_drift"
+      ],
       "host_anchor": [
         "host_gentle_push",
         "host_listening_drift"
@@ -124,18 +157,6 @@
       "everyday_example": [
         "daily_action_follow",
         "daily_pause_observe"
-      ],
-      "object_focus": [
-        "object_inspection_push",
-        "object_in_use_micro"
-      ],
-      "process_metaphor": [
-        "process_layer_drift",
-        "process_signal_pulse"
-      ],
-      "comparison_pair": [
-        "comparison_parallax_hold",
-        "comparison_reveal_shift"
       ],
       "environment_bridge": [
         "environment_breathing_pan",

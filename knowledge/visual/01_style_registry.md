@@ -1,18 +1,22 @@
 # Style Registry
 
 ## Resolution rule
-Every visual profile must resolve both `visual_style_id` and `visual_substyle_id` into a concrete style lock.
+Every visual profile must resolve `visual_style_id` and `visual_substyle_id` into a concrete style lock.
+Two valid approaches:
+1. **Registry-based:** Match the seed's `image_style` to a known family below, then use the family's pre-defined lock.
+2. **Seed-driven:** When `image_style` does not match any registry family, derive `visual_style_id` and `visual_substyle_id` directly from the seed description and build a custom style lock. The raw `image_style` value must be preserved in `style_lock.seed_image_style_raw`.
+
 Never stop at vague labels such as `manga-style`, `anime-style`, or `watercolor-style`.
-A valid style lock must specify:
+A valid style lock (whether registry-based or seed-driven) must specify:
 - family prompt phrase
 - substyle prompt phrase
 - render medium
 - line treatment
 - color system
-- texture or screentone behavior
+- texture or screentone behavior (if applicable)
 - composition bias
 - emotion ceiling
-- style drift to avoid
+- style drift to avoid (if applicable)
 
 ## Family: manga_editorial_clean
 Base lock:

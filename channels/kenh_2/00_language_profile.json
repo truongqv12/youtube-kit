@@ -1,36 +1,21 @@
 {
-  "language_profile_id": "jp_senior_health_neutral",
+  "language_profile_id": "jp_senior_safe_living_neutral",
   "base_language_mode": "national_neutral",
   "register_profile": "warm_polite_educational",
   "addressing_profile": "senior_respectful_neutral",
-  "preferred_audience_address": [
-    "あなた",
-    "60代・70代",
-    "シニア世代"
-  ],
-  "preferred_narrator_patterns": [
-    "～ですね",
-    "丁寧に～していきましょう",
-    "～してみてはいかがでしょうか"
-  ],
-  "preferred_softening_patterns": [
-    "少しでも",
-    "ゆっくりと",
-    "無理のない範囲で",
-    "一つずつ落ち着いて"
-  ],
-  "avoid_patterns": [
-    "絶対",
-    "確実",
-    "～すべきだ",
-    "直ちに～しろ"
-  ],
-  "banned_phrases": [
-    "確実に治る",
-    "今すぐやめろ",
-    "医者に行くな",
-    "手遅れになる"
-  ],
+  "preferred_audience_address": ["みなさん", "60代・70代の方", "シニア世代の方", "おひとりで暮らしている方"],
+  "preferred_narrator_patterns": ["この動画では", "今日は〜を見ていきましょう", "一緒に確認していきましょう", "お家の中を見直してみましょう"],
+  "preferred_softening_patterns": ["〜かもしれません", "〜してみましょう", "無理のない範囲で", "気になる場合は", "少しずつ整えていきましょう"],
+  "preferred_safety_framing_patterns": ["ここを見直すだけでも安心です", "ひとつずつ確認してみましょう", "気がついたときに直せば大丈夫です", "急がなくても大丈夫です"],
+  "avoid_patterns": ["絶対に", "必ず治る", "医者が隠している", "薬はやめて大丈夫", "これで事故ゼロ"],
+  "banned_phrases": ["絶対に治る", "必ず防げる", "医者は教えてくれない", "これだけで十分", "これで事故ゼロ"],
   "region_handling": "national_neutral_default",
-  "lexicon_priority": "safety_senior_home"
+  "lexicon_priority": "safety_domestic_senior",
+  "domain_lexicon": {
+    "bath_safety": ["お風呂", "浴室", "滑り止め", "手すり", "温度", "ヒートショック"],
+    "fall_prevention": ["転倒", "つまずき", "段差", "足元", "照明", "マット"],
+    "seasonal_prep": ["暑さ対策", "寒さ対策", "エアコン", "水分補給", "暖房", "換気"],
+    "outing_readiness": ["外出", "買い物", "通院", "持ち物", "靴", "天気確認"],
+    "kitchen_safety": ["火の元", "コンロ", "包丁", "踏み台", "収納", "消費期限"]
+  }
 }

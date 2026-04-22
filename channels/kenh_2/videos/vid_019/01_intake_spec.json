@@ -5,8 +5,8 @@
     "topic_cluster": "living alone routines",
     "topic_angle": "薬を飲み忘れにくくする暮らしの工夫",
     "viewer_problem": "Japanese senior viewers want practical, safety-oriented daily-life guidance that reduces anxiety and helps them prepare calmly.",
-    "target_duration_min": 15,
-    "target_duration_max": 20
+    "target_duration_min": 10,
+    "target_duration_max": 18
   },
   "tts_config": {
     "tts_voice_name": "ja_female_soft_01",

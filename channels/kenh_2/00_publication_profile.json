@@ -1,37 +1,42 @@
 {
-  "publication_profile_id": "kenh_2_publication",
+  "publication_profile_id": "jp_senior_safe_living_handbook_package",
   "target_market": "Japan senior 60+",
   "language_mode": "ja_publish_with_vi_operator_notes",
   "thumbnail_bias": {
     "text_density": "low",
-    "emotion": "warm_practical_reassuring",
+    "emotion": "warm_reassuring_not_alarming",
     "visual_simplicity": "high",
     "host_usage": "optional_but_consistent",
     "host_age_readability": "must_look_60_plus",
-    "max_text_words_ja": 5
+    "max_text_words_ja": 4,
+    "scene_preference": "domestic_object_or_room_corner",
+    "color_warmth": "warm_earth_tones_with_soft_accent"
   },
   "title_bias": {
     "allow_numbers": true,
-    "allow_warning_framing": false,
+    "allow_warning_framing": true,
     "allow_question_framing": true,
     "prefer_age_anchor": true,
     "prefer_daily_routine_language": true,
+    "prefer_domestic_safety_language": true,
     "must_match_script": true,
     "must_avoid_overpromise": true,
     "must_avoid_fake_authority": true,
-    "must_avoid_disease_cure_framing": true
+    "must_avoid_disease_cure_framing": true,
+    "must_avoid_fear_theater": true
   },
   "description_bias": {
-    "tone": "calm_helpful_cautious",
+    "tone": "calm_helpful_practical",
     "include_summary": true,
     "include_soft_disclaimer": true,
     "include_viewer_action_points": true,
     "include_channel_language_keywords_naturally": true,
-    "include_source_family_mentions": false
+    "include_source_family_mentions": true,
+    "include_domestic_safety_keywords": true
   },
   "shorts_derivative_policy": {
     "enabled": true,
     "count": 2,
-    "goal": "pull new viewers into the long-form video"
+    "goal": "highlight one quick safety check from the long-form video"
   }
 }

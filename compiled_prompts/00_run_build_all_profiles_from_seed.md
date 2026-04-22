@@ -55,7 +55,7 @@ Return:
 - do not invent unexplained values
 - every non-trivial default must be explainable in `00_profile_inference_report.md`
 - `language_country` must resolve into `channel_language` and `target_country`
-- `video_style` must resolve into both `visual_style_id` and `visual_substyle_id`
+- `image_style` and `video_style` must resolve into `visual_style_id` and `visual_substyle_id` — either by matching a known family in the style registry, or by deriving a seed-driven style lock directly from the seed's `image_style` description. Both approaches must produce a concrete style lock with explicit prompt phrases, render medium, line treatment, color system, and composition bias. Seed-driven locks must preserve the raw `image_style` value in `style_lock.seed_image_style_raw`.
 - `channel_niche` must drive editorial and publication bias
 - if a seed field is too vague, call it out explicitly instead of guessing silently
 

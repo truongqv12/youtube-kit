@@ -1,30 +1,53 @@
 {
-  "editorial_profile_id": "kenh_2_editorial",
-  "focus_area": "Japanese senior safe living and daily safety",
-  "target_audience": "60+",
-  "mission_statement": "Provide practical, reassuring, and easy-to-understand actionable safety tips for solo senior living: home modifications, seasonal care, outing preparation, preventing falls.",
-  "core_values": [
-    "reassurance over fear",
-    "practical actionable advice",
-    "respectful calm communication",
-    "solo living feasibility"
+  "editorial_profile_id": "jp_senior_safe_living_scenario_checklist",
+  "channel_positioning": "japanese senior safe-living illustrated handbook explainer",
+  "promise_style": "calm_practical_safety_review",
+  "fear_intensity_ceiling": "low",
+  "story_bias": "scenario_checklist_then_safety_review",
+  "host_trust_role": "gentle_companion_narrator",
+  "episode_scope_bias": "one_domestic_scenario_per_video",
+  "preferred_hook_patterns": [
+    "room-by-room safety check for seniors",
+    "seasonal home prep before summer or winter",
+    "what makes this corner risky for falls",
+    "shopping and outing preparation checklist",
+    "small home changes that make daily life easier"
   ],
-  "forbidden_topics": [
-    "reckless cure promises",
-    "overly complex physical routines",
-    "unsolicited financial advice",
-    "panic-inducing accident statistics"
+  "preferred_topic_clusters": [
+    "bath and bathroom safety",
+    "kitchen and cooking safety for seniors",
+    "seasonal heat and cold preparation",
+    "fall prevention inside the home",
+    "shopping and outing readiness",
+    "hospital visit preparation",
+    "bedroom and nighttime safety",
+    "entryway and shoe area organization",
+    "laundry and housework with reduced strain",
+    "emergency contacts and daily check-in habits"
+  ],
+  "forbidden_hook_patterns": [
+    "secret cure",
+    "doctor conspiracy",
+    "guaranteed prevention",
+    "disease-name shock bait",
+    "miracle reversal promise",
+    "medication replacement promise",
+    "fear-based home invasion framing"
   ],
   "story_structure_bias": [
-    "sympathetic hook on a daily challenge",
-    "why this matters for solo living",
-    "calm checklist of 3 to 5 realistic adjustments",
-    "when to ask family or a professional",
-    "reassuring positive close"
+    "soft hook with familiar domestic scene",
+    "walkthrough of the scenario or room",
+    "why this area or habit matters for safety",
+    "3 to 5 practical check items or adjustments",
+    "before-after comparison when applicable",
+    "when to ask family or professionals for help",
+    "calm reassuring close"
   ],
   "softener_rules": [
-    "emphasize 'one step at a time' (無理のない備えを、一つずつ落ち着いて整えていきましょう)",
-    "normalize physical decline without shame",
-    "position safety tools as everyday conveniences"
+    "prefer caution over certainty",
+    "use safety-review framing instead of fear framing",
+    "avoid absolute promises about accident prevention",
+    "encourage family consultation for larger home modifications",
+    "acknowledge that changes take time and partial progress is fine"
   ]
 }

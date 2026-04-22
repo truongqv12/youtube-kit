@@ -1,6 +1,6 @@
 # Negative Visual Rules
 
-- no vague style labels without a resolved family and substyle lock
+- no vague style labels without a resolved style lock (registry-based or seed-driven)
 - no random English signage on non-English channels
 - no mixed-language labels unless the exact object authentically uses them
 - no locale drift in architecture, road markings, packaging, uniforms, store layouts, props, or typography

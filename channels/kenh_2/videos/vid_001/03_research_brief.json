@@ -1,0 +1,105 @@
+{
+  "project_id": "kenh_2_vid_001",
+  "channel_id": "kenh_2",
+  "pipeline_step": "03_research_brief",
+  "generated_at": "2026-04-22T11:34:00+07:00",
+  "source_files": [
+    "core/system_principles.md",
+    "core/topic_strategy_standard.md",
+    "core/mandatory_research_standard.md",
+    "core/policy_guardrails.md",
+    "knowledge/japanese/00_language_strategy.md",
+    "channels/kenh_2/videos/vid_001/01_intake_spec.json",
+    "channels/kenh_2/videos/vid_001/02_topic_strategy.json"
+  ],
+  "source_log_path": "channels/kenh_2/videos/vid_001/03_source_log.md",
+  
+  "evidence_by_section": {
+    "S02_Background": {
+      "facts": [
+        "浴室での転倒は、身体機能の低下（筋力、平衡感覚）だけでなく、床の滑りやすさや立ち上がり動作がきっかけで発生しやすい（消費者庁）。",
+        "冬場の温度差（ヒートショック）による急激な血圧変動がめまいや立ちくらみを引き起こし、それが転倒の直接的な原因になることも多い（消費者庁・日本救急医学会）。"
+      ],
+      "practical_guidance": [],
+      "uncertainty_unknowns": [],
+      "when_to_consult": []
+    },
+    "S03_Check_1_Floor": {
+      "facts": [
+        "浴室の床材や浴槽の底は水や石けんで非常に滑りやすくなる。"
+      ],
+      "practical_guidance": [
+        "滑り止めマットを活用する。ただし、床が平らな場合は吸盤タイプ、凹凸がある場合は自沈タイプなど、床材との相性を確認して選ぶ。",
+        "カビやヌメリを放置するとかえって滑る原因になるため、こまめに洗い、経年劣化したら消耗品として交換する。",
+        "マットの上にシャワーチェアを置くとグラつく危険があるため重ねて使わない。"
+      ],
+      "uncertainty_unknowns": [
+        "市販のマットが自宅の特定の床材（特殊コーティング等）に完全に適合するかは個別確認が必要。"
+      ],
+      "when_to_consult": [
+        "最適なマットの選び方に迷った場合は、福祉用具専門相談員に相談する。"
+      ]
+    },
+    "S04_Check_2_Grab_Bars": {
+      "facts": [
+        "立ち座り用には「縦型（I字）」、移動用には「横型」、両方の動きには「L字型」が基本の形状となる。",
+        "一般的に横手すりの高さは床から800mm前後が目安とされるが、使う人の身長や状態により最適な位置は変わる。"
+      ],
+      "practical_guidance": [
+        "浴槽の出入り口や洗い場の立ち座りする場所に、つかまる場所が確保されているか確認する。"
+      ],
+      "uncertainty_unknowns": [
+        "自宅の浴室の壁材（タイル、ユニットバス等）に十分な強度があり、手すりが取り付け可能かどうかは、専門業者の現地調査が必要。"
+      ],
+      "when_to_consult": [
+        "手すりの設置にあたっては、体の状態に合わせた位置を決めるため、事前にケアマネジャーや専門業者に相談する。"
+      ]
+    },
+    "S05_Check_3_Temperature": {
+      "facts": [
+        "脱衣所と浴室の温度差が大きいと、血圧が乱高下しヒートショックの危険が高まる（日本救急医学会等）。",
+        "熱すぎるお湯や長風呂も血圧変動のリスクを上げる。"
+      ],
+      "practical_guidance": [
+        "入浴前に脱衣所や浴室を暖め、温度差を小さくする。",
+        "お湯の温度は41度以下（できれば40度以下）を目安にし、湯船につかる時間は10分以内にとどめる。",
+        "入浴前に家族に声をかける習慣をつける。"
+      ],
+      "uncertainty_unknowns": [
+        "個人の持病（高血圧等）によって推奨される細かい入浴条件は異なる場合がある。"
+      ],
+      "when_to_consult": [
+        "持病がある方や、入浴中に頻繁に気分が悪くなる方は、必ずかかりつけ医に相談する。"
+      ]
+    },
+    "S07_Where_to_Consult": {
+      "facts": [
+        "要支援・要介護認定を受けている場合、介護保険の「住宅改修費支給制度」を利用でき、手すり設置や床材変更などの対象工事が限度額（20万円）の1割〜3割の自己負担で行える。",
+        "介護保険制度を利用するためには、「必ず工事着工前に」事前申請が必要となる（事後申請は認められない）。",
+        "自治体によっては独自の住宅改修補助金制度を設けている場合がある。"
+      ],
+      "practical_guidance": [
+        "少しでも不安を感じたら、まずは地域包括支援センターやケアマネジャーに相談する。"
+      ],
+      "uncertainty_unknowns": [
+        "各自治体独自の上乗せ助成やクーポンの内容は市区町村によって異なるため、一律の金額や条件は断言できない。"
+      ],
+      "when_to_consult": [
+        "リフォームや福祉用具の導入を検討した時点で、自費で購入・工事する前に市区町村の窓口やケアマネジャーに相談する。"
+      ]
+    }
+  },
+  
+  "policy_compliance": {
+    "meets_evidence_requirements": true,
+    "total_sources": 7,
+    "official_or_primary_sources": 5,
+    "medical_claims_verified": true,
+    "promises_no_cure_or_guarantee": true
+  },
+  
+  "lexicon_integration": {
+    "target_domain": "bath_safety",
+    "required_keywords": ["お風呂", "滑り止め", "手すり", "温度", "ヒートショック", "段差"]
+  }
+}
