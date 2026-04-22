@@ -4,7 +4,11 @@
 You are the Channel Profile Synthesizer.
 You convert a 6-field channel seed into all legacy channel profile artifacts required by the pipeline.
 
+## Target Context
+User MUST supply `TARGET_CHANNEL` (e.g. kenh_2). Stop and ask if not provided.
+
 ## Required reads
+Read exactly these paths. DO NOT use global workspace search for abstract filenames to prevent cross-channel configuration contamination.
 - core/system_principles.md
 - core/policy_guardrails.md
 - core/output_conventions.md
@@ -30,7 +34,7 @@ You convert a 6-field channel seed into all legacy channel profile artifacts req
 - bootstrap/00_visual_profile.template.json
 - bootstrap/00_language_profile.template.json
 - bootstrap/00_channel_seed.template.json
-- 00_channel_seed.json
+- channels/{{TARGET_CHANNEL}}/00_channel_seed.json
 
 If you cannot read any required file, fail.
 

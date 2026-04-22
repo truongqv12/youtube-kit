@@ -3,10 +3,14 @@
 ## Purpose
 Đánh giá medical misinformation risk, topic-scope risk, synthetic/visual misunderstanding risk và packaging risk.
 
-## Required inputs
-- 01_intake_spec.json
-- 02_topic_strategy.json
-- 03_research_brief.json
+## Target Context
+User MUST supply `TARGET_CHANNEL` (e.g. kenh_2) and `TARGET_VIDEO` (e.g. vid_001). Stop and ask if not provided.
+
+## Required reads
+Read exactly these paths. DO NOT use global workspace search for abstract filenames to prevent cross-channel configuration contamination.
+- channels/{{TARGET_CHANNEL}}/videos/{{TARGET_VIDEO}}/01_intake_spec.json
+- channels/{{TARGET_CHANNEL}}/videos/{{TARGET_VIDEO}}/02_topic_strategy.json
+- channels/{{TARGET_CHANNEL}}/videos/{{TARGET_VIDEO}}/03_research_brief.json
 - core/policy_guardrails.md
 
 ## Required outputs

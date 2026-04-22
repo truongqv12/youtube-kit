@@ -16,18 +16,22 @@ It exists to separate:
 This step is intentionally engine-agnostic.
 It must not introduce engine-locked notation, phoneme tags, kana-control syntax, or vendor-specific pronunciation features.
 
+## Target Context
+User MUST supply `TARGET_CHANNEL` (e.g. kenh_2) and `TARGET_VIDEO` (e.g. vid_001). Stop and ask if not provided.
+
 ## Required reads
+Read exactly these paths. DO NOT use global workspace search for abstract filenames to prevent cross-channel configuration contamination.
 - core/system_principles.md
 - core/output_conventions.md
 - core/canonical_script_unit_standard.md
 - core/duration_control_standard.md
 - core/policy_guardrails.md
-- 00_channel_config.json
-- 00_language_profile.json
-- 04_policy_report.json
-- 06_script_canonical.json
-- 06_script_full.md
-- 06_script_metrics.json
+- channels/{{TARGET_CHANNEL}}/00_channel_config.json
+- channels/{{TARGET_CHANNEL}}/00_language_profile.json
+- channels/{{TARGET_CHANNEL}}/videos/{{TARGET_VIDEO}}/04_policy_report.json
+- channels/{{TARGET_CHANNEL}}/videos/{{TARGET_VIDEO}}/06_script_canonical.json
+- channels/{{TARGET_CHANNEL}}/videos/{{TARGET_VIDEO}}/06_script_full.md
+- channels/{{TARGET_CHANNEL}}/videos/{{TARGET_VIDEO}}/06_script_metrics.json
 - knowledge/japanese/00_language_strategy.md
 - knowledge/japanese/01_register_core.md
 - knowledge/japanese/02_honorific_and_addressing.md
