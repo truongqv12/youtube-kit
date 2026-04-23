@@ -1,7 +1,7 @@
 # STEP 05 — Outline Builder
 
 ## Purpose
-Tạo outline đủ dày để viết script dài đúng duration cho một micro-topic duy nhất.
+Create a sufficiently dense outline to support writing a script that meets the target duration for a single micro-topic.
 
 ## Target Context
 User MUST supply `TARGET_CHANNEL` (e.g. kenh_2) and `TARGET_VIDEO` (e.g. vid_001). Stop and ask if not provided.

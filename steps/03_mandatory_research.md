@@ -1,8 +1,8 @@
 # STEP 03 — Mandatory Research
 
 ## Purpose
-Research bắt buộc trước outline/script.
-Research phải bám `02_topic_strategy.json`, không bám video đối thủ.
+Mandatory research before outline/script writing.
+Research must follow `02_topic_strategy.json`, not competitor videos.
 
 ## Target Context
 User MUST supply `TARGET_CHANNEL` (e.g. kenh_2) and `TARGET_VIDEO` (e.g. vid_001). Stop and ask if not provided.

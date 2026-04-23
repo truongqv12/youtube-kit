@@ -1,7 +1,7 @@
 # STEP 00 — Build All Profiles From Seed
 
 ## Purpose
-Từ `00_channel_seed.json`, sinh toàn bộ state profile kiểu cũ mà pipeline downstream vẫn dùng:
+From `00_channel_seed.json`, generate all legacy-format profile files that downstream pipeline steps depend on:
 - `00_channel_config.json`
 - `00_editorial_profile.json`
 - `00_publication_profile.json`
@@ -20,10 +20,10 @@ Read exactly these paths. DO NOT use global workspace search for abstract filena
 - `knowledge/visual/*`
 
 ## Required outputs
-- các file profile legacy
+- All legacy profile files listed above
 - `00_profile_inference_report.md`
 
 ## Key rules
-- seed 6 trường là input tay duy nhất của kênh
-- mọi profile còn lại là derived state
-- phải giữ backward compatibility cho các step sau
+- The seed's 6 fields are the only manual input per channel
+- All other profiles are derived state
+- Must maintain backward compatibility for downstream steps

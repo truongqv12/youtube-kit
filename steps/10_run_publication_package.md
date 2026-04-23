@@ -1,7 +1,7 @@
 # STEP 10 — Publication Package Builder
 
 ## Purpose
-Sinh package để public video sau khi script và final export đã ổn định.
+Generate the publication package after the script and final export are stable.
 
 ## Target Context
 User MUST supply `TARGET_CHANNEL` (e.g. kenh_2) and `TARGET_VIDEO` (e.g. vid_001). Stop and ask if not provided.
@@ -19,7 +19,7 @@ Read exactly these paths. DO NOT use global workspace search for abstract filena
 - channels/{{TARGET_CHANNEL}}/videos/{{TARGET_VIDEO}}/06_script_canonical.json
 - channels/{{TARGET_CHANNEL}}/videos/{{TARGET_VIDEO}}/09_final_three_column.csv
 - channels/{{TARGET_CHANNEL}}/videos/{{TARGET_VIDEO}}/09_export_qc_report.md
-- web access thật
+- real web access
 
 ## Required outputs
 - 10_publication_package.json

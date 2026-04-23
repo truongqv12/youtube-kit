@@ -4,8 +4,8 @@
 Turn each canonical script unit into one Nano Banana still-image prompt.
 
 ## New key rule
-Không đi thẳng từ line script sang prompt ảnh.
-Phải resolve `line_context_frame` trước, rồi mới build `prompt_img_nano`.
+Do not jump directly from a script line to an image prompt.
+Must resolve `line_context_frame` first, then build `prompt_img_nano`.
 
 ## Must decide per row
 - scene_group_id

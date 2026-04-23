@@ -1,13 +1,13 @@
 # STEP 06 — Script Writer Canonical
 
 ## Purpose
-Viết script cuối trực tiếp thành canonical script units.
-Script phải:
-- đúng duration
-- TTS-safe
-- tự nhiên hơn khi đọc thành lời
-- hợp người xem 60+
-- hợp tiếng Nhật nói lịch sự, ấm, rõ
+Write the final script directly as canonical script units.
+The script must:
+- meet the target duration
+- be TTS-safe
+- sound more natural when read aloud
+- be appropriate for viewers aged 60+
+- use polite, warm, clear spoken Japanese
 
 ## Target Context
 User MUST supply `TARGET_CHANNEL` (e.g. kenh_2) and `TARGET_VIDEO` (e.g. vid_001). Stop and ask if not provided.
@@ -34,6 +34,6 @@ Read exactly these paths. DO NOT use global workspace search for abstract filena
 
 ## Hard rules
 - `full_script == "\n".join(canonical_script_units)`
-- không headings / labels / bullets / numbering / production notes
-- không mở rộng scope
-- phải qua rhythm gate và breath-group gate
+- no headings / labels / bullets / numbering / production notes
+- do not expand scope beyond the locked micro-topic
+- must pass rhythm gate and breath-group gate

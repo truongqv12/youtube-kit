@@ -1,12 +1,12 @@
-# Checklist khởi tạo kênh
+# Channel Initialization Checklist
 
-- đã tạo thư mục kênh
-- đã điền `00_channel_seed.json`
-- đã chạy Step 00
-- đã kiểm `00_profile_inference_report.md`
-- đã đặt ảnh reference host vào `assets/host_reference/` nếu kênh có host cố định
-- đã đặt tài nguyên branding vào `assets/branding/`
-- đã có đủ:
+- Created the channel directory
+- Filled in `00_channel_seed.json`
+- Ran Step 00
+- Reviewed `00_profile_inference_report.md`
+- Placed host reference image in `assets/host_reference/` if the channel has a fixed host
+- Placed branding assets in `assets/branding/`
+- Confirmed all profiles exist:
   - `00_channel_config.json`
   - `00_editorial_profile.json`
   - `00_publication_profile.json`

@@ -1,16 +1,16 @@
-# Checklist cho từng video
+# Per-Video Checklist
 
-- đã tạo thư mục video mới
-- đã điền `01_video_intake.json`
-- đã khóa `topic_cluster` và `topic_angle`
-- đã có `02_topic_strategy.json`
-- đã chạy research
-- đã chạy policy gate
-- đã có outline đúng một micro-topic
-- đã có script canonical đúng duration và tự nhiên hơn khi đọc thành tiếng
-- đã có image prompts line-context locked
-- đã có video prompts motion-only
-- đã export đúng 3 cột
-- đã có `09_export_qc_report.md`
-- đã có publication package cho long-form
-- đã có 2 shorts derivatives
+- Created the new video directory
+- Filled in `01_video_intake.json`
+- Locked `topic_cluster` and `topic_angle`
+- Have `02_topic_strategy.json`
+- Ran research
+- Ran policy gate
+- Have an outline for exactly one micro-topic
+- Have a canonical script that meets duration targets and sounds natural when read aloud
+- Have image prompts that are line-context locked
+- Have video prompts that are motion-only
+- Exported exactly 3 columns
+- Have `09_export_qc_report.md`
+- Have a publication package for long-form
+- Have 2 Shorts derivatives

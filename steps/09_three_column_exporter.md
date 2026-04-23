@@ -1,7 +1,7 @@
 # STEP 09 — Three Column Exporter + Minimal QA
 
 ## Goal
-Export final manual-production CSV và chạy QC tối thiểu.
+Export the final manual-production CSV and run minimal QC.
 
 ## Required final columns
 - script_text

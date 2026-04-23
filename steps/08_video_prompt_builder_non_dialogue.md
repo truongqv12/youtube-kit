@@ -4,10 +4,10 @@
 Turn each still image prompt into one Veo 3 image-to-video motion prompt.
 
 ## New key rule
-Prompt này là motion-only.
-Không mô tả lại full image.
-Không tự thêm text mới.
-Không implied speech nếu non-dialogue mode đang bật.
+This prompt is motion-only.
+Do not re-describe the full image.
+Do not add new text.
+Do not imply speech if non-dialogue mode is enabled.
 
 ## Must decide per row
 - i2v_mode

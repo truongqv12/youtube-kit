@@ -1,7 +1,7 @@
 # STEP 04 — Policy Gate
 
 ## Purpose
-Đánh giá medical misinformation risk, topic-scope risk, synthetic/visual misunderstanding risk và packaging risk.
+Evaluate medical misinformation risk, topic-scope risk, synthetic/visual misunderstanding risk, and packaging risk.
 
 ## Target Context
 User MUST supply `TARGET_CHANNEL` (e.g. kenh_2) and `TARGET_VIDEO` (e.g. vid_001). Stop and ask if not provided.

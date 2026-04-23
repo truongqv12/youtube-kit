@@ -1,7 +1,7 @@
 # STEP 02 — Topic Strategy
 
 ## Purpose
-Khóa micro-topic, viewer problem, safe working promise, research questions và packaging seeds trước khi research.
+Lock the micro-topic, viewer problem, safe working promise, research questions, and packaging seeds before research begins.
 
 ## Target Context
 User MUST supply `TARGET_CHANNEL` (e.g. kenh_2) and `TARGET_VIDEO` (e.g. vid_001). Stop and ask if not provided.

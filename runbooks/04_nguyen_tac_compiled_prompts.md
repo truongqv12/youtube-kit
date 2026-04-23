@@ -1,13 +1,13 @@
-# Nguyên tắc cho thư mục compiled_prompts
+# Compiled Prompts Principles
 
-## Thư mục này để làm gì
-Chứa các file prompt thực thi theo từng step.
+## What this directory is for
+Contains the execution prompt files for each pipeline step.
 
-## Quy tắc mới cho v3
-- file prompt thực thi chính giữ bằng tiếng Anh
-- cho phép file companion `*_vi.md` trong cùng thư mục
-- file `*_vi.md` chỉ để operator đọc hiểu logic
-- không dùng file `*_vi.md` để chạy pipeline
+## v3 rules
+- The primary execution prompts are kept in English
+- Vietnamese companion files `*_vi.md` are allowed in the same directory
+- `*_vi.md` files are for operator reading comprehension only
+- Do not use `*_vi.md` files for pipeline execution
 
-## Vì sao
-Operator Việt cần hiểu logic mà không bắt buộc phải đọc tiếng Anh chuyên ngành, nhưng prompt chạy thật vẫn cần ổn định bằng tiếng Anh.
+## Rationale
+Operators may need to understand the logic without being required to read specialized English, but the actual execution prompts must remain stable in English.

@@ -1,34 +1,34 @@
-# Bắt đầu từ đây
+# Getting Started
 
-## Mục tiêu
-File này giải thích cách chạy tay theo kiểu dễ đọc, đúng pipeline v3.
+## Goal
+This file explains how to run the pipeline manually, following the v3 process.
 
-## Quy tắc quan trọng
-- hướng dẫn đọc cho operator viết bằng tiếng Việt
-- prompt thực thi chính giữ bằng tiếng Anh
-- file `*_vi.md` trong `compiled_prompts/` chỉ để đọc hiểu, không dùng để chạy
-- artifact mới là nguồn sự thật
-- không tin AI đã đọc file chỉ vì nó nói là đã đọc
-- step nào có `Required reads` thì phải dán đủ file trước khi cho chạy
-- luôn bắt AI trả `Preflight` trước
-- kênh chỉ điền 1 file `00_channel_seed.json`
+## Important rules
+- Operator guides are written in English
+- Execution prompts are kept in English
+- `*_vi.md` files in `compiled_prompts/` are reading companions only, not for execution
+- New artifacts are the source of truth
+- Do not trust that an AI has read a file just because it claims to have
+- Any step with `Required reads` requires all listed files to be pasted before execution
+- Always require the AI to return `Preflight` first
+- Each channel only requires filling one file: `00_channel_seed.json`
 
-## Quy trình ngắn
-1. điền `00_channel_seed.json`
-2. chạy step 00 để build toàn bộ profile
-3. điền `01_video_intake.json`
-4. chạy step 01 intake
-5. chạy step 02 topic strategy
-6. chạy step 03 mandatory research
-7. chạy step 04 policy gate
-8. chạy step 05 outline
-9. chạy step 06 script canonical
-10. chạy step 07 image prompt
-11. chạy step 08 video prompt
-12. chạy step 09 export + minimal QA
-13. chạy step 10 publication package
+## Short workflow
+1. Fill in `00_channel_seed.json`
+2. Run Step 00 to build all profiles
+3. Fill in `01_video_intake.json`
+4. Run Step 01 intake
+5. Run Step 02 topic strategy
+6. Run Step 03 mandatory research
+7. Run Step 04 policy gate
+8. Run Step 05 outline
+9. Run Step 06 script canonical
+10. Run Step 07 image prompt
+11. Run Step 08 video prompt
+12. Run Step 09 export + minimal QA
+13. Run Step 10 publication package
 
-## Lưu ý vận hành
-- Không mở đầu bằng việc đi tìm 1 video đối thủ để bám theo.
-- Nếu topic angle còn mơ hồ, dừng ở step 02 trước khi research.
-- Nếu script nghe còn máy móc, quay lại step 06 thay vì sửa tay ở step 09.
+## Operational notes
+- Do not start by finding a competitor video to follow.
+- If the topic angle is still vague, pause at Step 02 before proceeding to research.
+- If the script still sounds robotic, go back to Step 06 instead of manually editing at Step 09.
