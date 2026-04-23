@@ -1,0 +1,273 @@
+{
+  "project_id": "kenh_2_vid_001",
+  "channel_id": "kenh_2",
+  "pipeline_step": "05_outline",
+  "generated_at": "2026-04-22T12:04:00+07:00",
+  "source_files": [
+    "core/system_principles.md",
+    "core/duration_control_standard.md",
+    "channels/kenh_2/videos/vid_001/01_intake_spec.json",
+    "channels/kenh_2/videos/vid_001/02_topic_strategy.json",
+    "channels/kenh_2/videos/vid_001/03_research_brief.json",
+    "channels/kenh_2/videos/vid_001/04_policy_report.json"
+  ],
+
+  "micro_topic": "お風呂で転ばないために見直したいこと3つ",
+  "micro_topic_en": "Three things to review so you do not slip and fall in the bath",
+  "micro_topic_scope_lock": "Chỉ bao gồm 3 check items (足元の滑り, つかまる場所, 温度差) trong bối cảnh phòng tắm gia đình Nhật. KHÔNG mở rộng sang phòng tắm công cộng, bệnh viện, hoặc chủ đề sức khỏe không liên quan trực tiếp.",
+
+  "duration_budget": {
+    "target_min_min": 10,
+    "target_max_min": 18,
+    "tts_chars_per_min": 320,
+    "target_min_chars": 3200,
+    "target_max_chars": 5760,
+    "planned_total_min": 15.5,
+    "planned_total_chars_approx": 4960
+  },
+
+  "story_flow": "scenario_then_checklist",
+  "emotional_arc": "familiar_worry → calm_understanding → step_by_step_review → reassured_confidence",
+  "narrator_stance": "gentle_companion_narrator",
+
+  "sections": [
+    {
+      "section_id": "S01",
+      "label": "オープニング — お風呂、ちょっと気になっていませんか",
+      "label_en": "Opening — Have you been a little worried about bath time?",
+      "purpose": "soft_hook",
+      "spoken_flow_description": "Mở đầu bằng cảnh quen thuộc: bước vào phòng tắm mỗi ngày, chân hơi trượt, tay không biết bám vào đâu. Không dramatize. Chỉ gợi lên cảm giác 'à, mình cũng nghĩ vậy'. Sau đó giới thiệu nhẹ nhàng: hôm nay cùng xem lại 3 điểm đơn giản.",
+      "key_beats": [
+        "Cảnh quen thuộc: bước vào phòng tắm buổi tối",
+        "Nhận ra sàn hơi trơn, hoặc không có chỗ bám",
+        "Narrator: 'この動画では、お風呂まわりで見直しておきたいポイントを3つに絞って、ひとつずつ一緒に確認していきます'",
+        "Nhấn mạnh: không phải cải tạo lớn, mà là những điều nhỏ có thể bắt đầu từ hôm nay"
+      ],
+      "estimated_duration_sec": 80,
+      "estimated_chars": 430,
+      "emotional_tone": "warm_relatable",
+      "evidence_source": null,
+      "policy_notes": [
+        "Tránh fear hook. Không dùng 'nguy hiểm' hay 'tai nạn' trong câu đầu tiên.",
+        "Dùng daily-routine framing, không phải disease-name shock."
+      ],
+      "softeners_required": []
+    },
+    {
+      "section_id": "S02",
+      "label": "なぜ浴室は滑りやすい場所なのか — 背景をさらっと",
+      "label_en": "Why the bathroom is a slippery spot — brief background",
+      "purpose": "context_setting",
+      "spoken_flow_description": "Giải thích ngắn gọn tại sao phòng tắm dễ gây trượt ngã: nước + xà phòng + vận động đứng lên ngồi xuống + thay đổi nhiệt độ. Dùng số liệu nhẹ nhàng từ Consumer Affairs Agency để cho thấy đây là chuyện phổ biến, không phải hiếm gặp. Không dramatize con số.",
+      "key_beats": [
+        "Nước và xà phòng làm sàn rất trơn",
+        "Động tác đứng lên từ bồn tắm tạo khoảnh khắc mất thăng bằng",
+        "Mùa đông: chênh lệch nhiệt độ gây chóng mặt, choáng váng (nhắc nhẹ, không giải thích cơ chế chi tiết)",
+        "Dẫn số liệu bình tĩnh: '浴室での転倒は、珍しいことではありません'（消費者庁）",
+        "Transition: 'では、具体的にどこを見直せばいいのか、一緒に確認していきましょう'"
+      ],
+      "estimated_duration_sec": 110,
+      "estimated_chars": 590,
+      "emotional_tone": "calm_factual",
+      "evidence_source": "03_research_brief.json → S02_Background",
+      "policy_notes": [
+        "WO01: KHÔNG dramatize statistics. Prefer framing '珍しいことではありません' over '年間〇〇万人が'.",
+        "WO02: Nhắc ヒートショック ở mức 'chênh lệch nhiệt độ gây chóng mặt', KHÔNG giải thích cơ chế sinh lý chi tiết.",
+        "DN03: Ghi rõ nguồn 消費者庁 trong narration."
+      ],
+      "softeners_required": ["SF02"]
+    },
+    {
+      "section_id": "S03",
+      "label": "見直し①：足元 — 滑り止めマットを確認しよう",
+      "label_en": "Check 1: Underfoot — Let's check the anti-slip mat",
+      "purpose": "practical_check_item",
+      "spoken_flow_description": "Check item đầu tiên: sàn phòng tắm và thảm chống trượt. Giải thích tại sao sàn trơn khi ướt. Hướng dẫn cách chọn thảm phù hợp (loại hút chân không cho sàn phẳng, loại tự chìm cho sàn có gờ). Nhắc nhở bảo dưỡng và thay thế. Cảnh báo không đặt chồng ghế tắm lên thảm.",
+      "key_beats": [
+        "Sàn phòng tắm + nước + xà phòng = rất trơn",
+        "Thảm chống trượt là bước đơn giản nhất để bắt đầu",
+        "Cách chọn: sàn phẳng → loại hút chân không (吸盤タイプ), sàn có gờ → loại tự chìm (自沈タイプ)",
+        "Lưu ý: nấm mốc và nhớt làm thảm mất tác dụng → vệ sinh thường xuyên, thay khi cũ",
+        "Cảnh báo nhẹ: không đặt ghế tắm (シャワーチェア) lên thảm, dễ lắc",
+        "Softener: nếu phân vân chọn loại nào → hỏi 福祉用具専門相談員"
+      ],
+      "estimated_duration_sec": 170,
+      "estimated_chars": 910,
+      "emotional_tone": "practical_helpful",
+      "evidence_source": "03_research_brief.json → S03_Check_1_Floor",
+      "policy_notes": [
+        "SF01: Nói 'すべりにくくなることがあります', KHÔNG nói 'すべりません'.",
+        "Nhắc uncertainty: tương thích sàn cần kiểm tra riêng.",
+        "Nhắc consult: 福祉用具専門相談員."
+      ],
+      "softeners_required": ["SF01"]
+    },
+    {
+      "section_id": "S04",
+      "label": "見直し②：つかまる場所 — 手すりのこと",
+      "label_en": "Check 2: Something to hold on to — about grab bars",
+      "purpose": "practical_check_item",
+      "spoken_flow_description": "Check item thứ hai: tay vịn. Giải thích 3 loại cơ bản (I字 cho đứng lên/ngồi xuống, 横型 cho di chuyển, L字 cho cả hai). Nhắc vị trí lắp đặt thường thấy (bên bồn tắm, gần nơi rửa). Nhấn mạnh rằng vị trí tối ưu phụ thuộc chiều cao và tình trạng cơ thể → cần tham vấn chuyên gia. Nhắc nhẹ về cường độ tường (tường gạch, unit bath có khác nhau) → cần chuyên gia đánh giá.",
+      "key_beats": [
+        "Kiểm tra xem trong phòng tắm có chỗ nào để bám không",
+        "3 loại tay vịn cơ bản: 縦型(I字), 横型, L字型 — giải thích ngắn gọn mỗi loại dùng khi nào",
+        "Vị trí thường lắp: bên cạnh bồn tắm (出入り口), gần ghế rửa (洗い場の立ち座り)",
+        "Chiều cao 800mm là mức tham khảo, nhưng tùy người",
+        "Softener quan trọng: 手すりの位置は、使う方の身長や体の状態に合わせて決めることが大切です",
+        "Tường có đủ chắc không → cần chuyên gia đánh giá trước khi lắp (KHÔNG khuyến khích DIY)",
+        "Nhắc nhẹ: 介護保険で手すり設置は対象になることがあります"
+      ],
+      "estimated_duration_sec": 180,
+      "estimated_chars": 960,
+      "emotional_tone": "practical_supportive",
+      "evidence_source": "03_research_brief.json → S04_Check_2_Grab_Bars",
+      "policy_notes": [
+        "SF01: KHÔNG nói '手すりがあれば安全です'. Dùng '手すりがあると安心につながることがあります'.",
+        "SF03: Nhắc tham vấn ケアマネジャー + 専門業者 trước khi lắp đặt.",
+        "SF04: 800mm là '目安', phải nói rõ.",
+        "KHÔNG khuyến khích tự lắp đặt DIY cho thiết bị chịu lực."
+      ],
+      "softeners_required": ["SF01", "SF03", "SF04"]
+    },
+    {
+      "section_id": "S05",
+      "label": "見直し③：温度差 — 脱衣所と浴室のあいだ",
+      "label_en": "Check 3: Temperature gap — between changing room and bathroom",
+      "purpose": "practical_check_item",
+      "spoken_flow_description": "Check item thứ ba: chênh lệch nhiệt độ. Giải thích nhẹ nhàng rằng vào mùa đông, bước từ phòng thay đồ lạnh vào tắm nóng có thể gây chóng mặt. Đưa ra 3 mẹo thực tế: (a) làm ấm phòng thay đồ trước, (b) nhiệt độ nước ≤41°C và ngâm ≤10 phút, (c) báo cho gia đình trước khi tắm. Kèm softener về tình trạng sức khỏe cá nhân.",
+      "key_beats": [
+        "Mùa đông: phòng thay đồ lạnh → phòng tắm nóng → cơ thể phản ứng mạnh",
+        "Narrator giải thích nhẹ: 血圧が急に変わりやすくなります — KHÔNG dùng thuật ngữ y tế sâu",
+        "Mẹo 1: 入浴前に脱衣所や浴室を暖めておく",
+        "Mẹo 2: お湯の温度は41度以下が目安、湯船は10分以内",
+        "Mẹo 3: 入浴前に家族に声をかける習慣",
+        "Softener: '持病がある方や、入浴中に気分が悪くなることがある方は、かかりつけ医にご相談ください'"
+      ],
+      "estimated_duration_sec": 170,
+      "estimated_chars": 910,
+      "emotional_tone": "calm_practical",
+      "evidence_source": "03_research_brief.json → S05_Check_3_Temperature",
+      "policy_notes": [
+        "WO02: Giữ ở mức practical tips, KHÔNG giải thích cơ chế sinh lý chi tiết của heat shock.",
+        "SF01: Dùng 'リスクを減らす工夫のひとつです', KHÔNG dùng 'ヒートショックを防げます'.",
+        "SF02: Bắt buộc nhắc かかりつけ医 cho người có bệnh nền.",
+        "SF04: 41°C và 10分 là '目安とされています'."
+      ],
+      "softeners_required": ["SF01", "SF02", "SF04"]
+    },
+    {
+      "section_id": "S06",
+      "label": "見直し前と見直し後 — 小さな変化のイメージ",
+      "label_en": "Before and after review — imagining small changes",
+      "purpose": "visual_comparison",
+      "spoken_flow_description": "Tóm tắt bằng hình ảnh before-after: góc phòng tắm trước khi review (sàn trống, không tay vịn, không chuẩn bị nhiệt) vs. sau review (thêm thảm chống trượt, tay vịn ở vị trí bồn tắm, phòng thay đồ ấm hơn). Nhấn mạnh đó là những thay đổi nhỏ, không phải cải tạo toàn bộ. Transition sang phần hỗ trợ.",
+      "key_beats": [
+        "Trước: sàn phòng tắm trơn, không tay vịn, phòng thay đồ lạnh",
+        "Sau: thêm 1 tấm thảm chống trượt, 1 thanh tay vịn, phòng thay đồ có máy sưởi nhỏ",
+        "Narrator: '大掛かりなリフォームではなく、ちょっとした見直しだけでも、安心につながることがあります'",
+        "Transition: 'もし、ひとりで進めるのが難しいなと思ったら…'"
+      ],
+      "estimated_duration_sec": 80,
+      "estimated_chars": 430,
+      "emotional_tone": "encouraging_modest",
+      "evidence_source": null,
+      "policy_notes": [
+        "WO03: before-after scope = thêm 1-2 đồ vật nhỏ, KHÔNG biến đổi toàn bộ phòng tắm.",
+        "SF01: '安心につながることがあります', KHÔNG dùng '安全になります'.",
+        "VR06: Visual phải rõ ràng là illustration, không phải ảnh thực."
+      ],
+      "softeners_required": ["SF01"]
+    },
+    {
+      "section_id": "S07",
+      "label": "ひとりで難しいときは — 相談先の整理",
+      "label_en": "When it is hard alone — where to get help",
+      "purpose": "consult_guidance",
+      "spoken_flow_description": "Hướng dẫn nơi tham vấn khi cần hỗ trợ. Nhắc 地域包括支援センター và ケアマネジャー. Giới thiệu nhẹ về chế độ 介護保険の住宅改修費支給 (上限20万円, tự trả 1-3 phần). Nhấn mạnh: PHẢI nộp đơn trước khi bắt đầu thi công. Nhắc rằng các chính sách hỗ trợ thêm tùy thuộc vào địa phương.",
+      "key_beats": [
+        "Đầu tiên liên hệ: 地域包括支援センター hoặc ケアマネジャー",
+        "Nếu có 要支援・要介護認定: có thể dùng 介護保険の住宅改修費支給制度",
+        "Giới hạn 20万円, tự trả 1〜3割 — '自治体によって条件が異なることがあります'",
+        "Lưu ý quan trọng: '工事を始める前に、必ず事前申請が必要です'",
+        "Một số địa phương có hỗ trợ thêm → liên hệ市区町村の窓口",
+        "Narrator: '少しでも気になったら、まずは相談してみるところから始めてみましょう'"
+      ],
+      "estimated_duration_sec": 110,
+      "estimated_chars": 590,
+      "emotional_tone": "supportive_informative",
+      "evidence_source": "03_research_brief.json → S07_Where_to_Consult",
+      "policy_notes": [
+        "SF03: Nhắc ケアマネジャー + 専門業者 + 事前申請.",
+        "SF04: 20万円 và 1〜3割 là thông tin tổng quát, phải kèm '自治体によって異なります'.",
+        "KHÔNG frame renovation là bắt buộc. Present as option with consultation emphasis."
+      ],
+      "softeners_required": ["SF03", "SF04"]
+    },
+    {
+      "section_id": "S08",
+      "label": "おわりに — 今日できることから、少しずつ",
+      "label_en": "Closing — start with what you can do today, step by step",
+      "purpose": "calm_close",
+      "spoken_flow_description": "Recap 3 điểm chính. Nhắc lại: không cần làm tất cả cùng lúc, bắt đầu từ điều nhỏ nhất. Biết rằng có nơi để hỏi. Kêu gọi nhẹ nhàng xem tiếp. Không tạo áp lực.",
+      "key_beats": [
+        "Recap: ①足元の滑り ②つかまる場所 ③温度差",
+        "Narrator: '全部を一度にやる必要はありません。気がついたときに、ひとつずつ見直してみてください'",
+        "Safety framing pattern: '急がなくても大丈夫です。少しずつ整えていきましょう'",
+        "Nhẹ nhàng kết thúc: 'この動画がお役に立てたら、また次回もご一緒にお話ししましょう'",
+        "KHÔNG dùng CTA mạnh (subscribe/like). Giữ tone companion."
+      ],
+      "estimated_duration_sec": 70,
+      "estimated_chars": 370,
+      "emotional_tone": "warm_reassuring",
+      "evidence_source": null,
+      "policy_notes": [
+        "SF05: Dùng '少しずつ整えていきましょう' / '急がなくても大丈夫です'. KHÔNG tạo áp lực.",
+        "WS05: Dùng ít nhất 1 safety_framing_pattern từ language_constraints."
+      ],
+      "softeners_required": ["SF05"]
+    }
+  ],
+
+  "total_sections": 8,
+  "total_estimated_duration_sec": 970,
+  "total_estimated_duration_min": 16.2,
+  "total_estimated_chars": 5190,
+  "duration_within_target": true,
+
+  "duration_validation": {
+    "min_chars": 3200,
+    "max_chars": 5760,
+    "planned_chars": 5190,
+    "status": "PASS",
+    "note": "5190 chars nằm trong range [3200, 5760]. Outline đủ dày cho ~16 min narration. Không quá dải, không quá ngắn."
+  },
+
+  "scope_validation": {
+    "micro_topic_respected": true,
+    "scope_drifts_detected": [],
+    "note": "Tất cả 8 sections đều xoay quanh 3 check items cho phòng tắm gia đình. Không mở rộng sang chủ đề khác."
+  },
+
+  "policy_compliance_check": {
+    "forbidden_angles_avoided": true,
+    "mandatory_softeners_mapped": {
+      "SF01": ["S03", "S04", "S05", "S06"],
+      "SF02": ["S02", "S05"],
+      "SF03": ["S04", "S07"],
+      "SF04": ["S04", "S05", "S07"],
+      "SF05": ["S08"]
+    },
+    "outline_warnings_addressed": {
+      "WO01": "S02 emotional_tone = calm_factual. Statistics framed as '珍しいことではありません'.",
+      "WO02": "S05 scope limited to practical tips. No detailed physiological explanation.",
+      "WO03": "S06 before-after scope = thêm 1-2 đồ vật nhỏ, not full renovation."
+    }
+  },
+
+  "spoken_flow_quality_check": {
+    "reads_like_spoken_narration": true,
+    "section_turns_feel_natural": true,
+    "repetitive_patterns_avoided": true,
+    "note": "Flow: warm hook → brief context → 3 check items (mỗi item có structure riêng: vấn đề → giải pháp → lưu ý → consult) → visual recap → hỗ trợ → kết. Mỗi section có emotional tone khác biệt, tránh monotone."
+  }
+}

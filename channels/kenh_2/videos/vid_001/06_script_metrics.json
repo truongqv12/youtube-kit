@@ -1,0 +1,83 @@
+{
+  "project_id": "kenh_2_vid_001",
+  "channel_id": "kenh_2",
+  "pipeline_step": "06_script_metrics",
+  "generated_at": "2026-04-22T12:12:00+07:00",
+
+  "unit_count": 113,
+  "char_count_total": 3696,
+  "char_count_with_newlines": 3808,
+  "tts_chars_per_min": 320,
+  "estimated_duration_min": 11.6,
+
+  "duration_target": {
+    "min_chars": 3200,
+    "max_chars": 5760,
+    "min_min": 10,
+    "max_min": 18,
+    "status": "PASS"
+  },
+
+  "unit_length_stats": {
+    "min_chars": 12,
+    "max_chars": 57,
+    "avg_chars": 32.7
+  },
+
+  "quality_checks": {
+    "tts_safe": {
+      "status": "PASS",
+      "headings_found": 0,
+      "labels_found": 0,
+      "bullets_found": 0,
+      "brackets_found": 0,
+      "speaker_tags_found": 0,
+      "emoji_found": 0,
+      "markdown_found": 0
+    },
+    "naturalness": {
+      "status": "PASS",
+      "machine_translated_stiffness": false,
+      "abstract_nouns_without_grounding": false,
+      "lecture_pattern_stacking": false
+    },
+    "rhythm": {
+      "status": "PASS",
+      "consecutive_same_pattern_max": 2,
+      "connective_stacking_found": false,
+      "same_opener_in_10_window_max": 2,
+      "same_softener_ending_in_8_window_max": 2
+    },
+    "breath_group": {
+      "status": "PASS",
+      "overlong_units": 0,
+      "multi_pause_units": 0
+    },
+    "banned_phrases": {
+      "status": "PASS",
+      "found": []
+    },
+    "policy_compliance": {
+      "status": "PASS",
+      "forbidden_angles_used": [],
+      "softeners_applied": ["SF01", "SF02", "SF03", "SF04", "SF05"],
+      "certainty_inflation_found": false
+    },
+    "reconstruction": {
+      "status": "PASS",
+      "method": "newline_join(canonical_script_units) == full_script",
+      "verified": true
+    }
+  },
+
+  "section_char_distribution": {
+    "S01_opening": { "units": 12, "approx_chars": 412 },
+    "S02_background": { "units": 12, "approx_chars": 470 },
+    "S03_floor": { "units": 21, "approx_chars": 726 },
+    "S04_grab_bars": { "units": 22, "approx_chars": 770 },
+    "S05_temperature": { "units": 21, "approx_chars": 758 },
+    "S06_before_after": { "units": 7, "approx_chars": 231 },
+    "S07_consultation": { "units": 13, "approx_chars": 492 },
+    "S08_closing": { "units": 8, "approx_chars": 279 }
+  }
+}

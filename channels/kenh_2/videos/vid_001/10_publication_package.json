@@ -1,0 +1,66 @@
+{
+  "search_gate_summary": {
+    "observed_patterns": "Popular Japanese YouTube videos on senior bath safety often use heavy red/yellow text with alarmist framing ('危険！', '寿命が縮む'). Many feature real-life photos of slippery floors, emergency sirens, or doctors pointing urgently.",
+    "likely_fit": "Calm, warm illustrated aesthetic (retro-clean 2D). Minimal text. Focus on specific, actionable check marks ('3つの見直し').",
+    "likely_mismatch": "Fear-bait titles, cluttered neon text overlays, photorealistic medical warnings, exaggerations.",
+    "things_to_avoid": "Guaranteeing prevention ('これで絶対安心'), dramatizing falls, replacing doctor's advice, or inducing anxiety."
+  },
+  "title_candidates": [
+    {
+      "id": "T1",
+      "text_ja": "お風呂で転ばないために見直したいこと3つ【60代・70代の暮らし】",
+      "text_vi": "3 điều cần xem lại để không bị ngã trong phòng tắm [Cuộc sống tuổi 60, 70]"
+    },
+    {
+      "id": "T2",
+      "text_ja": "シニアのお風呂、安心して入るための3つのチェックポイント",
+      "text_vi": "Phòng tắm của người cao tuổi, 3 điểm kiểm tra để tắm an toàn"
+    },
+    {
+      "id": "T3",
+      "text_ja": "浴室の危ない場所、見直しませんか？【今日からできる工夫】",
+      "text_vi": "Bạn có muốn xem lại những chỗ nguy hiểm trong phòng tắm? [Mẹo có thể làm ngay hôm nay]"
+    }
+  ],
+  "thumbnail_candidates": [
+    {
+      "id": "TH1",
+      "concept_ja": "温かみのあるイラストで、浴室の隅（滑り止めマットと手すり）を描画。テキストは「お風呂 3つの見直し」のみ。落ち着いた日常感を強調。",
+      "concept_vi": "Hình minh họa ấm áp góc phòng tắm (có thảm chống trượt và tay vịn). Text chỉ gồm 'Phòng tắm: 3 điểm xem lại'. Nhấn mạnh cảm giác đời thường bình yên."
+    },
+    {
+      "id": "TH2",
+      "concept_ja": "画面分割で「滑り止めマット」と「手すり」にチェックマーク。テキストは「お風呂の安心チェック」。確認作業のわかりやすさを強調。",
+      "concept_vi": "Chia đôi màn hình có dấu check ở 'thảm chống trượt' và 'tay vịn'. Text là 'Kiểm tra an toàn phòng tắm'. Nhấn mạnh sự dễ hiểu của các bước kiểm tra."
+    },
+    {
+      "id": "TH3",
+      "concept_ja": "シニアホストがノートを持ち、浴室のイラストの横で優しく微笑む。テキストは「お風呂の安全 3つの工夫」。親しみやすさを強調。",
+      "concept_vi": "Host người cao tuổi cầm sổ tay, mỉm cười hiền từ cạnh hình minh họa phòng tắm. Text là 'An toàn phòng tắm: 3 mẹo'. Nhấn mạnh sự thân thiện."
+    }
+  ],
+  "selected_package": {
+    "title_id": "T1",
+    "thumbnail_id": "TH1",
+    "rationale_ja": "チャンネルの「温かい図解ハンドブック」という方針に最も適しており、恐怖を煽らずに具体的な行動を促すことができるため。",
+    "rationale_vi": "Phù hợp nhất với định hướng 'Sổ tay minh họa ấm áp' của kênh, không gây sợ hãi mà vẫn thúc đẩy hành động cụ thể."
+  },
+  "shorts_derivatives": [
+    {
+      "short_title_ja": "【お風呂の安全】足元、滑っていませんか？",
+      "short_title_vi": "[An toàn phòng tắm] Dưới chân bạn có trượt không?",
+      "hook_line_ja": "「お風呂に入ったとき、足元がつるっと滑った感覚はありませんか？」",
+      "cut_angle": "Focus strictly on the anti-slip mat check (suction cups vs flat floor).",
+      "bridge_to_longform_ja": "「手すりや温度の工夫についても本編で解説しています。下のリンクからどうぞ。」",
+      "why_it_can_pull_new_viewers": "Highly relatable micro-moment that quickly grabs attention."
+    },
+    {
+      "short_title_ja": "冬のお風呂、ヒートショック対策の小さな工夫",
+      "short_title_vi": "Mẹo nhỏ phòng ngừa sốc nhiệt khi tắm mùa đông",
+      "hook_line_ja": "「冬のお風呂、脱衣所と浴室の温度差に気をつけていますか？」",
+      "cut_angle": "Focus purely on temperature shock and the practicality of a small heater and water under 41°C.",
+      "bridge_to_longform_ja": "「滑りやすさなど、他のお風呂の安全チェックは本編動画をご覧ください。」",
+      "why_it_can_pull_new_viewers": "Taps into a common seasonal health concern providing an immediate practical fix."
+    }
+  ]
+}
