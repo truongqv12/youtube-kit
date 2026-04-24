@@ -1,0 +1,375 @@
+{
+  "project_id": "kenh_2_vid_002",
+  "channel_id": "kenh_2",
+  "pipeline_step": "04_policy_gate",
+  "generated_at": "2026-04-24T23:38:02+07:00",
+  "source_files": [
+    "core/system_principles.md",
+    "core/policy_guardrails.md",
+    "core/output_conventions.md",
+    "channels/kenh_2/videos/vid_002/01_intake_spec.json",
+    "channels/kenh_2/videos/vid_002/02_topic_strategy.json",
+    "channels/kenh_2/videos/vid_002/03_research_brief.json"
+  ],
+
+  "overall_risk": {
+    "level": "LOW",
+    "summary": "Chủ đề an toàn khu vực thay đồ (脱衣所) cho người cao tuổi. Nội dung thuộc loại practical daily-life safety review, không đưa ra tuyên bố y tế mạnh, không hứa hẹn phòng ngừa tuyệt đối, không thay thế chỉ dẫn bác sĩ. Research brief đã xác nhận đủ nguồn chính thống (4 official / 3 primary), tất cả claim đều nằm trong safe_claim_boundary. 3 uncertainties đã document (U1-U3). Rủi ro tổng thể thấp nếu downstream steps tuân thủ các softener và restriction. Lưu ý thêm: vid_002 có thêm rủi ro fire safety khi nói về lò sưởi trong 脱衣所 mà vid_001 không có."
+  },
+
+  "allowed_angles": [
+    {
+      "angle": "脱衣所の3つの気をつけたいポイント（床・温度差・着替え動作）を一緒に確認する",
+      "classification": "allowed_freely",
+      "note": "Core promise của video. Framing là 'check' và 'review', không phải 'fix' hay 'prevent'."
+    },
+    {
+      "angle": "消費者庁・厚生労働省の公的統計を引用して脱衣所を含む入浴関連事故の背景を簡潔に説明する",
+      "classification": "allowed_with_softeners",
+      "note": "Statistics phải trích dẫn bình tĩnh, không dramatize. Nhắc rõ rằng thống kê là cho toàn bộ quy trình 入浴 (bao gồm 脱衣所+浴室), không có data riêng cho 脱衣所 (U1). KHÔNG framing kiểu '年間〇〇万人が...' kèm giọng điệu gây sợ."
+    },
+    {
+      "angle": "脱衣所の床の滑り止め対策（コルクマット、EVAマット）の紹介",
+      "classification": "allowed_with_softeners",
+      "note": "Practical guidance có trong research brief (G1). Softener cần: 'RCTレベルのエビデンスはないが推奨されている工夫のひとつ' (U2). Nhắc kiểm tra tương thích sàn, đoạn段差注意."
+    },
+    {
+      "angle": "ヒートショック予防のための脱衣所暖房と温度差管理",
+      "classification": "allowed_with_softeners",
+      "note": "Nói về khuyến nghị (脱衣所 20℃前後, 湯温 41℃以下) nhưng PHẢI: (1) nói 'リスクを減らす工夫' thay vì 'ヒートショックを防げます', (2) kèm 'かかりつけ医にご相談ください' khi nhắc huyết áp, (3) KHÔNG giải thích cơ chế sinh lý chi tiết."
+    },
+    {
+      "angle": "暖房器具（セラミックヒーター等）の安全な選び方と使い方",
+      "classification": "allowed_with_softeners",
+      "note": "Đây là nội dung MỚI so với vid_001. PHẢI kèm fire safety warning: 'タオルや衣類をヒーターの近くに置かない', '離れるときは消す'. PHẢI nhắc chọn sản phẩm có 転倒時自動オフ・過熱防止. KHÔNG recommend thương hiệu cụ thể."
+    },
+    {
+      "angle": "高齢者の安全な着替え方法（座って着替える、準備を先に整える）",
+      "classification": "allowed_freely",
+      "note": "Practical guidance từ OT sources (F5, G3). Framing 'daily routine tip', không phải 'medical rehabilitation'. Tránh cảnh minh họa không đáng kính (undignified)."
+    },
+    {
+      "angle": "介護保険の住宅改修費支給制度の紹介（手すり・床材変更）",
+      "classification": "allowed_with_softeners",
+      "note": "Nhắc tổng quát (上限20万円, 1〜3割自己負担, 事前申請必須). PHẢI kèm '自治体によって条件が異なります'. KHÔNG hứa hẹn số tiền cụ thể. PHẢI nhắc ケアマネジャー."
+    },
+    {
+      "angle": "before-after比較（見直し前と見直し後の脱衣所）",
+      "classification": "allowed_with_softeners",
+      "note": "Before-after phải realistic, khiêm tốn. 'After' chỉ thêm 1-2 đồ vật nhỏ (thảm + lò sưởi nhỏ + ghế). KHÔNG biến đổi toàn bộ 脱衣所. Softener: 'ひとつずつできることから'."
+    },
+    {
+      "angle": "相談先の案内（地域包括支援センター、ケアマネジャー、自治体窓口）",
+      "classification": "allowed_freely",
+      "note": "Consult-a-professional framing. Đây là phần quan trọng để tuân thủ policy."
+    }
+  ],
+
+  "forbidden_angles": [
+    {
+      "angle": "「これで事故ゼロ」「絶対に転ばない」— guaranteed accident prevention",
+      "reason": "Violates policy_guardrails.md + 02_topic_strategy.json forbidden_claims",
+      "enforcement": "Script, title, thumbnail, description đều phải tránh mọi biến thể."
+    },
+    {
+      "angle": "「ヒートショックを防げます」「ヒートショックにならない方法」— heat shock prevention certainty",
+      "reason": "Medical certainty claim. Chỉ được nói giảm rủi ro, không được nói ngăn chặn.",
+      "enforcement": "Script phải dùng '〜のリスクを減らす工夫' thay vì '〜を防ぐ方法'."
+    },
+    {
+      "angle": "「脱衣所を暖めればヒートショックは起きない」— sufficiency guarantee for heating alone",
+      "reason": "Forbidden claim trong 02_topic_strategy. Heating chỉ là 1 trong nhiều yếu tố.",
+      "enforcement": "Script KHÔNG viết câu khẳng định rằng chỉ cần làm 1 việc là đủ."
+    },
+    {
+      "angle": "「血圧変動はこれで防げます」— blood pressure control promise",
+      "reason": "Medical claim. Vượt ngoài scope educational content.",
+      "enforcement": "Tuyệt đối cấm. Khi nhắc huyết áp → chuyển sang consult-clinician framing."
+    },
+    {
+      "angle": "「医者は教えてくれない脱衣所の秘密」— anti-doctor conspiracy framing",
+      "reason": "Violates policy_guardrails.md explicitly.",
+      "enforcement": "Title/hook/script phải tránh mọi biến thể."
+    },
+    {
+      "angle": "「これだけで十分です」— sufficiency guarantee",
+      "reason": "Contradicts softener rule. Video giới thiệu 3 điểm check, không phải giải pháp toàn diện.",
+      "enforcement": "Script phải rõ rằng đây là điểm bắt đầu, không phải giải pháp hoàn chỉnh."
+    },
+    {
+      "angle": "Disease-name shock bait trong hook hoặc title",
+      "reason": "Forbidden hook pattern. Channel ở giai đoạn đầu, prefer daily-routine framing.",
+      "enforcement": "Title candidates hiện tại OK. Downstream không được đổi sang fear-based title."
+    },
+    {
+      "angle": "Cảnh ngã thực tế, cảnh thương tích, cảnh bất tỉnh, cảnh khẩn cấp",
+      "reason": "fear_intensity_ceiling = low. Calm caution preferred over fear theater.",
+      "enforcement": "Prompt builder chạy negative check cho 'fall', 'slip', 'injury', 'collapse', 'unconscious'."
+    },
+    {
+      "angle": "Recommend thương hiệu cụ thể (tên hãng lò sưởi, tên sản phẩm thảm)",
+      "reason": "Tránh quảng cáo ngầm. Giữ generic product illustration.",
+      "enforcement": "Script và prompt phải dùng 'セラミックヒーター' chung, KHÔNG nêu tên hãng."
+    }
+  ],
+
+  "mandatory_softeners": [
+    {
+      "id": "SF01",
+      "context": "Khi nói về hiệu quả của bất kỳ biện pháp nào (滑り止め, 暖房, 座って着替える)",
+      "required_framing": "Dùng 〜かもしれません / 〜につながることがあります / 〜の工夫のひとつです. KHÔNG dùng 〜で防げます / 〜で安全です.",
+      "applies_to": ["outline", "script"]
+    },
+    {
+      "id": "SF02",
+      "context": "Khi nhắc đến triệu chứng hoặc rủi ro sức khỏe (ヒートショック, めまい, 血圧変動, ふらつき)",
+      "required_framing": "Kèm 'かかりつけ医にご相談ください' hoặc '気になる場合は専門家にご相談ください'.",
+      "applies_to": ["outline", "script"]
+    },
+    {
+      "id": "SF03",
+      "context": "Khi nói về lắp đặt tay vịn / cải tạo 脱衣所",
+      "required_framing": "Kèm 'ケアマネジャーや専門業者に相談する' + '事前申請が必要'. KHÔNG khuyến khích tự lắp đặt DIY cho thiết bị chịu lực.",
+      "applies_to": ["outline", "script"]
+    },
+    {
+      "id": "SF04",
+      "context": "Khi đưa ra con số cụ thể (20℃, 41°C, 20万円, 10分)",
+      "required_framing": "Kèm '〜が目安とされています' / '〜と推奨されています' / '自治体によって異なります'.",
+      "applies_to": ["outline", "script"]
+    },
+    {
+      "id": "SF05",
+      "context": "Tổng kết / closing section",
+      "required_framing": "Nhắc lại rằng thay đổi từng bước là đủ tốt: '少しずつ整えていきましょう' / '急がなくても大丈夫です'. KHÔNG tạo áp lực phải làm ngay.",
+      "applies_to": ["outline", "script"]
+    },
+    {
+      "id": "SF06",
+      "context": "Khi nhắc đến thống kê số liệu (8,270人, 6,541人 v.v.)",
+      "required_framing": "Nhắc rõ đây là thống kê cho toàn bộ quy trình入浴, không phải chỉ 脱衣所 riêng. KHÔNG dùng con số lớn để dramatize.",
+      "applies_to": ["outline", "script"]
+    },
+    {
+      "id": "SF07",
+      "context": "Khi nói về lò sưởi trong 脱衣所",
+      "required_framing": "PHẢI kèm fire safety warning: 'タオルや衣類を近づけない', '離れるときは消す', '転倒時自動オフ付きを選ぶ'. KHÔNG nói lò sưởi là hoàn toàn an toàn.",
+      "applies_to": ["outline", "script"]
+    }
+  ],
+
+  "visual_restrictions": [
+    {
+      "id": "VR01",
+      "rule": "Style PHẢI là illustrated_lifestyle_handbook / retro_clean_domestic_senior. KHÔNG photorealistic.",
+      "reason": "Tránh misleading visuals that appear as proof."
+    },
+    {
+      "id": "VR02",
+      "rule": "Nhân vật người phải hiển thị rõ ràng là người cao tuổi (65-75): tóc bạc, nếp nhăn, tư thế phù hợp tuổi. Tối thiểu 2-3 cues lão hóa.",
+      "reason": "demographic_anchors.age_lock_priority = HIGH."
+    },
+    {
+      "id": "VR03",
+      "rule": "KHÔNG lip sync, KHÔNG direct-to-camera speech, KHÔNG generated audio track.",
+      "reason": "non_dialogue_mode=true, veo_audio_policy=silent."
+    },
+    {
+      "id": "VR04",
+      "rule": "Text hiển thị trong ảnh tối đa 6 từ, chỉ tiếng Nhật (ja-JP). Mặc định là avoid_readable_text.",
+      "reason": "visible_text_governance policy."
+    },
+    {
+      "id": "VR05",
+      "rule": "KHÔNG hiển thị thương hiệu cụ thể của sản phẩm (tên hãng lò sưởi, thảm).",
+      "reason": "Tránh quảng cáo ngầm. Giữ generic product illustration."
+    },
+    {
+      "id": "VR06",
+      "rule": "Before-after comparison phải rõ ràng là minh họa (illustration), KHÔNG được trông như ảnh thực.",
+      "reason": "Tránh synthetic disclosure risk."
+    },
+    {
+      "id": "VR07",
+      "rule": "Bối cảnh phải là 脱衣所 kiểu Nhật Bản. KHÔNG dùng phòng thay đồ phương Tây. Phải có cảm giác nhà Nhật thực (gạch/vinyl floor, máy giặt, kệ khăn).",
+      "reason": "locale_governance.target_country = Japan. forbidden_cross_locale_cues enforced."
+    },
+    {
+      "id": "VR08",
+      "rule": "KHÔNG hiển thị cảnh ngã, cảnh thương tích, cảnh bất tỉnh, cảnh cháy/bỏng.",
+      "reason": "fear_intensity_ceiling = low. Calm caution preferred over fear theater."
+    },
+    {
+      "id": "VR09",
+      "rule": "KHÔNG hiển thị cảnh thay đồ trực tiếp (nudity/undressing). Chỉ hiển thị: ghế + quần áo gấp sẵn, tay vịn, hoặc close-up of feet on stable surface.",
+      "reason": "Dignity and content appropriateness. Focus on objects and environment, not body."
+    }
+  ],
+
+  "disclosure_notes": [
+    {
+      "id": "DN01",
+      "note": "Video description phải có soft disclaimer: 'この動画は情報提供を目的としたものです。体調に不安がある方は、かかりつけ医にご相談ください。'",
+      "applies_to": ["publication_assets"]
+    },
+    {
+      "id": "DN02",
+      "note": "Hình ảnh minh hoạ (illustrated) tự nó đã tạo synthetic disclosure tự nhiên — không cần thêm label 'AI-generated' vì phong cách rõ ràng là minh họa, không phải ảnh thực.",
+      "applies_to": ["prompt_builders"]
+    },
+    {
+      "id": "DN03",
+      "note": "Nếu nhắc đến số liệu thống kê, nên ghi rõ nguồn (消費者庁, 厚生労働省) trong narration hoặc description.",
+      "applies_to": ["outline", "script", "publication_assets"]
+    },
+    {
+      "id": "DN04",
+      "note": "Khi nhắc đến lò sưởi, nên thêm: 'ご使用の際はメーカーの取扱説明書をご確認ください' trong description hoặc script.",
+      "applies_to": ["script", "publication_assets"]
+    }
+  ],
+
+  "warnings_for_outline": [
+    {
+      "id": "WO01",
+      "severity": "MEDIUM",
+      "warning": "Section S02 (Background statistics): dùng số liệu bình tĩnh, KHÔNG dramatize. Nhắc rõ uncertainty U1 — không có data riêng cho 脱衣所. Framing: '脱衣所を含む入浴関連の事故は決して珍しいことではありません'.",
+      "actionable_instruction": "Outline phải ghi rõ emotional tone = calm_factual cho section này. Không dùng con số lớn đứng một mình."
+    },
+    {
+      "id": "WO02",
+      "severity": "MEDIUM",
+      "warning": "Section S04 (Temperature/Heat shock): dễ trượt sang medical claim mạnh. Outline phải giới hạn scope ở 'temperature management tips'. KHÔNG đi vào cơ chế sinh lý chi tiết của heat shock (血圧変動のメカニズム).",
+      "actionable_instruction": "Outline cần note: 'giữ ở mức practical tips, nhắc khám bác sĩ nếu có bệnh nền. Tránh giải thích cơ chế y khoa chi tiết'."
+    },
+    {
+      "id": "WO03",
+      "severity": "MEDIUM",
+      "warning": "Section S04 cũng bao gồm heater safety. PHẢI có fire safety warning rõ ràng, không được skip.",
+      "actionable_instruction": "Outline phải có sub-point riêng cho heater safety với SF07."
+    },
+    {
+      "id": "WO04",
+      "severity": "LOW",
+      "warning": "Section S05 (Changing posture): tránh minh họa cảnh thay đồ trực tiếp. Focus on objects (ghế, tay vịn, quần áo gấp sẵn).",
+      "actionable_instruction": "Outline note: 'visual focus = stool + grab bar + organized clothes, NOT person undressing'."
+    },
+    {
+      "id": "WO05",
+      "severity": "LOW",
+      "warning": "Section S06 (Before-after): giữ realistic, KHÔNG exaggerate. 'After' chỉ thêm thảm + lò sưởi nhỏ + ghế, KHÔNG biến đổi toàn bộ 脱衣所.",
+      "actionable_instruction": "Outline phải ghi rõ: 'before-after scope = thêm 1-2 đồ vật nhỏ, không phải cải tạo toàn diện'."
+    }
+  ],
+
+  "warnings_for_script": [
+    {
+      "id": "WS01",
+      "severity": "HIGH",
+      "warning": "Mỗi khi nhắc biện pháp phòng ngừa, PHẢI dùng softener (SF01). KHÔNG viết câu khẳng định tuyệt đối.",
+      "actionable_instruction": "Script writer kiểm tra từng câu liên quan đến hiệu quả. Thay '〜で安全' bằng '〜が安心につながることがあります'."
+    },
+    {
+      "id": "WS02",
+      "severity": "HIGH",
+      "warning": "KHÔNG dùng bất kỳ banned_phrases nào: 絶対に治る, 必ず防げる, 医者は教えてくれない, これだけで十分, これで事故ゼロ.",
+      "actionable_instruction": "Script writer chạy text search cho tất cả banned phrases trước khi finalize."
+    },
+    {
+      "id": "WS03",
+      "severity": "HIGH",
+      "warning": "Khi nhắc lò sưởi, PHẢI kèm fire safety warning (SF07). KHÔNG chỉ nói lợi ích mà không nhắc rủi ro.",
+      "actionable_instruction": "Script line về heater → phải có ít nhất 1 câu cảnh báo an toàn cháy."
+    },
+    {
+      "id": "WS04",
+      "severity": "MEDIUM",
+      "warning": "Khi nhắc con số cụ thể (20℃, 41°C, 20万円, 10分), phải kèm qualifier (SF04).",
+      "actionable_instruction": "Script line chứa con số → thêm '〜が目安とされています' hoặc '〜と推奨されています'."
+    },
+    {
+      "id": "WS05",
+      "severity": "MEDIUM",
+      "warning": "Script phải TTS-safe. Không formatting marks, emoji, markdown.",
+      "actionable_instruction": "Mỗi script_text line phải đọc tự nhiên bằng giọng nói."
+    },
+    {
+      "id": "WS06",
+      "severity": "LOW",
+      "warning": "Closing section (S08) phải dùng ít nhất 1 safety_framing_pattern từ language_constraints.",
+      "actionable_instruction": "Chọn ít nhất 1 từ: 'ひとつずつ確認してみましょう', '気がついたときに直せば大丈夫です', '急がなくても大丈夫です'."
+    }
+  ],
+
+  "warnings_for_prompt_builders": [
+    {
+      "id": "WP01",
+      "severity": "HIGH",
+      "warning": "Style lock PHẢI enforce: 'illustrated lifestyle handbook, retro-clean 2D, warm domestic scenes, senior-friendly'. Mọi prompt phải chứa style anchor này.",
+      "actionable_instruction": "Image prompt template phải có style_lock.seed_image_style_raw làm prefix."
+    },
+    {
+      "id": "WP02",
+      "severity": "HIGH",
+      "warning": "Nhân vật người cao tuổi PHẢI có ≥2 aging cues rõ ràng.",
+      "actionable_instruction": "Mỗi prompt chứa nhân vật → thêm: 'silver-gray hair, gentle wrinkles, relaxed mature posture'. Negative: 'DO NOT make the character look younger than 60'."
+    },
+    {
+      "id": "WP03",
+      "severity": "HIGH",
+      "warning": "Veo prompt PHẢI có '(Silent video, no audio).' ở cuối. KHÔNG request ambience, foley, room tone.",
+      "actionable_instruction": "Veo prompt template tự động append directive này."
+    },
+    {
+      "id": "WP04",
+      "severity": "HIGH",
+      "warning": "KHÔNG tạo cảnh ngã, cảnh thương tích, cảnh cháy, cảnh bất tỉnh, cảnh khẩn cấp.",
+      "actionable_instruction": "Prompt builder chạy negative check: nếu prompt chứa 'fall', 'slip', 'injury', 'fire', 'burn', 'collapse', 'unconscious' → flag và rewrite sang object-focused shot."
+    },
+    {
+      "id": "WP05",
+      "severity": "MEDIUM",
+      "warning": "Bối cảnh phải là Japanese dressing room (脱衣所). KHÔNG Western-style dressing room.",
+      "actionable_instruction": "Prompt phải chứa 'Japanese dressing room' hoặc '脱衣所'. Negative: 'no Western-style bathroom, no European bathroom'."
+    },
+    {
+      "id": "WP06",
+      "severity": "MEDIUM",
+      "warning": "KHÔNG hiển thị cảnh thay đồ trực tiếp. Focus: ghế, tay vịn, quần áo gấp sẵn, feet on stable surface.",
+      "actionable_instruction": "Prompt cho S05 PHẢI dùng object-focused framing."
+    },
+    {
+      "id": "WP07",
+      "severity": "LOW",
+      "warning": "Visible text trong ảnh: mặc định avoid. Nếu cần → tối đa 6 từ, tiếng Nhật only.",
+      "actionable_instruction": "Prompt builder kiểm tra visible_text_policy theo từng line."
+    }
+  ],
+
+  "warnings_for_publication_assets": [
+    {
+      "id": "WA01",
+      "severity": "HIGH",
+      "warning": "Title KHÔNG được overpromise. Cấm: '絶対に転ばない方法', 'ヒートショック完全対策', '事故ゼロの脱衣所'.",
+      "actionable_instruction": "Title candidates từ 02_topic_strategy OK. Nếu cần thay đổi → chạy lại qua forbidden_claims check."
+    },
+    {
+      "id": "WA02",
+      "severity": "HIGH",
+      "warning": "Thumbnail KHÔNG được hiển thị cảnh nguy hiểm/sợ hãi. Emotion = warm_reassuring.",
+      "actionable_instruction": "Thumbnail concept: close-up 脱衣所 nhẹ nhàng + text overlay '脱衣所 3つの見直し'. Giữ tone warm."
+    },
+    {
+      "id": "WA03",
+      "severity": "MEDIUM",
+      "warning": "Description phải có soft disclaimer (DN01) + heater manufacturer disclaimer (DN04).",
+      "actionable_instruction": "Append disclaimers vào description."
+    },
+    {
+      "id": "WA04",
+      "severity": "LOW",
+      "warning": "KHÔNG derive shorts cho video này (video-level directive).",
+      "actionable_instruction": "packaging_seeds_shorts.enabled = false đã set. Publication step skip shorts."
+    }
+  ]
+}

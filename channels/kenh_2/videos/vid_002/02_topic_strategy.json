@@ -1,0 +1,228 @@
+{
+  "project_id": "kenh_2_vid_002",
+  "channel_id": "kenh_2",
+  "pipeline_step": "02_topic_strategy",
+  "generated_at": "2026-04-24T22:24:00+07:00",
+  "source_files": [
+    "core/system_principles.md",
+    "core/topic_strategy_standard.md",
+    "core/policy_guardrails.md",
+    "channels/kenh_2/videos/vid_002/01_intake_spec.json",
+    "channels/kenh_2/00_editorial_profile.json",
+    "channels/kenh_2/00_publication_profile.json"
+  ],
+
+  "topic_cluster": "bath safety",
+  "topic_angle": "脱衣所で気をつけたいこと3つ",
+  "topic_angle_en": "Three things to watch out for in the dressing room",
+
+  "topic_differentiation": {
+    "vid_001_scope": "浴室内 — inside the bathroom (floor, grab bars, water temperature)",
+    "vid_002_scope": "脱衣所 — the dressing/changing room before the bathroom (temperature gap, floor condition, pre-bath preparation habits)",
+    "overlap_management": "vid_002 may briefly reference the bathroom transition but focuses entirely on the dressing room zone; heat shock is framed as a temperature gap problem between dressing room and bathroom, not as a bathroom-interior problem"
+  },
+
+  "target_viewer": {
+    "age_band": "60+",
+    "living_situation": "lives alone or with minimal daily support",
+    "locale": "Japan, national neutral",
+    "daily_context": "undresses in a typical Japanese dressing room (脱衣所) before entering the bath every day; the dressing room may be unheated in winter, have a hard tile or vinyl floor, and lack handholds for balance while changing",
+    "information_need": "wants a calm, plain-language checklist of specific things to inspect and adjust in the dressing room area to reduce risk of falls, chills, and heat shock — without major renovation"
+  },
+
+  "viewer_problem": "脱衣所は毎日使う場所なのに、安全面の見直しが後回しになりがちです。冬場の寒さや、着替えのときのふらつき、床の滑りやすさなど、気になっていても具体的に何を確認すればいいのか分からないまま過ごしている方が多いです。",
+  "viewer_problem_en": "The dressing room is used every day, yet safety checks there tend to be postponed. Many seniors worry about winter cold, unsteadiness while changing, and slippery floors, but do not know exactly what to inspect or adjust.",
+
+  "working_promise": "脱衣所で気をつけておきたいポイントを3つに絞って、ひとつずつ一緒に確認していきます。大掛かりな工事ではなく、今日から見直せる小さな工夫が中心です。",
+  "working_promise_en": "We will walk through three specific check points for the dressing room, one by one. The focus is on small adjustments you can review today — not major renovation.",
+
+  "safe_claim_boundary": {
+    "this_video_claims": [
+      "脱衣所には転倒や体調不良のリスクを高めるポイントがいくつかある",
+      "床の状態・暖房と温度差・着替え動作の3つは、自分で見直せる代表的なチェック項目",
+      "小さな見直しでも安心感につながることがある",
+      "不安が大きい場合は、家族やケアマネジャーに相談するとよい",
+      "介護保険で住宅改修費用の一部が支給される場合がある"
+    ],
+    "this_video_does_NOT_claim": [
+      "これで転倒を完全に防げる",
+      "脱衣所を暖めればヒートショックは起きない",
+      "暖房器具を置けば絶対安全",
+      "医師の指導なしでも十分",
+      "リフォーム不要で全て解決",
+      "この方法で血圧変動を防げる"
+    ]
+  },
+
+  "forbidden_claims": [
+    "「これで事故ゼロ」— guaranteed accident prevention",
+    "「絶対に転ばない」— absolute fall prevention promise",
+    "「ヒートショックを防げます」— heat shock prevention certainty",
+    "「脱衣所を暖めるだけで大丈夫」— sufficiency guarantee for heating alone",
+    "「医者は教えてくれない脱衣所の秘密」— anti-doctor conspiracy framing",
+    "「これだけで十分です」— sufficiency guarantee",
+    "「血圧変動はこれで防げます」— blood pressure control promise"
+  ],
+
+  "research_questions": [
+    {
+      "id": "RQ1",
+      "question": "日本の高齢者における脱衣所・洗面所での転倒・体調急変の発生状況と主な原因（消費者庁・厚生労働省・東京消防庁等の統計）",
+      "question_en": "Incidence and leading causes of falls and sudden health changes in dressing rooms/washrooms among Japanese seniors — statistics from Consumer Affairs Agency, MHLW, Tokyo Fire Department",
+      "source_type_expected": "official statistics, government white paper"
+    },
+    {
+      "id": "RQ2",
+      "question": "脱衣所の床材の滑りやすさと転倒予防のための床対策（滑り止めマット、コルクマット、床暖房等）に関する推奨",
+      "question_en": "Dressing room floor slipperiness and recommended floor countermeasures for fall prevention — anti-slip mats, cork mats, underfloor heating",
+      "source_type_expected": "housing modification guideline, care prevention material"
+    },
+    {
+      "id": "RQ3",
+      "question": "脱衣所と浴室の温度差によるヒートショックのメカニズムと、脱衣所暖房の推奨温度（日本循環器学会・日本救急医学会等）",
+      "question_en": "Heat shock mechanism caused by temperature gaps between dressing room and bathroom, and recommended dressing room heating temperature — Japan Circulation Society, Japan Association for Acute Medicine",
+      "source_type_expected": "medical society guideline, NHK health article"
+    },
+    {
+      "id": "RQ4",
+      "question": "高齢者の着替え動作中の転倒リスクと安全な着替え方法の工夫（座って着替える、手すりを使う等）",
+      "question_en": "Fall risk during changing clothes for seniors and practical tips for safe changing — sitting while changing, using a grab bar, etc.",
+      "source_type_expected": "occupational therapy resource, care prevention program material"
+    },
+    {
+      "id": "RQ5",
+      "question": "脱衣所の暖房器具の種類と安全な選び方（セラミックヒーター、浴室暖房乾燥機の脱衣所モード等）、火災・やけどリスクの注意点",
+      "question_en": "Types of dressing room heaters and safe selection criteria — ceramic heaters, bathroom heater-dryer dressing room mode, fire and burn risk cautions",
+      "source_type_expected": "product safety guideline, NITE (製品評価技術基盤機構), fire department advisory"
+    },
+    {
+      "id": "RQ6",
+      "question": "脱衣所の安全改修（手すり設置、暖房設備、床材変更）に対する介護保険住宅改修費の適用範囲と手続き概要",
+      "question_en": "Scope of long-term care insurance coverage for dressing room safety modifications (grab bars, heating equipment, floor changes) and application procedure overview",
+      "source_type_expected": "government official page, care manager resource"
+    },
+    {
+      "id": "RQ7",
+      "question": "自治体や介護予防事業が配布している「脱衣所・洗面所の安全チェックリスト」の有無と内容",
+      "question_en": "Availability and content of dressing room/washroom safety checklists distributed by municipalities or fall prevention programs",
+      "source_type_expected": "municipal pamphlet, care prevention program PDF"
+    }
+  ],
+
+  "planned_sections": [
+    {
+      "section_id": "S01",
+      "label": "オープニング — 脱衣所、気にしたことありますか？",
+      "label_en": "Opening — have you ever thought about your dressing room?",
+      "purpose": "soft hook with a relatable domestic scene — the dressing room is used daily but rarely safety-checked",
+      "estimated_duration_sec": 90,
+      "editorial_note": "universal experience of feeling cold or unsteady in the changing area; no fear framing; establish that this video focuses on the dressing room zone specifically"
+    },
+    {
+      "section_id": "S02",
+      "label": "なぜ脱衣所が見落とされやすいのか — 背景を軽く整理",
+      "label_en": "Why the dressing room tends to be overlooked — brief background",
+      "purpose": "provide brief factual context from statistics; position the dressing room as a separate risk zone from the bathroom interior",
+      "estimated_duration_sec": 120,
+      "editorial_note": "cite Consumer Affairs Agency or MHLW data on dressing room incidents; distinguish from bathroom-interior stats covered in vid_001"
+    },
+    {
+      "section_id": "S03",
+      "label": "気をつけたいこと①：床の滑りやすさと段差",
+      "label_en": "Watch point 1: Floor slipperiness and level differences",
+      "purpose": "first of three check items — dressing room floor surface, rugs, moisture, and step between dressing room and bathroom",
+      "estimated_duration_sec": 180,
+      "editorial_note": "object-focused shots of floor surface, anti-slip mat, wet spots near bath entrance; show the step/段差 between dressing room and bathroom threshold"
+    },
+    {
+      "section_id": "S04",
+      "label": "気をつけたいこと②：温度差への備え",
+      "label_en": "Watch point 2: Preparing for the temperature gap",
+      "purpose": "second check item — heat shock prevention through dressing room heating; focus on the temperature gap between warm living room, cold dressing room, and hot bathroom",
+      "estimated_duration_sec": 200,
+      "editorial_note": "show a small ceramic heater in the dressing room; mention recommended pre-heating 10-15 min before bathing; cite medical society temperature recommendation; remind about consulting a doctor if blood pressure concerns exist"
+    },
+    {
+      "section_id": "S05",
+      "label": "気をつけたいこと③：着替えのときの動作と工夫",
+      "label_en": "Watch point 3: Movement and tips when changing clothes",
+      "purpose": "third check item — fall risk during the act of changing clothes (standing on one foot to remove pants, bending over, reaching for towels)",
+      "estimated_duration_sec": 180,
+      "editorial_note": "show a stable stool or bench in the dressing room; grab bar at waist height; organizing towels and clothes within reach before undressing; avoid showing clinical or undignified scenes"
+    },
+    {
+      "section_id": "S06",
+      "label": "before-after イメージ — 見直し前と見直し後の脱衣所",
+      "label_en": "Before-after image — dressing room before and after review",
+      "purpose": "visual comparison showing the dressing room corner improvements",
+      "estimated_duration_sec": 90,
+      "editorial_note": "illustrated before-after side by side: bare cold floor → anti-slip mat + small heater + stool + grab bar; no exaggeration of improvement claims"
+    },
+    {
+      "section_id": "S07",
+      "label": "一人で難しい場合は — 相談先の整理",
+      "label_en": "When it is hard to do alone — where to consult",
+      "purpose": "when to ask family, care manager, or municipality for help with larger modifications",
+      "estimated_duration_sec": 90,
+      "editorial_note": "mention care insurance housing modification benefit (介護保険住宅改修); municipal consultation desk; encourage asking family for help with heater installation or grab bar placement"
+    },
+    {
+      "section_id": "S08",
+      "label": "まとめ — 今日できることから始めましょう",
+      "label_en": "Wrap-up — start with what you can do today",
+      "purpose": "calm reassuring close with recap of three points: floor, temperature, changing movement",
+      "estimated_duration_sec": 60,
+      "editorial_note": "encourage partial progress; acknowledge that changes take time; reinforce that even one small adjustment adds peace of mind"
+    }
+  ],
+
+  "total_estimated_duration_sec": 1010,
+  "total_estimated_duration_min": 16.8,
+  "duration_within_target": true,
+  "duration_target": "10–18 min",
+
+  "packaging_seeds_longform": {
+    "title_candidates": [
+      "脱衣所で気をつけたいこと3つ【60代・70代の暮らし】",
+      "シニアの脱衣所 安全チェック3つの見直しポイント",
+      "脱衣所の寒さと滑り、見直しませんか？【ひとり暮らしのシニアへ】"
+    ],
+    "thumbnail_concept": {
+      "scene": "illustrated close-up of a Japanese dressing room corner: a cork anti-slip mat on the floor, a small ceramic heater on the side, a low wooden stool for sitting while changing — warm tones, retro-clean 2D style, soft morning light from a small window",
+      "text_overlay": "脱衣所 3つの見直し",
+      "text_word_count": 4,
+      "emotion": "warm_reassuring",
+      "host_presence": "optional — may appear in small corner or absent"
+    },
+    "description_seed": "脱衣所で気をつけておきたいポイントを3つに絞ってお話しします。床の滑りやすさ・温度差への備え・着替えのときの動作、それぞれ確認してみましょう。※この動画は情報提供を目的としたものです。体調に不安がある方は、かかりつけ医にご相談ください。"
+  },
+
+  "packaging_seeds_shorts": {
+    "enabled": false,
+    "count": 0,
+    "override_reason": "video-level directive: long-form only, do not derive shorts",
+    "placeholder_concepts": [
+      {
+        "shorts_id": "placeholder_S1",
+        "concept": "「脱衣所、暖めてから服を脱いでいますか？」— 15-second temperature prep quick tip",
+        "note": "NOT produced for this video; retained as future reference only"
+      },
+      {
+        "shorts_id": "placeholder_S2",
+        "concept": "「着替えるとき、片足立ちになっていませんか？」— 15-second safe changing posture quick tip",
+        "note": "NOT produced for this video; retained as future reference only"
+      }
+    ]
+  },
+
+  "notes_for_research": [
+    "RQ1 — prioritize Consumer Affairs Agency (消費者庁) and MHLW data specifically mentioning 脱衣所 or 洗面脱衣室; many stats bundle dressing room with bathroom — extract dressing-room-specific numbers where available",
+    "RQ2 — check if cork mat or EVA mat is commonly recommended for dressing rooms vs ceramic tile floors; confirm moisture resistance requirements vs bathroom mats",
+    "RQ3 — use Japan Circulation Society (日本循環器学会) or JAAM guidelines; key threshold is the 10°C+ temperature gap between rooms; cite recommended dressing room target temperature (ideally 20-22°C) before entering bath",
+    "RQ4 — look for occupational therapy or physiotherapy resources on safe changing posture for seniors; the key risk is standing on one foot, bending over, and reaching high shelves",
+    "RQ5 — confirm NITE (製品評価技術基盤機構) safety advisories on dressing room heaters; key caution is towels/clothing too close to heater surface fire risk; prefer wall-mount ceramic heaters for safety",
+    "RQ6 — confirm current care insurance (介護保険) coverage for dressing room modifications; typically 手すり設置 and 床材変更 are covered items",
+    "RQ7 — look for municipal PDF checklists that include 脱衣所 as a distinct check zone; Tokyo Metropolitan Government and Osaka City often have these",
+    "General — clearly distinguish vid_002 research from vid_001; avoid re-citing the same statistics already used in vid_001 when possible; prefer dressing-room-specific data points"
+  ]
+}

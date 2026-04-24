@@ -1,0 +1,285 @@
+{
+  "project_id": "kenh_2_vid_002",
+  "channel_id": "kenh_2",
+  "pipeline_step": "05_outline",
+  "generated_at": "2026-04-24T23:42:20+07:00",
+  "source_files": [
+    "core/system_principles.md",
+    "core/duration_control_standard.md",
+    "channels/kenh_2/videos/vid_002/01_intake_spec.json",
+    "channels/kenh_2/videos/vid_002/02_topic_strategy.json",
+    "channels/kenh_2/videos/vid_002/03_research_brief.json",
+    "channels/kenh_2/videos/vid_002/04_policy_report.json"
+  ],
+
+  "micro_topic": "脱衣所で気をつけたいこと3つ",
+  "micro_topic_en": "Three things to watch out for in the dressing room",
+  "micro_topic_scope_lock": "Chỉ bao gồm 3 check items (床の滑りやすさ, 温度差への備え, 着替え動作の工夫) trong bối cảnh 脱衣所 gia đình Nhật. KHÔNG mở rộng sang phòng tắm nội bộ (vid_001 đã cover), phòng tắm công cộng, hoặc chủ đề sức khỏe không liên quan trực tiếp.",
+
+  "duration_budget": {
+    "target_min_min": 10,
+    "target_max_min": 18,
+    "tts_chars_per_min": 320,
+    "target_min_chars": 3200,
+    "target_max_chars": 5760,
+    "planned_total_min": 16.0,
+    "planned_total_chars_approx": 5120
+  },
+
+  "story_flow": "scenario_then_checklist",
+  "emotional_arc": "overlooked_daily_spot → calm_awareness → step_by_step_check → reassured_readiness",
+  "narrator_stance": "gentle_companion_narrator",
+
+  "sections": [
+    {
+      "section_id": "S01",
+      "label": "オープニング — 脱衣所、気にしたことはありますか",
+      "label_en": "Opening — Have you ever thought about your dressing room?",
+      "purpose": "soft_hook",
+      "spoken_flow_description": "Mở đầu bằng cảnh quen thuộc: bước vào 脱衣所 để chuẩn bị tắm, chân lạnh trên sàn, vừa cởi áo vừa hơi lắc lư. Không dramatize. Chỉ gợi lên cảm giác 'à, mình cũng thấy không thoải mái ở chỗ này'. Phân biệt rõ: đây là video về 脱衣所, không phải trong phòng tắm. Sau đó giới thiệu nhẹ nhàng: hôm nay cùng xem lại 3 điều cần lưu ý ở khu thay đồ.",
+      "key_beats": [
+        "Cảnh quen thuộc: bước vào 脱衣所 trước giờ tắm buổi tối",
+        "Sàn hơi lạnh, không gian nhỏ, quen thuộc nhưng ít khi ai kiểm tra an toàn",
+        "Narrator: 'この動画では、脱衣所で気をつけておきたいポイントを3つに絞って、ひとつずつ一緒に確認していきます'",
+        "Nhấn mạnh: phòng thay đồ dùng mỗi ngày nhưng thường bị bỏ qua khi nghĩ về an toàn trong nhà"
+      ],
+      "estimated_duration_sec": 80,
+      "estimated_chars": 430,
+      "emotional_tone": "warm_relatable",
+      "evidence_source": null,
+      "policy_notes": [
+        "Tránh fear hook. Không dùng 'nguy hiểm' hay 'tai nạn' trong câu đầu tiên.",
+        "Dùng daily-routine framing, không phải disease-name shock.",
+        "Phân biệt rõ với vid_001 (浴室内): đây là video về không gian TRƯỚC khi bước vào tắm."
+      ],
+      "softeners_required": []
+    },
+    {
+      "section_id": "S02",
+      "label": "なぜ脱衣所が見落とされやすいのか — 背景をさらっと",
+      "label_en": "Why the dressing room tends to be overlooked — brief background",
+      "purpose": "context_setting",
+      "spoken_flow_description": "Giải thích ngắn gọn tại sao 脱衣所 dễ bị bỏ qua: ai cũng biết phòng tắm trơn nhưng ít ai nghĩ đến phòng thay đồ. Dẫn thống kê nhẹ nhàng: 脱衣所 nằm trong nhóm địa điểm tai nạn phổ biến nhất cho người cao tuổi. Nhắc rõ rằng thống kê là cho toàn bộ quy trình入浴 vì không có data riêng cho 脱衣所 (U1). Transition vào 3 check items.",
+      "key_beats": [
+        "脱衣所 thường bị xem là 'chỉ là nơi mặc đồ' → ít ai kiểm tra an toàn",
+        "Nhưng thực tế: 風呂場・脱衣所・洗面所 là nhóm tai nạn ngã phổ biến nhất trong nhà (消費者庁)",
+        "Mùa đông: chênh lệch nhiệt độ giữa phòng khách ấm → 脱衣所 lạnh → phòng tắm nóng",
+        "Nhắc rõ: 'chính xác bao nhiêu vụ ở riêng 脱衣所 thì chưa có thống kê tách riêng, nhưng đây là khu vực cần chú ý'",
+        "Transition: 'では、脱衣所で何を確認すればいいのか、ひとつずつ見ていきましょう'"
+      ],
+      "estimated_duration_sec": 110,
+      "estimated_chars": 590,
+      "emotional_tone": "calm_factual",
+      "evidence_source": "03_research_brief.json → F1, F2, F4, U1",
+      "policy_notes": [
+        "WO01: KHÔNG dramatize statistics. Framing '入浴関連の事故は珍しいことではありません'.",
+        "SF06: Nhắc rõ uncertainty — data không tách riêng 脱衣所. Honest framing.",
+        "DN03: Ghi rõ nguồn 消費者庁 trong narration."
+      ],
+      "softeners_required": ["SF06"]
+    },
+    {
+      "section_id": "S03",
+      "label": "気をつけたいこと①：床の滑りやすさと段差",
+      "label_en": "Watch point 1: Floor slipperiness and level differences",
+      "purpose": "practical_check_item",
+      "spoken_flow_description": "Check item đầu tiên: sàn 脱衣所. Khu vực này thường có sàn vinyl hoặc gạch, dễ bị ẩm do gần nhà tắm. Chân trần đi từ phòng tắm ra dễ trượt. Hướng dẫn cách chọn thảm phù hợp (コルクマット cho cách nhiệt + chống trượt, EVAマット cho chống ẩm). Nhắc về 段差 giữa 脱衣所 và phòng tắm. Lưu ý bảo dưỡng.",
+      "key_beats": [
+        "Sàn 脱衣所 thường vinyl hoặc gạch → trơn khi ẩm, lạnh khi đông",
+        "Chân trần bước ra từ phòng tắm → nước + sàn trơn = trượt ngã",
+        "Giải pháp: thảm chống trượt (コルクマット cho cách nhiệt, EVAマット cho chống ẩm)",
+        "Cách chọn: xem xét lực hút (ズレない), thoát nước nhanh (速乾性), không tạo thêm 段差",
+        "Lưu ý 段差: bậc giữa 脱衣所 và phòng tắm → kiểm tra, dùng miếng lát chuyển tiếp nếu cần",
+        "Bảo dưỡng: thảm ẩm → nấm mốc → vệ sinh thường xuyên, thay khi cũ",
+        "Softener: 'これだけで転倒を防げるわけではありませんが、見直しの第一歩として考えてみてください'"
+      ],
+      "estimated_duration_sec": 170,
+      "estimated_chars": 910,
+      "emotional_tone": "practical_helpful",
+      "evidence_source": "03_research_brief.json → F2, G1, U2",
+      "policy_notes": [
+        "SF01: Nói '滑りにくくなることがあります', KHÔNG nói '滑りません'.",
+        "Nhắc U2: không có RCT cho hiệu quả thảm → present as '推奨されている工夫のひとつ'.",
+        "KHÔNG recommend thương hiệu cụ thể."
+      ],
+      "softeners_required": ["SF01"]
+    },
+    {
+      "section_id": "S04",
+      "label": "気をつけたいこと②：温度差への備え",
+      "label_en": "Watch point 2: Preparing for the temperature gap",
+      "purpose": "practical_check_item",
+      "spoken_flow_description": "Check item thứ hai: chênh lệch nhiệt độ. Đây là đặc thù của 脱衣所 — khu vực nằm giữa phòng khách ấm và phòng tắm nóng, nhưng bản thân thường rất lạnh vào mùa đông. Giải thích nhẹ rằng chênh lệch >10℃ giữa các phòng làm tăng rủi ro. Đưa ra mẹo: sưởi ấm trước 10-15 phút. Giới thiệu loại lò sưởi phù hợp. KÈM cảnh báo an toàn cháy cho lò sưởi (SF07 — bắt buộc).",
+      "key_beats": [
+        "脱衣所 nằm ở giữa: phòng khách ấm ↔ 脱衣所 lạnh ↔ phòng tắm nóng → nhiệt độ dao động lớn",
+        "Narrator: '温度差が10度以上になると、体に負担がかかりやすいとされています'",
+        "Mẹo: bật lò sưởi nhỏ trong 脱衣所 trước 10-15 phút, mở nắp bồn tắm cho hơi nóng vào phòng tắm",
+        "Mục tiêu: 脱衣所 khoảng 20℃前後 — '目安とされています'",
+        "Lò sưởi an toàn: chọn loại有転倒時自動オフ + 過熱防止, ưu tiên壁掛けタイプ",
+        "⚠ CẢNH BÁO CHÁY (SF07): 'タオルや衣類をヒーターの近くに置かないようにしましょう', '使い終わったら必ず電源を切りましょう'",
+        "Softener: '血圧が気になる方は、かかりつけ医に入浴時の注意を相談してみてください'"
+      ],
+      "estimated_duration_sec": 200,
+      "estimated_chars": 1070,
+      "emotional_tone": "calm_practical",
+      "evidence_source": "03_research_brief.json → F3, F7, G2, C1",
+      "policy_notes": [
+        "WO02: Giữ ở mức practical tips, KHÔNG giải thích cơ chế sinh lý heat shock.",
+        "WO03: PHẢI có fire safety sub-point cho heater (SF07 — bắt buộc, không được skip).",
+        "SF01: 'リスクを減らす工夫のひとつです', KHÔNG dùng 'ヒートショックを防げます'.",
+        "SF02: Bắt buộc nhắc かかりつけ医 cho người có huyết áp bất thường.",
+        "SF04: 20℃ và 10度以上 là '目安' / '〜とされています'.",
+        "KHÔNG recommend thương hiệu cụ thể cho lò sưởi."
+      ],
+      "softeners_required": ["SF01", "SF02", "SF04", "SF07"]
+    },
+    {
+      "section_id": "S05",
+      "label": "気をつけたいこと③：着替えのときの動作と工夫",
+      "label_en": "Watch point 3: Movement and tips when changing clothes",
+      "purpose": "practical_check_item",
+      "spoken_flow_description": "Check item thứ ba: động tác thay đồ. Đây là nội dung duy nhất của vid_002 — vid_001 không có. Khác biệt rõ ràng. Giải thích rằng thay đồ đứng (đặc biệt cởi quần khi đứng 1 chân) là 1 trong những nguyên nhân ngã chính cho người cao tuổi. Đưa ra mẹo từ OT: ngồi thay đồ, chuẩn bị sẵn đồ trước, tay vịn để giữ thăng bằng.",
+      "key_beats": [
+        "Thay đồ đứng: khi cởi quần → đứng 1 chân → mất thăng bằng → ngã",
+        "Narrator: '片足で立つ瞬間は、バランスを崩しやすいタイミングのひとつです'",
+        "Mẹo 1: đặt ghế/ベンチ ổn định trong 脱衣所 → ngồi thay đồ",
+        "Mẹo 2: sắp sẵn khăn và quần áo trong tầm tay TRƯỚC KHI bắt đầu cởi đồ",
+        "Mẹo 3: nếu có thể, lắp 手すり ở độ cao thắt lưng → bám khi đứng lên/ngồi xuống",
+        "Chọn quần áo: ưu tiên loại co giãn (伸縮性), dễ mặc/cởi, tránh nút nhỏ khó thao tác",
+        "Softener: '無理に立ったまま着替える必要はありません。座ってゆっくりで大丈夫です'"
+      ],
+      "estimated_duration_sec": 180,
+      "estimated_chars": 960,
+      "emotional_tone": "practical_supportive",
+      "evidence_source": "03_research_brief.json → F5, G3, G4, C2",
+      "policy_notes": [
+        "WO04: Visual focus = ghế + tay vịn + quần áo gấp sẵn. KHÔNG cảnh thay đồ trực tiếp (VR09).",
+        "SF01: 'バランスを崩しにくくなることがあります', KHÔNG nói '転倒を防げます'.",
+        "SF02: Nếu ふらつき lặp lại → nhắc tham vấn.",
+        "SF03: Nếu lắp 手すり → nói ケアマネジャーに相談 + 事前申請."
+      ],
+      "softeners_required": ["SF01", "SF02", "SF03"]
+    },
+    {
+      "section_id": "S06",
+      "label": "見直し前と見直し後 — 小さな変化のイメージ",
+      "label_en": "Before and after review — imagining small changes",
+      "purpose": "visual_comparison",
+      "spoken_flow_description": "Tóm tắt bằng hình ảnh before-after: góc 脱衣所 trước review (sàn trống lạnh, không ghế, không lò sưởi, quần áo vất bừa trên máy giặt) vs. sau review (thêm thảm コルク, lò sưởi nhỏ trên tường, ghế gỗ thấp ổn định, khăn và quần áo gấp sẵn trên kệ trong tầm tay). Nhấn mạnh: chỉ là thay đổi nhỏ.",
+      "key_beats": [
+        "Trước: sàn trống lạnh, không ghế, quần áo vất trên máy giặt, không lò sưởi",
+        "Sau: thảm コルク trên sàn, lò sưởi nhỏ壁掛け, ghế gỗ thấp, quần áo gấp sẵn trên kệ",
+        "Narrator: '大掛かりなリフォームではなく、ちょっとした見直しだけでも、毎日の支度が少し楽になることがあります'",
+        "Transition: 'もし、ひとりで進めるのが難しいなと思ったら…'"
+      ],
+      "estimated_duration_sec": 80,
+      "estimated_chars": 430,
+      "emotional_tone": "encouraging_modest",
+      "evidence_source": null,
+      "policy_notes": [
+        "WO05: before-after scope = thêm 2-3 đồ vật nhỏ, KHÔNG biến đổi toàn bộ 脱衣所.",
+        "SF01: '少し楽になることがあります', KHÔNG dùng '安全になります'.",
+        "VR06: Visual phải rõ ràng là illustration, không phải ảnh thực."
+      ],
+      "softeners_required": ["SF01"]
+    },
+    {
+      "section_id": "S07",
+      "label": "ひとりで難しいときは — 相談先の整理",
+      "label_en": "When it is hard alone — where to get help",
+      "purpose": "consult_guidance",
+      "spoken_flow_description": "Hướng dẫn nơi tham vấn khi cần hỗ trợ. Nhắc 地域包括支援センター và ケアマネジャー. Giới thiệu nhẹ về 介護保険の住宅改修費支給: 手すり設置 và 床材変更 là các hạng mục được hỗ trợ. Nhắc rằng tự治体 có thêm chương trình hỗ trợ. Nhắc rằng autocheck checklists có sẵn trên web自治体.",
+      "key_beats": [
+        "Đầu tiên liên hệ: 地域包括支援センター hoặc ケアマネジャー",
+        "介護保険の住宅改修: 手すり設置、床材の変更 đều thuộc hạng mục được hỗ trợ",
+        "Giới hạn 20万円, tự trả 1〜3割 — '自治体によって条件が異なります'",
+        "Lưu ý quan trọng: '工事を始める前に、必ず事前申請が必要です'",
+        "Tự治体 website có 安全チェックリスト → có thể download và tự kiểm tra trước",
+        "Nhắc DN04: lò sưởi → 'メーカーの取扱説明書もご確認ください'",
+        "Narrator: '少しでも気になったら、まず相談してみるところから始めてみましょう'"
+      ],
+      "estimated_duration_sec": 110,
+      "estimated_chars": 590,
+      "emotional_tone": "supportive_informative",
+      "evidence_source": "03_research_brief.json → F6, G4, G5, C3",
+      "policy_notes": [
+        "SF03: Nhắc ケアマネジャー + 専門業者 + 事前申請.",
+        "SF04: 20万円 và 1〜3割 là thông tin tổng quát, phải kèm '自治体によって異なります'.",
+        "KHÔNG frame renovation là bắt buộc. Present as option with consultation emphasis.",
+        "DN04: Nhắc xem hướng dẫn sử dụng lò sưởi."
+      ],
+      "softeners_required": ["SF03", "SF04"]
+    },
+    {
+      "section_id": "S08",
+      "label": "おわりに — 今日できることから、少しずつ",
+      "label_en": "Closing — start with what you can do today, step by step",
+      "purpose": "calm_close",
+      "spoken_flow_description": "Recap 3 điểm chính với từ khóa đơn giản. Nhắc lại: không cần làm tất cả cùng lúc. Biết rằng có nơi để hỏi. Kêu gọi nhẹ nhàng. Không áp lực.",
+      "key_beats": [
+        "Recap: ①床の滑りやすさ ②温度差への備え ③着替えのときの動作",
+        "Narrator: '全部を一度にやる必要はありません。気がついたときに、ひとつずつ確認してみてください'",
+        "Safety framing pattern: '急がなくても大丈夫です。少しずつ整えていきましょう'",
+        "Nhẹ nhàng kết thúc: 'この動画がお役に立てたら、また次回もご一緒にお話ししましょう'",
+        "KHÔNG dùng CTA mạnh (subscribe/like). Giữ tone companion."
+      ],
+      "estimated_duration_sec": 70,
+      "estimated_chars": 370,
+      "emotional_tone": "warm_reassuring",
+      "evidence_source": null,
+      "policy_notes": [
+        "SF05: Dùng '少しずつ整えていきましょう' / '急がなくても大丈夫です'. KHÔNG tạo áp lực.",
+        "WS06: Dùng ít nhất 1 safety_framing_pattern từ language_constraints."
+      ],
+      "softeners_required": ["SF05"]
+    }
+  ],
+
+  "total_sections": 8,
+  "total_estimated_duration_sec": 1000,
+  "total_estimated_duration_min": 16.7,
+  "total_estimated_chars": 5350,
+  "duration_within_target": true,
+
+  "duration_validation": {
+    "min_chars": 3200,
+    "max_chars": 5760,
+    "planned_chars": 5350,
+    "status": "PASS",
+    "note": "5350 chars nằm trong range [3200, 5760]. Outline đủ dày cho ~16.7 min narration. Section S04 dày nhất (1070 chars) do bao gồm cả temperature management + heater safety."
+  },
+
+  "scope_validation": {
+    "micro_topic_respected": true,
+    "scope_drifts_detected": [],
+    "differentiation_from_vid_001": "vid_001 covers 浴室内 (sàn phòng tắm, tay vịn trong phòng tắm, nhiệt độ nước). vid_002 covers 脱衣所 (sàn phòng thay đồ, nhiệt độ phòng/lò sưởi, tư thế thay đồ). Overlap nhỏ ở topic nhiệt độ nhưng góc nhìn khác: vid_001 = nước nóng, vid_002 = không gian lạnh giữa các phòng.",
+    "note": "Tất cả 8 sections xoay quanh 3 check items cho 脱衣所. Không mở rộng sang phòng tắm nội bộ."
+  },
+
+  "policy_compliance_check": {
+    "forbidden_angles_avoided": true,
+    "mandatory_softeners_mapped": {
+      "SF01": ["S03", "S04", "S05", "S06"],
+      "SF02": ["S02", "S04", "S05"],
+      "SF03": ["S05", "S07"],
+      "SF04": ["S04", "S07"],
+      "SF05": ["S08"],
+      "SF06": ["S02"],
+      "SF07": ["S04"]
+    },
+    "outline_warnings_addressed": {
+      "WO01": "S02 emotional_tone = calm_factual. Statistics framed as '入浴関連の事故は珍しいことではありません'. Uncertainty U1 explicitly noted.",
+      "WO02": "S04 scope limited to practical tips (暖房 + 温度目安). No heat shock physiological mechanism.",
+      "WO03": "S04 includes dedicated heater fire safety sub-point with SF07.",
+      "WO04": "S05 visual focus = stool + grab bar + organized clothes. NOT person undressing.",
+      "WO05": "S06 before-after scope = thêm 2-3 đồ vật nhỏ (thảm + lò sưởi + ghế), not full renovation."
+    }
+  },
+
+  "spoken_flow_quality_check": {
+    "reads_like_spoken_narration": true,
+    "section_turns_feel_natural": true,
+    "repetitive_patterns_avoided": true,
+    "note": "Flow: warm hook → brief context → 3 check items (mỗi item có focus riêng: sàn/nhiệt độ/động tác, mỗi cái có structure: vấn đề → giải pháp → lưu ý → consult). Sau 3 items đến visual recap → hỗ trợ → kết. S04 dài nhất vì ghép temperature + heater safety. S03/S05 cân bằng. Tránh monotone qua emotional tone khác biệt ở mỗi section."
+  }
+}

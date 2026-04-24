@@ -1,0 +1,175 @@
+{
+  "project_id": "kenh_2_vid_002",
+  "channel_id": "kenh_2",
+  "pipeline_step": "10_publication_package",
+  "generated_at": "2026-04-25T00:55:00+07:00",
+
+  "search_gate_summary": {
+    "searches_performed": [
+      "脱衣所 高齢者 安全 YouTube 動画 タイトル サムネイル",
+      "シニア 入浴 ヒートショック 脱衣所 寒さ対策 YouTube",
+      "YouTube thumbnail best practices senior health Japan 高齢者 サムネイル ガイドライン"
+    ],
+    "examples_inspected": 10,
+    "directly_relevant_examples": 6,
+    "official_guidance_sources": 3,
+
+    "observed_patterns": {
+      "text_density": "Most competing thumbnails use 2-4 large words. Top performers keep it minimal for mobile readability at 60+ viewer age.",
+      "emotional_tone": "Two clear camps: (A) fear-framing ('交通事故の3倍', '命の危険') and (B) calm educational ('知っておきたい', '簡単対策'). Camp A gets initial clicks but lower retention for senior audiences.",
+      "visual_simplicity": "Successful senior-health channels use clean backgrounds, single focal object, high contrast. Cluttered thumbnails underperform.",
+      "host_usage": "Professional channels use face + white coat (authority). Illustration-style channels use no-host object scenes. Both work for different strategies.",
+      "danger_framing_vs_calm": "Fear-framing dominates search results but violates kenh_2 policy (fear_intensity_ceiling=low). Calm educational framing is safer and matches channel voice.",
+      "number_usage": "Numbers in titles are very effective (e.g., '3つ', '5選'). Almost all top results use number anchors.",
+      "promise_style": "Overpromise is common ('これだけで安心', '転倒ゼロへ'). kenh_2 must avoid these per policy. Safer framing: '見直し', '確認', 'ポイント'."
+    },
+
+    "likely_fit_for_this_channel": [
+      "Calm domestic object-focused thumbnail (dressing room corner with mat + heater + stool)",
+      "Number anchor in title (3つ) — matches script structure exactly",
+      "Warm earth-tone soft illustration style — unique differentiator vs photo-heavy competitors",
+      "Practical framing: '見直し' / '確認' without fear",
+      "Minimal text overlay (3-4 words max) for senior readability"
+    ],
+
+    "likely_mismatch_for_this_channel": [
+      "Fear-based thumbnails with shocked expressions or red alarm icons",
+      "White-coat authority framing (channel has no medical host)",
+      "Photo-heavy realistic thumbnails (channel is illustrated style)",
+      "Dense text overlays (5+ words) that are hard to read on mobile",
+      "Overpromise phrasing ('これで安全', '事故ゼロ')"
+    ],
+
+    "things_to_avoid": [
+      "Fear imagery or alarm icons (violates fear_intensity_ceiling=low)",
+      "Overpromise claims in title or thumbnail (violates forbidden_claims)",
+      "Medical authority framing without actual credentials (misleading)",
+      "Photorealistic thumbnail when channel style is illustrated",
+      "Disease-name shock bait in title (forbidden hook pattern)",
+      "English text on thumbnail (ja-JP only channel)"
+    ]
+  },
+
+  "title_candidates": [
+    {
+      "id": "T1",
+      "title_ja": "脱衣所で気をつけたいこと3つ【60代・70代の暮らし】",
+      "title_vi": "3 điều cần chú ý ở phòng thay đồ【Cuộc sống tuổi 60-70】",
+      "click_angle": "Practical checklist framing, age-anchored for target demo",
+      "risk_check": "PASS — no overpromise, no fear, matches script content exactly",
+      "source": "02_topic_strategy packaging_seeds"
+    },
+    {
+      "id": "T2",
+      "title_ja": "シニアの脱衣所 安全チェック3つの見直しポイント",
+      "title_vi": "Phòng thay đồ cho người cao tuổi: 3 điểm kiểm tra an toàn",
+      "click_angle": "Safety-review framing, clear '見直し' language avoids overpromise",
+      "risk_check": "PASS — uses 'チェック' and '見直し' instead of 'prevention' claims",
+      "source": "02_topic_strategy packaging_seeds"
+    },
+    {
+      "id": "T3",
+      "title_ja": "脱衣所の寒さと滑り、見直しませんか？【ひとり暮らしのシニアへ】",
+      "title_vi": "Phòng thay đồ lạnh và trơn trượt – Bạn đã kiểm tra chưa?【Dành cho người cao tuổi sống một mình】",
+      "click_angle": "Question hook, empathetic tone, specific living-situation anchor",
+      "risk_check": "PASS — invitation framing, no promises, no fear",
+      "source": "02_topic_strategy packaging_seeds"
+    }
+  ],
+
+  "thumbnail_candidates": [
+    {
+      "id": "TH1",
+      "concept_ja": "脱衣所のコーナーにコルクマット・小型セラミックヒーター・低めの椅子が並ぶ、温かみのあるイラスト。右上にテキスト「脱衣所 3つの見直し」",
+      "concept_vi": "Góc phòng thay đồ với thảm cork, lò sưởi nhỏ, ghế thấp – minh họa ấm áp retro-clean 2D. Text: '脱衣所 3つの見直し'",
+      "click_angle": "Object-focused — viewer instantly sees the 3 practical items. Calm domestic atmosphere.",
+      "text_overlay": "脱衣所 3つの見直し",
+      "text_word_count": 4,
+      "emotion": "warm_reassuring",
+      "host_presence": "no_host",
+      "style": "illustrated_lifestyle_handbook, retro-clean 2D"
+    },
+    {
+      "id": "TH2",
+      "concept_ja": "Before-After分割構成。左半分は冷たい色調の何もない脱衣所の床、右半分は暖かい色調でマットとヒーターが置かれた脱衣所。テキスト「見直し前 → 見直し後」",
+      "concept_vi": "Bố cục chia đôi Before-After. Trái: sàn phòng thay đồ trống, lạnh. Phải: sàn đã có thảm và lò sưởi, ấm. Text: '見直し前 → 見直し後'",
+      "click_angle": "Comparison — curiosity gap between empty cold floor vs safe warm setup.",
+      "text_overlay": "見直し前 → 見直し後",
+      "text_word_count": 3,
+      "emotion": "calm_encouraging",
+      "host_presence": "no_host",
+      "style": "illustrated_lifestyle_handbook, retro-clean 2D"
+    },
+    {
+      "id": "TH3",
+      "concept_ja": "脱衣所の床にコルクマットが敷かれ、その上に高齢者の足元だけが見えるクロースアップ。椅子の脚が端に写っている。テキスト「足もとの安心」",
+      "concept_vi": "Cận cảnh bàn chân người cao tuổi đứng trên thảm cork trong phòng thay đồ. Chân ghế thấp ở rìa khung hình. Text: '足もとの安心'",
+      "click_angle": "Personal, relatable angle — viewer projects themselves onto the elderly feet detail.",
+      "text_overlay": "足もとの安心",
+      "text_word_count": 3,
+      "emotion": "warm_practical",
+      "host_presence": "no_host",
+      "style": "illustrated_lifestyle_handbook, retro-clean 2D"
+    }
+  ],
+
+  "selected_package": {
+    "selected_title": {
+      "id": "T1",
+      "title_ja": "脱衣所で気をつけたいこと3つ【60代・70代の暮らし】",
+      "title_vi": "3 điều cần chú ý ở phòng thay đồ【Cuộc sống tuổi 60-70】"
+    },
+    "selected_thumbnail": {
+      "id": "TH1",
+      "concept_ja": "脱衣所のコーナーにコルクマット・小型セラミックヒーター・低めの椅子が並ぶ、温かみのあるイラスト。右上にテキスト「脱衣所 3つの見直し」",
+      "text_overlay": "脱衣所 3つの見直し"
+    },
+    "rationale": "T1 matches the script promise exactly, uses proven number-anchor pattern, and age-band bracket increases relevance for target demo. TH1 shows all 3 practical items in a single illustration, communicating the complete value in one glance — no fear, no overpromise, and the illustrated style differentiates from photo-heavy competitors.",
+
+    "description_ja": "脱衣所で気をつけておきたいポイントを3つに絞ってお話しします。\n\n① 床の滑りやすさと段差のこと\n② 温度差への備え（ヒートショック予防の工夫）\n③ 着替えるときの動作と工夫\n\nそれぞれ、今日からできる小さな見直しばかりです。\n大掛かりな工事の話ではありません。\n\n■ 介護保険の住宅改修制度についても簡単にご案内しています。\n\n※ この動画は情報提供を目的としたものです。体調に不安がある方は、かかりつけ医にご相談ください。\n※ 暖房器具をお使いの際は、メーカーの取扱説明書をご確認ください。\n\n#脱衣所 #シニア #転倒予防 #ヒートショック #高齢者の暮らし #入浴安全 #お風呂の安全 #介護保険住宅改修",
+
+    "description_vi": "Nội dung video nói về 3 điểm cần chú ý ở phòng thay đồ (脱衣所): (1) sàn trơn trượt, (2) chênh lệch nhiệt độ, (3) tư thế thay đồ an toàn. Kèm thông tin ngắn về chế độ cải tạo nhà của bảo hiểm chăm sóc. Disclaimer y tế + disclaimer hướng dẫn sử dụng lò sưởi đã được thêm cuối mô tả.",
+
+    "keywords_ja": [
+      "脱衣所",
+      "高齢者",
+      "転倒予防",
+      "ヒートショック",
+      "シニア",
+      "入浴安全",
+      "コルクマット",
+      "脱衣所暖房",
+      "着替え 安全",
+      "介護保険 住宅改修",
+      "60代",
+      "70代",
+      "お風呂 安全",
+      "滑り止め",
+      "手すり",
+      "脱衣所 寒さ対策"
+    ]
+  },
+
+  "shorts_derivatives": [
+    {
+      "shorts_id": "S1",
+      "short_title_ja": "脱衣所、暖めてから服を脱いでいますか？",
+      "short_title_vi": "Bạn có sưởi ấm phòng thay đồ trước khi cởi áo không?",
+      "hook_line_ja": "冬の脱衣所、そのまま服を脱いでいませんか？",
+      "cut_angle": "Temperature gap awareness — 15-second quick tip about pre-heating the dressing room 10-15 min before bathing",
+      "bridge_to_longform_ja": "もっと詳しい3つのチェックポイントは、長い動画でひとつずつ確認しています。概要欄のリンクからどうぞ。",
+      "why_it_can_pull_new_viewers": "Heat shock prevention is a highly searched winter topic among 60+ viewers. The question hook creates immediate self-reflection.",
+      "note": "intake directive says derive_shorts=0 for this video; this is a template concept only, NOT to be produced unless directive changes"
+    },
+    {
+      "shorts_id": "S2",
+      "short_title_ja": "着替えるとき、片足立ちになっていませんか？",
+      "short_title_vi": "Khi thay đồ, bạn có đứng một chân không?",
+      "hook_line_ja": "脱衣所でズボンを脱ぐとき、片足で立っていませんか？",
+      "cut_angle": "Safe changing posture — 15-second tip about sitting while changing clothes",
+      "bridge_to_longform_ja": "座って着替えるコツや便利な道具は、長い動画で詳しくお話ししています。",
+      "why_it_can_pull_new_viewers": "Relatable daily-life moment every senior recognizes. The question creates 'wait, I do that' awareness.",
+      "note": "intake directive says derive_shorts=0 for this video; this is a template concept only, NOT to be produced unless directive changes"
+    }
+  ]
+}

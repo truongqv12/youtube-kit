@@ -1,0 +1,77 @@
+{
+  "project_id": "kenh_2_vid_002",
+  "pipeline_step": "06_script_metrics",
+  "generated_at": "2026-04-24T23:55:44+07:00",
+
+  "total_units": 96,
+  "total_chars": 3211,
+  "estimated_duration_min": 10.0,
+  "tts_chars_per_min": 320,
+
+  "duration_validation": {
+    "min_chars": 3200,
+    "max_chars": 5760,
+    "actual_chars": 3211,
+    "status": "PASS",
+    "note": "3211 chars at lower end of [3200, 5760] range. Tight but valid ~10.0 min narration."
+  },
+
+  "reconstruction_check": {
+    "full_script_equals_join": true,
+    "method": "newline join of canonical_script_units → 06_script_full.md"
+  },
+
+  "tts_safe_check": {
+    "all_units_pass": true,
+    "headings_found": 0,
+    "bullets_found": 0,
+    "speaker_tags_found": 0,
+    "markdown_found": 0,
+    "emoji_found": 0,
+    "production_notes_found": 0
+  },
+
+  "rhythm_check": {
+    "consecutive_same_pattern_max": 2,
+    "status": "PASS",
+    "note": "No cluster of 3+ lines with identical grammar skeleton. Varied sentence endings."
+  },
+
+  "naturalness_check": {
+    "reads_like_spoken": true,
+    "lecture_stiffness": false,
+    "machine_translated_feel": false,
+    "excessive_connectives": false,
+    "note": "Rhythm: short → medium → landing pattern, scenario + checklist flow. Natural spoken register with softeners."
+  },
+
+  "banned_phrases_check": {
+    "絶対に治る": false,
+    "必ず防げる": false,
+    "医者は教えてくれない": false,
+    "これだけで十分": false,
+    "status": "PASS"
+  },
+
+  "softener_presence": {
+    "SF01_effect_hedging": true,
+    "SF02_consult_clinician": true,
+    "SF03_consult_caremgr": true,
+    "SF04_numeric_qualifier": true,
+    "SF05_closing_gentle": true,
+    "SF06_stats_uncertainty": true,
+    "SF07_fire_safety": true,
+    "status": "ALL_PRESENT"
+  },
+
+  "section_char_distribution": {
+    "S01_opening": 430,
+    "S02_background": 490,
+    "S03_floor": 570,
+    "S04_temperature": 630,
+    "S05_changing": 510,
+    "S06_before_after": 230,
+    "S07_consult": 220,
+    "S08_closing": 131
+  }
+}
