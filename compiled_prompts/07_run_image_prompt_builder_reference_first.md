@@ -11,17 +11,20 @@ User MUST supply `TARGET_CHANNEL` (e.g. kenh_2) and `TARGET_VIDEO` (e.g. vid_001
 Read exactly these paths. DO NOT use global workspace search for abstract filenames to prevent cross-channel configuration contamination.
 - core/system_principles.md
 - core/policy_guardrails.md
+- core/character_identity_lock_standard.md
 - core/prompt_description_grammar.md
 - knowledge/visual/00_visual_strategy.md
 - knowledge/visual/01_style_registry.md
 - knowledge/visual/05_negative_visual_rules.md
 - channels/{{TARGET_CHANNEL}}/00_channel_config.json
+- channels/{{TARGET_CHANNEL}}/00_visual_profile.json
 - channels/{{TARGET_CHANNEL}}/videos/{{TARGET_VIDEO}}/01_intake_spec.json
 - channels/{{TARGET_CHANNEL}}/videos/{{TARGET_VIDEO}}/06_script_canonical.json
 
 ## Optional reads
 - 00_language_profile.json
-- 00_visual_profile.json
+- channels/{{TARGET_CHANNEL}}/00_host_character_sheet.json
+- channels/{{TARGET_CHANNEL}}/assets/host_reference/*
 
 If you cannot read any required file, fail.
 
@@ -37,7 +40,9 @@ Return:
 8. locale_governance_detected
 9. visible_text_policy_detected
 10. continuity_policy_detected
-11. allowed_to_proceed
+11. host_character_sheet_detected
+12. visual_rhythm_plan_detected
+13. allowed_to_proceed
 
 ## Hard rules
 - this is a narration-support pipeline, not a film storyboard pipeline
@@ -47,7 +52,10 @@ Return:
 - before writing any final prompt, resolve a `line_context_frame`
 - choose exactly one `scene_archetype` per row
 - use host only when trust, continuity, or reassurance truly helps
-- if `reference_first` is enabled and host is used, describe the host lightly and rely on the uploaded reference first
+- if `host_usage=host`, use `00_host_character_sheet.json` as the identity source of truth when available
+- if `reference_first` is enabled and host is used, start from uploaded reference images and the fixed `prompt_identity_packet`
+- host prompts must be identity-lock first: fixed host identity packet first, then current line scene delta and action delta
+- do not rewrite the host as a new character per row
 - continuity is required across adjacent related rows
 - style must be resolved from both `visual_style_id` and `visual_substyle_id`
 - default visible text policy is `no_readable_text`
@@ -55,20 +63,25 @@ Return:
 - `prompt_img_nano` should be written in clear English for workflow consistency, but any visible text inside the image must remain exact `channel_language` text
 - demographic fidelity: when audience_age is 60+, every human character must show visible aging features — the word "older" alone is insufficient for Nano Banana; explicitly describe gray/silver hair, facial wrinkles, age-appropriate posture, and mature body language
 - for reference_first host scenes, append: "The character MUST appear the SAME age as the reference. NO youth reduction."
+- every host row must forbid youth drift, hairstyle drift, outfit redesign, photorealistic drift, lip sync, and direct-to-camera speech unless explicitly enabled
+- do not force the host into rows that are better served by objects, demonstrations, comparison pairs, or environment bridges
+- visual rhythm matters for YouTube: avoid repeating the same scene archetype/framing template more than twice in an 8-row window unless the script requires it
+- if a line is TTS-safe but not visual-beat-safe, flag it in `visualization_warning` instead of producing a generic prompt
 
 ## Prompt construction formula
 Build each `prompt_img_nano` in this order:
 1. task mode:
    - `Generate ...`
    - or `Using the provided reference image(s) ...`
-2. output format + resolved style lock
-3. line-context semantic subject
-4. visible state or action
-5. locale-correct setting, props, wardrobe, and architecture cues
-6. continuity anchors
-7. preservation / edit rule
-8. readable text instruction if needed
-9. exclusions and anti-drift anchors
+2. fixed identity lock when host or recurring character appears
+3. output format + resolved style lock
+4. line-context semantic subject
+5. visible state or action
+6. locale-correct setting, props, wardrobe, and architecture cues
+7. continuity anchors
+8. preservation / edit rule
+9. readable text instruction if needed
+10. exclusions and anti-drift anchors
 
 ## Procedure
 1. Read all required files.
@@ -83,6 +96,8 @@ Build each `prompt_img_nano` in this order:
    - continuity_anchors
    - visible_text_need
    - risk_guardrails
+   - visual_beat
+   - host_identity_lock if host is used
 4. Infer local scene grouping from neighboring rows.
 5. Choose exactly one `scene_archetype`.
 6. Decide `host_usage` as `host` or `no_host`.
@@ -93,7 +108,11 @@ Build each `prompt_img_nano` in this order:
    - `reference_preserve_edit`
    - `comparison_locked`
 9. Build one final `prompt_img_nano` per canonical unit.
-10. Keep row count aligned exactly with `canonical_script_units`.
+10. Run a visual rhythm pass:
+   - avoid repeated host-anchor filler
+   - prefer object/demo/comparison rows for practical instructions
+   - preserve scene-group continuity with 2 to 4 anchors
+11. Keep row count aligned exactly with `canonical_script_units`.
 
 ## Quality gate for each row
 A row fails if any of the following are true:
@@ -104,6 +123,10 @@ A row fails if any of the following are true:
 - signage, packaging, props, wardrobe, or architecture drift away from the target locale
 - readable text is in the wrong language or includes extra unwanted text
 - preservation vs change is unclear when reference editing is implied
+- a host row lacks a concrete identity lock from the character sheet or equivalent anchors
+- a host row changes hair, age, outfit, body type, or style family without reason
+- the row visualizes a generic topic instead of a concrete YouTube visual beat
+- the scene archetype/framing is repeated mechanically across nearby rows
 
 ## Output contract
 After preflight, return exactly:
@@ -117,6 +140,7 @@ After preflight, return exactly:
 - visible_text_policy
 - visible_text_exact
 - prompt_mode
+- visualization_warning
 - prompt_img_nano
 
 ## Failure conditions

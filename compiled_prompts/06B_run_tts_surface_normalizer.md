@@ -119,6 +119,7 @@ No engine-specific hacks are allowed here.
 - keep older listeners' processing comfort in mind
 - keep sentence rhythm varied after normalization
 - preserve warmth and dignity; do not flatten the voice into sterile instructions
+- preserve visual-beat clarity for downstream image and video prompt generation
 
 ## General rewrite rules
 ### A. Suspended-ending rule
@@ -173,6 +174,7 @@ Prefer moderate sentence length, familiar words, and calm landing forms suited t
 - never remove necessary softeners or consultation guidance
 - never strengthen claims beyond the policy report
 - never introduce new medical instructions not already supported upstream
+- never rewrite a concrete visualizable line into a vague abstract line
 
 ## Canonical-unit portable TTS gate
 A unit passes only if all checks below pass:
@@ -252,8 +254,11 @@ Good:
    - confirm the output remains generic Japanese spoken text
 10. Reconstruct `full_script` by newline join.
 11. Recompute metrics.
-12. Emit a normalization report summarizing what changed and why.
-13. Revise until canonical-unit, duration, naturalness, and portability checks all pass.
+12. Run a visual-beat preservation pass:
+   - every rewritten unit should still be supportable by one keyframe or one motion beat
+   - do not remove concrete objects or practical actions that downstream prompts need
+13. Emit a normalization report summarizing what changed and why.
+14. Revise until canonical-unit, duration, naturalness, portability, and visual-beat checks all pass.
 
 ## Output contract
 After preflight, return exactly:

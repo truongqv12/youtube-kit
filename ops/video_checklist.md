@@ -8,8 +8,13 @@
 - Ran policy gate
 - Have an outline for exactly one micro-topic
 - Have a canonical script that meets duration targets and sounds natural when read aloud
+- If host/recurring character is used, have `00_host_character_sheet.json`
+- If reference images exist, have approved files in `assets/host_reference/`
 - Have image prompts that are line-context locked
+- Have image prompts that are host-identity locked when `host_usage=host`
 - Have video prompts that are motion-only
+- Have video prompts that preserve host identity and include `(Silent video, no audio).`
+- Confirm no Veo prompt requests ambience, foley, room tone, music, soundscape, narration, or speech
 - Exported exactly 3 columns
 - Have `09_export_qc_report.md`
 - Have a publication package for long-form

@@ -12,16 +12,19 @@ User MUST supply `TARGET_CHANNEL` (e.g. kenh_2) and `TARGET_VIDEO` (e.g. vid_001
 Read exactly these paths. DO NOT use global workspace search for abstract filenames to prevent cross-channel configuration contamination.
 - core/system_principles.md
 - core/policy_guardrails.md
+- core/character_identity_lock_standard.md
 - core/prompt_description_grammar.md
 - knowledge/visual/00_visual_strategy.md
 - knowledge/visual/05_negative_visual_rules.md
 - channels/{{TARGET_CHANNEL}}/00_channel_config.json
+- channels/{{TARGET_CHANNEL}}/00_visual_profile.json
 - channels/{{TARGET_CHANNEL}}/videos/{{TARGET_VIDEO}}/01_intake_spec.json
 - channels/{{TARGET_CHANNEL}}/videos/{{TARGET_VIDEO}}/06_script_canonical.json
 - channels/{{TARGET_CHANNEL}}/videos/{{TARGET_VIDEO}}/07_image_prompt_table.csv
 
 ## Optional reads
-- 00_visual_profile.json
+- channels/{{TARGET_CHANNEL}}/00_host_character_sheet.json
+- channels/{{TARGET_CHANNEL}}/assets/host_reference/*
 
 If you cannot read any required file, fail.
 
@@ -36,7 +39,9 @@ Return:
 7. audio_prompt_mode_detected
 8. visible_text_preservation_detected
 9. scene_motion_bias_detected
-10. allowed_to_proceed
+10. host_character_sheet_detected
+11. subject_reference_strategy_detected
+12. allowed_to_proceed
 
 ## Hard rules
 - this step is image-to-video only
@@ -54,10 +59,14 @@ Return:
 - use general subject terms
 - preserve readable text from the source image exactly as-is when it exists
 - do not ask Veo to generate new readable text
+- preserve host or recurring character identity exactly from the source image and reference images
+- if host rows use subject reference images, use one to three approved subject images when the tool supports them
+- do not add new face, hairstyle, outfit, age, body type, or character design details in the video prompt
 - motion must vary according to `scene_archetype` and line meaning
 - if `non_dialogue_mode=true` or `voiceover_mode=narration_only`, forbid spoken dialogue, on-screen narration, lip sync, direct-to-camera speech, singing, chanting, and mouth-performance acting
 - audio directive must be exactly: `(Silent video, no audio).`
 - do NOT request ambience, foley, room tone, or any soundscape — audio is handled by external TTS
+- forbidden audio phrases include `ambient audio`, `room tone`, `foley`, `soundscape`, `music`, `voice`, `narration`, `spoken`, `says`, `whispers`, `singing`, and `chanting`
 - this policy reduces `PUBLIC_ERROR_AUDIO_FILTERED` from Veo 3.1 safety system
 - the spoken script is handled by external TTS, not by on-screen performance
 - if a line needs stronger transformation, choose `first_last_frame_transition` instead of overloading a first-frame-only prompt
@@ -93,10 +102,11 @@ Build each `prompt_video_veo3` in this order:
 1. camera motion
 2. subject micro-motion
 3. environmental micro-motion
-4. mood preservation
-5. text preservation if visible text exists
-6. silent audio directive: `(Silent video, no audio).`
-7. negative motion, performance, and audio constraints
+4. identity/style preservation when a person or host appears
+5. mood preservation
+6. text preservation if visible text exists
+7. silent audio directive: `(Silent video, no audio).`
+8. negative motion, performance, and audio constraints
 
 ## Procedure
 1. Read all required files.
@@ -107,12 +117,15 @@ Build each `prompt_video_veo3` in this order:
    - `visible_text_policy`
    - `visible_text_exact`
    - `prompt_mode`
+   - `visualization_warning` if present
    - `prompt_img_nano`
 4. Choose one scene-appropriate `motion_strategy`.
 5. Choose one `i2v_mode`.
 6. Choose one `recommended_duration_sec`.
-7. Build one Veo 3 image-to-video prompt in English using motion-only language.
-8. Keep row count aligned exactly with `canonical_script_units`.
+7. If the row uses the host, insert the `video_preservation_packet` or equivalent preserve-identity language.
+8. Build one Veo 3 image-to-video prompt in English using motion-only language.
+9. Run an audio-drift pass and delete any ambience, room tone, foley, music, narration, speech, or soundscape language.
+10. Keep row count aligned exactly with `canonical_script_units`.
 
 ## Quality gate for each row
 A row fails if any of the following are true:
@@ -123,6 +136,9 @@ A row fails if any of the following are true:
 - the prompt uses a repeated stock template with no scene-specific variation
 - the prompt implies character redesign or scene redesign
 - the prompt requests ambient audio, foley, room tone, or any generated soundscape
+- the prompt includes any forbidden audio phrase
+- a host row lacks identity preservation language
+- a host row introduces new character appearance details not present in the source image or character sheet
 
 ## Output contract
 After preflight, return exactly:
