@@ -24,6 +24,8 @@ Exactly 3 columns:
 - If `non_dialogue_mode=true` or `voiceover_mode=narration_only`, `prompt_video_veo3` must forbid spoken dialogue, lip sync, and direct-to-camera speech.
 - The final exporter must preserve row order.
 - Step 09 must also emit `09_export_qc_report.md`.
+- Step 09 may read helper columns from intermediate artifacts for QC, but the final export must still contain exactly the 3 required columns.
+- `09_export_qc_report.md` must report audio compliance, host identity compliance when host rows exist, visible text compliance, and visual beat warnings.
 
 ## Forbidden in final export
 - id

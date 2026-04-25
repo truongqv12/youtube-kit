@@ -18,6 +18,7 @@ Pipeline này tự động hóa toàn bộ quy trình sản xuất video YouTube
 - 🌱 **Seed-driven**: Chỉ cần điền 1 file `00_channel_seed.json` (6 trường) → toàn bộ profile kênh được sinh tự động
 - 🔬 **Research-first**: Bắt buộc nghiên cứu từ nguồn chính thức trước khi viết script — không bịa, không copy đối thủ
 - 🎙️ **TTS-safe script**: Script viết dưới dạng canonical units — mỗi dòng là một câu nói tự nhiên, paste thẳng vào TTS
+- 🧑‍🦳 **Character-locked host**: Nhân vật host được khóa bằng character sheet cấp kênh trước khi sinh ảnh/video
 - 🖼️ **Line-context locked prompts**: Prompt ảnh (Nano Banana) khóa ngữ nghĩa theo từng dòng script
 - 🎥 **Motion-only video prompts**: Prompt video (Veo 3) chỉ mô tả chuyển động, không lặp lại nội dung ảnh
 - 📦 **Publication package**: Sinh title, thumbnail concept, description, keyword, và 2 Shorts derivatives
@@ -31,12 +32,13 @@ Pipeline này tự động hóa toàn bộ quy trình sản xuất video YouTube
 seniorhealth_pipeline_topic_first_v3/
 │
 ├── core/                          # Tiêu chuẩn & luật chung cho mọi kênh
-│   ├── system_principles.md       # 16 nguyên tắc bất biến
+│   ├── system_principles.md       # Nguyên tắc bất biến
 │   ├── canonical_script_unit_standard.md
 │   ├── duration_control_standard.md
 │   ├── mandatory_research_standard.md
 │   ├── policy_guardrails.md       # Rào chắn y tế & nội dung
 │   ├── prompt_description_grammar.md
+│   ├── character_identity_lock_standard.md
 │   ├── topic_strategy_standard.md
 │   ├── publication_package_standard.md
 │   └── output_conventions.md      # Chuẩn export 3 cột
@@ -48,6 +50,7 @@ seniorhealth_pipeline_topic_first_v3/
 │   ├── 00_language_profile.template.json
 │   ├── 00_publication_profile.template.json
 │   ├── 00_visual_profile.template.json
+│   ├── 00_host_character_sheet.template.json
 │   └── 01_video_intake.template.json
 │
 ├── steps/                         # Định nghĩa từng step
@@ -58,6 +61,7 @@ seniorhealth_pipeline_topic_first_v3/
 │   ├── 04_policy_gate.md
 │   ├── 05_outline_builder.md
 │   ├── 06_script_writer_canonical.md
+│   ├── 06C_host_character_lock.md
 │   ├── 07_image_prompt_builder_reference_first.md
 │   ├── 08_video_prompt_builder_non_dialogue.md
 │   ├── 09_three_column_exporter.md
@@ -78,6 +82,7 @@ seniorhealth_pipeline_topic_first_v3/
 │   │   ├── 00_language_profile.json   # (sinh bởi Step 00)
 │   │   ├── 00_publication_profile.json# (sinh bởi Step 00)
 │   │   ├── 00_visual_profile.json     # (sinh bởi Step 00)
+│   │   ├── 00_host_character_sheet.json
 │   │   └── videos/
 │   │       └── vid_001/
 │   │           ├── 01_intake_spec.json
@@ -176,6 +181,7 @@ Step 03  →  Mandatory research (web access bắt buộc)
 Step 04  →  Policy gate (kiểm rào chắn y tế)
 Step 05  →  Outline builder
 Step 06  →  Script writer canonical (TTS-safe)
+Step 06C →  Host character lock (khóa nhân vật cố định)
 Step 07  →  Image prompt builder (Nano Banana, line-locked)
 Step 08  →  Video prompt builder (Veo 3, motion-only)
 Step 09  →  Three-column exporter + QC
@@ -184,7 +190,7 @@ Step 10  →  Publication package (web access bắt buộc)
 
 ---
 
-## 📐 Pipeline 11 bước chi tiết
+## 📐 Pipeline chi tiết
 
 | Step | Tên | Input chính | Output chính |
 |------|-----|-------------|--------------|
@@ -195,7 +201,8 @@ Step 10  →  Publication package (web access bắt buộc)
 | **04** | Policy Gate | research + guardrails | `04_policy_report.json` |
 | **05** | Outline Builder | research + policy | `05_outline.json` |
 | **06** | Script Writer | outline + knowledge | `06_script_canonical.json` + full script |
-| **07** | Image Prompt Builder | script + visual profile | `07_image_prompt_table.csv` |
+| **06C** | Host Character Lock | visual profile + host references | `00_host_character_sheet.json` |
+| **07** | Image Prompt Builder | script + visual profile + character sheet | `07_image_prompt_table.csv` |
 | **08** | Video Prompt Builder | image prompts + script | `08_video_prompt_table.csv` |
 | **09** | Three-Column Export | prompts + script | `09_final_three_column.csv` + QC report |
 | **10** | Publication Package | export + **web** | `10_publication_package.json` |
@@ -224,17 +231,28 @@ Step 10  →  Publication package (web access bắt buộc)
 - Qua 4 gate: TTS-safe → Naturalness → Rhythm → Breath-group
 - Không heading, bullet, emoji, speaker tag, stage direction
 - Duration phải nằm trong khoảng `target_min` — `target_max`
+- Mỗi dòng cũng phải visual-beat-safe: dễ hỗ trợ bằng 1 ảnh hoặc 1 motion beat rõ ràng cho YouTube
+
+### Nhân vật cố định
+- Nếu kênh dùng host, tạo hoặc kiểm `00_host_character_sheet.json` trước Step 07
+- Host identity là channel state, không viết lại tùy hứng theo từng video
+- Nên có 1-3 ảnh reference trong `assets/host_reference/`
+- Prompt host phải dùng identity-lock first: reference → identity packet → scene delta → action delta → drift blockers
+- Không đổi tóc, tuổi, outfit family, body type, style, hoặc làm trẻ hóa nhân vật
 
 ### Prompt ảnh
 - Semantic lock theo từng dòng script — không minh họa chung chung
 - Resolve `line_context_frame` trước khi viết prompt
 - Nhân vật 60+ phải mô tả rõ dấu hiệu lão hóa (tóc bạc, nếp nhăn, tư thế)
 - Locale-correct (kiến trúc, biển hiệu, trang phục phù hợp quốc gia)
+- Prompt host phải lấy `prompt_identity_packet` từ character sheet khi có
 
 ### Prompt video
 - Motion-only — không lặp lại mô tả ảnh
 - Silent audio: `(Silent video, no audio).`
 - Không lip sync, không thoại trực tiếp
+- Không ambience, foley, room tone, music, soundscape, hoặc bất kỳ audio cue nào
+- Với host, chỉ preserve identity từ source image/reference; không tạo lại mặt/tóc/trang phục trong video prompt
 
 ---
 
@@ -246,9 +264,10 @@ Pipeline hỗ trợ chạy nhiều kênh YouTube trên cùng một bộ engine:
 |------------|-----------------|
 | `core/` | `00_channel_seed.json` |
 | `knowledge/` | Các profile sinh từ Step 00 |
-| `compiled_prompts/` | `assets/host_reference/` |
-| `runbooks/` | `assets/branding/` |
-| `steps/` | Toàn bộ thư mục `videos/` |
+| `compiled_prompts/` | `00_host_character_sheet.json` |
+| `runbooks/` | `assets/host_reference/` |
+| `steps/` | `assets/branding/` |
+|  | Toàn bộ thư mục `videos/` |
 
 **Khi nào nên tách kênh mới?** Khi muốn khác thực sự ở cấp thương hiệu: khác host, khác style hình ảnh, khác cách kể chuyện, hoặc khác trụ nội dung chính.
 
@@ -281,9 +300,9 @@ TARGET_VIDEO=vid_001
 
 ---
 
-## 🗂️ Cấu trúc output mỗi video
+## 🗂️ Cấu trúc output
 
-Sau khi chạy xong pipeline, thư mục video sẽ chứa:
+Sau khi chạy xong pipeline, thư mục video chứa artifact từng video. Nếu kênh dùng host, thư mục kênh cũng có `00_host_character_sheet.json`.
 
 ```
 vid_001/

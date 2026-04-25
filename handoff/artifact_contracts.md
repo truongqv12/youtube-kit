@@ -14,3 +14,7 @@
 - `prompt_video_veo3` must stay motion-only for image-to-video
 - visible text must follow `channel_language` and locale governance
 - compiled prompts require mandatory file reads + preflight extraction
+- if host or recurring character appears, `00_host_character_sheet.json` is the identity source of truth
+- host image prompts must use identity-lock first
+- host video prompts must preserve source identity and must not redesign the character
+- Veo prompts must include `(Silent video, no audio).` and must not request ambience, foley, room tone, music, voice, narration, or soundscape

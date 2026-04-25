@@ -55,6 +55,7 @@ Return:
 - obey extracted language profile and Japanese knowledge files
 - stay aligned with the exact micro-topic from `02_topic_strategy.json`
 - write for the ear, not for the page
+- write for YouTube voiceover production: every unit should also suggest one clear visual beat when possible
 - every canonical unit must sound natural when spoken aloud
 - one unit = one spoken thought, or two tightly linked clauses only
 - maximum 2 clauses per unit
@@ -72,6 +73,9 @@ Return:
 - let important lines land with plain wording
 - favor reassuring usefulness over rhetorical flourish
 - keep older listeners' processing comfort in mind
+- alternate explanation with visualizable examples, objects, comparisons, and practical micro-actions
+- avoid long runs of abstract explanation that are TTS-safe but hard to support with images or video
+- every 20 to 40 seconds, create a visual turn such as a host reassurance, object close-up, everyday demonstration, comparison pair, or calm environment bridge
 
 ## Few-shot style examples
 
@@ -124,9 +128,13 @@ Fail if the script contains patterns like:
    - vary sentence length
    - break monotony
    - reduce cloned syntax
-8. Run a breath-group pass:
+8. Run a YouTube visual-beat pass:
+   - ensure each unit can be supported by one keyframe or motion beat
+   - replace generic abstract wording with concrete daily-life wording when meaning stays accurate
+   - flag any necessary abstract line for `process_metaphor` instead of forcing a generic illustration
+9. Run a breath-group pass:
    - split lines that carry more than one natural pause
-9. Run a spoken-Japanese pass:
+10. Run a spoken-Japanese pass:
    - replace written stiffness with natural educational speech
    - inject light colloquial markers only when appropriate
 10. Reconstruct `full_script` by newline join.

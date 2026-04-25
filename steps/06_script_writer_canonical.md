@@ -6,6 +6,7 @@ The script must:
 - meet the target duration
 - be TTS-safe
 - sound more natural when read aloud
+- produce clear visual beats for downstream image/video generation
 - be appropriate for viewers aged 60+
 - use polite, warm, clear spoken Japanese
 
@@ -37,3 +38,4 @@ Read exactly these paths. DO NOT use global workspace search for abstract filena
 - no headings / labels / bullets / numbering / production notes
 - do not expand scope beyond the locked micro-topic
 - must pass rhythm gate and breath-group gate
+- must pass visual-beat gate: each line should be easy to support with one image keyframe or one motion beat

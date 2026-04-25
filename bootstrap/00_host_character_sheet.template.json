@@ -1,0 +1,72 @@
+{
+  "character_id": "channel_host_01",
+  "core_identity_statement": "Same recurring Japanese senior host for this channel, calm and trustworthy, visibly 65-75.",
+  "reference_images": {
+    "primary_front": "assets/host_reference/host_primary_front.png",
+    "three_quarter": "assets/host_reference/host_three_quarter.png",
+    "half_body": "assets/host_reference/host_half_body.png",
+    "notes": "Use one to three approved subject images when the generation tool supports subject reference images."
+  },
+  "face_lock": {
+    "face_shape": "soft oval mature face",
+    "skin_and_wrinkles": "gentle wrinkles around eyes and mouth, slightly weathered but warm face",
+    "eyes": "calm attentive eyes",
+    "expression_range": "warm smile, thoughtful concern, reassuring listening expression"
+  },
+  "hair_lock": {
+    "color": "silver-gray",
+    "length": "short to medium",
+    "silhouette": "neat softly waved senior hairstyle",
+    "forbidden": ["dark youthful hair", "long idol hair", "dramatic hairstyle redesign"]
+  },
+  "age_lock": {
+    "visible_age_range": "65-75",
+    "required_cues": [
+      "silver-gray hair",
+      "gentle wrinkles around eyes and mouth",
+      "relaxed mature posture",
+      "slightly weathered hands when hands are visible"
+    ],
+    "forbidden": ["youth reduction", "smooth youthful skin", "athletic youthful posture"]
+  },
+  "body_lock": {
+    "body_type": "ordinary senior body, not athletic, not frail unless the script explicitly needs frailty",
+    "posture": "relaxed mature posture"
+  },
+  "wardrobe_lock": {
+    "default_family": "simple cardigan over a modest blouse, practical senior casualwear suitable for Japan",
+    "color_family": "warm muted earth tones with low saturation",
+    "forbidden": ["glamour outfit", "doctor costume unless required", "random uniform", "youth fashion"]
+  },
+  "accessory_lock": {
+    "allowed": ["small notebook", "simple glasses if present in reference", "plain tea cup"],
+    "fixed_if_present": "If an accessory appears in the approved reference, preserve it consistently unless the line needs free hands."
+  },
+  "expression_policy": {
+    "default": "calm, reassuring, observant",
+    "allowed": ["gentle smile", "thoughtful concern", "empathetic nod", "quiet listening"],
+    "forbidden": ["open-mouth talking pose", "exaggerated fear", "comic shock", "idol glamour expression"]
+  },
+  "pose_policy": {
+    "default": "seated or standing calmly, small hand gestures only",
+    "allowed_motion": ["soft blink", "small nod", "gentle hand gesture", "slight head tilt"],
+    "forbidden": ["lip sync", "direct-to-camera speech", "dramatic acting", "large action pose"]
+  },
+  "continuity_anchors": [
+    "same host identity",
+    "same hair silhouette",
+    "same visible age cues",
+    "same wardrobe family",
+    "same visual style family"
+  ],
+  "forbidden_drift": [
+    "do not make the host younger",
+    "do not smooth away age cues",
+    "do not change hairstyle or hair color",
+    "do not redesign outfit family",
+    "do not switch to photorealism",
+    "do not use lip sync or direct speech pose"
+  ],
+  "prompt_identity_packet": "Same recurring Japanese senior female host, visibly 65-75, soft oval mature face, silver-gray softly waved short-to-medium hair, gentle wrinkles around eyes and mouth, relaxed mature posture, simple cardigan over a modest blouse in warm muted earth tones, calm trustworthy expression, same illustration style as the channel reference.",
+  "video_preservation_packet": "Preserve the exact host identity, face shape, silver-gray hair silhouette, visible age cues, wardrobe family, body posture, and illustration style from the source image. Do not redesign the character."
+}

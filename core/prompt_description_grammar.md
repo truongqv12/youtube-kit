@@ -15,6 +15,8 @@ This is a narration-support visual system for podcast, voiceover, explanation, a
 - Educational clarity is more important than cinematic drama.
 - Default mode is non-dialogue visuals.
 - A prompt builder must first resolve a `line_context_frame` before writing a final prompt.
+- Host or recurring character identity must come from `00_host_character_sheet.json` when host imagery is used.
+- The script is for YouTube narration: each line should create one speakable TTS unit and one clear visual beat.
 
 ## Line context frame
 Before writing a final prompt, resolve each line into:
@@ -28,6 +30,8 @@ Before writing a final prompt, resolve each line into:
 - visible text need
 - risk guardrails
 - demographic_lock: resolve the character's visible age to match channel audience (60+), include at least 2 concrete aging visual cues
+- visual_beat: the exact image or motion beat that can support this spoken line on YouTube
+- host_identity_lock: required when `host_usage=host`; use the channel host identity packet, not a generic senior person
 
 A prompt fails if it jumps directly from topic to image without resolving the line's meaning.
 
@@ -110,14 +114,15 @@ Build each `prompt_img_nano` in this order:
 1. task mode:
    - `Generate ...`
    - or `Using the provided reference image(s) ...`
-2. output format + resolved style lock
-3. line-context semantic subject
-4. visible state or action
-5. locale-correct setting, props, and wardrobe
-6. continuity anchors
-7. preservation / edit rule
-8. visible text instruction if needed
-9. exclusions and anti-drift anchors
+2. identity lock if the host or recurring character appears
+3. output format + resolved style lock
+4. line-context semantic subject
+5. visible state or action
+6. locale-correct setting, props, and wardrobe
+7. continuity anchors
+8. preservation / edit rule
+9. visible text instruction if needed
+10. exclusions and anti-drift anchors
 
 ### Image prompt rules
 - one image = one main idea
@@ -127,11 +132,29 @@ Build each `prompt_img_nano` in this order:
 - no exaggerated movie language
 - prefer clear composition over decorative detail
 - if `host_reference_mode` is `reference_first`, keep host description light and rely on the uploaded reference first
+- if `host_usage=host`, include the fixed host `prompt_identity_packet` or an equivalent concrete identity lock
+- do not rewrite host identity creatively per row; only change the current line's scene delta and action delta
 - if host is not needed, do not force the host into the scene
 - if editing from a source image, explicitly state what to preserve and what may change
 - if readable text is needed, specify the exact text and add `no other readable text`
 - if the character is a senior (60+), EXPLICITLY describe aging features: gray/silver hair, wrinkles, age-appropriate posture, weathered hands — do not rely on the word "older" alone
 - manga/illustration style naturally reduces aging cues, so OVER-describe age features to compensate
+
+## YouTube visual rhythm gate
+Across a script section, visual beats should not become monotonous.
+
+Preferred pattern:
+- host reassurance or section bridge
+- everyday example
+- object focus or practical demonstration
+- process metaphor only when the concept is invisible
+- comparison pair when the line contrasts safe/unsafe or before/after
+
+Hard rules:
+- do not use host rows as filler
+- do not repeat the same host framing more than twice in an 8-row window
+- do not use abstract process metaphors for practical instructions that can be shown with an object or action
+- if a canonical unit is natural for TTS but impossible to visualize, flag it for script revision instead of writing a generic image prompt
 
 ## Veo 3 image-to-video grammar
 The source image already provides subject, setting, lighting, style, and visible text.
