@@ -1,0 +1,364 @@
+{
+  "project_id": "kenh_2_vid_005",
+  "step": "05_outline",
+  "status": "complete",
+  "generated_at": "2026-04-27T19:55:00+07:00",
+
+  "micro_topic": "ひとり暮らしのシニアが夏本番の前に見直したい、家の中の暑さ対策チェックリスト",
+  "micro_topic_en": "A home heat-safety checklist that seniors living alone should review before peak summer",
+  "scope_lock": "Indoor heat-safety preparation only — room-by-room check of cooling, hydration habits, sleep environment, and kitchen heat. Excludes outdoor heatstroke, exercise, medical conditions, specific product recommendations.",
+
+  "duration_target": {
+    "min_minutes": 10,
+    "max_minutes": 18,
+    "tts_chars_per_min": 320,
+    "min_chars": 3200,
+    "max_chars": 5760,
+    "outline_estimated_minutes": 15.5,
+    "outline_estimated_chars": 4960
+  },
+
+  "narrative_strategy": {
+    "tone": "warm, calm, practical — like a trusted neighbor gently reminding you",
+    "structure": "scenario_then_checklist — open with a relatable domestic scene, walk through rooms/habits one by one, close with reassurance",
+    "spoken_flow_notes": "Sections should feel like a guided walkthrough of a familiar home. Transitions between sections use 'next let's look at...' or 'speaking of which...' phrasing, not article headings. Rhythm alternates between factual context and practical action items to avoid monotony.",
+    "fear_ceiling": "low — statistics are reported calmly as facts, not dramatized"
+  },
+
+  "sections": [
+    {
+      "section_id": "S1",
+      "section_type": "hook",
+      "title_ja": "夏が来る前に、お家の中を見直してみませんか",
+      "title_en": "Before summer arrives, shall we review your home together?",
+      "editorial_beat": "soft hook with familiar domestic scene",
+      "spoken_intent": "Open with a gentle image of a warm spring afternoon turning into a hot day. Invite viewers to review their home together, at their own pace. Establish this as a calm preparation video, not an emergency warning.",
+      "research_anchors": [],
+      "policy_notes": "No fear hook. No disease-name shock. No 'shocking statistics' opener.",
+      "estimated_duration_sec": 50,
+      "estimated_chars": 267,
+      "target_line_count": "3-4",
+      "visual_beat_notes": "Warm domestic scene — a quiet Japanese apartment living room in late spring, sunlight through curtains, a calendar showing approaching summer."
+    },
+    {
+      "section_id": "S2",
+      "section_type": "context",
+      "title_ja": "ひとり暮らしのシニアと室内の暑さリスク",
+      "title_en": "Solo-living seniors and indoor heat risk",
+      "editorial_beat": "why this area or habit matters for safety",
+      "spoken_intent": "Introduce the key fact: indoor heatstroke is the most common type, and seniors account for over half of all cases. The home is the most frequent location. Frame this as 'knowing this helps us prepare better' — not as fear. Briefly note that living alone means no one else may notice the signs early, which is why self-preparation matters.",
+      "research_anchors": ["F1", "F2", "F3"],
+      "policy_notes": "Report statistics calmly: '〜というデータが報告されています'. Do NOT use surprise/shock language. Do NOT claim 'ひとり暮らしに多い' (U1 — no official data for this). Use '高齢者の室内での熱中症が最も多い' as base. Softener: 'だからこそ、事前に準備しておくと安心です'.",
+      "estimated_duration_sec": 100,
+      "estimated_chars": 533,
+      "target_line_count": "5-7",
+      "visual_beat_notes": "Simple infographic-style illustration: a Japanese apartment cross-section showing rooms. A gentle thermometer icon. Warm color palette, not alarming red."
+    },
+    {
+      "section_id": "S3",
+      "section_type": "checklist_item",
+      "title_ja": "チェック①：エアコンの使い方を見直す",
+      "title_en": "Check 1: Review your AC usage habits",
+      "editorial_beat": "practical check item — AC usage",
+      "spoken_intent": "The first and most impactful check item. Address why some seniors avoid AC (F7 — empathetic tone, not critical). Present the 28°C guideline (F4) as a reference from official sources. Recommend using a room thermometer instead of body feel. Include AC pre-season check tips (F9/G7 — NITE recommendation). Mention fan/circulator combo. Address the cost concern gently.",
+      "sub_points": [
+        {
+          "point": "エアコンを使いたくない気持ち — 共感から入る",
+          "anchors": ["F7"],
+          "note": "List the 4 reasons empathetically. '気持ちはよくわかります' tone."
+        },
+        {
+          "point": "室温28度以下を目安に — 体感ではなく温度計で",
+          "anchors": ["F4", "G1"],
+          "note": "Softener: '環境省では〜を推奨しています'. NOT '28度にしないと危険'."
+        },
+        {
+          "point": "夏前にエアコンの試運転を — NITEの推奨",
+          "anchors": ["F9", "G7"],
+          "note": "Practical: filter check → outdoor unit → 10min cold test → 30min run. Summer = repair queue."
+        },
+        {
+          "point": "扇風機・サーキュレーターとの併用",
+          "anchors": ["G1"],
+          "note": "Wind direction away from body. Circulate cool air."
+        }
+      ],
+      "research_anchors": ["F4", "F7", "F9", "G1", "G7"],
+      "policy_notes": "Empathetic tone for AC resistance. '場合もあります' for cost comparison (U3). No brand recommendations.",
+      "estimated_duration_sec": 170,
+      "estimated_chars": 907,
+      "target_line_count": "9-12",
+      "visual_beat_notes": "AC remote in a senior's hand. Room thermometer on the wall. Fan and circulator nearby. Filter being cleaned (close-up of hands). Outdoor unit with clear surroundings."
+    },
+    {
+      "section_id": "S4",
+      "section_type": "checklist_item",
+      "title_ja": "チェック②：水分補給のタイミングを整える",
+      "title_en": "Check 2: Organize your hydration timing",
+      "editorial_beat": "practical check item — hydration",
+      "spoken_intent": "Shift from room environment to personal habits. Key message: 'drink before you feel thirsty' because thirst sensation decreases with age (F3). Present the 1.2L/day guideline (F5) as a general reference, immediately followed by the clinician note for those with kidney/heart conditions (C3). Provide concrete timing anchors (wake up, before/after meals, before/after bath, before bed). Mention alternatives for those who don't like plain water.",
+      "sub_points": [
+        {
+          "point": "喉が渇く前に — 加齢による感覚変化",
+          "anchors": ["F3", "F5"],
+          "note": "'体の自然な変化' framing, NOT '老化の欠陥'."
+        },
+        {
+          "point": "1日約1.2リットルが目安 — ただし持病のある方は医師の指示を",
+          "anchors": ["F5", "C3"],
+          "note": "MUST include C3 clinician note in same section."
+        },
+        {
+          "point": "タイミングの工夫 — 起床時・食事前後・入浴前後・就寝前",
+          "anchors": ["G2"],
+          "note": "Concrete anchors the viewer can remember."
+        },
+        {
+          "point": "飲みにくい場合はゼリー・果物・汁物も",
+          "anchors": ["G2"],
+          "note": "Practical alternatives. No brand recommendations."
+        }
+      ],
+      "research_anchors": ["F3", "F5", "G2", "C3"],
+      "policy_notes": "MUST include C3 (持病のある方は医師の指示を優先). Softener: '一般的な目安として〜と言われています'. No '水を飲めば大丈夫' (forbidden claim).",
+      "estimated_duration_sec": 150,
+      "estimated_chars": 800,
+      "target_line_count": "8-10",
+      "visual_beat_notes": "Glass of water/barley tea on a side table. Clock showing morning routine. A meal tray with miso soup. Jelly and fruit on a plate. A simple daily timeline illustration."
+    },
+    {
+      "section_id": "S5",
+      "section_type": "checklist_item",
+      "title_ja": "チェック③：寝室の暑さ対策を準備する",
+      "title_en": "Check 3: Prepare your bedroom for heat",
+      "editorial_beat": "practical check item — bedroom cooling",
+      "spoken_intent": "Transition to nighttime. Night is when many indoor heatstroke cases go unnoticed, especially for solo-living seniors. Present the 26-28°C nighttime AC setting (F6/G3). Mention cooling bedding options. Recommend blackout curtains for daytime sun blocking. Include water by the bedside. Note that 24°C is from limited research — not presented as the 'correct' answer.",
+      "sub_points": [
+        {
+          "point": "夜間もエアコンを — 26〜28度設定が基本",
+          "anchors": ["F6", "G3"],
+          "note": "24°C mentioned only as '一部の研究では〜という指摘もあります' (U2)."
+        },
+        {
+          "point": "風は直接体に当てず、サーキュレーターで循環",
+          "anchors": ["G3"],
+          "note": "Practical tip to address 'cold wind is bad for you' concern."
+        },
+        {
+          "point": "接触冷感・吸湿速乾の寝具を活用",
+          "anchors": ["G3"],
+          "note": "Generic material types, no specific brands."
+        },
+        {
+          "point": "遮光カーテン・すだれで日中の日射を遮断",
+          "anchors": ["G3"],
+          "note": "Preventive measure during daytime."
+        },
+        {
+          "point": "枕元にコップ1杯の水を",
+          "anchors": ["G3"],
+          "note": "Simple, memorable action."
+        }
+      ],
+      "research_anchors": ["F6", "G3", "U2"],
+      "policy_notes": "U2: 24°C is NOT official recommendation. Present 26-28°C as base. No '正解の温度'.",
+      "estimated_duration_sec": 140,
+      "estimated_chars": 747,
+      "target_line_count": "7-10",
+      "visual_beat_notes": "Japanese bedroom with futon. AC unit on wall. A glass of water on the bedside. Cool-feeling bedding. Blackout curtains. Evening light through sudare."
+    },
+    {
+      "section_id": "S6",
+      "section_type": "checklist_item",
+      "title_ja": "チェック④：台所まわりの暑さリスクを減らす",
+      "title_en": "Check 4: Reduce heat risk around the kitchen",
+      "editorial_beat": "practical check item — kitchen heat management",
+      "spoken_intent": "The kitchen is a high-heat zone inside the home — fire and steam make it hotter and more humid than the living room (F8). But we don't have precise temperature numbers (U4), so keep it general. Focus on practical workarounds: ventilation fan, microwave cooking, pre-made meals, cooking during cooler hours. Remind about hydration during cooking.",
+      "sub_points": [
+        {
+          "point": "台所は火を使うので暑くなりやすい場所",
+          "anchors": ["F8"],
+          "note": "U4: NO specific temperature numbers. Say '暑くなりやすい場所です' only."
+        },
+        {
+          "point": "換気扇を常に回す・フィルター清掃",
+          "anchors": ["G6"],
+          "note": "Dirty filter = reduced ventilation capacity."
+        },
+        {
+          "point": "火を使わない調理法の活用 — 電子レンジ・惣菜",
+          "anchors": ["F8", "G6"],
+          "note": "Reduce cooking time and heat generation. No specific brand recommendations."
+        },
+        {
+          "point": "長時間の煮込みは涼しい時間帯にまとめる",
+          "anchors": ["G6"],
+          "note": "Morning or evening batch cooking."
+        },
+        {
+          "point": "調理中もコップ1杯の水を台所に置いておく",
+          "anchors": ["G6"],
+          "note": "Tie back to hydration theme."
+        }
+      ],
+      "research_anchors": ["F8", "G6", "U4"],
+      "policy_notes": "U4: No quantitative temperature data for kitchen. Keep claims general. No fabricated numbers.",
+      "estimated_duration_sec": 120,
+      "estimated_chars": 640,
+      "target_line_count": "6-8",
+      "visual_beat_notes": "Japanese kitchen with gas stove. Ventilation fan running. Microwave on counter. A glass of water near the cutting board. Summer vegetables (cucumber, tomato) on a plate."
+    },
+    {
+      "section_id": "S7",
+      "section_type": "awareness",
+      "title_ja": "自分では気づきにくい暑さ不調のサイン",
+      "title_en": "Heat-related warning signs you might not notice",
+      "editorial_beat": "awareness + when to ask for help",
+      "spoken_intent": "This is the most policy-sensitive section. Present early warning signs (G4) as things to 'notice' — NOT diagnose. Use awareness framing: 'もしこのような状態に気づいたら'. The key danger is that these signs look like 'summer fatigue' or 'just getting old' and get dismissed. Include both self-check and what to do: rest in cool place + water first, then clinician if no improvement (C1). For severe cases (unconsciousness), immediately call ambulance / #7119 (C2).",
+      "sub_points": [
+        {
+          "point": "見過ごされやすいサイン — なんとなく元気がない、食欲低下、ふらつき",
+          "anchors": ["G4"],
+          "note": "AWARENESS framing only. '気づいたら' NOT 'これは熱中症です'."
+        },
+        {
+          "point": "「夏バテかな」「歳のせいかな」と見過ごしやすい",
+          "anchors": ["G4"],
+          "note": "The key insight — these signs mimic everyday tiredness."
+        },
+        {
+          "point": "おかしいなと感じたら — まず涼しい場所で休んで水分を",
+          "anchors": ["C1"],
+          "note": "First action step before escalation."
+        },
+        {
+          "point": "意識がはっきりしない場合は迷わず救急車を",
+          "anchors": ["C2"],
+          "note": "救急安心センター #7119 also mentioned as consultation option."
+        }
+      ],
+      "research_anchors": ["G4", "C1", "C2"],
+      "policy_notes": "HIGH SENSITIVITY. No diagnostic language. No 'これは熱中症の症状です'. Use '気づきの促し' framing. MUST include C1 and C2. Visual: NO distressed/collapsed people. Suggest 'slightly tired person sitting in chair'.",
+      "estimated_duration_sec": 100,
+      "estimated_chars": 533,
+      "target_line_count": "5-7",
+      "visual_beat_notes": "A senior sitting in a chair looking slightly fatigued, hand on forehead — NOT collapsed or in distress. A cool room with a fan. A phone with #7119 displayed."
+    },
+    {
+      "section_id": "S8",
+      "section_type": "support",
+      "title_ja": "ひとりでも安心できる見守りの仕組み",
+      "title_en": "Watch-over systems for peace of mind when living alone",
+      "editorial_beat": "when to ask family or professionals for help",
+      "spoken_intent": "Pivot from individual preparation to community support. Living alone doesn't mean being alone in preparation. Introduce the 地域包括支援センター as the main consultation point. Mention volunteer visits, 民生委員, emergency button systems. Give the search tip: '市区町村名＋地域包括支援センター'. Frame as 'peace of mind' not 'you're in danger alone'.",
+      "sub_points": [
+        {
+          "point": "地域包括支援センター — 総合相談窓口",
+          "anchors": ["G5"],
+          "note": "Main recommendation. Search tip included."
+        },
+        {
+          "point": "見守り訪問・電話見守りのサービス",
+          "anchors": ["G5"],
+          "note": "社会福祉協議会, 民生委員."
+        },
+        {
+          "point": "緊急通報システム（ボタン式）の確認",
+          "anchors": ["G5"],
+          "note": "Available through local government."
+        }
+      ],
+      "research_anchors": ["G5"],
+      "policy_notes": "Framing: 'ひとりでも安心できる工夫' NOT 'ひとりだから危険'. No isolation-fear framing.",
+      "estimated_duration_sec": 80,
+      "estimated_chars": 427,
+      "target_line_count": "4-6",
+      "visual_beat_notes": "A friendly local support center building. A person pressing an emergency button pendant. A phone call illustration. Community connection imagery."
+    },
+    {
+      "section_id": "S9",
+      "section_type": "close",
+      "title_ja": "少しずつ準備すれば、夏も安心です",
+      "title_en": "Prepare little by little, and summer will be just fine",
+      "editorial_beat": "calm reassuring close",
+      "spoken_intent": "Brief, warm closing. Recap the 4 check items as a simple list (AC → hydration → bedroom → kitchen). Reinforce the message: no need to rush, prepare at your own pace. End with encouragement: '少しずつ整えていきましょう'. Include a soft reminder about consulting a doctor if anything feels off.",
+      "research_anchors": [],
+      "policy_notes": "No new claims in close. Recap only. Include soft disclaimer reference (disclosure_notes).",
+      "estimated_duration_sec": 50,
+      "estimated_chars": 267,
+      "target_line_count": "3-4",
+      "visual_beat_notes": "A calm summer afternoon scene — a senior's apartment looking well-prepared: AC on, water on table, curtains drawn, fan circulating. Warm, reassuring color palette."
+    }
+  ],
+
+  "outline_totals": {
+    "total_sections": 9,
+    "total_estimated_duration_sec": 960,
+    "total_estimated_duration_min": 16.0,
+    "total_estimated_chars": 5121,
+    "duration_within_target": true,
+    "chars_within_target": true,
+    "target_range": "10-18 min / 3200-5760 chars"
+  },
+
+  "section_duration_distribution": [
+    {"section": "S1 hook", "sec": 50, "pct": "5.2%"},
+    {"section": "S2 context", "sec": 100, "pct": "10.4%"},
+    {"section": "S3 AC check", "sec": 170, "pct": "17.7%"},
+    {"section": "S4 hydration", "sec": 150, "pct": "15.6%"},
+    {"section": "S5 bedroom", "sec": 140, "pct": "14.6%"},
+    {"section": "S6 kitchen", "sec": 120, "pct": "12.5%"},
+    {"section": "S7 warning signs", "sec": 100, "pct": "10.4%"},
+    {"section": "S8 watch-over", "sec": 80, "pct": "8.3%"},
+    {"section": "S9 close", "sec": 50, "pct": "5.2%"}
+  ],
+
+  "monotony_check": {
+    "passes": true,
+    "notes": "Duration varies from 50s (hook/close) to 170s (AC check). Checklist sections (S3-S6) vary between 120-170s. No long stretch of identical-length sections. Rhythm alternates between factual context and practical action items."
+  },
+
+  "research_coverage_check": {
+    "facts_used": ["F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9"],
+    "facts_available_but_unused": [],
+    "guidances_used": ["G1", "G2", "G3", "G5", "G6", "G7"],
+    "guidances_unused": ["G4_observable_signs_used_directly_in_S7"],
+    "unknowns_respected": ["U1", "U2", "U3", "U4"],
+    "consult_triggers_placed": ["C1_in_S7", "C2_in_S7", "C3_in_S4"],
+    "all_research_accounted": true
+  },
+
+  "policy_compliance_check": {
+    "forbidden_angles_avoided": true,
+    "mandatory_softeners_integrated": true,
+    "visual_restrictions_noted_per_section": true,
+    "banned_phrases_avoided": true,
+    "forbidden_claims_avoided": true,
+    "consult_clinician_placed": true,
+    "non_dialogue_mode_respected": true,
+    "fear_ceiling_low_respected": true
+  },
+
+  "transition_plan": {
+    "S1_to_S2": "Hook ends with invitation to review → S2 provides 'why this matters' context before diving into checklist",
+    "S2_to_S3": "Context about indoor risk → 'まず最初に確認したいのは、エアコンの使い方です' — natural lead into first check item",
+    "S3_to_S4": "AC environment done → 'お部屋の温度が整ったら、次は水分補給のことを' — shift from room to personal habit",
+    "S4_to_S5": "Hydration habits → 'さて、夜の寝室も確認しておきましょう' — time-of-day transition (daytime → nighttime)",
+    "S5_to_S6": "Bedroom done → 'もうひとつ、台所のことも確認しておきましょう' — room-to-room transition",
+    "S6_to_S7": "Kitchen done → 'ここまで、家の中の暑さ対策を見てきましたが、もうひとつ大切なことがあります' — pivot from prevention to awareness",
+    "S7_to_S8": "Warning signs → 'ひとりで暮らしていると気づきにくいこともあります。そんなときのために' — natural bridge to support systems",
+    "S8_to_S9": "Support systems → 'いかがでしたか。今日確認したのは〜' — recap and close"
+  },
+
+  "notes_for_script_writer": [
+    "Each section has target_line_count — respect this to maintain duration balance",
+    "S3 is the longest section (170s) — make sure sub-points are distinct and not repetitive",
+    "S7 is the most policy-sensitive section — use ONLY awareness framing, include C1 and C2",
+    "S4 MUST include C3 (持病のある方は医師の指示を優先) in the same section as the 1.2L guideline",
+    "Transition phrases in transition_plan are suggestions — adapt to natural spoken flow",
+    "All statistics (F1/F2) are reported as facts, not surprises: '〜というデータが報告されています'",
+    "AC resistance (F7) is presented with empathy, not criticism",
+    "U4: Kitchen section must avoid fabricated temperature numbers",
+    "Close (S9) should reference the general health disclaimer from disclosure_notes"
+  ]
+}

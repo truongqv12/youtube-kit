@@ -1,0 +1,65 @@
+{
+  "project_id": "kenh_2_vid_005",
+  "step": "06B_tts_surface_metrics",
+  "generated_at": "2026-04-27T20:50:00+07:00",
+  "source_step": "06_script_writer_canonical",
+
+  "total_canonical_units": 95,
+  "total_chars": 3308,
+  "total_chars_source": 3346,
+  "chars_delta": -38,
+  "chars_delta_pct": "-1.1%",
+  "total_chars_target_min": 3200,
+  "total_chars_target_max": 5760,
+  "chars_within_target": true,
+
+  "estimated_duration_min": 10.3,
+  "duration_source_min": 10.5,
+  "duration_target_min": 10,
+  "duration_target_max": 18,
+  "duration_within_target": true,
+
+  "tts_chars_per_min": 320,
+
+  "line_stats": {
+    "min_line_chars": 11,
+    "max_line_chars": 59,
+    "avg_line_chars": 34.8
+  },
+
+  "section_breakdown": [
+    {"section_id": "S1", "title": "hook", "lines": 5},
+    {"section_id": "S2", "title": "context", "lines": 9},
+    {"section_id": "S3", "title": "AC check", "lines": 23},
+    {"section_id": "S4", "title": "hydration", "lines": 12},
+    {"section_id": "S5", "title": "bedroom", "lines": 12},
+    {"section_id": "S6", "title": "kitchen", "lines": 11},
+    {"section_id": "S7", "title": "warning signs", "lines": 10},
+    {"section_id": "S8", "title": "watch-over", "lines": 7},
+    {"section_id": "S9", "title": "close", "lines": 6}
+  ],
+
+  "normalization_summary": {
+    "total_units_changed": 16,
+    "total_units_kept": 79,
+    "splits": 0,
+    "merges": 0,
+    "rewrites": 16,
+    "meaning_changes": 0,
+    "policy_changes": 0,
+    "softener_changes": 0
+  },
+
+  "quality_checks": {
+    "landing_stability": "PASS — all 95 units sound complete if TTS inserts a pause after each",
+    "pause_stability": "PASS — no competing pause interpretations from ambiguous punctuation",
+    "reading_stability": "PASS — numerals normalized (7000→7千), #7119→シャープ7119, quotes reduced",
+    "prosodic_stability": "PASS — mimetic もわっと removed, calm spoken surface throughout",
+    "portability": "PASS — no SSML, no phoneme tags, no kana-control, no vendor notation",
+    "canonical_unit_gate": "PASS — all units are plain spoken narration",
+    "reconstruction_check": "PASS — 06B_script_full.md equals newline join of canonical_script_units",
+    "duration_check": "PASS — 3308 chars / 10.3 min within 3200-5760 / 10-18",
+    "visual_beat_preservation": "PASS — all concrete objects and actions preserved for downstream prompt generation",
+    "policy_preservation": "PASS — C1/C2/C3 consult triggers intact; all mandatory softeners intact; all banned/forbidden items still absent"
+  }
+}

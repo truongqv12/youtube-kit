@@ -1,0 +1,235 @@
+{
+  "project_id": "kenh_2_vid_005",
+  "step": "02_topic_strategy",
+  "status": "complete",
+  "generated_at": "2026-04-27T17:31:00+07:00",
+
+  "topic_cluster": "heat and cold preparedness",
+  "topic_angle": "ひとり暮らしのシニアが夏本番の前に見直したい、家の中の暑さ対策チェックリスト",
+  "topic_angle_en": "A home heat-safety checklist that seniors living alone should review before peak summer",
+  "micro_topic_scope": "Indoor heat-safety preparation only — room-by-room check of cooling, hydration habits, and sleep environment. Excludes outdoor heatstroke, exercise, and medical conditions.",
+
+  "target_viewer": {
+    "age_band": "60+",
+    "living_situation": "ひとり暮らし (living alone)",
+    "country": "Japan",
+    "season_context": "Late spring / early summer — before peak heat arrives",
+    "emotional_state": "Slightly anxious about summer heat but not in crisis; wants to prepare calmly at own pace",
+    "knowledge_level": "Knows heat is dangerous but unsure which home preparations actually matter most"
+  },
+
+  "viewer_problem": "ひとりで暮らしているシニアの方が、夏の暑さに備えたいけれど、家の中のどこから手をつければいいかわからず、不安を感じている。エアコンの使い方、水分の取り方、寝室の環境など、具体的に何を見直せばいいかを整理したい。",
+  "viewer_problem_en": "Seniors living alone want to prepare their home for summer heat, but feel unsure about where to start — AC usage, hydration habits, bedroom environment. They need a calm, practical checklist to reduce anxiety.",
+
+  "working_promise": "この動画では、夏本番を迎える前に、家の中で見直しておきたい暑さ対策のポイントを、ひとつずつ一緒に確認していきます。",
+  "working_promise_en": "In this video, we will calmly review the key heat-safety checkpoints inside your home, one by one, before peak summer arrives.",
+
+  "safe_claim_boundary": {
+    "what_this_video_does": [
+      "Reviews practical indoor heat-safety preparation items",
+      "Presents official guidance from Japanese health authorities as reference",
+      "Helps viewers build a personal checklist at their own pace",
+      "Covers AC usage habits, hydration timing, bedroom cooling, and kitchen heat management"
+    ],
+    "what_this_video_does_NOT_do": [
+      "Does NOT diagnose heatstroke or any medical condition",
+      "Does NOT promise to prevent heatstroke or heat-related illness",
+      "Does NOT replace medical advice or professional home assessment",
+      "Does NOT cover outdoor heat safety, exercise, or physical rehabilitation",
+      "Does NOT recommend specific products, brands, or medications"
+    ]
+  },
+
+  "forbidden_claims": [
+    "これで熱中症を防げます (this will prevent heatstroke)",
+    "エアコンをつければ絶対安全です (AC guarantees safety)",
+    "水を飲めば大丈夫です (drinking water is enough)",
+    "医者に行かなくても大丈夫 (no need to see a doctor)",
+    "この方法で事故ゼロ (zero accidents with this method)",
+    "必ず防げる (can definitely prevent)",
+    "これだけで十分 (this alone is sufficient)"
+  ],
+
+  "research_questions": [
+    {
+      "id": "RQ1",
+      "question": "厚生労働省や環境省が推奨する、高齢者向けの室内熱中症予防ガイドラインの最新内容は何か？",
+      "question_en": "What are the latest indoor heatstroke prevention guidelines for elderly people from Japan's MHLW or MOE?",
+      "source_type": "official_government",
+      "priority": "must_have"
+    },
+    {
+      "id": "RQ2",
+      "question": "高齢者がエアコンを使わない・使いたがらない理由と、安全な使い方の推奨事項は？",
+      "question_en": "Why do elderly people avoid or resist using AC, and what are recommended safe AC usage practices?",
+      "source_type": "official_or_academic",
+      "priority": "must_have"
+    },
+    {
+      "id": "RQ3",
+      "question": "ひとり暮らしの高齢者における室内熱中症の発生率・搬送データの傾向は？（総務省消防庁の統計）",
+      "question_en": "What are the trends in indoor heatstroke hospitalization rates for elderly living alone? (FDMA statistics)",
+      "source_type": "official_statistics",
+      "priority": "must_have"
+    },
+    {
+      "id": "RQ4",
+      "question": "高齢者に適した水分補給のタイミングと量について、日本の公的機関はどう推奨しているか？",
+      "question_en": "What hydration timing and amounts do Japanese public health authorities recommend for elderly people?",
+      "source_type": "official_or_primary",
+      "priority": "should_have"
+    },
+    {
+      "id": "RQ5",
+      "question": "寝室の暑さ対策（寝具、室温、換気）について、高齢者向けに推奨されている実践的な工夫は？",
+      "question_en": "What practical bedroom cooling measures (bedding, room temp, ventilation) are recommended for elderly?",
+      "source_type": "primary_or_expert",
+      "priority": "should_have"
+    },
+    {
+      "id": "RQ6",
+      "question": "高齢者が自分で気づきにくい初期の暑さ不調のサインにはどのようなものがあるか？",
+      "question_en": "What are early heat-related warning signs that elderly people may not notice on their own?",
+      "source_type": "official_or_academic",
+      "priority": "should_have"
+    },
+    {
+      "id": "RQ7",
+      "question": "ひとり暮らしの場合、暑さで体調を崩したときの連絡・見守り体制として何が推奨されているか？",
+      "question_en": "What contact/watch-over systems are recommended for solo-living seniors in case of heat-related distress?",
+      "source_type": "local_government_or_npo",
+      "priority": "nice_to_have"
+    }
+  ],
+
+  "planned_sections": [
+    {
+      "section_id": "S1",
+      "section_type": "hook",
+      "title_ja": "夏が来る前に、お家の中を見直してみませんか",
+      "title_en": "Before summer arrives, shall we review your home together?",
+      "purpose": "Soft hook — familiar domestic scene, gentle invitation to review",
+      "estimated_duration_sec": 60,
+      "editorial_beat": "soft hook with familiar domestic scene"
+    },
+    {
+      "section_id": "S2",
+      "section_type": "context",
+      "title_ja": "ひとり暮らしのシニアと室内の暑さリスク",
+      "title_en": "Solo-living seniors and indoor heat risk",
+      "purpose": "Brief context: why indoor heat is a real risk for seniors living alone, backed by data",
+      "estimated_duration_sec": 120,
+      "editorial_beat": "why this area or habit matters for safety"
+    },
+    {
+      "section_id": "S3",
+      "section_type": "checklist_item",
+      "title_ja": "チェック①：エアコンの使い方を見直す",
+      "title_en": "Check 1: Review your AC usage habits",
+      "purpose": "Practical AC usage review — temperature setting, timing, reluctance to use",
+      "estimated_duration_sec": 150,
+      "editorial_beat": "practical check item"
+    },
+    {
+      "section_id": "S4",
+      "section_type": "checklist_item",
+      "title_ja": "チェック②：水分補給のタイミングを整える",
+      "title_en": "Check 2: Organize your hydration timing",
+      "purpose": "Hydration habits — when, how much, what drinks, easy-to-forget moments",
+      "estimated_duration_sec": 150,
+      "editorial_beat": "practical check item"
+    },
+    {
+      "section_id": "S5",
+      "section_type": "checklist_item",
+      "title_ja": "チェック③：寝室の暑さ対策を準備する",
+      "title_en": "Check 3: Prepare your bedroom for heat",
+      "purpose": "Bedroom cooling — bedding, room temp at night, ventilation options",
+      "estimated_duration_sec": 150,
+      "editorial_beat": "practical check item"
+    },
+    {
+      "section_id": "S6",
+      "section_type": "checklist_item",
+      "title_ja": "チェック④：台所まわりの暑さリスクを減らす",
+      "title_en": "Check 4: Reduce heat risk around the kitchen",
+      "purpose": "Kitchen heat management — cooking timing, ventilation, short meal prep",
+      "estimated_duration_sec": 120,
+      "editorial_beat": "practical check item"
+    },
+    {
+      "section_id": "S7",
+      "section_type": "awareness",
+      "title_ja": "自分では気づきにくい暑さ不調のサイン",
+      "title_en": "Heat-related warning signs you might not notice",
+      "purpose": "Early warning signs — soft consult-clinician framing, not diagnostic",
+      "estimated_duration_sec": 90,
+      "editorial_beat": "why this matters + when to ask for help"
+    },
+    {
+      "section_id": "S8",
+      "section_type": "support",
+      "title_ja": "ひとりでも安心できる見守りの仕組み",
+      "title_en": "Watch-over systems for peace of mind when living alone",
+      "purpose": "Contact/check-in options — family, neighbors, local services",
+      "estimated_duration_sec": 90,
+      "editorial_beat": "when to ask family or professionals for help"
+    },
+    {
+      "section_id": "S9",
+      "section_type": "close",
+      "title_ja": "少しずつ準備すれば、夏も安心です",
+      "title_en": "Prepare little by little, and summer will be just fine",
+      "purpose": "Calm reassuring close — recap, encouragement, no rush",
+      "estimated_duration_sec": 60,
+      "editorial_beat": "calm reassuring close"
+    }
+  ],
+
+  "total_estimated_duration_sec": 990,
+  "total_estimated_duration_min": 16.5,
+  "duration_within_target": true,
+
+  "packaging_seeds_longform": {
+    "title_candidates": [
+      "【ひとり暮らし】夏が来る前に確認したい、家の暑さ対策チェックリスト",
+      "60代70代のひとり暮らし｜夏本番前に見直したい室内の暑さ対策",
+      "シニアのひとり暮らし｜お家の中の暑さ対策、ここだけは確認しておきましょう"
+    ],
+    "thumbnail_concept": {
+      "scene": "A retro-clean 2D illustrated Japanese apartment living room in summer — a senior's hand reaching toward an AC remote, a glass of barley tea on the side table, a simple fan nearby. Warm earth tones with soft yellow-orange accent suggesting summer warmth.",
+      "text_overlay_ja": "夏の暑さ対策",
+      "text_word_count": 4,
+      "emotion": "warm_reassuring_not_alarming"
+    },
+    "description_seed": "ひとりで暮らしているシニアの方に向けて、夏の暑さに備えるための家の中のチェックポイントをまとめました。エアコンの使い方、水分補給、寝室の工夫など、ひとつずつ一緒に確認していきましょう。※この動画は一般的な情報提供であり、医療アドバイスではありません。体調に不安がある場合は、かかりつけ医にご相談ください。"
+  },
+
+  "packaging_seeds_shorts": {
+    "enabled": false,
+    "count": 0,
+    "reason": "derive_shorts=0 per intake spec; long-form only for this video",
+    "placeholder_if_enabled_later": [
+      {
+        "short_id": "SH1",
+        "angle": "エアコン、何度に設定していますか？",
+        "source_section": "S3"
+      },
+      {
+        "short_id": "SH2",
+        "angle": "寝る前に気をつけたい、寝室の暑さ対策",
+        "source_section": "S5"
+      }
+    ]
+  },
+
+  "notes_for_research": [
+    "Focus on Japanese government sources: 厚生労働省 (MHLW), 環境省 (MOE), 総務省消防庁 (FDMA)",
+    "Look for 2024-2025 heatstroke statistics specific to 高齢者 and ひとり暮らし",
+    "Prioritize indoor-specific data over outdoor/exercise heatstroke",
+    "Find AC usage resistance data specific to elderly populations in Japan",
+    "Look for practical hydration guidelines (量・タイミング) from official sources, not commercial brands",
+    "If bedroom cooling research is limited, NHK health programs and 国民生活センター may have practical guidance",
+    "Watch-over system info may come from local government (市区町村) welfare pages or 社会福祉協議会"
+  ]
+}

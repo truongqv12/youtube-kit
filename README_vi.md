@@ -53,20 +53,6 @@ seniorhealth_pipeline_topic_first_v3/
 │   ├── 00_host_character_sheet.template.json
 │   └── 01_video_intake.template.json
 │
-├── steps/                         # Định nghĩa từng step
-│   ├── 00_build_all_profiles_from_seed.md
-│   ├── 01_video_intake.md
-│   ├── 02_topic_strategy.md
-│   ├── 03_mandatory_research.md
-│   ├── 04_policy_gate.md
-│   ├── 05_outline_builder.md
-│   ├── 06_script_writer_canonical.md
-│   ├── 06C_host_character_lock.md
-│   ├── 07_image_prompt_builder_reference_first.md
-│   ├── 08_video_prompt_builder_non_dialogue.md
-│   ├── 09_three_column_exporter.md
-│   └── 10_run_publication_package.md
-│
 ├── compiled_prompts/              # Prompt biên dịch sẵn cho AI chạy step
 │
 ├── knowledge/                     # Knowledge base
@@ -266,7 +252,7 @@ Pipeline hỗ trợ chạy nhiều kênh YouTube trên cùng một bộ engine:
 | `knowledge/` | Các profile sinh từ Step 00 |
 | `compiled_prompts/` | `00_host_character_sheet.json` |
 | `runbooks/` | `assets/host_reference/` |
-| `steps/` | `assets/branding/` |
+| `assets/branding/` |
 |  | Toàn bộ thư mục `videos/` |
 
 **Khi nào nên tách kênh mới?** Khi muốn khác thực sự ở cấp thương hiệu: khác host, khác style hình ảnh, khác cách kể chuyện, hoặc khác trụ nội dung chính.

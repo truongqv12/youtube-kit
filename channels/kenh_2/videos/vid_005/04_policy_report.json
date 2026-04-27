@@ -1,0 +1,284 @@
+{
+  "project_id": "kenh_2_vid_005",
+  "step": "04_policy_gate",
+  "status": "pass",
+  "generated_at": "2026-04-27T19:45:00+07:00",
+
+  "overall_risk": "LOW",
+  "overall_assessment": "Topic is well-scoped indoor heat-safety preparation for seniors living alone. Research brief is evidence-based (8 sources, 4 official Japanese government). No diagnosis, no cure promises, no fear-based framing detected. Safe claim boundary is clearly defined. Topic aligns with daily-routine framing preferred by channel editorial profile. Proceed to outline.",
+
+  "policy_dimensions": {
+    "medical_misinformation_risk": {
+      "level": "LOW",
+      "assessment": "All health claims in research brief are sourced from official Japanese government agencies (総務省消防庁, 厚生労働省, 環境省). No fabricated statistics. Unknowns (U1-U3) are properly flagged with script impact guidance. Consult-clinician triggers (C1-C3) are pre-defined.",
+      "action_required": "none"
+    },
+    "topic_scope_risk": {
+      "level": "LOW",
+      "assessment": "Micro-topic scope is clearly bounded: indoor heat-safety preparation only. Explicitly excludes outdoor heatstroke, exercise, medical conditions, specific product recommendations. Safe claim boundary in topic strategy is comprehensive and well-defined.",
+      "action_required": "none"
+    },
+    "synthetic_visual_misunderstanding_risk": {
+      "level": "LOW",
+      "assessment": "Visual style is 'retro-clean 2D illustration' — clearly non-photorealistic. No risk of viewers mistaking illustrated content for real medical imagery or documentary footage. Style lock explicitly sets render_medium to 'retro-clean 2D illustration'.",
+      "action_required": "none"
+    },
+    "title_thumbnail_overpromise_risk": {
+      "level": "LOW",
+      "assessment": "Title candidates use daily-routine language ('見直したい', '確認したい'). No cure/prevention promises. Thumbnail concept is a warm domestic scene (hand reaching for AC remote, barley tea) — not alarming. Text overlay '夏の暑さ対策' is neutral and descriptive. All 3 title candidates comply.",
+      "action_required": "none"
+    },
+    "fear_intensity_risk": {
+      "level": "LOW",
+      "assessment": "Working promise uses calm framing ('ひとつずつ一緒に確認していきます'). Hook section is a soft domestic invitation. Statistics in F1/F2 could create anxiety if presented with urgency theater, but topic strategy already sets fear_intensity_ceiling=low and editorial_beat for S2 is 'why this matters for safety' not 'shocking statistics'.",
+      "action_required": "downstream_guidance_provided"
+    },
+    "consult_clinician_compliance": {
+      "level": "COMPLIANT",
+      "assessment": "Research brief pre-defines 3 consult-clinician triggers (C1: initial signs → かかりつけ医, C2: unconsciousness → 救急車/#7119, C3: kidney/heart conditions → 医師の指示優先). These cover all scenarios where script might mention symptoms or medication.",
+      "action_required": "none"
+    },
+    "non_dialogue_audio_compliance": {
+      "level": "COMPLIANT",
+      "assessment": "Intake spec confirms non_dialogue_mode=true, veo_audio_policy=silent, audio_prompt_mode=silent_motion_only. No conflicting settings detected.",
+      "action_required": "none"
+    }
+  },
+
+  "allowed_angles": [
+    "室内の暑さ対策チェックリスト（エアコン・水分補給・寝室・台所）",
+    "公的機関の推奨を参考情報として紹介（厚生労働省・環境省・総務省消防庁）",
+    "高齢者がエアコンを使わない理由の共感的紹介（批判ではなく理解）",
+    "日常の習慣として水分補給タイミングを整理",
+    "ひとりでも安心できる見守りの仕組みの紹介（地域包括支援センター等）",
+    "自分で気づきにくい初期サインの共有（診断ではなく気づきの促し）",
+    "「少しずつ準備すれば大丈夫」という安心感のあるクロージング"
+  ],
+
+  "forbidden_angles": [
+    "熱中症の診断・医学的判断を行うような表現",
+    "「これで熱中症を防げます」等の予防保証",
+    "「エアコンをつければ絶対安全」等の過度な断言",
+    "「医者に行かなくても大丈夫」等の受診抑制",
+    "恐怖・緊急性を煽る統計の提示方法（死亡数の強調、ショッキングな事例紹介等）",
+    "特定のエアコンメーカー・水分補給製品・健康食品の推奨",
+    "「ひとり暮らしは危険」という孤立恐怖フレーミング",
+    "夜間室温24度未満を「正解」として提示（U2: 研究段階の指摘に過ぎない）",
+    "エアコンつけっぱなしのコスト面を一般化しすぎる表現（U3）",
+    "「ひとり暮らしの方に室内熱中症が多い」と断言（U1: 公式統計で裏付けなし）"
+  ],
+
+  "mandatory_softeners": [
+    {
+      "context": "統計データ（F1/F2）の紹介時",
+      "softener": "「〜というデータがあります」「〜となっています」など、事実の報告として提示。「なんと！」「驚くべきことに」等の驚嘆表現を避ける",
+      "applies_to": ["outline", "script"]
+    },
+    {
+      "context": "エアコン室温28度以下の推奨（F4）",
+      "softener": "「〜を目安にするとよいと言われています」「環境省では〜を推奨しています」と出典を明示。「28度にしなければ危険」というニュアンスを避ける",
+      "applies_to": ["outline", "script"]
+    },
+    {
+      "context": "水分補給量1.2リットル/日（F5）",
+      "softener": "「一般的な目安として〜と言われています」。腎臓・心臓の持病がある場合は医師の指示優先を必ず併記（C3）",
+      "applies_to": ["outline", "script"]
+    },
+    {
+      "context": "夜間室温の推奨（F6）",
+      "softener": "26〜28度を基本推奨とし、24度未満は「一部の研究では〜という指摘もあります」程度に留める。「正解の温度」として提示しない",
+      "applies_to": ["outline", "script"]
+    },
+    {
+      "context": "初期サインの紹介（G4）",
+      "softener": "「もしこのような状態に気づいたら」「おかしいなと感じたら」と気づきを促す表現。「これは熱中症です」等の診断表現を絶対に使わない",
+      "applies_to": ["outline", "script"]
+    },
+    {
+      "context": "エアコンつけっぱなしのコスト（U3）",
+      "softener": "「場合もあります」「住環境によって異なりますが」等の条件付き表現。一般化しない",
+      "applies_to": ["outline", "script"]
+    },
+    {
+      "context": "ひとり暮らしの方への呼びかけ全般",
+      "softener": "「ひとりで暮らしていても安心できる工夫があります」と安心感優先。「ひとりだから危険」という孤立恐怖フレーミングを避ける",
+      "applies_to": ["outline", "script", "publication_assets"]
+    }
+  ],
+
+  "visual_restrictions": [
+    {
+      "restriction": "倒れている高齢者、苦しんでいる表情、救急車のシーンなど、恐怖を煽るビジュアルは禁止",
+      "reason": "fear_intensity_ceiling=low, calm caution preferred",
+      "applies_to": ["image_prompt_builder", "video_prompt_builder"]
+    },
+    {
+      "restriction": "体温計の数値、血圧計の数値など医療機器のクローズアップを「証拠」として見せるビジュアルは禁止",
+      "reason": "misleading visuals that appear as proof — policy_guardrails",
+      "applies_to": ["image_prompt_builder"]
+    },
+    {
+      "restriction": "2Dイラストであることを前提に、写実的な医療シーンや病院内シーンは避ける",
+      "reason": "visual_style is retro-clean 2D illustration; medical scene would conflict with style and could create synthetic misunderstanding",
+      "applies_to": ["image_prompt_builder"]
+    },
+    {
+      "restriction": "全キャラクターに最低2-3個の加齢特徴を明示（白髪、しわ、前傾姿勢等）",
+      "reason": "demographic_anchors.illustration_age_compensation in intake spec",
+      "applies_to": ["image_prompt_builder"]
+    },
+    {
+      "restriction": "visible_text_governanceに従い、画像内の読める文字は最小限（max 6 words）、日本語のみ、ブランド文字はauthenticな場合のみ",
+      "reason": "visible_text_governance in intake spec",
+      "applies_to": ["image_prompt_builder"]
+    },
+    {
+      "restriction": "lip sync、talking head、direct-to-camera speech禁止。motion-onlyで(Silent video, no audio).を必ず含める",
+      "reason": "non_dialogue_mode=true, veo_audio_policy=silent",
+      "applies_to": ["video_prompt_builder"]
+    }
+  ],
+
+  "disclosure_notes": [
+    {
+      "type": "general_health_disclaimer",
+      "placement": "description / close section",
+      "text_ja": "この動画は一般的な情報提供を目的としたものであり、医療アドバイスではありません。体調に不安がある場合は、かかりつけ医にご相談ください。",
+      "text_en": "This video is for general informational purposes and is not medical advice. If you have health concerns, please consult your doctor."
+    },
+    {
+      "type": "source_attribution",
+      "placement": "description",
+      "text_ja": "参考情報：厚生労働省、環境省、総務省消防庁の公開資料に基づいています。",
+      "text_en": "Reference: Based on publicly available materials from MHLW, MOE, and FDMA."
+    }
+  ],
+
+  "warnings_for_outline": [
+    {
+      "section": "S2 (context — indoor heat risk data)",
+      "warning": "F1/F2の統計データを紹介する際、「驚くべき数字」「衝撃の事実」等の煽り表現を使わない。事実をそのまま報告する形で。fear_intensity_ceiling=lowを厳守。",
+      "severity": "medium"
+    },
+    {
+      "section": "S6 (kitchen heat — planned section)",
+      "warning": "Research supplement đã bổ sung G6 (台所の暑さ対策) với 3 sources (S9-S12). Tuy nhiên U4 flag: không có定量データ về温度上昇幅. Outline KHÔNG được đưa ra con số cụ thể (ví dụ 'リビングより5度高い'). Chỉ nói '暑くなりやすい場所'.",
+      "severity": "low"
+    },
+    {
+      "section": "S7 (warning signs)",
+      "warning": "G4の初期サインを紹介する際、「これは熱中症の症状です」と診断的に述べない。「こんな変化に気づいたら」「おかしいなと思ったら」という気づき促しフレーミングに留める。consult-clinician (C1/C2) を必ず併記。",
+      "severity": "high"
+    },
+    {
+      "section": "全体",
+      "warning": "U1により「ひとり暮らしの高齢者に限定した室内熱中症のデータ」は公式統計にない。「高齢者の室内熱中症が最も多い」(F2) をベースに、ひとり暮らしとの関連は推測として示す。",
+      "severity": "medium"
+    }
+  ],
+
+  "warnings_for_script": [
+    {
+      "warning": "banned_phrasesの5つを使用禁止：「絶対に治る」「必ず防げる」「医者は教えてくれない」「これだけで十分」「これで事故ゼロ」",
+      "severity": "critical"
+    },
+    {
+      "warning": "forbidden_claims (topic_strategy) の7項目すべてを回避。特に「これで熱中症を防げます」「エアコンをつければ絶対安全です」は要注意。",
+      "severity": "critical"
+    },
+    {
+      "warning": "水分補給量（F5: 1.2L/日）に言及する際、必ず「持病のある方は医師の指示を優先してください」を同一セクション内に含める（C3対応）。",
+      "severity": "high"
+    },
+    {
+      "warning": "「暑さを感じにくくなる」（F3）の説明を、「老化の欠陥」ではなく「体の自然な変化」として表現する。viewer dignity優先。",
+      "severity": "medium"
+    },
+    {
+      "warning": "統計データは「〜というデータが報告されています」形式。年度を明示（2024年）。過度な丸め・省略による印象操作を避ける。",
+      "severity": "medium"
+    },
+    {
+      "warning": "エアコンを使わない理由（F7）を紹介する際、批判・説教トーンではなく共感トーンで。「気持ちはよくわかります」→「でも〜してみませんか」。",
+      "severity": "medium"
+    }
+  ],
+
+  "warnings_for_prompt_builders": [
+    {
+      "target": "image_prompt_builder",
+      "warning": "全人物キャラクターに加齢特徴2-3個を必ず含める（gray/white hair, gentle wrinkles around eyes, slightly rounded posture）。2Dイラストは若く見えやすいため。",
+      "severity": "high"
+    },
+    {
+      "target": "image_prompt_builder",
+      "warning": "S7（初期サイン）の行では、苦しんでいる・倒れている表現を避け、「少し疲れた表情で椅子に座っている」「額に手を当てて考え込んでいる」程度の控えめな表現に。",
+      "severity": "high"
+    },
+    {
+      "target": "image_prompt_builder",
+      "warning": "エアコンのリモコン、温度計、コップの水など生活小物を中心に構成。医療器具（体温計のクローズアップ等）は避ける。",
+      "severity": "medium"
+    },
+    {
+      "target": "video_prompt_builder",
+      "warning": "(Silent video, no audio).を全行に含める。lip sync、direct speech、ambience、foley、room toneすべて禁止。",
+      "severity": "critical"
+    },
+    {
+      "target": "video_prompt_builder",
+      "warning": "motion-onlyを厳守。image promptの内容を繰り返さない。カメラワーク・物体の動き・光の変化のみ記述。",
+      "severity": "high"
+    },
+    {
+      "target": "both",
+      "warning": "locale_governance: 日本の一般的なアパート・住宅のインテリア。畳・ふすま・炊飯器・麦茶ポット等、日本らしい生活用品。洋風インテリアを混在させない。",
+      "severity": "medium"
+    }
+  ],
+
+  "warnings_for_publication_assets": [
+    {
+      "target": "title",
+      "warning": "タイトルに「防ぐ」「治す」「絶対」「必ず」を含めない。「見直す」「確認する」「備える」等の日常語を使用。",
+      "severity": "high"
+    },
+    {
+      "target": "thumbnail",
+      "warning": "サムネイルに恐怖表現（赤い警告マーク、倒れた人物、救急シーン等）を使わない。warm_reassuring_not_alarmingを厳守。",
+      "severity": "high"
+    },
+    {
+      "target": "description",
+      "warning": "動画説明文に一般的な健康免責事項を必ず含める（disclosure_notes参照）。ソース帰属も含める。",
+      "severity": "high"
+    },
+    {
+      "target": "keywords",
+      "warning": "「治療」「治す」「医療」「診断」等の医療系キーワードを避ける。「暑さ対策」「熱中症予防」「ひとり暮らし」「シニア」等の生活系キーワードを優先。",
+      "severity": "medium"
+    }
+  ],
+
+  "research_quality_assessment": {
+    "source_count": "12 sources — meets min_sources=5 ✅ (8 original + 4 supplement)",
+    "official_count": "6 official — meets min_official_or_primary=3 ✅",
+    "japan_coverage": "12/12 Japan-based — meets target_country_priority ✅",
+    "unknowns_handled": "4 unknowns (U1-U4) properly flagged with script_impact guidance ✅",
+    "consult_clinician_defined": "3 triggers (C1-C3) pre-defined with framing templates ✅",
+    "gap_identified": "S6 (kitchen heat) gap filled by supplement sources S9-S12. U4 flags lack of quantitative kitchen temp data.",
+    "overall": "Research brief is thorough and compliant after supplement round. Ready for outline."
+  },
+
+  "gate_decision": {
+    "verdict": "PASS",
+    "conditions": [
+      "Outline must respect all mandatory_softeners",
+      "S6 (kitchen heat) must be limited to general knowledge — no fabricated statistics or specific recommendations without source",
+      "S7 (warning signs) must use awareness framing, not diagnostic framing, and include consult-clinician (C1/C2)",
+      "Script must avoid all 5 banned_phrases and 7 forbidden_claims",
+      "All visual prompts must comply with visual_restrictions"
+    ],
+    "next_step": "05_outline_builder"
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "project_id": "kenh_2_vid_005",
+  "channel_id": "kenh_2",
+  "generated_by": "01_run_video_intake",
+  "generated_at": "2026-04-27T17:21:00+07:00",
+  "pipeline_version": "1.0",
+  "target_video": "vid_005",
+  "topic_angle": "ひとり暮らしで備えたい夏の暑さ対策",
+  "topic_cluster": "heat and cold preparedness",
+  "channel_language": "ja-JP",
+  "target_country": "Japan",
+  "audience_age_band": "60+",
+  "content_mode": "educational_explanatory",
+  "resolved_duration": {
+    "min_minutes": 10,
+    "max_minutes": 18
+  },
+  "resolved_script_length": {
+    "min_chars": 3200,
+    "max_chars": 5760,
+    "tts_chars_per_min": 320
+  },
+  "research_required": true,
+  "derive_shorts": 0,
+  "artifacts_produced": {
+    "01_intake_spec.json": {
+      "status": "created",
+      "description": "Merged intake spec with channel profiles and video intake, all conflicts resolved"
+    },
+    "01_project_manifest.json": {
+      "status": "created",
+      "description": "Project manifest summarizing resolved settings and downstream pipeline inputs"
+    }
+  },
+  "source_files_consumed": [
+    "core/system_principles.md",
+    "core/output_conventions.md",
+    "channels/kenh_2/00_channel_config.json",
+    "channels/kenh_2/00_language_profile.json",
+    "channels/kenh_2/00_visual_profile.json",
+    "channels/kenh_2/00_editorial_profile.json",
+    "channels/kenh_2/00_publication_profile.json",
+    "channels/kenh_2/videos/vid_005/01_intake_spec.json"
+  ],
+  "conflict_resolutions": [
+    "visual_substyle_id: channel retro_clean_2d_domestic → intake retro_clean_domestic_senior (video override)",
+    "register_profile: channel warm_polite_educational → intake warm_polite_practical (video override)",
+    "derive_shorts: channel default 2 → intake 0 (video override, long-form only)",
+    "duration: channel 8-12min → intake 10-18min (video override, wider range)"
+  ],
+  "downstream_gates": {
+    "step_02_research": {
+      "required": true,
+      "reason": "health/safety topic (summer heat preparedness for seniors)",
+      "min_sources": 5,
+      "min_official_or_primary": 3
+    },
+    "step_03_script": {
+      "script_chars_target": "3200-5760",
+      "tts_voice": "ja_female_soft_01",
+      "non_dialogue_mode": true,
+      "register": "warm_polite_practical"
+    },
+    "step_04_prompts": {
+      "visual_style": "illustrated_lifestyle_handbook",
+      "substyle": "retro_clean_domestic_senior",
+      "veo_audio_mode": "silent",
+      "host_usage": "host_optional_reference_first"
+    },
+    "step_09_export": {
+      "columns": ["script_text", "prompt_img_nano", "prompt_video_veo3"],
+      "qc_report_required": true
+    }
+  },
+  "hard_constraints_summary": [
+    "non_dialogue_mode = true → no on-screen spoken dialogue",
+    "veo_audio_mode = silent → all Veo prompts include '(Silent video, no audio).'",
+    "lip_sync = false → no lip sync in any generated video",
+    "research_required = true → Step 02 must run before script",
+    "fear_intensity_ceiling = low → no fear-based framing",
+    "banned_phrases enforced from language profile",
+    "forbidden_hook_patterns enforced from editorial profile",
+    "visible_text max 6 words ja-JP only",
+    "demographic anchors 65-75 with aging cue enforcement"
+  ]
+}

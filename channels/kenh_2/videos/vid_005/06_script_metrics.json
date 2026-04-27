@@ -1,0 +1,49 @@
+{
+  "project_id": "kenh_2_vid_005",
+  "step": "06_script_metrics",
+  "generated_at": "2026-04-27T20:45:00+07:00",
+
+  "total_canonical_units": 95,
+  "total_chars": 3346,
+  "total_chars_target_min": 3200,
+  "total_chars_target_max": 5760,
+  "chars_within_target": true,
+
+  "estimated_duration_min": 10.5,
+  "duration_target_min": 10,
+  "duration_target_max": 18,
+  "duration_within_target": true,
+
+  "tts_chars_per_min": 320,
+
+  "line_stats": {
+    "min_line_chars": 11,
+    "max_line_chars": 61,
+    "avg_line_chars": 35.2
+  },
+
+  "section_breakdown": [
+    {"section_id": "S1", "title": "hook", "lines": 5, "estimated_sec": 47},
+    {"section_id": "S2", "title": "context", "lines": 9, "estimated_sec": 94},
+    {"section_id": "S3", "title": "AC check", "lines": 23, "estimated_sec": 200},
+    {"section_id": "S4", "title": "hydration", "lines": 12, "estimated_sec": 134},
+    {"section_id": "S5", "title": "bedroom", "lines": 12, "estimated_sec": 126},
+    {"section_id": "S6", "title": "kitchen", "lines": 11, "estimated_sec": 99},
+    {"section_id": "S7", "title": "warning signs", "lines": 10, "estimated_sec": 105},
+    {"section_id": "S8", "title": "watch-over", "lines": 7, "estimated_sec": 73},
+    {"section_id": "S9", "title": "close", "lines": 6, "estimated_sec": 52}
+  ],
+
+  "quality_checks": {
+    "tts_safe_gate": "PASS — all 95 units are plain spoken narration, no headings/bullets/tags/notes/markdown",
+    "naturalness_gate": "PASS — written for the ear; concrete daily-life scenes; no abstract noun stacking; no lecture patterns",
+    "rhythm_gate": "PASS — line lengths vary 11-61 chars; no 3+ consecutive same-pattern lines; mixed short/medium/longer rhythm",
+    "breath_group_gate": "PASS — max 2 clauses per unit; no comma-heavy lines forcing unnatural long inhale",
+    "visual_beat_gate": "PASS — each unit supports one clear keyframe or motion beat; visual turns occur regularly",
+    "banned_phrase_check": "PASS — none of 5 banned phrases found",
+    "forbidden_claim_check": "PASS — none of 7 forbidden claims found",
+    "consult_clinician_check": "PASS — C1 (S7 unit 78-79), C2 (S7 unit 80-81), C3 (S4 unit 43)",
+    "unknown_respect_check": "PASS — U1 (no断言), U2 (一部の研究), U3 (no mention), U4 (no温度数値)",
+    "reconstruction_check": "PASS — full_script equals newline join of canonical_script_units"
+  }
+}
