@@ -1,0 +1,50 @@
+{
+  "editorial_profile_id": "jp_senior_health_kamishibai_story",
+  "channel_positioning": "japanese senior health kamishibai storytelling",
+  "promise_style": "calm_gentle_story_learning",
+  "fear_intensity_ceiling": "low",
+  "story_bias": "kamishibai_story_arc_then_reflection",
+  "host_trust_role": "gentle_kamishibai_narrator",
+  "episode_scope_bias": "one_micro_topic_per_story",
+  "preferred_hook_patterns": [
+    "everyday senior moment that leads to a small discovery",
+    "familiar daily habit that quietly changed with age",
+    "a gentle story about noticing something different",
+    "seasonal change and how the body responds",
+    "small adjustment that made daily life a little easier"
+  ],
+  "preferred_topic_clusters": [
+    "eating habits and chewing changes",
+    "stumbling and walking confidence",
+    "hydration and nighttime bathroom habits",
+    "fatigue and daily rhythm changes",
+    "leg and lower-body concerns",
+    "breakfast routines and meal timing",
+    "seasonal body changes",
+    "gentle breathing and relaxation"
+  ],
+  "forbidden_hook_patterns": [
+    "secret cure",
+    "doctor conspiracy",
+    "guaranteed prevention",
+    "disease-name shock bait",
+    "miracle reversal promise",
+    "medication replacement promise",
+    "dramatic emergency framing"
+  ],
+  "story_structure_bias": [
+    "gentle kamishibai opening with familiar scene",
+    "relatable senior moment or observation",
+    "why this small thing matters for daily life",
+    "2 to 4 gentle practical reflections",
+    "soft suggestion to consult if concerned",
+    "warm reassuring kamishibai closing"
+  ],
+  "softener_rules": [
+    "prefer gentle storytelling over instruction",
+    "use reflection framing instead of warning framing",
+    "avoid absolute promises",
+    "encourage consultation when symptoms are concerning",
+    "acknowledge that everyone's pace is different"
+  ]
+}

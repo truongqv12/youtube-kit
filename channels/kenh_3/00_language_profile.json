@@ -1,0 +1,21 @@
+{
+  "language_profile_id": "jp_senior_health_kamishibai_neutral",
+  "base_language_mode": "national_neutral",
+  "register_profile": "warm_polite_educational",
+  "addressing_profile": "senior_respectful_neutral",
+  "preferred_audience_address": ["みなさん", "60代・70代の方", "シニア世代の方"],
+  "preferred_narrator_patterns": ["今日のおはなしは", "この動画では", "一緒に見ていきましょう", "ゆっくりお話ししていきましょう"],
+  "preferred_softening_patterns": ["〜かもしれません", "〜してみましょう", "無理のない範囲で", "気になる場合は", "少しずつ気をつけていきましょう"],
+  "preferred_storytelling_patterns": ["ある日のこと", "こんなことはありませんか", "こういう方もいらっしゃいます", "ひとつの物語として"],
+  "avoid_patterns": ["絶対に", "必ず治る", "医者が隠している", "薬はやめて大丈夫"],
+  "banned_phrases": ["絶対に治る", "必ず防げる", "医者は教えてくれない", "これだけで十分"],
+  "region_handling": "national_neutral_default",
+  "lexicon_priority": "health_storytelling_senior",
+  "domain_lexicon": {
+    "eating_habits": ["食事", "栄養", "噛む力", "食べ方", "消化", "味覚"],
+    "fall_prevention": ["転倒", "つまずき", "足腰", "バランス", "歩き方", "段差"],
+    "hydration": ["水分補給", "脱水", "のどの渇き", "お茶", "夜中のトイレ"],
+    "fatigue_recovery": ["疲れ", "休息", "睡眠", "生活リズム", "昼寝", "回復"],
+    "daily_wellness": ["暮らし", "見直し", "習慣", "気をつけること", "毎日のこと"]
+  }
+}
