@@ -5,8 +5,8 @@
     "topic_cluster": "daily wellness routines",
     "topic_angle": "1万歩より大切な歩き方のコツ",
     "viewer_problem": "Japanese senior viewers want practical daily advice that feels useful, calm, and non-alarmist.",
-    "target_duration_min": 8,
-    "target_duration_max": 12
+    "target_duration_min": 10,
+    "target_duration_max": 15
   },
   "tts_config": {
     "tts_voice_name": "ja_female_soft_01",
