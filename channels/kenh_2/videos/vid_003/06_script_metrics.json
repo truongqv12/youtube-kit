@@ -1,0 +1,72 @@
+{
+  "project_id": "kenh_2_vid_003",
+  "channel_id": "kenh_2",
+  "pipeline_step": "06_script_metrics",
+  "generated_at": "2026-04-28T15:28:01+07:00",
+  "tts_chars_per_min": 320,
+  "target_duration_min": 10,
+  "target_duration_max": 18,
+  "target_min_chars": 3200,
+  "target_max_chars": 5760,
+  "total_canonical_units": 76,
+  "total_chars": 3244,
+  "estimated_duration_min": 10.14,
+  "within_target": true,
+  "reconstruction_match": true,
+  "avg_unit_chars": 41.7,
+  "min_unit_chars": 21,
+  "max_unit_chars": 75,
+  "banned_phrases_found": [],
+  "rhythm_violations": [],
+  "quality_gates": {
+    "tts_safe": true,
+    "no_headings_bullets_labels": true,
+    "no_speaker_tags": true,
+    "no_markdown_syntax": true,
+    "naturalness": "PASS",
+    "language_mode": "ja-JP national_neutral warm_polite_practical",
+    "region_handling": "national_neutral_default",
+    "policy_compliance": "PASS",
+    "softeners_SF01_to_SF05": "all_scheduled",
+    "warnings_WO01_WO02_WO03": "all_respected"
+  },
+  "section_summary": [
+    {
+      "section": "S01_hook",
+      "units": 8,
+      "purpose": "hook"
+    },
+    {
+      "section": "S02_context",
+      "units": 9,
+      "purpose": "context"
+    },
+    {
+      "section": "S03_fridge",
+      "units": 14,
+      "purpose": "explanation_block"
+    },
+    {
+      "section": "S04_ventilation",
+      "units": 16,
+      "purpose": "explanation_block"
+    },
+    {
+      "section": "S05_fire",
+      "units": 15,
+      "purpose": "explanation_block"
+    },
+    {
+      "section": "S06_hygiene",
+      "units": 9,
+      "purpose": "practical_adjustments"
+    },
+    {
+      "section": "S07_close",
+      "units": 6,
+      "purpose": "calm_close"
+    }
+  ],
+  "pass_status": "PASS",
+  "next_step": "07_prompt_builder"
+}

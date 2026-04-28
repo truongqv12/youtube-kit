@@ -1,0 +1,122 @@
+{
+  "project_id": "kenh_2_vid_003",
+  "channel_id": "kenh_2",
+  "pipeline_step": "03_mandatory_research",
+  "generated_at": "2026-04-28T15:04:58+07:00",
+  "source_files": [
+    "core/system_principles.md",
+    "core/topic_strategy_standard.md",
+    "core/mandatory_research_standard.md",
+    "core/policy_guardrails.md",
+    "knowledge/japanese/00_language_strategy.md",
+    "channels/kenh_2/videos/vid_003/01_intake_spec.json",
+    "channels/kenh_2/videos/vid_003/02_topic_strategy.json"
+  ],
+  "topic_angle": "夏の台所まわりで見直したい安全チェック",
+  "source_summary": {
+    "total_sources": 6,
+    "official": 3,
+    "primary": 2,
+    "supporting": 1
+  },
+  "facts": [
+    {
+      "id": "F1",
+      "claim": "熱中症による救急搬送者の約6割近くが65歳以上の高齢者であり、発生場所としては「住居内」が非常に多い。台所など火を使う場所は特に室温・湿度が上がりやすい危険エリア。",
+      "source_ids": ["S1", "S3"],
+      "confidence": "high",
+      "note": "総務省消防庁および環境省の統計・資料ベース。"
+    },
+    {
+      "id": "F2",
+      "claim": "加齢により暑さや喉の渇きを感じにくくなるため、本人が気づかないうちに室内（台所など）で熱中症が進行・重症化するリスクが高い。",
+      "source_ids": ["S1", "S4"],
+      "confidence": "high",
+      "note": "厚生労働省や気象庁の啓発資料から高齢者の生理的特徴を引用。"
+    },
+    {
+      "id": "F3",
+      "claim": "冷蔵庫に食品を詰め込みすぎると冷気の循環が悪くなり、庫内温度が上昇して食中毒リスクが高まる。理想は7割程度に抑えること。",
+      "source_ids": ["S2"],
+      "confidence": "high",
+      "note": "消費者庁の食中毒予防・食品ロス削減啓発資料より。"
+    },
+    {
+      "id": "F4",
+      "claim": "高齢者の台所コンロ火災では「着衣着火」が多く発生している。加齢に伴う視力変化（青い炎が見えにくい）や、反応の遅れが重症化要因となる。",
+      "source_ids": ["S5"],
+      "confidence": "high",
+      "note": "NITE（製品評価技術基盤機構）および東京消防庁からの注意喚起。"
+    },
+    {
+      "id": "F5",
+      "claim": "スポンジやふきんは水分・温度・栄養分が揃いやすく細菌の温床となる。確実な「乾燥」と、定期的な熱湯・薬剤消毒が衛生管理の基本。",
+      "source_ids": ["S1", "S6"],
+      "confidence": "high",
+      "note": "厚生労働省「家庭でできる食中毒予防」および生活衛生関連記事ベース。"
+    }
+  ],
+  "practical_guidance": [
+    {
+      "id": "G1",
+      "guidance": "食材の管理：買い物から帰ったらすぐ冷蔵・冷凍庫へ入れる。冷気が循環するよう冷蔵室は7割程度の収納に抑える。肉や魚は汁漏れしないよう個別に包む。",
+      "source_ids": ["S2", "S1"],
+      "applicable_section": "S03"
+    },
+    {
+      "id": "G2",
+      "guidance": "熱中症対策と換気：冷房中でも台所の換気（換気扇・窓）は必須だが、室温が上がりすぎないようエアコンの設定温度を随時調整する。電子レンジなどを活用し、ガスコンロで火を使う時間をできるだけ短縮する。",
+      "source_ids": ["S4", "S1", "S3"],
+      "applicable_section": "S04"
+    },
+    {
+      "id": "G3",
+      "guidance": "火の元の安全：袖の広がった服（割烹着など）で調理するのを避け、防炎エプロンを使う。奥の調味料等を取る際はコンロの火を必ず一旦消す。",
+      "source_ids": ["S5"],
+      "applicable_section": "S05"
+    },
+    {
+      "id": "G4",
+      "guidance": "着衣着火が起きた場合の対応：パニックで走らず、その場に止まって倒れ、転がって消火する（ストップ・ドロップ・アンド・ロール）。",
+      "source_ids": ["S5"],
+      "applicable_section": "S05"
+    },
+    {
+      "id": "G5",
+      "guidance": "スポンジ・ふきんのお手入れ：洗剤で洗った後は水気をよく切り、通気性の良い場所で「しっかり乾燥」させる。完璧を求めすぎず、使い捨てペーパーの活用も取り入れる。",
+      "source_ids": ["S6", "S1"],
+      "applicable_section": "S06"
+    }
+  ],
+  "uncertainty_and_unknowns": [
+    {
+      "id": "U1",
+      "topic": "「台所のみ」で発生した熱中症・食中毒件数の正確な抽出",
+      "detail": "熱中症の統計は「住居内」としてまとめられており、台所で単独発生した限定データを得るのは困難。また、家庭内食中毒も発生場所の特定が難しい。",
+      "script_impact": "一律に「台所で何件起きている」とは言わず、「住居内で起きる熱中症の要因に、台所の暑さも含まれる」という自然な表現にとどめる。"
+    },
+    {
+      "id": "U2",
+      "topic": "エアコン冷房と換気扇の同時使用時の正確な電気代や室温変化",
+      "detail": "住宅の構造やエアコンの年式に依存するため、一概に「換気扇を回しながら冷房すると何度上がる」とは断定できない。",
+      "script_impact": "具体的な数字を出さず、「換気で逃げた冷気を補うため、エアコンの温度設定に気を配る」といった汎用的なアドバイスにする。"
+    }
+  ],
+  "when_to_consult_clinician": [
+    {
+      "id": "C1",
+      "situation": "夏場に食欲不振や軽い倦怠感、立ちくらみが何日も続く場合",
+      "framing": "ただの「夏バテ」と思わず、隠れ熱中症や脱水の可能性もあるので、早めにかかりつけ医に相談しましょう。",
+      "applicable_section": "S07"
+    }
+  ],
+  "section_evidence_mapping": {
+    "S01_opening": ["F1", "F2"],
+    "S02_background": ["F1", "F2"],
+    "S03_fridge": ["F3", "G1"],
+    "S04_heat_ventilation": ["F1", "F2", "G2", "U2"],
+    "S05_fire_safety": ["F4", "G3", "G4"],
+    "S06_hygiene": ["F5", "G5"],
+    "S07_wrap_up": ["C1"]
+  }
+}

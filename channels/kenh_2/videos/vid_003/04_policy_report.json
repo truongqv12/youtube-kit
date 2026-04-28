@@ -1,0 +1,247 @@
+{
+  "project_id": "kenh_2_vid_003",
+  "channel_id": "kenh_2",
+  "pipeline_step": "04_policy_gate",
+  "generated_at": "2026-04-28T15:10:32+07:00",
+  "source_files": [
+    "core/system_principles.md",
+    "core/policy_guardrails.md",
+    "core/output_conventions.md",
+    "channels/kenh_2/videos/vid_003/01_intake_spec.json",
+    "channels/kenh_2/videos/vid_003/02_topic_strategy.json",
+    "channels/kenh_2/videos/vid_003/03_research_brief.json"
+  ],
+
+  "overall_risk": {
+    "level": "LOW",
+    "summary": "夏の台所での食中毒・熱中症・火災予防に関する practical daily-life safety review。医療的・専門的な断定（絶対に食中毒を防ぐ、熱中症が治る等）を行わない限り、ポリシー違反リスクは低い。Research brief で公的ソース（消防庁、厚生労働省、環境省等）から事実を確認済み。着衣着火（clothing fire）に関する内容が含まれるため、視覚的な dramatization（過度な恐怖を煽る描写）を避けることが重要。"
+  },
+
+  "allowed_angles": [
+    {
+      "angle": "夏の台所で気をつけたい3つのポイント（食材管理、換気、火の元）を一緒に確認する",
+      "classification": "allowed_freely",
+      "note": "動画のコアとなる約束（Core promise）。'check' や 'review' のフレーミング。"
+    },
+    {
+      "angle": "熱中症の多くが「住居内」で発生しているという公的データの紹介",
+      "classification": "allowed_with_softeners",
+      "note": "消防庁や環境省のデータを冷静に伝えること。「台所でバタバタ倒れている」といった過剰な恐怖（fear theater）を煽らない。"
+    },
+    {
+      "angle": "冷蔵庫への食品の詰め込みすぎ（7割程度が目安）に注意する工夫",
+      "classification": "allowed_with_softeners",
+      "note": "食中毒リスクを下げる工夫として紹介。「これで絶対に腐らない」などの sufficiency guarantee は避ける。"
+    },
+    {
+      "angle": "冷房と換気を併用し、火を使う時間を減らす（電子レンジの活用など）",
+      "classification": "allowed_with_softeners",
+      "note": "室温設定を一律に断定せず、「無理のない範囲で」「涼しく保つ環境作り」とする。「エアコン代がもったいない」などの個人的信条を非難しない。"
+    },
+    {
+      "angle": "コンロ周りでの着衣着火のリスクと、安全な服装（防炎エプロン等）の提案",
+      "classification": "allowed_with_softeners",
+      "note": "加齢による視力・反応の変化に触れつつ、防炎グッズやIHへの切り替えを「ひとつの選択肢」として紹介。特定メーカーの推奨はしない。"
+    },
+    {
+      "angle": "スポンジやふきんの乾燥と定期的な消毒の推奨",
+      "classification": "allowed_with_softeners",
+      "note": "完璧な衛生状態を求めず、「できる範囲で」「使い捨てペーパーも便利」と心理的ハードルを下げるアプローチ。"
+    },
+    {
+      "angle": "体調不良時（夏バテ等）のかかりつけ医への相談",
+      "classification": "allowed_freely",
+      "note": "Consult-a-professional framing。ポリシー遵守に不可欠な要素。"
+    }
+  ],
+
+  "forbidden_angles": [
+    {
+      "angle": "「これで食中毒・熱中症は絶対に起きない」— guaranteed accident/disease prevention",
+      "reason": "医療的・科学的絶対性の主張（Violates policy guardrails）。",
+      "enforcement": "Script、タイトル、サムネイルにおいて絶対予防の表現を禁止。"
+    },
+    {
+      "angle": "「クーラーは体に悪いので換気だけで十分」— dangerous health advice",
+      "reason": "公的な熱中症予防ガイドラインに真っ向から反する危険な主張。",
+      "enforcement": "Script 内で冷房の適切な使用を必ず推奨すること。"
+    },
+    {
+      "angle": "「特定の食品を食べれば熱中症を防げる」— unverified nutritional claims",
+      "reason": "情報提供範囲外の栄養学的主張。スコープ逸脱。",
+      "enforcement": "食事管理には触れず、あくまで「環境と衛生の安全チェック」に限定。"
+    },
+    {
+      "angle": "「IHじゃないと火事で家を失う」— severe fear framing & sufficiency guarantee",
+      "reason": "Fear theater（過度な恐怖）と、特定製品への過度な誘導。",
+      "enforcement": "コンロの安全に関しては「安全機能の活用」「服装への注意」を中心とする。"
+    },
+    {
+      "angle": "「医者が隠している夏の健康法」— anti-doctor conspiracy",
+      "reason": "医療不信を煽る表現（Violates policy guardrails）。",
+      "enforcement": "タイトル・フックでの使用を厳禁。"
+    },
+    {
+      "angle": "リアルな炎上事故・腐敗した食品・人が倒れる映像の使用",
+      "reason": "Fear intensity ceiling = low。視覚的ショックや不安を煽ることを避ける。",
+      "enforcement": "Prompt builder で negative check を徹底。"
+    }
+  ],
+
+  "mandatory_softeners": [
+    {
+      "id": "SF01",
+      "context": "予防策・工夫の有効性を語る場面",
+      "required_framing": "「〜のリスクを減らせます」「〜の工夫のひとつです」「〜が安心につながります」を使用。「絶対に防ぎます」「安全です」は不可。",
+      "applies_to": ["outline", "script"]
+    },
+    {
+      "id": "SF02",
+      "context": "体調に関するリスクや症状（熱中症、立ちくらみ）に触れる場面",
+      "required_framing": "「ただの夏バテと思わず、気になる場合はかかりつけ医にご相談ください」と添える。",
+      "applies_to": ["outline", "script"]
+    },
+    {
+      "id": "SF03",
+      "context": "数値（庫内7割、室温28℃等）を挙げる場面",
+      "required_framing": "「〜が目安とされています」「〜と言われています」と添え、絶対的な基準としない。",
+      "applies_to": ["outline", "script"]
+    },
+    {
+      "id": "SF04",
+      "context": "着衣着火や火災の危険性を説明する場面",
+      "required_framing": "「もしもの時はストップ・ドロップ・アンド・ロールで対応しましょう」と対処法を冷静に提示し、不安だけで終わらせない。",
+      "applies_to": ["outline", "script"]
+    },
+    {
+      "id": "SF05",
+      "context": "まとめ・エンディング",
+      "required_framing": "「完璧を目指さず、できることから少しずつ」とプレッシャーを軽減する締めくくりにする。",
+      "applies_to": ["outline", "script"]
+    }
+  ],
+
+  "visual_restrictions": [
+    {
+      "id": "VR01",
+      "rule": "スタイルは「illustrated_lifestyle_handbook / retro_clean_domestic_senior」に固定。Photorealistic（実写風）は禁止。",
+      "reason": "合成による虚偽事実（実写の事故現場など）の誤認を防ぐため。"
+    },
+    {
+      "id": "VR02",
+      "rule": "登場する高齢者には、2つ以上の加齢の特徴（白髪、穏やかなシワ、柔らかい姿勢など）を持たせる。",
+      "reason": "適正なターゲット層の反映。"
+    },
+    {
+      "id": "VR03",
+      "rule": "火（コンロ）の表現は、日常的な青い炎に留め、大きな炎や着衣への引火、火事の描写は絶対に行わない。",
+      "reason": "恐怖を煽らない（Fear intensity ceiling = low）。"
+    },
+    {
+      "id": "VR04",
+      "rule": "腐敗した食品、カビまみれのスポンジ、汚えきった台所などの不快な表現は禁止。すべて清潔感のある状態のビジュアルを使用する。",
+      "reason": "Dignity and content appropriateness。"
+    },
+    {
+      "id": "VR05",
+      "rule": "人がバタバタと倒れる・気を失う描写の禁止。代わりに窓の近くで涼む様子や、温度計に注目する様子などを描く。",
+      "reason": "Fear intensity ceiling = low。"
+    },
+    {
+      "id": "VR06",
+      "rule": "日本の典型的な台所であること。欧米風の巨大なキッチンアイランドなどは避ける。",
+      "reason": "Locale context（日本・日本の住環境）の維持。"
+    }
+  ],
+
+  "disclosure_notes": [
+    {
+      "id": "DN01",
+      "note": "概要欄（Description）には必ず以下の免責事項を含めること：「この動画は日常の生活に役立つ情報提供を目的としています。体調に不安がある場合は、早めにかかりつけの医師にご相談ください。」",
+      "applies_to": ["publication_assets"]
+    },
+    {
+      "id": "DN02",
+      "note": "統計データ（消防庁の割合など）を使用する場合は、概要欄に「※消防庁や環境省のデータ等に基づき作成」と付記する。",
+      "applies_to": ["publication_assets"]
+    }
+  ],
+
+  "warnings_for_outline": [
+    {
+      "id": "WO01",
+      "severity": "MEDIUM",
+      "warning": "Section S02（統計紹介）は、視聴者を怖がらせる目的ではなく、「背景理解」のために短く留める。",
+      "actionable_instruction": "Outline は「factual and calm」をトーン指定すること。"
+    },
+    {
+      "id": "WO02",
+      "severity": "MEDIUM",
+      "warning": "Section S04（熱中症と冷房）で、「電気代節約を非難する」ようなアウトライン構成を避ける。",
+      "actionable_instruction": "「我慢せずに使うことが安全への投資」というポジティブな見地に立つこと。"
+    },
+    {
+      "id": "WO03",
+      "severity": "MEDIUM",
+      "warning": "各セクションの改善策（S03〜S06）は、「すべてやらなければならない」という網羅的タスクとして提示しない。",
+      "actionable_instruction": "各対策に「できそうなものから」というニュアンスを含める。"
+    }
+  ],
+
+  "warnings_for_script": [
+    {
+      "id": "WS01",
+      "severity": "HIGH",
+      "warning": "効果を約束する表現（「必ず」「絶対に」）の検索と排除。",
+      "actionable_instruction": "Softener (SF01) が適用されているかを文ごとに確認する。"
+    },
+    {
+      "id": "WS02",
+      "severity": "HIGH",
+      "warning": "着衣着火に関して、不安を煽るだけの記述（例：「気がついた時には火だるまに」）は厳禁。",
+      "actionable_instruction": "対処法（SF04）を冷静に伝えることに重点を置く。"
+    },
+    {
+      "id": "WS03",
+      "severity": "MEDIUM",
+      "warning": "エンディングで「少しずつ実践しましょう」という Safety framing pattern (SF05) を必ず使用する。",
+      "actionable_instruction": "完璧主義を和らげるスクリプトライティングを徹底。"
+    }
+  ],
+
+  "warnings_for_prompt_builders": [
+    {
+      "id": "WP01",
+      "severity": "HIGH",
+      "warning": "スタイルアンカー「illustrated lifestyle handbook, retro-clean 2D, warm domestic scenes」をすべての画像プロンプトに必須化。",
+      "actionable_instruction": "プロンプト生成時の Prefix として強制適用。"
+    },
+    {
+      "id": "WP02",
+      "severity": "HIGH",
+      "warning": "ネガティブプロンプトの徹底：火事（fire, explosion, burning clothes）、事故（collapse, faint, accident）、腐敗（rotten, moldy, dirty）。",
+      "actionable_instruction": "全プロンプトに対して Negative filter を走らせる。"
+    },
+    {
+      "id": "WP03",
+      "severity": "MEDIUM",
+      "warning": "Bối cảnh là bếp kiểu Nhật: Mọi prompt về không gian bếp phải có 'Japanese kitchen, standard compact size, not European'.",
+      "actionable_instruction": "Bảo đảm locale constraint."
+    }
+  ],
+
+  "warnings_for_publication_assets": [
+    {
+      "id": "WA01",
+      "severity": "HIGH",
+      "warning": "タイトルに「恐怖」「危険」などのショックワードを使わない。（例：「夏の台所で死なないために」は禁止）。",
+      "actionable_instruction": "あくまで「見直したい安全チェック」などの穏やかなタイトルを使用する。"
+    },
+    {
+      "id": "WA02",
+      "severity": "HIGH",
+      "warning": "サムネイルで火が出ているコンロや、苦しむ高齢者のイラストを使用しない。",
+      "actionable_instruction": "清潔なキッチンの見直し、等の前向きなイメージを採用する。"
+    }
+  ]
+}

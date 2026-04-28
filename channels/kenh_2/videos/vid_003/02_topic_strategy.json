@@ -1,0 +1,177 @@
+{
+  "project_id": "kenh_2_vid_003",
+  "channel_id": "kenh_2",
+  "pipeline_step": "02_topic_strategy",
+  "generated_at": "2026-04-28T14:46:06+07:00",
+  "source_files": [
+    "core/system_principles.md",
+    "core/topic_strategy_standard.md",
+    "core/policy_guardrails.md",
+    "channels/kenh_2/videos/vid_003/01_intake_spec.json",
+    "channels/kenh_2/00_editorial_profile.json",
+    "channels/kenh_2/00_publication_profile.json"
+  ],
+  "topic_cluster": "kitchen and cooking safety",
+  "topic_angle": "夏の台所まわりで見直したい安全チェック",
+  "topic_angle_en": "Summer kitchen safety checks every senior should review",
+  "topic_differentiation": {
+    "vid_003_scope": "夏の台所 — Summer kitchen environments emphasizing heat/humidity impacts (food storage, ventilation, fire safety, hygiene)",
+    "overlap_management": "This video focuses on summer-specific domestic risks in the kitchen (food poisoning, indoor heatstroke near the stove, changing cooking habits in the heat) to ensure topics don't drift into general nutrition or bathroom safety."
+  },
+  "target_viewer": {
+    "age_band": "60+",
+    "living_situation": "lives alone or with minimal daily support",
+    "locale": "Japan, national neutral",
+    "daily_context": "cooking in a typical Japanese kitchen, managing food storage, using a gas stove, dealing with high summer humidity and temperature.",
+    "information_need": "wants a practical, plain-language checklist for keeping the kitchen safe, preventing food spoilage, ensuring good ventilation, and avoiding fire risks during hot summer months."
+  },
+  "viewer_problem": "夏の台所は、暑さや湿気で熱中症や食中毒のリスクが高まります。しかし、毎日使う場所だからこそ「いつものやり方」で過ごしてしまい、年齢に合わせた食材の管理や換気、火の元の安全見直しの必要性に気づきにくい方が多いです。",
+  "viewer_problem_en": "The kitchen is used daily, but summer heat and humidity increase risks like heatstroke and food poisoning. Because seniors rely on 'the usual way', many fail to realize the need to review ventilation, food storage, and fire safety to suit their aging needs.",
+  "working_promise": "夏の台所を少しでも安全で快適にするための見直しポイントを整理します。食材管理、換気、火の元の安心など、今日からできる小さな工夫を一緒に確認していきましょう。",
+  "working_promise_en": "We will review practical points to make your summer kitchen safer and more comfortable. We'll check simple tips you can adopt today, covering food storage, ventilation, and peace of mind around the stove.",
+  "safe_claim_boundary": {
+    "this_video_claims": [
+      "夏の台所には、食中毒や熱中症、火災のリスクが潜んでいること",
+      "食材の管理、換気、火の元の3つは、自分で見直せる代表的なポイントであること",
+      "小さな工夫を取り入れることで、夏場の台所仕事の負担や不安を減らせること",
+      "片付けや掃除は無理のない範囲で、少しずつ進めるのが良いこと",
+      "便利な調理家電を活用することで火を使う時間を減らせること"
+    ],
+    "this_video_does_NOT_claim": [
+      "これで絶対に食中毒を防げる",
+      "クーラーをつけないでも換気だけで熱中症を防げる",
+      "特定の食品を食べれば免疫力が上がる",
+      "最新のIHコンロに買い替えなければ火事を防げない",
+      "すべての家事を完璧にこなさなければならない"
+    ]
+  },
+  "forbidden_claims": [
+    "「絶対に食中毒を防ぐ」— absolute food poisoning prevention",
+    "「食中毒はこれで完治する」— cure context",
+    "「クーラーは体に悪いから換気だけで十分」— dangerous heatstroke advice",
+    "「IHじゃないと火事で家を失う」— severe fear framing",
+    "「医者が隠している夏の健康法」— anti-doctor conspiracy framing",
+    "「これだけで完璧です」— sufficiency guarantee"
+  ],
+  "research_questions": [
+    {
+      "id": "RQ1",
+      "question": "日本の高齢者における夏の食中毒および家庭内熱中症の発生状況と主な原因（厚生労働省・消防庁の統計）",
+      "question_en": "Incidence and leading causes of food poisoning and household heatstroke during summer among Japanese seniors (statistics from MHLW and Fire and Disaster Management Agency)",
+      "source_type_expected": "official statistics, government white paper"
+    },
+    {
+      "id": "RQ2",
+      "question": "高齢者の家庭での食中毒予防（保存方法、消費期限の確認、冷蔵庫の過密防止等）に関する推奨事項（消費者庁や食品安全委員会）",
+      "question_en": "Recommendations for food poisoning prevention in senior households (storage methods, expiration dates, avoiding overstuffed fridges) from Consumer Affairs Agency and Food Safety Commission",
+      "source_type_expected": "government advisory, food safety guideline"
+    },
+    {
+      "id": "RQ3",
+      "question": "夏場の台所における熱中症予防と効果的な換気・室温調整の工夫、火を使う時間の短縮法（環境省・気象庁）",
+      "question_en": "Heatstroke prevention in summer kitchens, effective ventilation/temperature control, and reducing stove usage time (MOE, JMA)",
+      "source_type_expected": "environmental ministry advisory, health guideline"
+    },
+    {
+      "id": "RQ4",
+      "question": "高齢者の台所における火災・事故リスク（着衣着火・消し忘れ等）とその安全対策（総務省消防庁やNITE）",
+      "question_en": "Fire and accident risks in senior kitchens (clothing catching fire, forgetting to turn off the stove) and safety measures (FDMA, NITE)",
+      "source_type_expected": "product safety advisory, fire department data"
+    },
+    {
+      "id": "RQ5",
+      "question": "湿度が高くカビが繁殖しやすい季節の、台所衛生管理の基本（ふきんやスポンジの管理等）",
+      "question_en": "Basics of kitchen hygiene management during high humidity/mold season (managing dishcloths and sponges)",
+      "source_type_expected": "hygiene guideline, practical lifestyle resource"
+    }
+  ],
+  "planned_sections": [
+    {
+      "section_id": "S01",
+      "label": "オープニング — 夏の台所、暑さや湿気で疲れていませんか？",
+      "label_en": "Opening — Are you tired from the heat and humidity of the summer kitchen?",
+      "purpose": "soft hook with a relatable domestic scene — cooking in the summer heat is exhausting and introduces hidden risks",
+      "estimated_duration_sec": 90,
+      "editorial_note": "universal experience of feeling overwhelmed by summer kitchen chores; establish this video focuses on safety adjustments for the season"
+    },
+    {
+      "section_id": "S02",
+      "label": "なぜ夏の台所は見直しが必要なのか — 背景を軽く整理",
+      "label_en": "Why summer kitchens need a review — brief background",
+      "purpose": "provide brief factual context from stats; aging influences sensitivity to heat and smell (spoilage)",
+      "estimated_duration_sec": 120,
+      "editorial_note": "cite MHLW or FDMA data on summer risks; frame it softly as adapting to seasonal challenges, not a scare tactic"
+    },
+    {
+      "section_id": "S03",
+      "label": "見直しポイント①：食材の管理と冷蔵庫",
+      "label_en": "Review point 1: Food storage and the refrigerator",
+      "purpose": "first check item — preventing food poisoning by not overpacking the fridge and managing leftovers properly",
+      "estimated_duration_sec": 180,
+      "editorial_note": "object-focused shots of a clean, uncrowded refrigerator; checking expiration dates; cooling food before storing"
+    },
+    {
+      "section_id": "S04",
+      "label": "見直しポイント②：台所の熱中症対策と換気",
+      "label_en": "Review point 2: Kitchen heatstroke prevention and ventilation",
+      "purpose": "second check item — balancing ventilation with AC use, and reducing active stove time",
+      "estimated_duration_sec": 180,
+      "editorial_note": "show a well-ventilated kitchen and AC usage; suggest using microwaves or slow cookers to cut down on standing over a hot gas stove"
+    },
+    {
+      "section_id": "S05",
+      "label": "見直しポイント③：火の元とコンロ周りの安全",
+      "label_en": "Review point 3: Fire hazards and stove safety",
+      "purpose": "third check item — preventing 'clothing fires' (着衣着火) and forgetting to turn off the flame",
+      "estimated_duration_sec": 180,
+      "editorial_note": "illustrate safe cooking attire (avoiding loose sleeves); mention automatic shut-off features or setting a simple kitchen timer"
+    },
+    {
+      "section_id": "S06",
+      "label": "衛生管理のコツ — ふきんやスポンジのお手入れ",
+      "label_en": "Hygiene tips — caring for dishcloths and sponges",
+      "purpose": "brief practical tips on minimizing bacteria without exhausting cleaning routines",
+      "estimated_duration_sec": 90,
+      "editorial_note": "show straightforward washing/drying of sponges; emphasize 'good enough' cleanliness to relieve perfectionist pressure"
+    },
+    {
+      "section_id": "S07",
+      "label": "まとめ — 無理せず安全に夏を乗り切りましょう",
+      "label_en": "Wrap-up — Get through the summer safely without pushing too hard",
+      "purpose": "recap the 3 main points and encourage small, manageable adjustments",
+      "estimated_duration_sec": 60,
+      "editorial_note": "calm reassuring closing; even doing just one of the tips provides a measure of safety"
+    }
+  ],
+  "total_estimated_duration_sec": 900,
+  "total_estimated_duration_min": 15.0,
+  "duration_within_target": true,
+  "duration_target": "10-18 min",
+  "packaging_seeds_longform": {
+    "title_candidates": [
+      "夏の台所まわりで見直したい安全チェック【60代・70代の暮らし】",
+      "シニアの台所 安全チェック3つの見直しポイント",
+      "食中毒と熱中症を防ぐ、夏の台所見直し【ひとり暮らしのシニアへ】"
+    ],
+    "thumbnail_concept": {
+      "scene": "illustrated close-up of a neat Japanese kitchen counter with a window open for ventilation, simple modern gas stove, and a clean refrigerator. warm earth tones, retro-clean 2D style",
+      "text_overlay": "夏の台所 3つの見直し",
+      "text_word_count": 4,
+      "emotion": "warm_reassuring",
+      "host_presence": "optional"
+    },
+    "description_seed": "夏の台所で気をつけておきたいポイントを整理してお話しします。食材の管理・換気と暑さ対策・火の元の安全について、今日からできる工夫を確認してみましょう。※この動画は情報提供を目的としたものです。"
+  },
+  "packaging_seeds_shorts": {
+    "enabled": false,
+    "count": 0,
+    "override_reason": "explicit video-level directive: long-form only, do not derive shorts",
+    "placeholder_concepts": []
+  },
+  "notes_for_research": [
+    "RQ1 — prioritize MHLW and Fire and Disaster Management Agency (消防庁) data on household heatstroke and food poisoning among seniors.",
+    "RQ2 — focus on simple, achievable food storage tips (e.g., maintaining proper fridge temp by not overpacking).",
+    "RQ3 — check MOE (環境省) guidelines on indoor heatstroke prevention without adopting an anti-AC stance.",
+    "RQ4 — NITE explicitly warns seniors about '着衣着火' (clothing fires) while cooking. Address safe cooking attire or timer usage."
+  ]
+}

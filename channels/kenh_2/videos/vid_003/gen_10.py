@@ -1,0 +1,134 @@
+import json
+import os
+
+data = {
+  "search_gate_summary": {
+    "patterns_observed": [
+        "Focus on practical cooling (AC, microwave, avoiding fire) and hydration.",
+        "Thumbnails often use large text for '火を使わない' (no fire) or '熱中症予防' (heatstroke prevention).",
+        "The tone is generally practical, emphasizing '無理をしない' (don't overdo it) to seniors."
+    ],
+    "likely_fit": [
+        "Emphasizing '見直し' (review/check), 3 points, and '安心' (peace of mind).",
+        "Simple, neat thumbnails mapping to '夏の台所' (summer kitchen)."
+    ],
+    "likely_mismatch": [
+        "High danger vectors (e.g., '死なないために' - to avoid dying).",
+        "Heavy text covering the entire screen which reduces accessibility for older viewers."
+    ],
+    "things_to_avoid": [
+        "Do not use alarmist fear-based claims like 'If you don't do this, you might catch on fire'.",
+        "Must comply with WA01 and WA02 from the policy report."
+    ]
+  },
+  "title_candidates": [
+    {
+      "ja": "夏の台所まわりで見直したい安全チェック【60代からの暮らし】",
+      "vi": "Kiểm tra an toàn cần xem lại xung quanh bếp mùa hè [Cuộc sống từ tuổi 60]"
+    },
+    {
+      "ja": "シニアがいま見直したい「夏の台所」3つの安全ポイント",
+      "vi": "3 điểm an toàn trong 'bếp mùa hè' mà người cao tuổi nên xem lại ngay"
+    },
+    {
+      "ja": "食中毒と熱中症を防ぐ、夏の台所・安心チェック【ひとり暮らしのシニアへ】",
+      "vi": "Kiểm tra an tâm bếp mùa hè, phòng chống ngộ độc thực phẩm và say nắng [Dành cho người cao tuổi sống một mình]"
+    }
+  ],
+  "thumbnail_candidates": [
+    {
+      "concept_ja": "清潔な日本のキッチンカウンターのイラスト。大きな文字で「夏の台所 3つの見直し」。人物は不要で、冷蔵庫やコンロなどの対象物の明瞭さに焦点を当てる。",
+      "concept_vi": "Hình minh họa một quầy bếp Nhật Bản sạch sẽ. Chữ lớn 'Bếp mùa hè 3 điều cần xem lại'. Không cần có người, tập trung vào sự rõ ràng của các vật dụng như tủ lạnh và bếp."
+    },
+    {
+      "concept_ja": "優しく微笑む高齢女性が、台所でコップの水を手にしているイラスト。文字は「台所の安全確認」。人間的な温かみと安心感を強調する。",
+      "concept_vi": "Hình minh họa một phụ nữ cao tuổi mỉm cười hiền hậu, cầm cốc nước trong bếp. Văn bản 'Xác nhận an toàn bếp'. Nhấn mạnh sự ấm áp và cảm giác an tâm."
+    },
+    {
+      "concept_ja": "すっきりした冷蔵庫の中身と、回る換気扇の分割イラスト。文字は「夏の台所 安心チェック」。具体的なアクション項目を一目で伝える。",
+      "concept_vi": "Hình minh họa chia đôi màn hình: bên trong tủ lạnh gọn gàng và quạt thông gió đang quay. Văn bản 'Kiểm tra an tâm bếp mùa hè'. Truyền tải nhanh các hành động cụ thể."
+    }
+  ],
+  "selected_package": {
+    "title": "シニアがいま見直したい「夏の台所」3つの安全ポイント",
+    "thumbnail_concept": "清潔な日本のキッチンカウンターのイラスト。大きな文字で「夏の台所 3つの見直し」。(コンセプトA)",
+    "description": "夏の台所で気をつけておきたいポイントを整理してお話しします。食材の管理・換気と暑さ対策・火の元の安全について、今日からできる小さな工夫を確認してみましょう。\n\n※この動画は日常の生活に役立つ情報提供を目的としています。体調に不安がある場合は、早めにかかりつけの医師にご相談ください。\n※データ等は消防庁や環境省などの公的資料に基づき作成しています。",
+    "description_vi": "Chúng tôi sẽ tổng hợp các điểm cần lưu ý trong bếp mùa hè. Hãy cùng kiểm tra những mẹo nhỏ có thể làm ngay từ hôm nay về quản lý thực phẩm, thông gió, chống nóng và an toàn nguồn lửa.\n\n*Video nhằm cung cấp thông tin hữu ích. Nếu lo lắng sức khỏe, vui lòng thảo luận với bác sĩ. *Dữ liệu dựa trên Cục Cứu hỏa và Bộ Môi trường.",
+    "keywords": "シニア, 高齢者, 熱中症対策, 食中毒予防, 台所の安全, 夏のキッチン, ひとり暮らし",
+    "rationale": "This title is clear, not clickbaity, and directly speaks to the senior audience checking their kitchen safety. The thumbnail is very simple and readable."
+  },
+  "shorts_derivatives": [
+    {
+      "short_title_ja": "冷蔵庫は「7割」が目安！夏の台所チェック",
+      "short_title_vi": "Tủ lạnh chỉ nên để '70%'! Kiểm tra bếp mùa hè",
+      "hook_line_ja": "夏の冷蔵庫、ぎゅうぎゅうに詰め込んでいませんか？実はお腹を壊す原因になるかもしれません。",
+      "cut_angle": "Food storage safety and not overpacking the fridge to maintain lower temperatures.",
+      "bridge_to_longform_ja": "換気や火の元の安全については、本編の動画で詳しくお話ししています。",
+      "why_it_can_pull_new_viewers": "Practical, immediate utility regarding fridge packing hooks people quickly for a common domestic issue."
+    },
+    {
+      "short_title_ja": "コンロの火に注意！夏の台所の着衣着火",
+      "short_title_vi": "Chú ý lửa bếp! Bắt lửa vào quần áo ở bếp mùa hè",
+      "hook_line_ja": "夏はお料理中に服の袖がコンロの火に触れてしまう「着衣着火」にご用心ください。",
+      "cut_angle": "Fire hazard around the stove, clothing fires, and the advice to roll up sleeves.",
+      "bridge_to_longform_ja": "ほかにも夏の台所を守る安全チェックを本編で解説しています。",
+      "why_it_can_pull_new_viewers": "Addresses a highly specific safety risk (clothing catching fire over gas stoves) that many older viewers may not realize is statistically common."
+    }
+  ]
+}
+
+md_content = f"""# 10 Publication Package
+
+## Search Gate Summary
+- **Patterns Observed**: {data['search_gate_summary']['patterns_observed']}
+- **Likely Fit**: {data['search_gate_summary']['likely_fit']}
+- **Likely Mismatch**: {data['search_gate_summary']['likely_mismatch']}
+- **Things to Avoid**: {data['search_gate_summary']['things_to_avoid']}
+
+## Title Candidates
+1. {data['title_candidates'][0]['ja']}
+   *(VI: {data['title_candidates'][0]['vi']})*
+2. {data['title_candidates'][1]['ja']}
+   *(VI: {data['title_candidates'][1]['vi']})*
+3. {data['title_candidates'][2]['ja']}
+   *(VI: {data['title_candidates'][2]['vi']})*
+
+## Thumbnail Candidates
+1. **Concept A**: {data['thumbnail_candidates'][0]['concept_ja']}
+   *(VI: {data['thumbnail_candidates'][0]['concept_vi']})*
+2. **Concept B**: {data['thumbnail_candidates'][1]['concept_ja']}
+   *(VI: {data['thumbnail_candidates'][1]['concept_vi']})*
+3. **Concept C**: {data['thumbnail_candidates'][2]['concept_ja']}
+   *(VI: {data['thumbnail_candidates'][2]['concept_vi']})*
+
+## Selected Package
+- **Title**: {data['selected_package']['title']}
+- **Thumbnail**: {data['selected_package']['thumbnail_concept']}
+- **Description (JA)**:\n```text\n{data['selected_package']['description']}\n```
+- **Description (VI)**:\n```text\n{data['selected_package']['description_vi']}\n```
+- **Keywords**: {data['selected_package']['keywords']}
+- **Rationale**: {data['selected_package']['rationale']}
+
+## Shorts Derivatives
+### Shot 1
+- **Title (JA/VI)**: {data['shorts_derivatives'][0]['short_title_ja']} / {data['shorts_derivatives'][0]['short_title_vi']}
+- **Hook Line (JA)**: {data['shorts_derivatives'][0]['hook_line_ja']}
+- **Cut Angle**: {data['shorts_derivatives'][0]['cut_angle']}
+- **Bridge to Longform (JA)**: {data['shorts_derivatives'][0]['bridge_to_longform_ja']}
+- **Why it works**: {data['shorts_derivatives'][0]['why_it_can_pull_new_viewers']}
+
+### Shot 2
+- **Title (JA/VI)**: {data['shorts_derivatives'][1]['short_title_ja']} / {data['shorts_derivatives'][1]['short_title_vi']}
+- **Hook Line (JA)**: {data['shorts_derivatives'][1]['hook_line_ja']}
+- **Cut Angle**: {data['shorts_derivatives'][1]['cut_angle']}
+- **Bridge to Longform (JA)**: {data['shorts_derivatives'][1]['bridge_to_longform_ja']}
+- **Why it works**: {data['shorts_derivatives'][1]['why_it_can_pull_new_viewers']}
+"""
+
+with open("10_publication_package.json", "w", encoding="utf-8") as f:
+    json.dump(data, f, ensure_ascii=False, indent=2)
+
+with open("10_publication_package.md", "w", encoding="utf-8") as f:
+    f.write(md_content)
+
+print("Generated 10_publication_package.json and 10_publication_package.md")

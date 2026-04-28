@@ -1,0 +1,341 @@
+{
+  "project_id": "kenh_2_vid_003",
+  "channel_id": "kenh_2",
+  "pipeline_step": "05_outline_builder",
+  "generated_at": "2026-04-28T15:24:31+07:00",
+  "source_files": [
+    "core/system_principles.md",
+    "core/duration_control_standard.md",
+    "core/output_conventions.md",
+    "channels/kenh_2/videos/vid_003/01_intake_spec.json",
+    "channels/kenh_2/videos/vid_003/02_topic_strategy.json",
+    "channels/kenh_2/videos/vid_003/03_research_brief.json",
+    "channels/kenh_2/videos/vid_003/04_policy_report.json"
+  ],
+
+  "micro_topic": "夏の台所まわりで見直したい安全チェック",
+  "micro_topic_en": "Summer kitchen safety checks every senior should review",
+  "scope_confirmed": "Single micro-topic only. Covers food storage, ventilation/heatstroke prevention, stove fire safety, and basic hygiene. Does NOT drift into nutrition claims, general health advice, or non-kitchen domestic spaces.",
+
+  "duration_plan": {
+    "target_duration_min": 10,
+    "target_duration_max": 18,
+    "tts_chars_per_min": 320,
+    "target_min_chars": 3200,
+    "target_max_chars": 5760,
+    "outline_estimated_duration_min": 15,
+    "outline_estimated_chars": 4800,
+    "duration_within_target": true
+  },
+
+  "tone_directive": "warm_polite_practical — factual and calm throughout; gentle companion narrator; no fear theater; softeners mandatory per policy",
+
+  "policy_compliance_summary": {
+    "overall_risk": "LOW",
+    "forbidden_angles_avoided": [
+      "no guaranteed prevention claims",
+      "no anti-AC dangerous advice",
+      "no unverified nutritional claims",
+      "no severe fear framing around IH",
+      "no anti-doctor framing",
+      "no shock visuals of accidents or rotten food"
+    ],
+    "softeners_applied": ["SF01", "SF02", "SF03", "SF04", "SF05"],
+    "outline_warnings_respected": ["WO01", "WO02", "WO03"]
+  },
+
+  "sections": [
+    {
+      "section_id": "S01",
+      "label": "オープニング — 夏の台所、暑さや湿気で疲れていませんか？",
+      "label_en": "Opening — Are you tired from the heat and humidity of the summer kitchen?",
+      "structural_role": "hook",
+      "estimated_duration_sec": 90,
+      "evidence_refs": ["F1", "F2"],
+      "spoken_flow_notes": "Open with a quietly relatable observation — the kitchen in summer is uniquely hot and draining. Establish the video's gentle promise: not a scare story, but a room-by-room 'check-together' walk. Avoid any shock stat or fear opener.",
+      "beats": [
+        {
+          "beat_id": "S01-B1",
+          "purpose": "soft hook — relatable domestic observation",
+          "spoken_direction": "Describe the familiar but tiring feeling of standing in a summer kitchen — the heat from the stove, the humidity from boiling water, the sensation of the room getting hotter than expected. Invite the viewer to sit down and review together.",
+          "sample_flow": "夏の台所に立つと、蒸し暑さで思ったより体が疲れていませんか。今日はそんな台所まわりを一緒に、無理なく見直してみましょう。",
+          "forbidden_patterns": ["fear_theater", "guaranteed_prevention"]
+        },
+        {
+          "beat_id": "S01-B2",
+          "purpose": "context setup — what this video covers",
+          "spoken_direction": "Briefly name the 3+1 check points the video will walk through: food storage, ventilation, stove safety, and hygiene. Frame it as a companion review, not an alarm.",
+          "sample_flow": "今日は、食材の管理・換気と暑さ対策・火の元の安全、そして衛生管理のコツ、この順番で確認していきましょう。",
+          "forbidden_patterns": ["fear_theater", "guaranteed_prevention"]
+        }
+      ]
+    },
+
+    {
+      "section_id": "S02",
+      "label": "なぜ夏の台所は見直しが必要なのか — 背景を軽く整理",
+      "label_en": "Why summer kitchens need a review — brief background",
+      "structural_role": "context",
+      "estimated_duration_sec": 120,
+      "evidence_refs": ["F1", "F2"],
+      "spoken_flow_notes": "Keep strictly brief and calm. Mention that heatstroke often occurs indoors — and that kitchen environments with heat sources raise the risk — without dramatizing. Mention aging physiology softly: harder to feel thirst or heat. Frame as 'adapting to the season', not 'seniors at risk of dying'. Apply WO01: factual and calm, short, background only.",
+      "policy_warnings": ["WO01 — stat section must stay brief and reassuring"],
+      "beats": [
+        {
+          "beat_id": "S02-B1",
+          "purpose": "indoor heatstroke context — calm factual framing",
+          "spoken_direction": "Mention that according to public data (消防庁・環境省), heatstroke is often reported to happen 'indoors at home', and that kitchens — where heat and humidity concentrate — can become one of those spots. Do NOT say 'seniors die in kitchens'. Say 'indoor environments where heat gathers deserve attention'.",
+          "evidence": "F1",
+          "softener_required": "SF01 — リスクを減らせます framing",
+          "sample_flow": "消防庁などのデータでは、熱中症は屋外だけでなく、ご自宅の中で起きることも多いとされています。台所は特に熱や湿気が集まりやすい場所のひとつです。"
+        },
+        {
+          "beat_id": "S02-B2",
+          "purpose": "aging physiology — soft acknowledgment",
+          "spoken_direction": "Gently note that as we age, it can become harder to notice thirst or heat. This is not a scare — it's simply a reason why a calm seasonal review is useful. Avoid clinical framing.",
+          "evidence": "F2",
+          "softener_required": "SF02 — かかりつけ医 framing if symptoms mentioned",
+          "sample_flow": "年齢を重ねると、暑さや喉の渇きを感じにくくなることがあります。だからこそ、夏の台所まわりを改めて確認しておくことが安心につながります。"
+        }
+      ]
+    },
+
+    {
+      "section_id": "S03",
+      "label": "見直しポイント①：食材の管理と冷蔵庫",
+      "label_en": "Review point 1: Food storage and the refrigerator",
+      "structural_role": "explanation_block",
+      "estimated_duration_sec": 180,
+      "evidence_refs": ["F3", "G1"],
+      "spoken_flow_notes": "Lead with the specific fridge-packing risk. Give 2–3 actionable habits. Use softeners — no guarantee language. Each sub-tip should feel achievable, not a full checklist of obligations (WO03). Close this beat with an encouraging micro-turn.",
+      "policy_warnings": ["WO03 — present as 'try what you can', not mandatory checklist"],
+      "beats": [
+        {
+          "beat_id": "S03-B1",
+          "purpose": "fridge overpacking risk — practical framing",
+          "spoken_direction": "Explain that overpacking reduces cold air circulation, causing temperature rises that increase spoilage risk. Mention the 'roughly 70% full' guideline — but frame it as a rough estimate, not a hard rule.",
+          "evidence": "F3",
+          "softener_required": "SF03 — 〜が目安とされています",
+          "sample_flow": "冷蔵庫の中はすきまなく詰め込んでいませんか？食品を詰め込みすぎると冷気が回りにくくなり、庫内の温度が上がってしまうことがあります。7割程度を目安に、できる範囲で余裕を持たせるといいでしょう。"
+        },
+        {
+          "beat_id": "S03-B2",
+          "purpose": "handling raw meat and fish safely",
+          "spoken_direction": "Short practical tip: wrap meat and fish individually to prevent drip contamination. Suggest keeping them on lower shelves. Keep tone light — 'one small habit' rather than a rule.",
+          "evidence": "G1",
+          "softener_required": "SF01 — リスクを減らす framing",
+          "sample_flow": "お肉や魚は、汁が漏れないように個別にラップや袋に包んで、庫内の下段に置くと安心です。ひと手間ですが、食中毒のリスクを減らすことにつながります。"
+        },
+        {
+          "beat_id": "S03-B3",
+          "purpose": "putting groceries away promptly — summer note",
+          "spoken_direction": "Briefly note that summer heat means groceries should go into the fridge or freezer as soon as returning from shopping, rather than leaving them on the counter. Keep it gentle, not alarmist.",
+          "evidence": "G1",
+          "softener_required": "SF01",
+          "sample_flow": "夏場は買い物から帰ったら、なるべく早く冷蔵・冷凍庫へ移すのがおすすめです。室温が高い分、食品の傷みが早まりやすい季節です。"
+        },
+        {
+          "beat_id": "S03-B4",
+          "purpose": "micro close / encouragement turn",
+          "spoken_direction": "Close S03 with a light reassurance — just one or two of these habits is a fine start. No need to overhaul the fridge all at once.",
+          "softener_required": "SF01 + WO03",
+          "sample_flow": "まずはできそうなひとつから、気づいたときに始めてみましょう。"
+        }
+      ]
+    },
+
+    {
+      "section_id": "S04",
+      "label": "見直しポイント②：台所の熱中症対策と換気",
+      "label_en": "Review point 2: Kitchen heatstroke prevention and ventilation",
+      "structural_role": "explanation_block",
+      "estimated_duration_sec": 180,
+      "evidence_refs": ["F1", "F2", "G2", "U2"],
+      "spoken_flow_notes": "Balance ventilation and AC use without criticizing electricity costs (WO02). Recommend AC as a positive safety investment. Use the microwave / short cooking suggestion from G2. Handle U2 (cant give exact numbers on AC+ventilation electricity) by keeping advice general. Apply SF01.",
+      "policy_warnings": ["WO02 — do NOT criticize electricity-saving mindset; frame AC as positive investment"],
+      "beats": [
+        {
+          "beat_id": "S04-B1",
+          "purpose": "ventilation is essential even with AC",
+          "spoken_direction": "Explain that running the range hood / ventilation fan while cooking is important for removing heat and fumes — but while doing so, the room temperature may rise, so adjusting the AC setting accordingly helps maintain comfort and safety.",
+          "evidence": "G2, U2",
+          "softener_required": "SF01 — リスクを減らせます, no exact temp numbers",
+          "sample_flow": "調理中は換気扇を回して、熱気や湿気を外に逃がしましょう。同時に、エアコンの設定温度も無理のない範囲で調整して、室温が上がりすぎないようにするのが安心です。"
+        },
+        {
+          "beat_id": "S04-B2",
+          "purpose": "AC as safety tool, positive framing",
+          "spoken_direction": "Gently reframe AC use as a safety measure for summer cooking — not a luxury. Avoid criticizing those who try to economize; instead, invite them to think of it as an investment in safe cooking.",
+          "evidence": "F1, F2",
+          "softener_required": "SF01 + WO02",
+          "sample_flow": "冷房は体の負担を減らすための安全な工夫のひとつです。夏場の調理中は、無理をせず上手に活用していただければと思います。"
+        },
+        {
+          "beat_id": "S04-B3",
+          "purpose": "reduce stove time — microwave and other appliances",
+          "spoken_direction": "Suggest using the microwave or slow cooker to reduce standing over a hot stove. Frame it as a practical kitchen upgrade — less heat exposure, same result.",
+          "evidence": "G2",
+          "softener_required": "SF01",
+          "sample_flow": "電子レンジや電気調理器を上手に使うと、ガスコンロで火を使う時間を短くできます。台所での暑さの軽減につながりますし、こまめに休憩を取ることも体を守ることにつながります。"
+        },
+        {
+          "beat_id": "S04-B4",
+          "purpose": "hydration reminder — brief, non-clinical",
+          "spoken_direction": "A short, non-alarming reminder to keep water nearby and sip it regularly while cooking — since the kitchen is hot and seniors may not feel thirst readily. Apply SF02 if symptoms mentioned.",
+          "evidence": "F2",
+          "softener_required": "SF02 — 気になる場合はかかりつけ医へ",
+          "sample_flow": "調理の合間に、水やお茶をこまめに飲むことも大切です。夏場はのどの渇きを感じにくくなることもありますので、気になる場合はかかりつけ医にご相談ください。"
+        }
+      ]
+    },
+
+    {
+      "section_id": "S05",
+      "label": "見直しポイント③：火の元とコンロ周りの安全",
+      "label_en": "Review point 3: Fire hazards and stove safety",
+      "structural_role": "explanation_block",
+      "estimated_duration_sec": 180,
+      "evidence_refs": ["F4", "G3", "G4"],
+      "spoken_flow_notes": "Handle 着衣着火 (clothing fire) calmly and practically. Acknowledge aging vision changes that make blue flames harder to see. Suggest safe attire and fire-off habit. MUST include Stop-Drop-and-Roll (SF04) as calm coping info, not as fear. Apply SF04 mandatory. Avoid: 'gas stoves will kill you', 'must buy IH'. IH is one option, not a mandate.",
+      "policy_warnings": [
+        "SF04 mandatory — stop-drop-and-roll must be stated calmly",
+        "Forbidden: IH sufficiency guarantee or severe fear framing"
+      ],
+      "beats": [
+        {
+          "beat_id": "S05-B1",
+          "purpose": "clothing fire risk — calm acknowledgment",
+          "spoken_direction": "Mention that NITE and Tokyo Fire Department note that clothing fires at the kitchen stove are a known risk for seniors — partly because aging can affect vision of blue gas flames, and partly because reaction times can change. Frame this as 'something worth knowing', not 'you are in danger right now'.",
+          "evidence": "F4",
+          "softener_required": "SF04",
+          "sample_flow": "コンロを使うとき、服に気をつけていますか。製品評価技術基盤機構（NITE）などでは、コンロ付近での着衣着火について注意を呼びかけています。年齢とともに青い炎が見えにくくなることもあり、袖口など衣服の素材には注意が必要とされています。"
+        },
+        {
+          "beat_id": "S05-B2",
+          "purpose": "practical attire and stove habits",
+          "spoken_direction": "Suggest avoiding loose wide-sleeved clothing (especially synthetic or flammable fabric) while cooking. Mention flame-resistant aprons as one option. Suggest turning off the flame before reaching over or behind the stove for seasonings.",
+          "evidence": "G3",
+          "softener_required": "SF01 — 〜の工夫のひとつです",
+          "sample_flow": "調理のときは、なるべく袖の広がった服を避けるのが安心です。防炎加工のエプロンを使うことも、ひとつの選択肢です。また、奥の調味料を取るときは、コンロの火を一旦消してから動くようにすると安全です。"
+        },
+        {
+          "beat_id": "S05-B3",
+          "purpose": "if clothing fire occurs — stop-drop-and-roll (SF04 mandatory)",
+          "spoken_direction": "Calmly deliver the Stop-Drop-and-Roll message. State it as practical knowledge that is useful to know ahead of time — not as fear. End with reassurance.",
+          "evidence": "G4",
+          "softener_required": "SF04 — MANDATORY",
+          "sample_flow": "もしも服に火が移ってしまったときは、走らずその場に止まり、地面に倒れて転がして消す、「ストップ・ドロップ・アンド・ロール」が有効とされています。あらかじめ知っておくだけで、冷静に対処できる可能性が高まります。"
+        },
+        {
+          "beat_id": "S05-B4",
+          "purpose": "stove safety features and IH as one option",
+          "spoken_direction": "Mention that modern gas stoves often have auto-shutoff safety features — encourage checking if theirs has them. IH cooktop is mentioned as one possible choice for those considering a change, NOT as a requirement.",
+          "softener_required": "SF01 — presented as 選択肢のひとつ",
+          "sample_flow": "最近のガスコンロには、自動消火機能がついているものもあります。お手持ちのコンロにその機能があるか、一度確認してみるといいかもしれません。ご家庭の状況に合わせて、IHクッキングヒーターへの切り替えも、選択肢のひとつとして考える方もいらっしゃいます。"
+        }
+      ]
+    },
+
+    {
+      "section_id": "S06",
+      "label": "衛生管理のコツ — ふきんやスポンジのお手入れ",
+      "label_en": "Hygiene tips — caring for dishcloths and sponges",
+      "structural_role": "practical_adjustments",
+      "estimated_duration_sec": 90,
+      "evidence_refs": ["F5", "G5"],
+      "spoken_flow_notes": "Keep this section short and light. Avoid perfectionism framing (WO03). The key points: dry well, clean regularly, disposable paper is fine. No 'rotten sponge' imagery — just clean and practical. Apply SF01.",
+      "policy_warnings": ["WO03 — 'do what you can' framing, not mandatory exhaustive checklist"],
+      "beats": [
+        {
+          "beat_id": "S06-B1",
+          "purpose": "sponge and dishcloth bacteria — brief factual context",
+          "spoken_direction": "Briefly explain that kitchen sponges and dishcloths hold moisture and warmth, making them easy spots for bacteria in summer. Keep it factual and matter-of-fact — no gross-out imagery.",
+          "evidence": "F5",
+          "softener_required": "SF01",
+          "sample_flow": "台所のスポンジやふきんは、水分と温度が揃いやすく、夏場は細菌が増えやすい環境になりやすいとされています。"
+        },
+        {
+          "beat_id": "S06-B2",
+          "purpose": "simple care routine — dry and occasional disinfect",
+          "spoken_direction": "Recommend: after use, wring out well and dry in a well-ventilated spot. Occasional hot-water rinse or sanitizer use is good. Suggest disposable paper cloths as a no-pressure alternative. Emphasize 'good enough' over perfection.",
+          "evidence": "G5",
+          "softener_required": "SF01 + WO03",
+          "sample_flow": "使い終わったら水気をしっかり切って、風通しの良いところで乾燥させるのが基本です。定期的に煮沸や薬剤での消毒をするとさらに安心ですが、難しいときは使い捨てのペーパータオルを活用するのも手軽でいいと思います。完璧を目指さずに、できる範囲で取り組んでみましょう。"
+        }
+      ]
+    },
+
+    {
+      "section_id": "S07",
+      "label": "まとめ — 無理せず安全に夏を乗り切りましょう",
+      "label_en": "Wrap-up — Get through the summer safely without pushing too hard",
+      "structural_role": "calm_close",
+      "estimated_duration_sec": 90,
+      "evidence_refs": ["C1"],
+      "spoken_flow_notes": "Recap the 3 main check areas briefly. Clinician consult (C1/SF02) must appear naturally before the close. End with SF05 — 'small steps are fine, no need for perfection'. Warm and reassuring. No new info introduced.",
+      "policy_warnings": [
+        "SF02 mandatory — clinician consult before close",
+        "SF05 mandatory — 完璧を目指さず締め"
+      ],
+      "beats": [
+        {
+          "beat_id": "S07-B1",
+          "purpose": "brief recap of 3 check areas",
+          "spoken_direction": "Summarise the 3 main review areas in 2–3 sentences. Keep it light — just the key words: food storage, ventilation, stove safety, hygiene.",
+          "sample_flow": "今日は夏の台所で見直しておきたいポイントを確認しました。食材の管理と冷蔵庫の使い方、換気と暑さ対策、火の元の安全、そして衛生管理のコツです。"
+        },
+        {
+          "beat_id": "S07-B2",
+          "purpose": "clinician consult — SF02 mandatory",
+          "spoken_direction": "Naturally mention: if you've been feeling off lately — fatigue, dizziness, not wanting to eat — don't brush it off as summer fatigue. It's worth checking in with your doctor. Keep tone gentle, not alarming.",
+          "evidence": "C1",
+          "softener_required": "SF02 — MANDATORY",
+          "sample_flow": "夏場に食欲がない日が続いたり、ふらつきや倦怠感が気になる場合は、ただの夏バテと思わず、早めにかかりつけ医にご相談されることをおすすめします。"
+        },
+        {
+          "beat_id": "S07-B3",
+          "purpose": "calm reassuring close — SF05 mandatory",
+          "spoken_direction": "End with the SF05 pattern: no need to do everything at once; one small change at a time is enough. Warm, unhurried close.",
+          "softener_required": "SF05 — MANDATORY",
+          "sample_flow": "完璧を目指さず、できることから少しずつ。それだけで夏の台所は、ずいぶん安心できる場所になります。今日も最後までご覧いただきありがとうございました。"
+        }
+      ]
+    }
+  ],
+
+  "outline_character_estimate": {
+    "method": "sum of sample_flow strings across all beats, extrapolated to full script density",
+    "estimated_chars": 4800,
+    "target_min_chars": 3200,
+    "target_max_chars": 5760,
+    "within_target": true,
+    "note": "Estimate includes full narration expansion at script stage. Outline beats are direction prompts; script will flesh each beat to spoken paragraph length."
+  },
+
+  "forbidden_checks_passed": [
+    "No absolute prevention guarantee language",
+    "No anti-AC dangerous advice",
+    "No unverified nutritional claims",
+    "No IH sufficiency guarantee or severe fear framing",
+    "No anti-doctor framing",
+    "No shock imagery descriptions",
+    "No scope creep beyond kitchen safety micro-topic"
+  ],
+
+  "mandatory_softeners_scheduled": {
+    "SF01": "Applied in S03, S04, S05, S06 — all prevention/adjustment beats",
+    "SF02": "Applied in S04-B4 and S07-B2 — hydration and clinician consult beats",
+    "SF03": "Applied in S03-B1 — 7割 fridge guideline",
+    "SF04": "Applied in S05-B3 — stop-drop-and-roll calm delivery (MANDATORY)",
+    "SF05": "Applied in S07-B3 — closing beat (MANDATORY)"
+  },
+
+  "next_step": "06_script_builder",
+  "handoff_notes": [
+    "Script builder must expand each beat into full TTS-safe spoken narration paragraphs.",
+    "WS01: scan every line for 必ず / 絶対に — remove without exception.",
+    "WS02: S05 clothing fire section must stay calm — stop-drop-and-roll only, no fear escalation.",
+    "WS03: SF05 closing framing is mandatory in S07-B3.",
+    "Total script chars must land between 3,200 and 5,760 before passing."
+  ]
+}

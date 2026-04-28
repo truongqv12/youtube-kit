@@ -2,8 +2,8 @@
   "project_id": "kenh_2_vid_004",
   "channel_id": "kenh_2",
   "project_scope": {
-    "topic_cluster": "bath safety",
-    "topic_angle": "滑りやすい浴室で見直したい習慣",
+    "topic_cluster": "living area safety and decluttering",
+    "topic_angle": "つまずきを防ぐ。シニアがリビングで手放してよかったもの3選",
     "viewer_problem": "Japanese senior viewers want practical, safety-oriented daily-life guidance that reduces anxiety and helps them prepare calmly.",
     "target_duration_min": 10,
     "target_duration_max": 18
@@ -48,7 +48,7 @@
   },
   "special_notes": [
     "video is explanatory, not dialogue",
-    "focus on home safety, preparation, and daily-life risk reduction",
+    "focus on safe living room environments, decluttering (danshari) to prevent trips and falls, managing cords, rugs, and low furniture",
     "prefer object and environment shots over face-centric scenes",
     "avoid disease-cure framing unless the policy gate clearly allows it",
     "long-form only; do not derive shorts"
