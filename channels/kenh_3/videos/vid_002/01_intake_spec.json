@@ -1,12 +1,14 @@
 {
   "project_id": "kenh_3_vid_002",
   "channel_id": "kenh_3",
+  "pipeline_step": "01_video_intake",
+  "generated_at": "2026-04-28T22:24:00+07:00",
   "project_scope": {
     "topic_cluster": "dizziness and balance",
     "topic_angle": "ふらつく前にあった小さな変化の話",
     "viewer_problem": "Japanese senior viewers want slow, easy-to-follow story-based health guidance that feels gentle, relatable, and memorable.",
-    "target_duration_min": 5,
-    "target_duration_max": 7
+    "target_duration_min": 10,
+    "target_duration_max": 15
   },
   "tts_config": {
     "tts_voice_name": "ja_female_soft_01",
@@ -22,7 +24,8 @@
   },
   "publication_goals": {
     "long_form_primary": true,
-    "derive_shorts": 0
+    "derive_shorts": 0,
+    "shorts_override_reason": "explicit video-level directive: long-form only; do not derive shorts"
   },
   "inherited_constraints": {
     "visual_constraints": {
@@ -52,5 +55,28 @@
     "slow page-turn rhythm, calm narration, soft takeaway",
     "avoid overt disease diagnosis or cure framing",
     "long-form only; do not derive shorts"
+  ],
+  "conflict_resolutions": [
+    {
+      "field": "target_duration",
+      "original_intake_value": "5-7 min",
+      "operator_override": "10-15 min",
+      "resolved_to": "10-15 min",
+      "reason": "User explicitly requested rebuild with target_duration_min=10 and target_duration_max=15."
+    },
+    {
+      "field": "derive_shorts",
+      "channel_value": 2,
+      "intake_value": 0,
+      "resolved_to": 0,
+      "reason": "Explicit video directive remains: long-form only; do not derive shorts."
+    },
+    {
+      "field": "register_profile",
+      "channel_value": "warm_polite_educational",
+      "intake_value": "warm_polite_storytelling",
+      "resolved_to": "warm_polite_storytelling",
+      "reason": "Intake specifies storytelling register to match story-first kamishibai format."
+    }
   ]
 }

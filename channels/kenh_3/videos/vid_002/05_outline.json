@@ -1,0 +1,123 @@
+{
+  "project_id": "kenh_3_vid_002",
+  "target_duration_mins": "10-15",
+  "target_chars_range": "3200-4800",
+  "outline_sections": [
+    {
+      "section_number": 1,
+      "purpose": "Kamishibai opening",
+      "spoken_focus": "Introduce the theme softly as one quiet story, not a lecture.",
+      "key_points": [
+        "State topic: small changes before feeling unsteady.",
+        "Set paper-theater mood.",
+        "Introduce Michiko, 72, and her quiet daily routine."
+      ],
+      "estimated_chars_proportion": "350-450 characters"
+    },
+    {
+      "section_number": 2,
+      "purpose": "Small morning sign",
+      "spoken_focus": "Show a familiar domestic scene where the character naturally reaches for support.",
+      "key_points": [
+        "Morning hallway after waking.",
+        "Hand reaches for pillar without panic.",
+        "The sensation stays with her through breakfast."
+      ],
+      "estimated_chars_proportion": "500-650 characters"
+    },
+    {
+      "section_number": 3,
+      "purpose": "Prior tiny signs",
+      "spoken_focus": "Layer several small signs that viewers can recognize.",
+      "key_points": [
+        "Slipper catches slightly.",
+        "Evening hallway feels dim.",
+        "First step feels a little far.",
+        "She dismisses it as age."
+      ],
+      "estimated_chars_proportion": "450-600 characters"
+    },
+    {
+      "section_number": 4,
+      "purpose": "Brief unsteady moment",
+      "spoken_focus": "A mild incident: rushing to answer phone and feeling the first step sway.",
+      "key_points": [
+        "Telephone rings.",
+        "She stands quickly.",
+        "Scenery feels briefly unstable.",
+        "The event passes, but unease remains."
+      ],
+      "estimated_chars_proportion": "450-600 characters"
+    },
+    {
+      "section_number": 5,
+      "purpose": "Soft interpretation",
+      "spoken_focus": "Translate the incident into gentle learning.",
+      "key_points": [
+        "Unsteadiness may have small prior signs.",
+        "Examples: wanting a breath before standing, feeling floor is far, needing more light.",
+        "Frame as the body asking to start slowly."
+      ],
+      "estimated_chars_proportion": "500-650 characters"
+    },
+    {
+      "section_number": 6,
+      "purpose": "Evidence-based explanation without diagnosis",
+      "spoken_focus": "Plain-language medical context, carefully softened.",
+      "key_points": [
+        "Standing blood-pressure adjustment may take longer with age.",
+        "Balance and muscle response change gradually.",
+        "Medication effects and hydration can matter.",
+        "No individual diagnosis."
+      ],
+      "estimated_chars_proportion": "450-600 characters"
+    },
+    {
+      "section_number": 7,
+      "purpose": "Practical story actions",
+      "spoken_focus": "Show Michiko adjusting daily rhythm without turning into a listicle.",
+      "key_points": [
+        "Pause before standing.",
+        "Check foot placement.",
+        "Foot light in hallway.",
+        "Stable slippers.",
+        "Morning water if appropriate.",
+        "Short notes about symptoms."
+      ],
+      "estimated_chars_proportion": "800-1000 characters"
+    },
+    {
+      "section_number": 8,
+      "purpose": "Family and clinician guidance",
+      "spoken_focus": "Normalize sharing small changes and recording symptom timing.",
+      "key_points": [
+        "Daughter listens calmly.",
+        "Notes support future consultation.",
+        "Information: time, movement, medication timing."
+      ],
+      "estimated_chars_proportion": "450-600 characters"
+    },
+    {
+      "section_number": 9,
+      "purpose": "Consultation and red flags",
+      "spoken_focus": "Caring caution, not fear.",
+      "key_points": [
+        "Repeated dizziness should be discussed with clinician.",
+        "Strong dizziness, chest discomfort, speech problems, or medication timing need early consultation.",
+        "Water restriction disclaimer already integrated."
+      ],
+      "estimated_chars_proportion": "350-500 characters"
+    },
+    {
+      "section_number": 10,
+      "purpose": "Warm closing",
+      "spoken_focus": "Return to the story image and close with a gentle takeaway.",
+      "key_points": [
+        "Small signs are not shameful.",
+        "They are clues for safer daily life.",
+        "Encourage one breath before standing and checking morning footpath."
+      ],
+      "estimated_chars_proportion": "350-500 characters"
+    }
+  ]
+}

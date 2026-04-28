@@ -1,0 +1,77 @@
+{
+  "project_id": "kenh_3_vid_002",
+  "generated_at": "2026-04-28T22:24:00+07:00",
+  "publication_status": "ready_for_operator_review",
+  "target_duration_min": 10,
+  "target_duration_max": 15,
+  "estimated_duration_min": 11.58,
+  "intake_shorts_policy": "derive_shorts=0; shorts derivatives intentionally disabled",
+  "market_scan": {
+    "observed_patterns": [
+      "Age anchors such as 60代/70代 are common in senior health titles.",
+      "Direct terms like ふらつき, めまい, 転倒予防 help search relevance.",
+      "Exercise channels often use strong improvement language, but this channel should remain softer.",
+      "Kamishibai examples signal familiarity and calm educational pacing, but health-specific kamishibai is less saturated."
+    ],
+    "official_guidance_basis": [
+      "YouTube title and thumbnail guidance: accurate, succinct, readable, and not overly complex.",
+      "YouTube metadata policy: avoid misleading titles, thumbnails, or descriptions that imply content not present in the video."
+    ]
+  },
+  "title_candidates_ja": [
+    "ふらつく前にあった小さな変化の話｜シニア健康かみしばい",
+    "70代の足元に出た小さな合図。ふらつく前に見直したい暮らし",
+    "立ち上がる前に気づきたい体の合図｜やさしい健康かみしばい"
+  ],
+  "thumbnail_concepts": [
+    {
+      "id": "A",
+      "text_ja": "足元の合図",
+      "visual": "Michiko gently touching a hallway pillar, stable slippers visible, warm morning light, no panic.",
+      "operator_note_vi": "Dễ hiểu, đúng kịch bản, không hù dọa."
+    },
+    {
+      "id": "B",
+      "text_ja": "ふらつく前に",
+      "visual": "Close view of slippers near a tatami edge and a soft hand near a pillar.",
+      "operator_note_vi": "Tập trung keyword nhưng hơi trừu tượng hơn A."
+    },
+    {
+      "id": "C",
+      "text_ja": "小さな変化",
+      "visual": "Kamishibai collage: footlight, notebook, slippers, glass of water.",
+      "operator_note_vi": "Hiền nhưng CTR có thể thấp do thiếu tình huống người thật."
+    }
+  ],
+  "selected_final_package": {
+    "title": "ふらつく前にあった小さな変化の話｜シニア健康かみしばい",
+    "thumbnail_text": "足元の合図",
+    "thumbnail_prompt": "Kamishibai paper theater illustration, hand-painted gouache and watercolor, warm textured paper, elderly Japanese woman around 72 gently touching a hallway pillar after waking, stable slippers visible near tatami edge, small hallway footlight, calm thoughtful expression, warm morning light, simple framed scene, low text density with exact Japanese text '足元の合図', no panic, no falling, no hospital imagery, no photorealism, no glossy CG.",
+    "description_ja": "今日のシニア健康かみしばいは、ふらつく前にあった小さな変化のお話です。\n\n主人公の美智子さんは、ある朝、廊下の柱にそっと手をついている自分に気づきます。倒れたわけではありません。でも、スリッパの先が引っかかる、立ち上がる前に一呼吸ほしくなる、足元を前より確かめたくなる。そんな小さな合図から、毎日の暮らしを少し見直していきます。\n\nこの動画では、立ち上がる前のひと呼吸、足元の明かり、履き物、水分、体調メモ、家族や医療者への相談のしかたまで、ひとつの物語としてやさしく見ていきます。\n\n※この動画は一般的な健康情報です。めまい・ふらつきが何度も続く場合、胸の苦しさ、ろれつの回りにくさ、失神などがある場合は、早めに医療機関へご相談ください。水分制限を受けている方は、主治医の指示を優先してください。\n\n参考にした情報の分野：高齢者の転倒予防、立ちくらみ、脱水、日常生活動作、服薬とふらつきに関する公的・医療系情報。",
+    "hashtags": [
+      "#シニア健康",
+      "#ふらつき",
+      "#転倒予防",
+      "#高齢者の暮らし",
+      "#健康かみしばい"
+    ],
+    "tags": [
+      "シニア 健康",
+      "ふらつき",
+      "めまい",
+      "転倒予防",
+      "高齢者",
+      "70代",
+      "立ち上がり",
+      "足元",
+      "かみしばい",
+      "紙芝居動画",
+      "高齢者 暮らし",
+      "スリッパ",
+      "足元灯"
+    ]
+  },
+  "shorts_derivatives": [],
+  "shorts_derivatives_disabled_reason": "01_intake_spec.json keeps publication_goals.derive_shorts at 0 and special note says long-form only; do not derive shorts.",
+  "operator_rationale_vi": "Gói chọn title A vì khớp trực tiếp với script, có keyword ふらつく nhưng không biến thành cảnh báo. Thumbnail text '足元の合図' ngắn, dễ đọc, đúng bias kamishibai và tránh fear theater. Script đã được mở rộng thật lên 10–15 phút, không chỉ sửa metadata."
+}

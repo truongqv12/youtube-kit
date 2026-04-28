@@ -1,0 +1,43 @@
+{
+  "project_id": "kenh_3_vid_002",
+  "topic_cluster": "dizziness and balance",
+  "topic_angle": "ふらつく前にあった小さな変化の話",
+  "target_duration_mins": "10-15",
+  "target_viewer": "Japanese senior viewers 60+ who prefer calm kamishibai-style health storytelling rather than listicle instruction",
+  "viewer_problem": "Small changes before unsteadiness are easy to dismiss as mere age or tiredness, so viewers need a gentle story that helps them notice early signals without fear.",
+  "working_promise": "Through one quiet daily-life story, the video helps viewers notice small signs before feeling unsteady and make simple, non-alarming adjustments to standing, walking path, lighting, footwear, hydration, symptom notes, and consultation timing.",
+  "safe_claim_boundary": "Can say that gradual standing, safer home environment, stable footwear, hydration awareness, and medical consultation when symptoms persist may support safer daily movement. Cannot claim to prevent all falls, diagnose dizziness, cure vestibular disease, or replace clinician advice.",
+  "forbidden_claims": [
+    "guarantees no falls",
+    "cures dizziness or vertigo",
+    "reverses aging balance decline",
+    "replaces medical evaluation or medication review",
+    "single habit prevents stroke or fainting",
+    "doctor-conspiracy framing"
+  ],
+  "research_questions": [
+    "What small pre-fall or pre-dizziness changes are common in older adults' daily movement?",
+    "How do orthostatic changes after lying or sitting relate to momentary unsteadiness?",
+    "How can muscle strength, balance ability, lighting, footwear, and home hazards affect fall risk?",
+    "How can dehydration or medication burden contribute to dizziness or falls in older adults?",
+    "When should a viewer consult a clinician rather than treating unsteadiness as normal aging?"
+  ],
+  "planned_sections": [
+    "Kamishibai opening: introduce the theme as a small sign before unsteadiness.",
+    "Story character setup: Michiko, 72, wakes slowly and notices her hand reaching for a hallway pillar.",
+    "Prior small signs: slipper catches, hallway feels dim, first step feels farther away.",
+    "Everyday incident: after rushing to answer the phone, the first step briefly feels unstable.",
+    "Reflection: small signs may include pausing before standing, checking the floor, or wanting more light.",
+    "Gentle explanation: standing blood pressure adjustment, balance, muscle strength, medication, and hydration can all matter.",
+    "Practical story-based adjustments: pause before standing, stable footwear, foot lighting, clear walking path, water awareness, and short health notes.",
+    "Family and clinician guidance: calm sharing, symptom notes, repeated dizziness, red flags, medication timing, and water restrictions.",
+    "Warm close: small signs are not shameful; they are clues for safer daily life."
+  ],
+  "packaging_seeds_longform": [
+    "Title seed: ふらつく前にあった小さな変化の話｜シニア健康かみしばい",
+    "Title seed: 70代の足元に出た小さな合図。ふらつく前に見直したい暮らし",
+    "Thumbnail seed: hand-painted kamishibai card of an elderly Japanese woman gently touching a hallway pillar, warm morning light, text 足元の合図"
+  ],
+  "packaging_seeds_shorts": [],
+  "notes_for_research": "Use Japanese health/fall-prevention sources and neutral medical references. Keep the final story non-diagnostic and avoid direct treatment claims. Long-form only; no Shorts derivatives by intake directive."
+}

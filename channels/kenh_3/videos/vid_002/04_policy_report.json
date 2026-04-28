@@ -1,0 +1,31 @@
+{
+  "overall_risk": "low_to_moderate",
+  "allowed_angles": [
+    "Gentle story about noticing small changes before unsteadiness.",
+    "General education on standing slowly, safer walking paths, stable footwear, hydration awareness, and symptom logging.",
+    "Encouraging consultation when dizziness repeats or appears with concerning symptoms."
+  ],
+  "forbidden_angles": [
+    "Diagnosing the character or viewer with a specific vestibular, neurological, or cardiovascular disease.",
+    "Claiming the story tips prevent all falls or cure dizziness.",
+    "Telling viewers to change medication or water restriction without clinician guidance.",
+    "Showing dramatic collapse, panic, emergency scenes, or fear-based thumbnail imagery."
+  ],
+  "mandatory_softeners": [
+    "Use 'ことがあります', 'かもしれません', and '相談してみましょう' rather than certainty language.",
+    "Frame changes as small clues and safer habits, not proof of disease.",
+    "Include urgent/early consultation cues for repeated dizziness or red-flag symptoms.",
+    "Include water-restriction disclaimer."
+  ],
+  "visual_restrictions": [
+    "No falling, fainting, dramatic wobble, panic, hospital emergency imagery, or red warning graphics.",
+    "Maintain kamishibai paper theater / gouache watercolor style with warm paper texture.",
+    "No lip sync, mouth-open acting, direct speech pose, generated audio, or dialogue balloons.",
+    "Avoid generated readable text except approved short thumbnail text."
+  ],
+  "disclosure_notes": "This is general senior-wellness education delivered as a fictional composite story. It is not diagnosis or individualized medical advice.",
+  "warnings_for_outline": "Keep one-story structure. Do not turn into a numbered listicle. Include consultation section near the end.",
+  "warnings_for_script": "Keep narration gentle, non-commanding, and story-first. Avoid disease labels unless referring generally to clinician evaluation.",
+  "warnings_for_prompt_builders": "Motion prompts must be micro-motion only and silent. No speech, no lip movement, no new visible text.",
+  "warnings_for_publication_assets": "Title and thumbnail must avoid fear theater. Use curiosity around 'small sign' rather than warning or diagnosis."
+}

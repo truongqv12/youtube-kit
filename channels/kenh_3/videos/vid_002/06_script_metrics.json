@@ -1,0 +1,22 @@
+{
+  "project_id": "kenh_3_vid_002",
+  "unit_count": 132,
+  "character_count_no_newlines": 3705,
+  "tts_chars_per_min": 320,
+  "estimated_duration_min": 11.58,
+  "target_duration_min": 10,
+  "target_duration_max": 15,
+  "target_chars_min": 3200,
+  "target_chars_max": 4800,
+  "duration_check": "PASS",
+  "reconstruction_check": "PASS",
+  "tts_safety_check": "PASS",
+  "banned_phrase_check": "PASS",
+  "banned_phrase_hits": [],
+  "notes": [
+    "Story-first structure preserved.",
+    "No headings, labels, bullets, speaker tags, or production notes in canonical units.",
+    "Medical claims softened; consultation guidance included.",
+    "Rebuilt after operator requested target_duration_min=10 and target_duration_max=15."
+  ]
+}
