@@ -5,8 +5,8 @@
     "topic_cluster": "hydration and meal timing",
     "topic_angle": "60代からの水分補給で気をつけたいこと",
     "viewer_problem": "Japanese senior viewers want practical daily advice that feels useful, calm, and non-alarmist.",
-    "target_duration_min": 8,
-    "target_duration_max": 12
+    "target_duration_min": 10,
+    "target_duration_max": 15
   },
   "tts_config": {
     "tts_voice_name": "ja_female_soft_01",
