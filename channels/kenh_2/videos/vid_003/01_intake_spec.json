@@ -2,9 +2,10 @@
   "project_id": "kenh_2_vid_003",
   "channel_id": "kenh_2",
   "project_scope": {
-    "topic_cluster": "bath safety",
-    "topic_angle": "冬のお風呂前に見直したい準備",
-    "viewer_problem": "Japanese senior viewers want practical, safety-oriented daily-life guidance that reduces anxiety and helps them prepare calmly.",
+    "topic_cluster": "kitchen and cooking safety",
+    "topic_angle": "夏の台所まわりで見直したい安全チェック",
+    "topic_angle_en": "Summer kitchen safety checks every senior should review",
+    "viewer_problem": "Japanese senior viewers living alone want practical guidance on keeping their kitchen safe during hot summer months — covering food storage, ventilation, fire risk, and hygiene habits.",
     "target_duration_min": 10,
     "target_duration_max": 18
   },
@@ -42,15 +43,16 @@
     }
   },
   "production_schedule": {
-    "month": 1,
-    "week": 1,
+    "month": 6,
+    "week": 2,
     "weekday_slot": "Wed"
   },
   "special_notes": [
     "video is explanatory, not dialogue",
-    "focus on home safety, preparation, and daily-life risk reduction",
-    "prefer object and environment shots over face-centric scenes",
+    "focus on summer kitchen safety: food spoilage prevention, ventilation while cooking, fire and gas awareness, hygiene in humid conditions",
+    "prefer object and environment shots over face-centric scenes — kitchen counters, refrigerator, stove area, ventilation fans",
     "avoid disease-cure framing unless the policy gate clearly allows it",
+    "seasonal tie-in: high humidity and temperature make food safety and kitchen ventilation especially critical for seniors living alone",
     "long-form only; do not derive shorts"
   ]
 }
