@@ -1,0 +1,273 @@
+{
+  "project_id": "kenh_3_vid_001",
+  "channel_id": "kenh_3",
+  "pipeline_step": "05_outline_builder",
+  "generated_at": "2026-04-28T20:38:00+07:00",
+  "source_files": [
+    "core/system_principles.md",
+    "core/duration_control_standard.md",
+    "core/output_conventions.md",
+    "channels/kenh_3/videos/vid_001/01_intake_spec.json",
+    "channels/kenh_3/videos/vid_001/02_topic_strategy.json",
+    "channels/kenh_3/videos/vid_001/03_research_brief.json",
+    "channels/kenh_3/videos/vid_001/04_policy_report.json"
+  ],
+
+  "micro_topic": "朝の起き上がり時のふらつき — 日常の小さな見直し",
+  "micro_topic_en": "Morning unsteadiness when getting up — small daily habit adjustments",
+  "story_character": "はるこさん / Haruko-san (composite, female, 68 years old, lives independently, Japan)",
+
+  "duration_target": {
+    "min_minutes": 10,
+    "max_minutes": 20,
+    "tts_chars_per_min": 320,
+    "min_chars": 3200,
+    "max_chars": 6400
+  },
+
+  "outline_mode": "spoken_narration_flow",
+  "content_mode": "educational_storytelling",
+  "story_bias": "story_first_then_soft_takeaway",
+  "register": "warm_polite_storytelling",
+
+  "sections": [
+    {
+      "section_id": "S01",
+      "label_ja": "オープニング — ある朝のはるこさん",
+      "label_en": "Opening — One morning, Haruko-san…",
+      "spoken_flow_purpose": "Draw the listener in with a familiar, unhurried morning scene. Haruko-san wakes up, slowly sits up — and for a brief moment, the room seems to sway gently. She pauses, waits, and it passes. A quiet 'oh, again…' moment.",
+      "narrative_beats": [
+        "Kamishibai opening: quiet bedroom, morning light through shoji screen.",
+        "Haruko-san wakes, sits up slowly in bed.",
+        "A moment of mild unsteadiness — the room shifts slightly, then settles.",
+        "She pauses quietly, hand resting on the mattress edge.",
+        "Narrator addresses the viewer: 'Have you ever felt this way in the morning?'"
+      ],
+      "research_backing": "RQ1 — orthostatic hypotension prevalence in elderly; research_brief.facts[0]",
+      "policy_compliance": {
+        "tone": "gentle curiosity, no alarm",
+        "forbidden_check": "no disease-name shock, no scary framing",
+        "softener_used": "quiet observational framing — 'こんなこと、ありませんか'"
+      },
+      "estimated_duration_sec": 80,
+      "estimated_chars": 430,
+      "transition_to_next": "From Haruko-san's experience, gently shift to 'maybe some of you have felt this too'"
+    },
+    {
+      "section_id": "S02",
+      "label_ja": "はるこさんのふらつき — どんな感じだったか",
+      "label_en": "Haruko-san's dizziness — what it felt like",
+      "spoken_flow_purpose": "Describe the sensation in story language — not medical terminology. The listener should recognize the feeling without being told 'you have a condition.'",
+      "narrative_beats": [
+        "Haruko-san's morning routine: standing up to open the curtain.",
+        "The brief feeling: not spinning, but a gentle unsteadiness — like the floor softened for a second.",
+        "She holds onto the wall for a moment, then it passes.",
+        "She's been noticing it more often recently — maybe once or twice a week.",
+        "She doesn't think it's serious, but wonders: 'Is this normal for my age?'"
+      ],
+      "research_backing": "RQ2 — everyday dizziness classification; research_brief.facts[2] (multi-factor nature)",
+      "policy_compliance": {
+        "tone": "normalizing, relatable",
+        "forbidden_check": "kept to mild unsteadiness per policy; no vertigo/spinning language; no diagnostic framing",
+        "softener_used": "storytelling normalization — 'こういう方もいらっしゃいます'"
+      },
+      "estimated_duration_sec": 90,
+      "estimated_chars": 480,
+      "transition_to_next": "Natural curiosity bridge: 'So Haruko-san wondered — why does this happen in the morning?'"
+    },
+    {
+      "section_id": "S03",
+      "label_ja": "なぜ朝にふらつきやすいのか — 体にはこんな理由がある",
+      "label_en": "Why mornings can be unsteady — what happens in the body",
+      "spoken_flow_purpose": "Gentle explanation in story-friendly language. Three layers: (1) blood pressure adjusts slowly after lying down all night, (2) the body loses water during sleep, (3) the balance system in the inner ear needs time to wake up. Frame as 'the body needs a moment to catch up.'",
+      "narrative_beats": [
+        "Transition: 'Haruko-san looked into it a little, and found out something interesting.'",
+        "Layer 1 — blood pressure: when we lie down all night, blood pressure settles; sitting up quickly can cause a temporary dip. For seniors, the adjustment takes longer.",
+        "Layer 2 — hydration: during sleep, the body loses moisture through breathing and perspiration. By morning, mild dehydration is common.",
+        "Layer 3 — balance sense: the inner ear and foot-sole sensory nerves also slow down with age; they need a moment to recalibrate after waking.",
+        "Wrap: 'So it's not that something is wrong — it's that the body needs a gentle moment to catch up.'"
+      ],
+      "research_backing": "RQ1, RQ2 — research_brief.facts[0,1,2,3]; multi-factor explanation with blood pressure, dehydration, inner ear",
+      "policy_compliance": {
+        "tone": "curious, explanatory, not alarming",
+        "forbidden_check": "no cure claims; no implication that knowing this is sufficient; no diagnostic language",
+        "softener_used": "'〜かもしれません' for each layer; 'こういうことが関わっている場合があります'"
+      },
+      "estimated_duration_sec": 150,
+      "estimated_chars": 800,
+      "transition_to_next": "Story bridge: 'When Haruko-san understood this, she started trying a few small things.'"
+    },
+    {
+      "section_id": "S04",
+      "label_ja": "はるこさんが気づいた小さなこと① — 起き上がり方を変えてみた",
+      "label_en": "Small thing Haruko-san noticed ① — trying a different way to get up",
+      "spoken_flow_purpose": "First practical reflection through Haruko-san's story. Not a prescription — a story of how Haruko-san tried getting up more slowly, and it felt better. Describe the staged movement naturally.",
+      "narrative_beats": [
+        "Haruko-san used to sit straight up quickly. Now she tries something different.",
+        "Step 1: She bends her knees while still lying down, gently moves her feet.",
+        "Step 2: She rolls to her side and uses her arm to push up slowly.",
+        "Step 3: She sits on the edge of the bed for a quiet moment — lets the body settle.",
+        "Step 4: When she feels steady, she stands up gently.",
+        "Haruko-san says it feels like 'giving the body a moment to say good morning.'"
+      ],
+      "research_backing": "RQ3 — recommended staged getting-up procedure; research_brief.practical_guidance[0,1]",
+      "policy_compliance": {
+        "tone": "practical, story-framed, not prescriptive",
+        "forbidden_check": "no exercise instruction framing; no claim this prevents falls",
+        "softener_used": "'〜してみました' (she tried); '〜と感じたそうです' (she felt)"
+      },
+      "estimated_duration_sec": 140,
+      "estimated_chars": 750,
+      "transition_to_next": "Narrative link: 'And there was one more small thing Haruko-san started doing.'"
+    },
+    {
+      "section_id": "S05",
+      "label_ja": "はるこさんが気づいた小さなこと② — 朝のお水を一杯",
+      "label_en": "Small thing Haruko-san noticed ② — one glass of water in the morning",
+      "spoken_flow_purpose": "Second practical reflection. Haruko-san started keeping water at her bedside and sipping before standing. Frame as a pleasant morning habit, not a medical directive.",
+      "narrative_beats": [
+        "Haruko-san placed a glass of water on her bedside table before sleeping.",
+        "In the morning, while still sitting on the bed edge, she takes a few sips.",
+        "Not a measured amount — just 'a glass of water' at her own pace.",
+        "She noticed her mornings felt a little less foggy.",
+        "Narrator: 'During sleep, the body quietly loses moisture. A sip of water in the morning helps the body gently wake up.'"
+      ],
+      "research_backing": "RQ4 — hydration and morning dizziness relationship; research_brief.practical_guidance[2]",
+      "policy_compliance": {
+        "tone": "warm habit-building, not prescription",
+        "forbidden_check": "no specific ml amounts per policy warnings; no claim water cures dizziness",
+        "softener_used": "'一杯のお水' (a glass of water) — vague by design; '〜かもしれません'"
+      },
+      "estimated_duration_sec": 110,
+      "estimated_chars": 590,
+      "transition_to_next": "Gentle continuation: 'And there was one more thing Haruko-san quietly adjusted.'"
+    },
+    {
+      "section_id": "S06",
+      "label_ja": "はるこさんが気づいた小さなこと③ — 夜の過ごし方を少し見直す",
+      "label_en": "Small thing Haruko-san noticed ③ — slightly adjusting evening routine",
+      "spoken_flow_purpose": "Third practical reflection. Haruko-san adjusted her evening habits: dimming lights earlier, avoiding screens late at night, keeping a regular sleep rhythm. Connect evening quality to morning steadiness.",
+      "narrative_beats": [
+        "Haruko-san realized that mornings don't start in the morning — they begin the night before.",
+        "She started dimming the room lights a little earlier in the evening.",
+        "She moved her evening water intake slightly earlier so she wouldn't get up too often at night.",
+        "She tried to keep a regular bedtime rhythm, though she acknowledges it's not always easy.",
+        "Narrator: 'Good sleep helps the body's internal rhythm reset, which can make mornings a little smoother.'"
+      ],
+      "research_backing": "RQ5 — sleep quality and morning dizziness/fall risk; research_brief.practical_guidance[3]",
+      "policy_compliance": {
+        "tone": "reflective, gentle lifestyle framing",
+        "forbidden_check": "no claim that sleep cures dizziness; no specific sleep hours prescribed",
+        "softener_used": "'見直してみましょう'; '少しずつ気をつけていきましょう'"
+      },
+      "estimated_duration_sec": 120,
+      "estimated_chars": 640,
+      "transition_to_next": "Story resolution bridge: 'So how did things go for Haruko-san after that?'"
+    },
+    {
+      "section_id": "S07",
+      "label_ja": "はるこさんのその後 — 少しずつ朝が楽になった",
+      "label_en": "After that — Haruko-san's mornings became a little easier",
+      "spoken_flow_purpose": "Story resolution. Haruko-san's mornings didn't transform overnight, but the unsteadiness became less startling. She feels more at ease. Frame as 'a small, quiet improvement' — never as a cure.",
+      "narrative_beats": [
+        "Haruko-san still feels a little unsteady some mornings — that hasn't completely gone away.",
+        "But the intensity has softened. The moments pass more quickly.",
+        "She feels less anxious about getting up, because she has her own gentle routine now.",
+        "Narrator: 'It wasn't a dramatic change. But for Haruko-san, mornings became a little less uncertain.'"
+      ],
+      "research_backing": "Synthesis of RQ1–RQ5; research_brief.unknowns[0] — acknowledges individual variation",
+      "policy_compliance": {
+        "tone": "warm, honest, not curative",
+        "forbidden_check": "explicitly does NOT claim cure; acknowledges residual unsteadiness",
+        "softener_used": "'少しずつ'; '完全になくなったわけではありませんが'"
+      },
+      "estimated_duration_sec": 80,
+      "estimated_chars": 430,
+      "transition_to_next": "Tonal shift to consult section: 'But there are times when it's important to talk to someone.'"
+    },
+    {
+      "section_id": "S08",
+      "label_ja": "もしふらつきが続くなら — かかりつけ医に相談を",
+      "label_en": "If dizziness continues — talk to your doctor",
+      "spoken_flow_purpose": "Mandatory consult-a-clinician section. Clearly distinguished from the gentle habit tips. List the situations where a doctor visit is warranted, without inducing panic.",
+      "narrative_beats": [
+        "Narrator shifts tone slightly — still warm, but a touch more earnest.",
+        "If you experience strong spinning dizziness (ぐるぐる回るようなめまい), please see a doctor.",
+        "If unsteadiness happens almost every morning and doesn't improve, a visit to the ear/nose/throat doctor or internal medicine doctor is a good idea.",
+        "If you're taking blood pressure medication and feeling dizzy frequently, talk to your doctor or pharmacist — don't stop the medication on your own.",
+        "If dizziness comes with numbness, slurred speech, or severe headache — seek emergency care immediately.",
+        "Closing: 'These are signs your body is asking for a little extra help from a professional.'"
+      ],
+      "research_backing": "RQ6 — when to seek medical attention; research_brief.when_to_ask_clinician[0,1,2]",
+      "policy_compliance": {
+        "tone": "earnest but not frightening",
+        "forbidden_check": "clearly distinguished from tips per policy warning; no substitution of tips for medical advice",
+        "softener_used": "encouraging framing — '体がもう少し助けを必要としているサインかもしれません'"
+      },
+      "estimated_duration_sec": 100,
+      "estimated_chars": 530,
+      "transition_to_next": "Return to warmth: 'And for those everyday mornings…'"
+    },
+    {
+      "section_id": "S09",
+      "label_ja": "おわりのことば — 朝の動き始めをそっと大切に",
+      "label_en": "Closing words — gently honoring the first moments of morning",
+      "spoken_flow_purpose": "Warm kamishibai closing. No recap checklist — stay in the story's emotional register. End with Haruko-san sitting on the bed edge, sunlight through the window, taking one quiet breath before standing.",
+      "narrative_beats": [
+        "Narrator: 'The morning is a quiet beginning. Let's honor that beginning gently.'",
+        "A brief poetic image: Haruko-san sitting on the edge of the bed, sunlight resting on her hands.",
+        "She takes a breath, feels the floor under her feet, and stands — slowly, peacefully.",
+        "Narrator: 'Take your mornings at your own pace. And if something feels different, someone is always there to listen.'",
+        "Warm closing: 'Thank you for watching today's story. Until next time, take care.'"
+      ],
+      "research_backing": "N/A — emotional closure; story resolution, not evidence-based claim",
+      "policy_compliance": {
+        "tone": "warm, reassuring, poetic",
+        "forbidden_check": "no recap checklist per editorial note; stays in story mood",
+        "softener_used": "'そっと'; 'ご自分のペースで'; 'いつでも相談できる人がいます'"
+      },
+      "estimated_duration_sec": 70,
+      "estimated_chars": 370,
+      "transition_to_next": null
+    }
+  ],
+
+  "outline_metrics": {
+    "total_sections": 9,
+    "total_estimated_duration_sec": 940,
+    "total_estimated_duration_min": 15.7,
+    "total_estimated_chars": 5020,
+    "duration_within_target": true,
+    "chars_within_target": true,
+    "target_range_min": "10 min / 3200 chars",
+    "target_range_max": "20 min / 6400 chars"
+  },
+
+  "structure_validation": {
+    "has_hook": true,
+    "has_context": true,
+    "has_explanation_blocks": true,
+    "has_practical_adjustments": true,
+    "has_consult_guidance": true,
+    "has_calm_close": true,
+    "single_micro_topic": true,
+    "spoken_flow_not_article": true,
+    "avoids_repetitive_patterns": true,
+    "policy_forbidden_angles_checked": true,
+    "policy_mandatory_softeners_included": true,
+    "policy_visual_restrictions_noted": true,
+    "s08_distinguishable_from_tips": true
+  },
+
+  "notes_for_script_writer": [
+    "Maintain Haruko-san as composite character throughout — never present as real medical history.",
+    "S01–S02 are story beats; S03 shifts to gentle explanation but stays in Haruko-san's perspective ('Haruko-san found out…').",
+    "S04–S06 are practical reflections told AS story beats, NOT instruction lists.",
+    "S07 must NOT claim cure — use 'less uncertain' or 'a little easier' framing only.",
+    "S08 must be tonally distinct — slightly more earnest — but still warm, not alarming.",
+    "S09 returns to warmth — end in the story's emotional register, not with a list.",
+    "Avoid '絶対に' and '必ず治る' per policy warnings.",
+    "Do not specify exact water amounts (e.g., 200ml) — use '一杯のお水' or 'コップ一杯'.",
+    "Keep sentences within TTS-safe breath groups; natural spoken rhythm."
+  ]
+}

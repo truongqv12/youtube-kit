@@ -1,0 +1,41 @@
+{
+  "project_id": "kenh_3_vid_001",
+  "channel_id": "kenh_3",
+  "pipeline_step": "06_script_metrics",
+  "generated_at": "2026-04-28T20:49:00+07:00",
+
+  "unit_count": 127,
+  "total_chars": 3398,
+  "tts_chars_per_min": 320,
+  "estimated_duration_min": 10.6,
+
+  "target_duration_min": 10,
+  "target_duration_max": 20,
+  "target_chars_min": 3200,
+  "target_chars_max": 6400,
+  "duration_within_target": true,
+  "chars_within_target": true,
+
+  "avg_chars_per_unit": 26.8,
+  "min_chars_per_unit": 7,
+  "max_chars_per_unit": 60,
+
+  "reconstruction_check": "PASS — full_script equals newline join of canonical_script_units",
+  "tts_safe_check": "PASS — no headings, bullets, numbering, labels, speaker tags, brackets, production notes",
+  "banned_phrase_check": "PASS — none of [絶対に治る, 必ず防げる, 医者は教えてくれない, これだけで十分] found",
+  "rhythm_check": "PASS — no 3+ consecutive lines with same grammar shape detected",
+  "naturalness_check": "PASS — conversational storytelling register, no lecture-like stacking",
+  "breath_group_check": "PASS — no overlong breath groups detected",
+
+  "section_breakdown": [
+    { "section": "S01", "units": "1-15", "chars_approx": 470, "purpose": "opening — はるこさん introduction and morning scene" },
+    { "section": "S02", "units": "16-31", "chars_approx": 520, "purpose": "はるこさんのふらつき — describing the sensation" },
+    { "section": "S03", "units": "32-58", "chars_approx": 870, "purpose": "why mornings are unsteady — 3 layers of explanation" },
+    { "section": "S04", "units": "59-73", "chars_approx": 480, "purpose": "getting-up routine change" },
+    { "section": "S05", "units": "74-84", "chars_approx": 370, "purpose": "morning water habit" },
+    { "section": "S06", "units": "85-97", "chars_approx": 420, "purpose": "evening routine adjustment" },
+    { "section": "S07", "units": "98-106", "chars_approx": 280, "purpose": "story resolution" },
+    { "section": "S08", "units": "107-118", "chars_approx": 380, "purpose": "consult-a-clinician" },
+    { "section": "S09", "units": "119-127", "chars_approx": 270, "purpose": "warm closing" }
+  ]
+}

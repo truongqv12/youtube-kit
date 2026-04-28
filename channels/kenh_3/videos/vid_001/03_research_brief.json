@@ -1,0 +1,45 @@
+{
+  "project_id": "kenh_3_vid_001",
+  "channel_id": "kenh_3",
+  "pipeline_step": "03_mandatory_research",
+  "generated_at": "2026-04-28T20:21:00+07:00",
+  "source_files": [
+    "core/system_principles.md",
+    "core/topic_strategy_standard.md",
+    "core/mandatory_research_standard.md",
+    "core/policy_guardrails.md",
+    "knowledge/japanese/00_language_strategy.md",
+    "channels/kenh_3/videos/vid_001/01_intake_spec.json",
+    "channels/kenh_3/videos/vid_001/02_topic_strategy.json"
+  ],
+  "source_count": 6,
+  "official_primary_count": 6,
+  "research_summary": {
+    "facts": [
+      "高齢になると自律神経の働きや圧受容反射が低下し、起き上がった際に脳への血流が一時的に減少しやすくなる（起立性低血圧）。",
+      "睡眠中には汗や呼吸で水分が失われるため、起床時は軽度の脱水状態になりやすく、これが血圧変動やふらつきを悪化させる一因となる。",
+      "高齢者のふらつきは多因子性であり、内耳（三半規管等）の機能低下、深部感覚（足裏の感覚）の衰え、加齢による血圧調整の遅れなどが複合的に絡み合って起こる。",
+      "急な姿勢変更（特に仰向けから急に立ち上がる動作）は、血圧の急降下やバランス保持の遅れを招きやすい。"
+    ],
+    "practical_guidance": [
+      "起き上がるときは急がず、「仰向けで膝を立てる」→「横向きになる」→「足をベッドから下ろす」→「手をついてゆっくり体を起こす」という段階を踏むことが推奨される。",
+      "立ち上がった直後に「3秒間静止」して、血圧とバランスが安定するのを待ってから歩き出すルールが転倒予防に有効とされている。",
+      "就寝中の水分喪失を補い、血流を整えるため、起床時にコップ一杯の水を飲む習慣が望ましい。",
+      "夜間の良質な睡眠や規則正しい生活リズムを保つことが、自律神経の働きを整え、翌朝のふらつき軽減に寄与する。"
+    ],
+    "unknowns_and_uncertainty": [
+      "ふらつきの原因は個人差が大きく（薬の副作用、耳の疾患、不整脈など）、一般的な習慣の見直しだけですべてが解決するわけではない。",
+      "すべての朝のめまいが「血圧」や「脱水」だけで説明できるわけではなく、良性発作性頭位めまい症（BPPV）など耳の疾患が原因で起こるケースも多々ある。"
+    ],
+    "when_to_ask_clinician": [
+      "手足のしびれ、ろれつが回らない、激しい頭痛などを伴う場合は、脳の疾患が疑われるため直ちに救急・脳神経外科等を受診する必要がある。",
+      "ぐるぐる目が回るような強いめまいが続く、または毎朝のようにふらつきが繰り返される場合は、耳鼻咽喉科やかかりつけ医（内科等）に相談することが推奨される。",
+      "降圧薬などを服用中でふらつきが頻発する場合は、自己判断で薬をやめず、医師や薬剤師に相談することが必要である。"
+    ]
+  },
+  "alignment_to_strategy": {
+    "topic_cluster": "dizziness and balance",
+    "verified": true,
+    "notes": "Research confirms that morning unsteadiness is a common, multi-factor issue for seniors and small habit changes (getting up slowly, hydration) are officially recommended."
+  }
+}

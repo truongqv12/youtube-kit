@@ -1,0 +1,222 @@
+{
+  "project_id": "kenh_3_vid_001",
+  "channel_id": "kenh_3",
+  "pipeline_step": "02_topic_strategy",
+  "generated_at": "2026-04-28T20:17:30+07:00",
+  "source_files": [
+    "core/system_principles.md",
+    "core/topic_strategy_standard.md",
+    "core/policy_guardrails.md",
+    "channels/kenh_3/videos/vid_001/01_intake_spec.json",
+    "channels/kenh_3/00_editorial_profile.json",
+    "channels/kenh_3/00_publication_profile.json"
+  ],
+
+  "topic_cluster": "dizziness and balance",
+  "topic_angle": "ある朝、急にふらついたAさんの話",
+  "topic_angle_en": "The story of A-san who suddenly felt dizzy one morning",
+
+  "target_viewer": {
+    "age_band": "60+",
+    "living_situation": "lives independently or with family, still handles daily routines alone",
+    "locale": "Japan, national neutral",
+    "daily_context": "occasionally experiences light-headedness when getting up in the morning, getting out of bed, or standing from a seated position; may feel briefly unsteady but has not discussed it with anyone",
+    "information_need": "wants to understand why this happens in daily life and learn small, reassuring habits that might help — without medical jargon or fear of disease"
+  },
+
+  "viewer_problem": "朝、起き上がったときや立ち上がったとき、ふらっとすることが増えたけれど、病院に行くほどでもないと感じている。でも、少し不安。誰かにそっと教えてほしい、こういうとき何を気をつけたらいいのか。",
+  "viewer_problem_en": "Some mornings, getting out of bed brings a brief wave of unsteadiness. It does not feel serious enough for a hospital visit, but it is quietly worrying. The viewer wants someone to gently explain what might be happening and what small things to look out for.",
+
+  "working_promise": "Aさんという方の朝のふらつきのお話を通して、なぜ朝の動き始めにふらっとしやすいのか、日常の中で気をつけられることを一緒に見ていきます。",
+  "working_promise_en": "Through the story of A-san's morning dizziness, we will gently explore why the body can feel unsteady when first moving in the morning, and walk through small daily habits that may help.",
+
+  "safe_claim_boundary": {
+    "this_video_claims": [
+      "朝の起き上がりや立ち上がりで、ふらつきを感じるシニアは少なくない",
+      "ふらつきには、血圧の変動や水分不足、内耳の機能低下など日常的な要因が関わっていることがある",
+      "起き上がる前の小さな準備動作（ゆっくり体を起こす、足を動かしてから立つなど）が役立つことがある",
+      "水分補給のタイミングや睡眠の質を見直すことも、ふらつき軽減につながる場合がある",
+      "強いめまいや繰り返すふらつきは、かかりつけ医に相談することが大切"
+    ],
+    "this_video_does_NOT_claim": [
+      "この方法でめまいが治る",
+      "ふらつきを完全に防げる",
+      "薬を飲まなくても大丈夫",
+      "病院に行く必要はない",
+      "これだけやれば十分"
+    ]
+  },
+
+  "forbidden_claims": [
+    "「これでめまいが治ります」— dizziness cure promise",
+    "「ふらつきを完全に防げます」— absolute fall/dizziness prevention",
+    "「薬なしでふらつきが消える」— medication replacement framing",
+    "「医者が教えてくれないめまいの原因」— anti-doctor conspiracy",
+    "「この体操で平衡感覚が戻る」— guaranteed recovery of balance function",
+    "「これだけ気をつければ大丈夫」— sufficiency guarantee"
+  ],
+
+  "research_questions": [
+    {
+      "id": "RQ1",
+      "question": "高齢者における起立性低血圧・起床時ふらつきの有病率と主な要因（厚生労働省・日本老年医学会等の報告）",
+      "question_en": "Prevalence and primary factors of orthostatic hypotension and morning dizziness in Japanese elderly — MHLW, Japan Geriatrics Society reports",
+      "source_type_expected": "official statistics, medical society guideline"
+    },
+    {
+      "id": "RQ2",
+      "question": "めまい・ふらつきの日常的な原因分類：血圧変動、脱水、内耳機能低下、薬の副作用など（日本めまい平衡医学会等）",
+      "question_en": "Classification of everyday dizziness causes: blood pressure fluctuation, dehydration, inner ear function decline, medication side effects — Japan Society for Equilibrium Research",
+      "source_type_expected": "medical society reference, review article"
+    },
+    {
+      "id": "RQ3",
+      "question": "高齢者の起き上がり動作と転倒予防のための推奨動作手順（厚労省介護予防事業・地域包括支援センター資料）",
+      "question_en": "Recommended getting-up movement sequences for fall prevention in elderly — MHLW care prevention program, community support center materials",
+      "source_type_expected": "government program material, municipal pamphlet"
+    },
+    {
+      "id": "RQ4",
+      "question": "水分補給と朝のふらつきの関係：高齢者における脱水傾向と夜間・起床時の水分摂取推奨（日本救急医学会等）",
+      "question_en": "Relationship between hydration and morning dizziness: dehydration tendency in elderly and recommended morning/nighttime fluid intake — Japan Association for Acute Medicine",
+      "source_type_expected": "medical guideline, NHK health article"
+    },
+    {
+      "id": "RQ5",
+      "question": "高齢者の睡眠の質と朝のふらつき・日中の転倒リスクの関連（国立長寿医療研究センター等の研究）",
+      "question_en": "Association between sleep quality and morning dizziness / daytime fall risk in elderly — National Center for Geriatrics and Gerontology studies",
+      "source_type_expected": "research center report, academic publication"
+    },
+    {
+      "id": "RQ6",
+      "question": "ふらつき・めまいで医療機関を受診すべきタイミングの判断基準（日本耳鼻咽喉科頭頸部外科学会の一般向けガイド）",
+      "question_en": "When to seek medical attention for dizziness — public-facing guide from Japan Society of Otorhinolaryngology-Head and Neck Surgery",
+      "source_type_expected": "medical society public guide, patient information leaflet"
+    }
+  ],
+
+  "planned_sections": [
+    {
+      "section_id": "S01",
+      "label": "オープニング — ある朝のAさん",
+      "label_en": "Opening — One morning, A-san…",
+      "purpose": "gentle kamishibai story opening: A-san wakes up, sits up in bed, and the room tilts slightly",
+      "estimated_duration_sec": 90,
+      "editorial_note": "relatable everyday moment; no alarm, no diagnosis; just a quiet 'oh, that happened again' feeling"
+    },
+    {
+      "section_id": "S02",
+      "label": "Aさんのふらつき — どんな感じだったか",
+      "label_en": "A-san's dizziness — what it felt like",
+      "purpose": "describe the sensation: brief unsteadiness when first getting up, the world shifting for a moment, then settling",
+      "estimated_duration_sec": 90,
+      "editorial_note": "use storytelling to normalize the experience; avoid medical terminology; keep in A-san perspective"
+    },
+    {
+      "section_id": "S03",
+      "label": "なぜ朝にふらつきやすいのか — 体にはこんな理由がある",
+      "label_en": "Why mornings can be unsteady — what happens in the body",
+      "purpose": "gentle explanation of blood pressure shifts on waking, mild dehydration after sleep, inner ear sensitivity with age",
+      "estimated_duration_sec": 150,
+      "editorial_note": "frame as 'your body has been resting all night, so it takes a moment to catch up'; cite RQ1/RQ2; calm tone, no fear"
+    },
+    {
+      "section_id": "S04",
+      "label": "Aさんが気づいた小さなこと① — 起き上がり方を変えてみた",
+      "label_en": "Small thing A-san noticed ① — trying a different way to get up",
+      "purpose": "first practical reflection: sit on the edge of the bed for a moment, wiggle toes, stand slowly",
+      "estimated_duration_sec": 150,
+      "editorial_note": "show the movement sequence as a kamishibai card series; cite RQ3 recommendations; no exercise instruction framing"
+    },
+    {
+      "section_id": "S05",
+      "label": "Aさんが気づいた小さなこと② — 朝のお水を一杯",
+      "label_en": "Small thing A-san noticed ② — one glass of water in the morning",
+      "purpose": "second practical reflection: bedside water, sipping before standing, hydration awareness",
+      "estimated_duration_sec": 120,
+      "editorial_note": "kamishibai card of a glass of water on a bedside table; cite RQ4; frame as habit, not prescription"
+    },
+    {
+      "section_id": "S06",
+      "label": "Aさんが気づいた小さなこと③ — 夜の過ごし方を少し見直す",
+      "label_en": "Small thing A-san noticed ③ — slightly adjusting evening routine",
+      "purpose": "third practical reflection: sleep quality, evening light, late-night fluid timing",
+      "estimated_duration_sec": 120,
+      "editorial_note": "link evening habits to morning steadiness; cite RQ5; keep gentle, not prescriptive"
+    },
+    {
+      "section_id": "S07",
+      "label": "Aさんのその後 — 少しずつ朝が楽になった",
+      "label_en": "After that — A-san's mornings became a little easier",
+      "purpose": "story resolution: A-san's mornings improved slightly; the dizziness didn't vanish but became less startling",
+      "estimated_duration_sec": 90,
+      "editorial_note": "do NOT claim cure; frame as 'the mornings felt a little less uncertain'; story-first closure"
+    },
+    {
+      "section_id": "S08",
+      "label": "もしふらつきが続くなら — かかりつけ医に相談を",
+      "label_en": "If dizziness continues — talk to your doctor",
+      "purpose": "soft consult-a-clinician framing: when morning dizziness is frequent, strong, or accompanied by other symptoms",
+      "estimated_duration_sec": 90,
+      "editorial_note": "cite RQ6 criteria; encourage consultation without inducing worry; mention ear/nose/throat or internal medicine as starting points"
+    },
+    {
+      "section_id": "S09",
+      "label": "おわりのことば — 朝の動き始めをそっと大切に",
+      "label_en": "Closing words — gently honoring the first moments of morning",
+      "purpose": "warm kamishibai closing; quiet reassurance; no recap checklist, stay in story mood",
+      "estimated_duration_sec": 60,
+      "editorial_note": "end with the image of A-san sitting on the bed edge, sunlight through the window, taking a breath before standing"
+    }
+  ],
+
+  "total_estimated_duration_sec": 960,
+  "total_estimated_duration_min": 16.0,
+  "duration_within_target": true,
+  "duration_target": "10–20 min",
+
+  "packaging_seeds_longform": {
+    "title_candidates": [
+      "ある朝、急にふらついたAさんの話【60代からの朝の暮らし】",
+      "朝、起きたときにふらっとしませんか？【シニアのための小さな見直し】",
+      "朝のふらつき、気になっていませんか？Aさんが気づいた3つのこと"
+    ],
+    "thumbnail_concept": {
+      "scene": "kamishibai paper theater card: an elderly Japanese woman (silver-gray hair, gentle wrinkles) sitting on the edge of a futon in a softly lit tatami room, one hand resting on the bed, morning sunlight streaming through a shoji screen — hand-painted gouache watercolor, warm paper texture, muted warm tones",
+      "text_overlay": "朝のふらつき",
+      "text_word_count": 3,
+      "emotion": "warm_gentle_reassuring",
+      "host_presence": "absent — story character focus"
+    },
+    "description_seed": "ある朝、起き上がったときにふらっとしたAさん。どうして朝は体がふらつきやすいのか、日々の暮らしの中で気づけることをゆっくりお話しします。※この動画は一般的な情報提供を目的としたものです。めまいやふらつきが続く場合は、かかりつけ医にご相談ください。"
+  },
+
+  "packaging_seeds_shorts": {
+    "enabled": false,
+    "count": 0,
+    "override_reason": "video-level directive: long-form only, do not derive shorts",
+    "placeholder_concepts": [
+      {
+        "shorts_id": "placeholder_S1",
+        "concept": "「朝、座ってから立つだけで違います」— 15-second getting-up habit tip",
+        "note": "NOT produced for this video; retained as future reference only"
+      },
+      {
+        "shorts_id": "placeholder_S2",
+        "concept": "「枕元にお水、置いていますか？」— 15-second bedside water reminder",
+        "note": "NOT produced for this video; retained as future reference only"
+      }
+    ]
+  },
+
+  "notes_for_research": [
+    "RQ1 — prioritize MHLW (厚生労働省) elderly health survey data and Japan Geriatrics Society position papers on orthostatic hypotension in elderly",
+    "RQ2 — Japan Society for Equilibrium Research (日本めまい平衡医学会) general-audience materials are ideal; avoid overly clinical inner-ear diagnostics",
+    "RQ3 — search for municipal care-prevention (介護予防) pamphlets with illustrated getting-up sequences; these exist from Tokyo, Osaka, Yokohama",
+    "RQ4 — look for NHK健康チャンネル or 日本救急医学会 general guidance on senior dehydration; connect to morning dizziness specifically",
+    "RQ5 — National Center for Geriatrics and Gerontology (国立長寿医療研究センター) sleep-and-fall studies; do NOT frame poor sleep as a disease",
+    "RQ6 — Japan Society of Otorhinolaryngology public-facing 'when to see a doctor for dizziness' Guide; use as the basis for S08 consult framing",
+    "General — all sources should be from the last 5 years when possible; this topic has stable evidence so older major sources are acceptable",
+    "Story note — maintain A-san as a composite character throughout; do NOT claim this is a real person's medical history"
+  ]
+}

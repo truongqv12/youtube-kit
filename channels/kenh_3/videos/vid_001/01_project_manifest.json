@@ -1,0 +1,101 @@
+{
+  "manifest_version": "1.0",
+  "project_id": "kenh_3_vid_001",
+  "channel_id": "kenh_3",
+  "channel_name": "シニア健康かみしばい",
+  "generated_at": "2026-04-28T20:12:00+07:00",
+  "pipeline_step": "04_policy_gate",
+  "pipeline_status": "step_04_complete",
+  "topic": {
+    "cluster": "dizziness and balance",
+    "angle": "ある朝、急にふらついたAさんの話",
+    "angle_en": "The story of A-san who suddenly felt dizzy one morning",
+    "viewer_problem": "Japanese senior viewers want slow, easy-to-follow story-based health guidance that feels gentle, relatable, and memorable.",
+    "working_promise": "Aさんという方の朝のふらつきのお話を通して、なぜ朝の動き始めにふらっとしやすいのか、日常の中で気をつけられることを一緒に見ていきます。"
+  },
+  "duration": {
+    "min_minutes": 10,
+    "max_minutes": 20,
+    "estimated_minutes": 15,
+    "source": "video_intake_override (10-20 min), extended for slow-paced senior storytelling"
+  },
+  "tts": {
+    "voice": "ja_female_soft_01",
+    "chars_per_min": 320,
+    "estimated_script_chars_min": 3200,
+    "estimated_script_chars_max": 6400
+  },
+  "evidence": {
+    "min_sources": 5,
+    "min_official": 3,
+    "country_priority": [
+      "Japan"
+    ],
+    "allow_non_japan": true
+  },
+  "output_plan": {
+    "long_form": true,
+    "shorts": 0,
+    "shorts_override_reason": "explicit video-level directive: long-form only, do not derive shorts"
+  },
+  "active_profiles": {
+    "editorial": "jp_senior_health_kamishibai_story",
+    "visual": "kamishibai_paper_theater / gouache_watercolor_gentle",
+    "language": "jp_senior_health_kamishibai_neutral",
+    "publication": "jp_senior_health_kamishibai_package"
+  },
+  "key_constraints_summary": {
+    "non_dialogue_mode": true,
+    "lip_sync": false,
+    "veo_audio_mode": "silent",
+    "host_policy": "host_optional_reference_first",
+    "story_bias": "story_first_then_soft_takeaway",
+    "fear_ceiling": "low",
+    "age_lock": "65-75, HIGH priority",
+    "locale": "Japan national neutral",
+    "visible_text": "avoid_readable_text, ja-JP only, max 6 words",
+    "format_note": "story-first kamishibai format, not listicle"
+  },
+  "production_schedule": {
+    "month": 1,
+    "week": 1,
+    "weekday_slot": "Mon"
+  },
+  "artifacts": {
+    "step_00": {
+      "00_channel_config.json": "channels/kenh_3/00_channel_config.json",
+      "00_editorial_profile.json": "channels/kenh_3/00_editorial_profile.json",
+      "00_visual_profile.json": "channels/kenh_3/00_visual_profile.json",
+      "00_language_profile.json": "channels/kenh_3/00_language_profile.json",
+      "00_publication_profile.json": "channels/kenh_3/00_publication_profile.json"
+    },
+    "step_01": {
+      "01_intake_spec.json": "channels/kenh_3/videos/vid_001/01_intake_spec.json",
+      "01_project_manifest.json": "channels/kenh_3/videos/vid_001/01_project_manifest.json",
+      "status": "complete"
+    },
+    "step_02": {
+      "02_topic_strategy.json": "channels/kenh_3/videos/vid_001/02_topic_strategy.json",
+      "status": "complete"
+    },
+    "step_03": {
+      "03_research_brief.json": "channels/kenh_3/videos/vid_001/03_research_brief.json",
+      "03_source_log.md": "channels/kenh_3/videos/vid_001/03_source_log.md",
+      "status": "complete"
+    },
+    "step_04": {
+      "04_policy_report.json": "channels/kenh_3/videos/vid_001/04_policy_report.json",
+      "status": "complete"
+    },
+    "step_05": {
+      "05_outline.json": null,
+      "status": "pending"
+    }
+  },
+  "next_step": {
+    "step": "05_outline_builder",
+    "description": "Outline Builder — convert the strategy and research into a structured scene-by-scene outline",
+    "required_input": "04_policy_report.json",
+    "prompt": "compiled_prompts/05_run_outline_builder.md"
+  }
+}

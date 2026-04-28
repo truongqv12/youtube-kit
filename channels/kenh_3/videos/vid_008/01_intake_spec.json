@@ -10,7 +10,7 @@
   },
   "tts_config": {
     "tts_voice_name": "ja_female_soft_01",
-    "tts_chars_per_min": 280
+    "tts_chars_per_min": 320
   },
   "evidence_scope": {
     "min_sources": 5,

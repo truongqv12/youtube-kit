@@ -1,0 +1,59 @@
+{
+  "project_id": "kenh_3_vid_001",
+  "channel_id": "kenh_3",
+  "pipeline_step": "04_policy_gate",
+  "generated_at": "2026-04-28T20:31:00+07:00",
+  "source_files": [
+    "core/system_principles.md",
+    "core/policy_guardrails.md",
+    "core/output_conventions.md",
+    "channels/kenh_3/videos/vid_001/01_intake_spec.json",
+    "channels/kenh_3/videos/vid_001/02_topic_strategy.json",
+    "channels/kenh_3/videos/vid_001/03_research_brief.json"
+  ],
+  "overall_risk": "Moderate",
+  "risk_assessment": "The topic of dizziness and balance carries a moderate risk because 'dizziness' can be a symptom of serious underlying conditions (e.g., stroke, inner ear disease). The script must clearly bound the topic to 'mild morning unsteadiness' often caused by daily habits, while avoiding any implication that these habits can cure chronic or severe dizziness. Clear guidelines on when to consult a clinician are mandatory.",
+  "allowed_angles": [
+    "Exploring why the body may feel briefly unsteady when waking up (e.g., blood pressure adjustments, mild dehydration).",
+    "Sharing gentle morning habits (e.g., sitting up slowly, moving legs before standing).",
+    "Suggesting hydration upon waking."
+  ],
+  "forbidden_angles": [
+    "Claiming these habits will 'cure' all dizziness or inner ear problems.",
+    "Using scary or alarming phrasing like 'sudden dizziness could mean stroke' in the title or opening.",
+    "Substituting these tips for medical advice if the viewer feels truly dizzy.",
+    "Implying that medication is unnecessary if these habits are followed."
+  ],
+  "mandatory_softeners": [
+    "Use phrases like '〜かもしれません' (might be), '見直してみましょう' (let's review), and '少しずつ気をつけていきましょう' (let's be carefully aware bit by bit).",
+    "Frame the advice as 'small daily observations' rather than 'prescriptions for health'.",
+    "Explicitly include the condition: 'If you feel strong spinning dizziness, or if it repeats frequently, please consult a doctor.'"
+  ],
+  "visual_restrictions": [
+    "Do NOT depict characters falling violently or looking severely injured.",
+    "Do NOT show diagnostic medical equipment or hospital emergency scenes unless specifically mentioning when to see a doctor.",
+    "Maintain the 'kamishibai paper theater' and 'gouache watercolor' gentle style, avoiding any hyper-realistic medical depictions.",
+    "Show characters (A-san) in relatable, safe domestic environments (e.g., sitting quietly on a bed)."
+  ],
+  "disclosure_notes": [
+    "The video description must contain a clear health disclaimer: 'This video provides general information. If you experience persistent dizziness, please consult a healthcare professional.'",
+    "The script should dedicate a full section (S08) to 'when to ask a clinician'."
+  ],
+  "warnings_for_outline": [
+    "Ensure S08 ('When to talk to your doctor') is clearly distinguished from the gentle habit tips.",
+    "Keep S02 (A-san's dizziness) focused on mild unsteadiness rather than severe vertigo."
+  ],
+  "warnings_for_script": [
+    "Avoid words like '絶対に' (absolutely) and '必ず治る' (definitely cures).",
+    "Keep the tone within the 'warm polite storytelling' register.",
+    "Do not prescribe water amounts precisely (e.g., exactly 200ml) but rather suggest 'a glass of water'."
+  ],
+  "warnings_for_prompt_builders": [
+    "Ensure character A-san looks like a gentle senior (65-75), not frail or sickly.",
+    "In motion prompts, ensure 'kamishibai_page_turn' or 'gentle_zoom_to_detail' is used without erratic or shaky camera movements that might simulate vertigo, to keep the video calm."
+  ],
+  "warnings_for_publication_assets": [
+    "Titles must remain within limits (e.g., '朝のふらつき' instead of '脳梗塞のサイン？朝のめまい').",
+    "Thumbnails should evoke a 'warm, reassuring' emotion, avoiding shocking colors or 'danger' symbols."
+  ]
+}
