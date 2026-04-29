@@ -1,0 +1,24 @@
+{
+  "project_id": "kenh_2_vid_005",
+  "total_canonical_units": 94,
+  "total_characters": 3220,
+  "tts_chars_per_min": 320,
+  "estimated_duration_min": 10.1,
+  "target_duration_min": 10,
+  "target_duration_max": 18,
+  "target_min_chars": 3200,
+  "target_max_chars": 5760,
+  "duration_in_range": true,
+  "reconstruction_verified": true,
+  "tts_safe_check": "pass",
+  "naturalness_check": "pass",
+  "rhythm_check": "pass",
+  "breath_group_check": "pass",
+  "banned_phrases_check": "pass",
+  "policy_softeners_placed": {
+    "MS1_temperature_guideline": true,
+    "MS2_fluid_intake": true,
+    "MS3_symptom_consult": true,
+    "MS4_general_disclaimer": true
+  }
+}

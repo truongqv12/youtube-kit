@@ -1,0 +1,33 @@
+{
+  "project_id": "kenh_2_vid_005",
+  "step": "06B_tts_surface_normalizer",
+  "source": "06_script_canonical.json",
+  "total_canonical_units": 95,
+  "total_characters": 3223,
+  "tts_chars_per_min": 320,
+  "estimated_duration_min": 10.1,
+  "target_duration_min": 10,
+  "target_duration_max": 18,
+  "duration_in_range": true,
+  "reconstruction_verified": true,
+  "engine_agnostic": true,
+  "canonical_unit_gate": "pass",
+  "landing_stability": "pass",
+  "pause_stability": "pass",
+  "reading_stability": "pass",
+  "prosodic_stability": "pass",
+  "portability": "pass",
+  "policy_softeners_preserved": {
+    "MS1_temperature_guideline": true,
+    "MS2_fluid_intake": true,
+    "MS3_symptom_consult": true,
+    "MS4_general_disclaimer": true
+  },
+  "source_vs_output": {
+    "source_units": 94,
+    "output_units": 95,
+    "source_chars": 3220,
+    "output_chars": 3223,
+    "net_char_change": 3
+  }
+}

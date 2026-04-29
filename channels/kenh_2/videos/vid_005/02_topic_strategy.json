@@ -1,0 +1,191 @@
+{
+  "project_id": "kenh_2_vid_005",
+  "channel_id": "kenh_2",
+  "step": "02_topic_strategy",
+  "status": "complete",
+  "topic_cluster": "heat and cold preparedness",
+  "topic_angle": "ひとり暮らしで備えたい夏の暑さ対策",
+  "topic_angle_en": "Summer heat preparedness essentials for seniors living alone",
+  "target_viewer": {
+    "age": "60+",
+    "living_situation": "living alone or with minimal daily support",
+    "location": "Japan (national-neutral, urban or semi-urban apartment)",
+    "concern_level": "mildly anxious about heat-related risks but not panicked",
+    "tech_comfort": "can operate air conditioner and basic appliances but may underuse them due to cost anxiety or habit"
+  },
+  "viewer_problem": "ひとり暮らしのシニアは、夏の暑さが体に影響しやすいことをぼんやり分かっていても、エアコンの電気代や使い方の不安から対策が不十分になりがちで、部屋の温度・水分補給・体調の変化サインをどう日常的にチェックすればよいかが整理できていない。",
+  "viewer_problem_en": "Solo-living seniors vaguely know summer heat affects their body, but cost anxiety and habit keep them from using AC properly, and they lack an organized daily checklist for room temperature, hydration, and early warning signs.",
+  "working_promise": "この動画では、ひとり暮らしの方が夏を安心して過ごすために、部屋の温度管理・水分のとり方・体調の変化に気づくポイントを整理します。",
+  "working_promise_en": "This video organizes three practical check areas — room temperature management, hydration habits, and early body-signal awareness — so solo-living seniors can get through summer more comfortably.",
+  "safe_claim_boundary": {
+    "this_video_does": [
+      "organizes practical home-level heat preparedness checks",
+      "explains why indoor heat risk is easily overlooked by solo-living seniors",
+      "provides a simple daily and weekly checklist approach",
+      "suggests when to consult family, neighbors, or a clinician"
+    ],
+    "this_video_does_NOT": [
+      "diagnose or treat heat stroke or any medical condition",
+      "replace professional medical advice",
+      "promise that following these steps will prevent heat-related illness",
+      "recommend specific medication, supplements, or medical devices",
+      "claim that AC alone solves all heat risks"
+    ]
+  },
+  "forbidden_claims": [
+    "これで熱中症を防げます",
+    "エアコンをつければ安心です",
+    "水を飲めば大丈夫です",
+    "この方法で必ず夏を乗り越えられます",
+    "医者に行かなくても大丈夫です",
+    "高齢者の熱中症は自分で治せます"
+  ],
+  "research_questions": [
+    {
+      "id": "RQ1",
+      "question": "日本の高齢者（65歳以上）の夏季の室内熱中症の発生率と主な発生場所は？",
+      "question_en": "What is the incidence rate and primary location of indoor heatstroke among Japanese seniors (65+) in summer?",
+      "source_type": "official statistics or ministry report",
+      "rationale": "Establishes why indoor heat risk is the core topic, not outdoor"
+    },
+    {
+      "id": "RQ2",
+      "question": "ひとり暮らしの高齢者がエアコンを適切に使わない主な理由は何か？",
+      "question_en": "What are the main reasons solo-living seniors underuse air conditioning?",
+      "source_type": "survey or public health report",
+      "rationale": "Identifies the behavioral gap the video addresses"
+    },
+    {
+      "id": "RQ3",
+      "question": "厚生労働省や環境省が推奨する室内の温度・湿度の目安は？",
+      "question_en": "What indoor temperature and humidity thresholds do MHLW/MOE recommend for seniors?",
+      "source_type": "official guideline",
+      "rationale": "Provides the specific numbers for the room temperature check section"
+    },
+    {
+      "id": "RQ4",
+      "question": "高齢者の夏の水分補給について、1日の推奨量やタイミングのガイドラインは？",
+      "question_en": "What are the recommended daily fluid intake amounts and timing guidelines for seniors in summer?",
+      "source_type": "clinical guideline or geriatric care reference",
+      "rationale": "Provides evidence for the hydration habit section"
+    },
+    {
+      "id": "RQ5",
+      "question": "高齢者が自分で気づける熱中症の初期サイン（体調変化）にはどのようなものがあるか？",
+      "question_en": "What are the early self-noticeable warning signs of heat-related distress in seniors?",
+      "source_type": "medical or public health resource",
+      "rationale": "Provides the body-signal awareness checklist content"
+    },
+    {
+      "id": "RQ6",
+      "question": "ひとり暮らしの高齢者が夏に実践できる、コストを抑えた暑さ対策（遮光・通気・冷却グッズなど）は？",
+      "question_en": "What are low-cost heat mitigation strategies (shading, ventilation, cooling goods) solo seniors can implement?",
+      "source_type": "municipal guide or consumer report",
+      "rationale": "Addresses the cost-anxiety barrier and provides actionable alternatives"
+    },
+    {
+      "id": "RQ7",
+      "question": "ひとり暮らしの高齢者の見守り・声かけ体制（地域包括支援、民生委員、近隣ネットワーク）の活用状況は？",
+      "question_en": "How are community watch and check-in systems (area support, welfare volunteers, neighbor networks) utilized by solo seniors?",
+      "source_type": "municipal or welfare report",
+      "rationale": "Supports the 'when to ask for help' section and soft safety net framing"
+    }
+  ],
+  "planned_sections": [
+    {
+      "section_id": "S1",
+      "section_label": "hook",
+      "title_hint": "真夏の部屋、意外と暑い",
+      "duration_target_min": 1.0,
+      "duration_target_max": 1.5,
+      "purpose": "Familiar domestic scene — a warm room on a summer afternoon. Soft question: 'Have you checked your room temperature today?'",
+      "visual_hint": "thermometer on a Japanese apartment wall showing high temperature, curtains half-open, sunlight filtering in"
+    },
+    {
+      "section_id": "S2",
+      "section_label": "why_this_matters",
+      "title_hint": "室内でも暑さは体に影響します",
+      "duration_target_min": 1.5,
+      "duration_target_max": 2.5,
+      "purpose": "Explain indoor heat risk for seniors — statistics on indoor heatstroke, why solo-living amplifies risk (no one notices early signs). Calm framing, not fear.",
+      "visual_hint": "illustrated data card showing indoor vs outdoor heatstroke stats, warm-tone apartment interior"
+    },
+    {
+      "section_id": "S3",
+      "section_label": "check_1_room_temperature",
+      "title_hint": "部屋の温度と湿度を整える",
+      "duration_target_min": 2.0,
+      "duration_target_max": 3.0,
+      "purpose": "AC usage tips, recommended temperature/humidity, cost-saving notes, shading and ventilation alternatives. Address cost anxiety directly.",
+      "visual_hint": "AC remote, curtain with sunshade, small thermometer-hygrometer on a table"
+    },
+    {
+      "section_id": "S4",
+      "section_label": "check_2_hydration",
+      "title_hint": "水分のとり方を見直す",
+      "duration_target_min": 2.0,
+      "duration_target_max": 3.0,
+      "purpose": "Daily hydration rhythm — timing, amount, preferred drinks for seniors, practical reminders (water bottle on the table, timer). Not medical prescription.",
+      "visual_hint": "kitchen table with water bottle, cup of barley tea, small notepad with check marks"
+    },
+    {
+      "section_id": "S5",
+      "section_label": "check_3_body_signals",
+      "title_hint": "体の変化サインに気づく",
+      "duration_target_min": 1.5,
+      "duration_target_max": 2.5,
+      "purpose": "Early warning signs a senior can self-check: dizziness, reduced sweating, fatigue, headache. When to rest, when to call someone. Includes soft consult-a-clinician framing.",
+      "visual_hint": "elderly person sitting on a chair resting, hand on forehead, calm expression, domestic living room"
+    },
+    {
+      "section_id": "S6",
+      "section_label": "support_and_connections",
+      "title_hint": "まわりの力も借りましょう",
+      "duration_target_min": 1.0,
+      "duration_target_max": 2.0,
+      "purpose": "Community support systems, neighbor check-ins, welfare volunteers. Gentle encouragement to accept help. Not isolationist self-reliance.",
+      "visual_hint": "neighborhood scene, a neighbor waving from a doorway, community bulletin board"
+    },
+    {
+      "section_id": "S7",
+      "section_label": "closing",
+      "title_hint": "ひとつずつ整えていきましょう",
+      "duration_target_min": 1.0,
+      "duration_target_max": 1.5,
+      "purpose": "Calm reassuring close. Quick recap of 3 check areas. 'You don't need to do everything at once.' Viewer encouragement.",
+      "visual_hint": "peaceful apartment interior, gentle evening light, organized and comfortable"
+    }
+  ],
+  "duration_estimate": {
+    "total_min": 10.0,
+    "total_max": 16.0,
+    "within_target_range": true,
+    "target_range": "10–18 min"
+  },
+  "packaging_seeds_longform": {
+    "title_candidates": [
+      "【ひとり暮らし】夏の暑さ、部屋の中から見直す3つのポイント",
+      "60代からの夏準備｜エアコン・水分・体調サインの見直しノート",
+      "ひとりでも安心｜夏の室内を快適にする暮らしの見直し"
+    ],
+    "thumbnail_concept": "warm-toned 2D illustration of a Japanese apartment room with a thermometer, a water bottle, and gentle sunlight — no text or minimal 1–2 word overlay",
+    "description_seed": "ひとり暮らしのシニアの方へ。夏の暑さは室内でも体に影響しやすいもの。この動画では、部屋の温度管理・水分のとり方・体調の変化サインの3つに絞って、日々の暮らしの中でできる見直しポイントを整理しました。"
+  },
+  "packaging_seeds_shorts": {
+    "enabled": false,
+    "count": 0,
+    "reason": "intake override — long-form only for this video; derive_shorts=0",
+    "placeholder_ideas": [
+      "Short 1 (not produced): 夏の水分補給、1日のタイミング — 30-sec hydration timing visual",
+      "Short 2 (not produced): エアコン、つけっぱなしが安い？ — 30-sec AC cost myth check"
+    ]
+  },
+  "notes_for_research": [
+    "Prioritize Japan-specific sources: 厚生労働省 (MHLW), 環境省 (MOE), 消防庁 (FDMA) heatstroke statistics",
+    "Look for 総務省消防庁 summer heatstroke transport data by age group and location (indoor/outdoor)",
+    "Municipal guides from Tokyo/Osaka on summer heat preparedness for elderly are excellent secondary sources",
+    "Geriatric care references for hydration in Japanese seniors — NHK health specials or Japan Geriatrics Society guidelines",
+    "Community support: 地域包括支援センター resources, 民生委員 welfare volunteer programs",
+    "Avoid non-Japan sources as primary — use only as supporting evidence when Japan-specific data is thin"
+  ]
+}

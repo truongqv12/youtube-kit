@@ -1,0 +1,197 @@
+{
+  "project_id": "kenh_2_vid_005",
+  "channel_id": "kenh_2",
+  "step": "05_outline_builder",
+  "status": "complete",
+  "duration_targets": {
+    "target_duration_min": 10,
+    "target_duration_max": 18,
+    "tts_chars_per_min": 320,
+    "target_min_chars": 3200,
+    "target_max_chars": 5760
+  },
+  "micro_topic": "ひとり暮らしで備えたい夏の暑さ対策",
+  "spoken_flow_summary": "Hook (familiar summer room) → Why indoor heat matters (stats, calm framing) → Check 1: Room temperature & AC (practical tips) → Check 2: Hydration habits → Check 3: Body signals & when to act → Reaching out for help → Calm reassuring close",
+  "outline_sections": [
+    {
+      "section_id": "S1",
+      "section_type": "hook",
+      "title_hint": "真夏の午後、部屋の温度を見ていますか",
+      "duration_target_min": 1.0,
+      "duration_target_max": 1.5,
+      "char_target_min": 320,
+      "char_target_max": 480,
+      "spoken_intent": "Start with a quiet, familiar summer afternoon scene. A warm room, curtains half-drawn. Pose a soft question about whether the viewer has checked room temperature today. Establish the tone: calm, practical, no alarm.",
+      "key_points": [
+        "Familiar domestic scene — afternoon, warm room",
+        "Soft opening question: 「今日、部屋の温度を確認しましたか？」",
+        "Transition: this video will organize 3 check areas for summer comfort"
+      ],
+      "evidence_refs": [],
+      "policy_notes": "No fear framing. Warm domestic opening.",
+      "visual_scene_hint": "Japanese apartment living room, thermometer on wall, soft afternoon light, curtains"
+    },
+    {
+      "section_id": "S2",
+      "section_type": "context",
+      "title_hint": "室内の暑さは気づきにくい",
+      "duration_target_min": 1.5,
+      "duration_target_max": 2.5,
+      "char_target_min": 480,
+      "char_target_max": 800,
+      "spoken_intent": "Explain why indoor heat is surprisingly dangerous for seniors. Use FDMA statistics calmly (97,578 transports, 57.4% seniors, 38% at home). Explain the perception gap — seniors feel less heat. Mention AC underuse reasons empathetically (cost, discomfort, habit).",
+      "key_points": [
+        "F1: 2024年 熱中症搬送97,578人、過去最多。65歳以上が57.4%",
+        "F2: 発生場所「住居」38.0% — 室内が最多",
+        "F4: エアコンを使わない理由 — 電気代、不快感、暑さを感じにくい",
+        "Calm framing: 「〜ということが分かっています」tone",
+        "Transition: so let's organize 3 areas you can check at home"
+      ],
+      "evidence_refs": ["F1", "F2", "F3", "F4", "F9"],
+      "policy_notes": "Policy warning: use statistics calmly, no fear theater. 「分かっています」「報告されています」の事実紹介トーン.",
+      "visual_scene_hint": "Illustrated data card, apartment interior with warm tones, possibly thermometer showing high reading"
+    },
+    {
+      "section_id": "S3",
+      "section_type": "explanation_block",
+      "title_hint": "ひとつめ：部屋の温度と湿度を整える",
+      "duration_target_min": 2.5,
+      "duration_target_max": 3.5,
+      "char_target_min": 800,
+      "char_target_max": 1120,
+      "spoken_intent": "First check area: room temperature and humidity. Cover the 28-degree guideline (with softener MS1 — it's a guideline, not absolute). Humidity 40–60%. Recommend a thermometer-hygrometer. AC usage tips — prioritize health over cost. Low-cost alternatives: sudare, shading curtains, ventilation timing (morning/night), fan + AC combo. Address cost anxiety directly and empathetically.",
+      "key_points": [
+        "F5: 「室温28度」は目安。設定温度≠室温。体調に合わせて調整",
+        "F6: 湿度40–60%。湿度80%超は28度でもリスク",
+        "G1: 温湿度計を設置して数値で確認",
+        "G2: エアコンは健康を守る道具。電気代より体調優先",
+        "G3: 遮光対策 — すだれ・よしず・遮光カーテン",
+        "G4: 換気タイミング — 早朝・夜間に開け、日中は閉める",
+        "G5: 扇風機・サーキュレーター併用",
+        "U3: 電気代比較は断定せず「〜とも言われています」",
+        "MS1 softener: 「あくまで目安です」"
+      ],
+      "evidence_refs": ["F5", "F6", "G1", "G2", "G3", "G4", "G5", "U1", "U3"],
+      "policy_notes": "MS1 mandatory softener after temperature numbers. U3: no definitive AC cost claim. Empathetic cost-anxiety framing.",
+      "visual_scene_hint": "AC remote control, thermometer-hygrometer on table, sudare on window, curtains"
+    },
+    {
+      "section_id": "S4",
+      "section_type": "explanation_block",
+      "title_hint": "ふたつめ：水分のとり方を見直す",
+      "duration_target_min": 2.0,
+      "duration_target_max": 3.0,
+      "char_target_min": 640,
+      "char_target_max": 960,
+      "spoken_intent": "Second check area: hydration habits. Cover daily target (1,000–1,500ml outside meals, with MS2 softener). Timing: wake-up, meals, bath, bedtime. Preferred drinks: barley tea, water. Mention oral rehydration solution for heavy sweating. Coffee/alcohol are not substitutes. Food-based hydration: miso soup, fruit, jelly. Practical tip: keep a water bottle within reach.",
+      "key_points": [
+        "F7: 食事以外の水分目安 1,000–1,500ml/日。コップ1杯200mlずつ",
+        "F7: タイミング — 起床時・食事時・入浴前後・就寝前",
+        "G6: 麦茶・水が基本。大量発汗時は経口補水液。コーヒー・アルコール不可",
+        "G7: 食事からの水分 — 味噌汁・果物・ゼリー",
+        "G9: 手の届く場所に飲み物を置く",
+        "MS2 softener: 「一般的な目安です。持病のある方はかかりつけ医に」"
+      ],
+      "evidence_refs": ["F7", "G6", "G7", "G9", "U2"],
+      "policy_notes": "MS2 mandatory softener after fluid intake numbers. Acknowledge medical conditions requiring different intake.",
+      "visual_scene_hint": "Kitchen table with water bottle, cup of barley tea, small notepad, miso soup bowl"
+    },
+    {
+      "section_id": "S5",
+      "section_type": "explanation_block",
+      "title_hint": "みっつめ：体の変化サインに気づく",
+      "duration_target_min": 2.0,
+      "duration_target_max": 3.0,
+      "char_target_min": 640,
+      "char_target_max": 960,
+      "spoken_intent": "Third check area: recognizing early body signals. List self-checkable signs: dizziness, fatigue, leg cramps, headache, unusual sweating patterns. Emphasize that seniors often don't notice these early. What to do: rest in a cool place, cool the body (neck, armpits), drink water. When to call for help: symptoms don't improve, can't drink by yourself. MS3 softener after symptom list.",
+      "key_points": [
+        "F8: 初期サイン — めまい・倦怠感・足のつり・頭痛・発汗異常・意識のぼんやり",
+        "G8: 体を冷やす — 首筋・脇の下・太ももの付け根に保冷剤・濡れタオル",
+        "C1: 休息後も改善しない → かかりつけ医・相談窓口に連絡",
+        "C2: 意識がぼんやり、自力で水分摂れない → 迷わず救急",
+        "MS3 softener: 「気になる症状が続く場合は、無理せず医療機関に」",
+        "Tone: calm awareness, not panic checklist"
+      ],
+      "evidence_refs": ["F8", "G8", "C1", "C2"],
+      "policy_notes": "MS3 mandatory softener. VR1: no depiction of collapsed person. VR4: expression stays calm/mildly concerned. Consult-a-clinician framing required.",
+      "visual_scene_hint": "Elderly person resting in chair, hand on forehead, calm living room, cooling items nearby"
+    },
+    {
+      "section_id": "S6",
+      "section_type": "practical_adjustment",
+      "title_hint": "まわりの力も借りましょう",
+      "duration_target_min": 1.0,
+      "duration_target_max": 2.0,
+      "char_target_min": 320,
+      "char_target_max": 640,
+      "spoken_intent": "Encourage connecting with support systems. Mention community resources: 地域包括支援センター, 民生委員, neighbor check-ins. Municipal support: AC subsidies, cool shelters (涼み処), heat prevention goods distribution. Gentle encouragement: it's okay to ask for help. Not isolationist self-reliance.",
+      "key_points": [
+        "Community_support: 地域包括支援センター、民生委員の訪問・安否確認",
+        "G10: 自治体のエアコン補助・涼み処・冷却グッズ配布",
+        "C3: 持病のある方 → 水分量は主治医に確認",
+        "Gentle encouragement: 「まわりに相談することも、大切な暑さ対策です」"
+      ],
+      "evidence_refs": ["G10", "community_support_findings", "C3"],
+      "policy_notes": "Help-seeking framing. No shame for needing assistance.",
+      "visual_scene_hint": "Neighbor waving from doorway, community center scene, bulletin board"
+    },
+    {
+      "section_id": "S7",
+      "section_type": "calm_close",
+      "title_hint": "ひとつずつ、少しずつ整えていきましょう",
+      "duration_target_min": 1.0,
+      "duration_target_max": 1.5,
+      "char_target_min": 320,
+      "char_target_max": 480,
+      "spoken_intent": "Quick recap of 3 check areas: (1) room temperature, (2) hydration, (3) body signals. Reassuring message: you don't need to do everything at once. Small steps make a difference. MS4 general disclaimer woven naturally. Warm farewell.",
+      "key_points": [
+        "Recap: 3つのポイント — 部屋の温度・水分・体のサイン",
+        "Reassurance: 「全部を一度にやらなくても大丈夫です」",
+        "MS4 softener: 「この動画は一般的な情報です。個別のことはかかりつけ医にご相談ください」",
+        "Warm farewell: 「今年の夏も、穏やかに過ごせますように」"
+      ],
+      "evidence_refs": [],
+      "policy_notes": "MS4 mandatory softener integrated naturally into closing. Calm, reassuring tone.",
+      "visual_scene_hint": "Peaceful apartment interior, gentle evening light, organized and comfortable space"
+    }
+  ],
+  "duration_budget": {
+    "S1_hook": {"min": 1.0, "max": 1.5},
+    "S2_context": {"min": 1.5, "max": 2.5},
+    "S3_room_temp": {"min": 2.5, "max": 3.5},
+    "S4_hydration": {"min": 2.0, "max": 3.0},
+    "S5_body_signals": {"min": 2.0, "max": 3.0},
+    "S6_support": {"min": 1.0, "max": 2.0},
+    "S7_closing": {"min": 1.0, "max": 1.5},
+    "total_min": 11.0,
+    "total_max": 17.0,
+    "within_target": true,
+    "target_range": "10–18 min"
+  },
+  "char_budget": {
+    "total_min_chars": 3520,
+    "total_max_chars": 5440,
+    "within_target": true,
+    "target_range": "3200–5760 chars"
+  },
+  "policy_compliance": {
+    "forbidden_angles_avoided": true,
+    "mandatory_softeners_placed": {
+      "MS1": "S3 — after temperature numbers",
+      "MS2": "S4 — after fluid intake numbers",
+      "MS3": "S5 — after symptom list",
+      "MS4": "S7 — closing disclaimer"
+    },
+    "visual_restrictions_noted": true,
+    "consult_guidance_included": ["S5 (C1, C2)", "S6 (C3)"]
+  },
+  "spoken_flow_quality_check": {
+    "natural_section_turns": true,
+    "no_repetitive_patterns": true,
+    "variety_in_section_length": true,
+    "hook_opens_with_familiar_scene": true,
+    "close_is_reassuring": true,
+    "reads_as_narration_not_article": true
+  }
+}

@@ -1,6 +1,8 @@
 {
   "project_id": "kenh_2_vid_005",
   "channel_id": "kenh_2",
+  "step": "01_video_intake",
+  "status": "complete",
   "project_scope": {
     "topic_cluster": "heat and cold preparedness",
     "topic_angle": "ひとり暮らしで備えたい夏の暑さ対策",
@@ -15,36 +17,128 @@
   "evidence_scope": {
     "min_sources": 5,
     "min_official_or_primary": 3,
-    "target_country_priority": [
-      "Japan"
-    ],
+    "target_country_priority": ["Japan"],
     "allow_non_japan_supporting_sources": true
   },
   "publication_goals": {
     "long_form_primary": true,
     "derive_shorts": 0
   },
-  "inherited_constraints": {
-    "visual_constraints": {
-      "visual_style_id": "illustrated_lifestyle_handbook",
-      "visual_substyle_id": "retro_clean_domestic_senior",
-      "non_dialogue_mode": true,
-      "host_usage_policy": "host_optional_reference_first"
+  "channel_state": {
+    "channel_name": "ひとりでも安心 シニア暮らしノート",
+    "channel_language": "ja-JP",
+    "target_country": "Japan",
+    "audience_age_band": "60+",
+    "content_mode": "educational_explanatory",
+    "voiceover_mode": "narration_only",
+    "veo_audio_mode": "silent"
+  },
+  "visual_constraints": {
+    "visual_style_id": "illustrated_lifestyle_handbook",
+    "visual_substyle_id": "retro_clean_2d_domestic",
+    "non_dialogue_mode": true,
+    "host_usage_policy": "host_optional_reference_first",
+    "lip_sync": false,
+    "talking_head_bias": false,
+    "audio_prompt_mode": "silent_motion_only",
+    "style_lock": {
+      "family_prompt_phrase": "illustrated lifestyle handbook",
+      "substyle_prompt_phrase": "retro-clean 2D, warm domestic scenes, senior-friendly",
+      "render_medium": "retro-clean 2D illustration",
+      "line_treatment": "clean flat outlines, minimal detail, object clarity",
+      "color_system": "flat soft colors, warm earth tones, low saturation, selective accent",
+      "composition_bias": "practical domestic scene focus, object clarity, minimal clutter, checklist-friendly layout",
+      "emotion_ceiling": "warm, reassuring, trustworthy, practical"
     },
-    "language_constraints": {
-      "language_profile_id": "jp_senior_safe_living_neutral",
-      "base_language_mode": "national_neutral",
-      "register_profile": "warm_polite_practical"
+    "demographic_anchors": {
+      "default_age_range": "65-75",
+      "age_lock_priority": "HIGH",
+      "age_presentation_keywords": [
+        "visibly elderly",
+        "silver-gray hair",
+        "gentle wrinkles around eyes and mouth",
+        "slightly weathered face",
+        "natural age spots on hands",
+        "relaxed mature posture",
+        "comfortable domestic clothing"
+      ]
     },
-    "editorial_constraints": {
-      "promise_style": "calm_preparation_and_safety",
-      "story_bias": "scenario_then_checklist"
+    "locale_governance": {
+      "target_country": "Japan",
+      "region_mode": "national_neutral",
+      "allowed_location_families": [
+        "ordinary Japanese apartment interiors",
+        "Japanese bathroom and bath areas",
+        "Japanese kitchen and dining spaces",
+        "Japanese entryway and genkan areas",
+        "Japanese bedroom and futon spaces",
+        "Japanese neighborhood streets and crossings",
+        "Japanese pharmacies and household-goods stores",
+        "Japanese clinic waiting areas only when the line truly needs them"
+      ]
+    },
+    "visible_text_governance": {
+      "default_policy": "avoid_readable_text",
+      "channel_language": "ja-JP",
+      "max_words": 6,
+      "mixed_language_policy": "disallow unless official brand_or_ui"
+    },
+    "motion_governance": {
+      "video_motion_policy": "non_dialogue_explanatory",
+      "forbid_dialogue": true,
+      "forbid_lip_sync": true,
+      "forbid_direct_to_camera_speech": true,
+      "veo_audio_policy": "silent",
+      "audio_prompt_directive": "(Silent video, no audio)."
     }
   },
-  "production_schedule": {
-    "month": 1,
-    "week": 1,
-    "weekday_slot": "Fri"
+  "language_constraints": {
+    "language_profile_id": "jp_senior_safe_living_neutral",
+    "base_language_mode": "national_neutral",
+    "register_profile": "warm_polite_practical",
+    "addressing_profile": "senior_respectful_neutral",
+    "preferred_audience_address": ["みなさん", "60代・70代の方", "シニア世代の方", "おひとりで暮らしている方"],
+    "preferred_softening_patterns": ["〜かもしれません", "〜してみましょう", "無理のない範囲で", "気になる場合は", "少しずつ整えていきましょう"],
+    "preferred_safety_framing_patterns": ["ここを見直すだけでも安心です", "ひとつずつ確認してみましょう", "気がついたときに直せば大丈夫です", "急がなくても大丈夫です"],
+    "avoid_patterns": ["絶対に", "必ず治る", "医者が隠している", "薬はやめて大丈夫", "これで事故ゼロ"],
+    "domain_lexicon_active": "seasonal_prep",
+    "domain_lexicon_terms": ["暑さ対策", "寒さ対策", "エアコン", "水分補給", "暖房", "換気"]
+  },
+  "editorial_constraints": {
+    "editorial_profile_id": "jp_senior_safe_living_scenario_checklist",
+    "promise_style": "calm_preparation_and_safety",
+    "story_bias": "scenario_then_checklist",
+    "fear_intensity_ceiling": "low",
+    "host_trust_role": "gentle_companion_narrator",
+    "episode_scope_bias": "one_domestic_scenario_per_video",
+    "story_structure_bias": [
+      "soft hook with familiar domestic scene",
+      "walkthrough of the scenario or room",
+      "why this area or habit matters for safety",
+      "3 to 5 practical check items or adjustments",
+      "before-after comparison when applicable",
+      "when to ask family or professionals for help",
+      "calm reassuring close"
+    ]
+  },
+  "publication_constraints": {
+    "publication_profile_id": "jp_senior_safe_living_handbook_package",
+    "thumbnail_bias": {
+      "text_density": "low",
+      "emotion": "warm_reassuring_not_alarming",
+      "scene_preference": "domestic_object_or_room_corner"
+    },
+    "title_bias": {
+      "prefer_age_anchor": true,
+      "prefer_daily_routine_language": true,
+      "must_avoid_overpromise": true,
+      "must_avoid_disease_cure_framing": true
+    },
+    "shorts_derivative_policy": {
+      "enabled": false,
+      "count": 0,
+      "reason": "intake override — long-form only for this video"
+    }
   },
   "special_notes": [
     "video is explanatory, not dialogue",
@@ -52,5 +146,40 @@
     "prefer object and environment shots over face-centric scenes",
     "avoid disease-cure framing unless the policy gate clearly allows it",
     "long-form only; do not derive shorts"
+  ],
+  "production_schedule": {
+    "month": 1,
+    "week": 1,
+    "weekday_slot": "Fri"
+  },
+  "conflict_resolution_log": [
+    {
+      "field": "target_duration_min",
+      "channel_default": 8,
+      "intake_override": 10,
+      "resolved": 10,
+      "reason": "intake-level duration override takes precedence"
+    },
+    {
+      "field": "target_duration_max",
+      "channel_default": 12,
+      "intake_override": 18,
+      "resolved": 18,
+      "reason": "intake-level duration override takes precedence"
+    },
+    {
+      "field": "derive_shorts",
+      "channel_default": 2,
+      "intake_override": 0,
+      "resolved": 0,
+      "reason": "special_notes explicitly state long-form only"
+    },
+    {
+      "field": "register_profile",
+      "channel_default": "warm_polite_educational",
+      "intake_override": "warm_polite_practical",
+      "resolved": "warm_polite_practical",
+      "reason": "intake inherited_constraints override"
+    }
   ]
 }

@@ -1,0 +1,184 @@
+{
+  "project_id": "kenh_2_vid_005",
+  "channel_id": "kenh_2",
+  "step": "04_policy_gate",
+  "status": "complete",
+  "overall_risk": "LOW",
+  "overall_risk_rationale": "Topic (summer heat preparedness at home) is practical daily-life safety. No disease treatment, no medication replacement, no diagnostic content. All claims are backed by official Japanese government sources. Working promise stays within educational framing. Risk is LOW provided softeners are applied at specific points.",
+  "allowed_angles": [
+    {
+      "angle": "室内熱中症の統計と「室内＝安全ではない」という認識のギャップ",
+      "status": "allowed_freely",
+      "notes": "Supported by FDMA official statistics. Factual, not fear-based."
+    },
+    {
+      "angle": "エアコンを使わない理由（電気代、不快感、感覚低下）の整理",
+      "status": "allowed_freely",
+      "notes": "Behavioral explanation. No blame framing. Empathetic tone."
+    },
+    {
+      "angle": "室温・湿度の目安と温湿度計の活用",
+      "status": "allowed_with_softeners",
+      "softener": "「28度はあくまで目安です。体調に合わせて調整してください」と明記。絶対的な閾値として提示しない。",
+      "uncertainty_ref": "U1"
+    },
+    {
+      "angle": "水分補給の目安量とタイミング",
+      "status": "allowed_with_softeners",
+      "softener": "「一般的な目安です。お薬や持病のある方は、かかりつけ医にご確認ください」と注記。",
+      "uncertainty_ref": "U2"
+    },
+    {
+      "angle": "熱中症の初期サイン（めまい・倦怠感・足のつりなど）",
+      "status": "allowed_with_softeners",
+      "softener": "「気になる症状が続く場合は、無理せずかかりつけ医や相談窓口に連絡しましょう」。自己診断を促さない。",
+      "consult_ref": "C1"
+    },
+    {
+      "angle": "低コスト暑さ対策（遮光・換気・冷却グッズ）",
+      "status": "allowed_freely",
+      "notes": "Practical home tips. No medical claim."
+    },
+    {
+      "angle": "地域の見守り・支援体制の紹介",
+      "status": "allowed_freely",
+      "notes": "Community support framing. Encourages help-seeking, not isolation."
+    },
+    {
+      "angle": "エアコンの電気代比較（つけっぱなし vs こまめオンオフ）",
+      "status": "allowed_with_softeners",
+      "softener": "「条件によって異なりますが、短い外出ならつけたままの方が効率的とも言われています」程度に留める。断定しない。",
+      "uncertainty_ref": "U3"
+    }
+  ],
+  "forbidden_angles": [
+    {
+      "angle": "熱中症の診断・治療方法の解説",
+      "reason": "Medical diagnosis/treatment is outside scope. This is a preparedness/prevention-awareness video.",
+      "guardrail": "policy_guardrails: avoid diagnosis language"
+    },
+    {
+      "angle": "「これで熱中症を防げます」などの予防確約",
+      "reason": "Guaranteed prevention is overclaiming. Violates policy_guardrails and topic_strategy forbidden_claims.",
+      "guardrail": "policy_guardrails: avoid guaranteed prevention"
+    },
+    {
+      "angle": "特定の薬・サプリ・医療機器の推奨",
+      "reason": "Medication/device recommendation is outside scope.",
+      "guardrail": "policy_guardrails: avoid medication-replacement framing"
+    },
+    {
+      "angle": "「医者に行かなくても大丈夫」などの受診回避フレーミング",
+      "reason": "Anti-doctor framing is explicitly forbidden.",
+      "guardrail": "policy_guardrails: avoid anti-doctor framing"
+    },
+    {
+      "angle": "恐怖を煽る表現（「死にます」「手遅れ」等）",
+      "reason": "Fear theater violates editorial fear_intensity_ceiling=low.",
+      "guardrail": "editorial_profile: fear_intensity_ceiling=low"
+    },
+    {
+      "angle": "他の動画チャンネルの構成や内容のコピー",
+      "reason": "Competitor copying forbidden by topic_strategy_standard.",
+      "guardrail": "topic_strategy_standard: do not import competitor structure"
+    }
+  ],
+  "mandatory_softeners": [
+    {
+      "id": "MS1",
+      "applies_to": "室温・温度の数値",
+      "softener_text": "あくまで目安です。体調に合わせて調整してください。",
+      "reason": "28度 is an administrative guideline, not a medical threshold."
+    },
+    {
+      "id": "MS2",
+      "applies_to": "水分摂取量の数値",
+      "softener_text": "一般的な目安です。お薬や持病のある方は、かかりつけ医にご確認ください。",
+      "reason": "Fluid intake varies by medical condition."
+    },
+    {
+      "id": "MS3",
+      "applies_to": "初期サインの説明後",
+      "softener_text": "気になる症状が続く場合は、無理せず医療機関や地域の相談窓口に連絡しましょう。",
+      "reason": "Symptom discussion requires consult-a-clinician framing."
+    },
+    {
+      "id": "MS4",
+      "applies_to": "動画全体のクロージング",
+      "softener_text": "この動画は一般的な情報をお伝えするものです。個別の状況については、かかりつけ医にご相談ください。",
+      "reason": "General disclaimer for health-adjacent content."
+    }
+  ],
+  "visual_restrictions": [
+    {
+      "id": "VR1",
+      "restriction": "熱中症で倒れている人のリアルな描写を避ける",
+      "reason": "Fear theater / misleading visual. Use calm preparedness scenes instead.",
+      "applies_to": "image_prompt_builder, video_prompt_builder"
+    },
+    {
+      "id": "VR2",
+      "restriction": "医療器具・病院の描写を最小限にする（必要な場合のみ）",
+      "reason": "This is a home preparedness video, not a clinical video. Clinic scenes only when the line truly needs them.",
+      "applies_to": "image_prompt_builder"
+    },
+    {
+      "id": "VR3",
+      "restriction": "温度計の数値を表示する場合は「目安」として見せる。絶対的な閾値として見せない",
+      "reason": "Aligns with U1 uncertainty.",
+      "applies_to": "image_prompt_builder"
+    },
+    {
+      "id": "VR4",
+      "restriction": "イラスト内の人物が苦痛を表す表情を過度に強調しない",
+      "reason": "Emotion ceiling = warm, reassuring, trustworthy. Not dramatic.",
+      "applies_to": "image_prompt_builder"
+    },
+    {
+      "id": "VR5",
+      "restriction": "non_dialogue_mode=true: 話している口元、リップシンク、カメラ目線の話者を含めない",
+      "reason": "System principle #14. Visual profile motion_governance.",
+      "applies_to": "image_prompt_builder, video_prompt_builder"
+    }
+  ],
+  "disclosure_notes": [
+    {
+      "id": "DN1",
+      "note": "動画はAI生成イラストを使用。リアルな映像と誤解されないよう、チャンネル概要欄またはエンドスクリーンで開示を推奨。",
+      "applies_to": "publication_package"
+    },
+    {
+      "id": "DN2",
+      "note": "統計データは2024年消防庁発表のもの。年度を明記して最新性を示す。",
+      "applies_to": "script_writer"
+    }
+  ],
+  "warnings_for_outline": [
+    "S2 (why this matters): 統計を使うが恐怖演出にならないよう、calm framing を維持。「〜ということが分かっています」という事実紹介のトーン。",
+    "S5 (body signals): 症状リストの後に必ずMS3 softenerを挿入するセクション構成にする。",
+    "S7 (closing): MS4 の一般免責を自然に組み込む。"
+  ],
+  "warnings_for_script": [
+    "温度・水分量の数値を述べる行の直後に、必ず「目安」「個人差」「かかりつけ医」のいずれかのsoftenerを入れる。",
+    "「防げます」「大丈夫です」「安心です」を単独で使わない。「見直すだけでも安心につながります」のように条件付きで使う。",
+    "初期サインの列挙後に、「気になる場合は」＋相談先を必ず入れる。",
+    "エアコン電気代の比較は断定せず「〜とも言われています」程度に留める。",
+    "forbidden_claims（02_topic_strategy.json）のフレーズをそのまま使わないこと。"
+  ],
+  "warnings_for_prompt_builders": [
+    "VR1: 倒れている人のリアル描写禁止。体調不良の描写は「椅子に座って休む」程度。",
+    "VR2: 病院・医療器具は最小限。温度計・水筒・エアコンリモコンなど日用品中心。",
+    "VR3: 温度計を映す場合、数値は「28」前後で示すが、「目安」としてのコンテキストで。",
+    "VR4: 表情は穏やか〜やや心配程度。苦痛・パニック表現不可。",
+    "VR5: non_dialogue — 話す口元、リップシンク、カメラ目線の話者禁止。",
+    "demographic_anchors: 人物は65–75歳、白髪・しわ・年齢相応の体格を明示。若く見せない。",
+    "locale_governance: 日本の一般的なアパート・住居。洋風家具のみの部屋にならないよう注意。"
+  ],
+  "warnings_for_publication_assets": [
+    "タイトルに「防げる」「安心」「絶対」を単独で使わない。",
+    "サムネイルに恐怖表現（倒れた人、赤い警告マーク等）を使わない。warm_reassuring_not_alarming。",
+    "サムネイルの人物が苦しそうな表情を見せない。",
+    "DN1: AI生成イラスト使用の開示を概要欄に含める。",
+    "DN2: 統計年度（2024年）を概要欄に明記。"
+  ]
+}

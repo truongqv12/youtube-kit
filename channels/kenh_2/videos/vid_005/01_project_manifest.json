@@ -1,0 +1,93 @@
+{
+  "project_id": "kenh_2_vid_005",
+  "channel_id": "kenh_2",
+  "created_at": "2026-04-29T01:01:00+07:00",
+  "topic_cluster": "heat and cold preparedness",
+  "topic_angle": "ひとり暮らしで備えたい夏の暑さ対策",
+  "target_duration_min": 10,
+  "target_duration_max": 18,
+  "tts_chars_per_min": 320,
+  "channel_language": "ja-JP",
+  "target_country": "Japan",
+  "visual_style_id": "illustrated_lifestyle_handbook",
+  "visual_substyle_id": "retro_clean_2d_domestic",
+  "non_dialogue_mode": true,
+  "veo_audio_mode": "silent",
+  "derive_shorts": 0,
+  "pipeline_steps": {
+    "step_00_build_profiles": {
+      "status": "complete",
+      "artifact": "00_channel_config.json + 4 profiles",
+      "note": "channel profiles pre-exist"
+    },
+    "step_01_video_intake": {
+      "status": "complete",
+      "artifacts": [
+        "01_intake_spec.json",
+        "01_project_manifest.json"
+      ]
+    },
+    "step_02_topic_strategy": {
+      "status": "complete",
+      "artifacts": [
+        "02_topic_strategy.json"
+      ]
+    },
+    "step_03_mandatory_research": {
+      "status": "complete",
+      "artifacts": [
+        "03_research_brief.json",
+        "03_source_log.md"
+      ]
+    },
+    "step_04_policy_gate": {
+      "status": "complete",
+      "artifacts": [
+        "04_policy_report.json"
+      ]
+    },
+    "step_05_outline_builder": {
+      "status": "complete",
+      "artifacts": [
+        "05_outline.json"
+      ]
+    },
+    "step_06_script_writer": {
+      "status": "complete",
+      "artifacts": [
+        "06_script_canonical.json",
+        "06_script_full.md",
+        "06_script_metrics.json"
+      ]
+    },
+    "step_07_image_prompt_builder": {
+      "status": "complete",
+      "artifacts": [
+        "07_image_prompt_table.csv"
+      ]
+    },
+    "step_08_video_prompt_builder": {
+      "status": "complete",
+      "artifacts": [
+        "08_video_prompt_table.csv"
+      ]
+    },
+    "step_09_three_column_export": {
+      "status": "complete",
+      "artifacts": [
+        "09_final_three_column.csv",
+        "09_export_qc_report.md"
+      ]
+    },
+    "step_10_publication_package": {
+      "status": "pending",
+      "artifacts": []
+    }
+  },
+  "conflict_resolutions": [
+    "duration_min: 8 → 10 (intake override)",
+    "duration_max: 12 → 18 (intake override)",
+    "derive_shorts: 2 → 0 (intake override, long-form only)",
+    "register_profile: warm_polite_educational → warm_polite_practical (intake override)"
+  ]
+}
