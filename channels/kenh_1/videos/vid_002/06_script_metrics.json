@@ -1,0 +1,15 @@
+{
+  "project_id": "kenh_1_vid_002",
+  "total_units": 113,
+  "total_chars": 3215,
+  "tts_chars_per_min": 320,
+  "estimated_duration_min": 10.0,
+  "target_duration_range": "10-15 min",
+  "target_chars_range": "3200-4800",
+  "duration_check": "PASS",
+  "reconstruction_check": "PASS — full_script equals newline join of canonical_script_units",
+  "tts_safe_check": "PASS — no headings, labels, bullets, speaker tags, brackets, or production notes",
+  "naturalness_check": "PASS — no 3 consecutive same-pattern lines, varied rhythm, no lecture-like connective stacking",
+  "banned_phrases_check": "PASS — no instances of 絶対に治る, 必ず防げる, 医者は教えてくれない, これだけで十分",
+  "policy_compliance": "PASS — cold water framed as preference, cortisol simplified to 体のストレス反応, pacing introduced naturally, mandatory softeners present, clinician section included"
+}

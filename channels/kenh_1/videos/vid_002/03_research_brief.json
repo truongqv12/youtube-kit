@@ -1,0 +1,62 @@
+{
+  "project_id": "kenh_1_vid_002",
+  "research_summary": "Evidence gathered on five common morning habits that may increase fatigue in seniors aged 60+. Research focused on Japanese official sources with supporting international evidence. All five claim areas now have at least moderate-to-high confidence with identified sources.",
+  "facts": [
+    {
+      "claim_area": "朝食欠食と疲労",
+      "finding": "高齢者が朝食を欠食すると、1日に必要な栄養素（たんぱく質、ビタミン、ミネラル）が不足しやすくなり、フレイル（筋力低下、体重減少、疲労感）の大きな要因となる。朝食は体内時計をリセットし、脳や体を活動モードに切り替えるスイッチの役割を果たす。欠食はこのリズムを乱し、筋肉の合成や代謝を阻害、疲労感や身体活動量の低下につながる。",
+      "sources": ["厚生労働省 e-ヘルスネット", "国民健康・栄養調査", "ダノン健康栄養財団"],
+      "confidence": "high"
+    },
+    {
+      "claim_area": "朝食欠食と死亡リスク",
+      "finding": "最新の研究では、高齢者の朝食欠食・遅延が疲労感やうつの初期サインである可能性、死亡リスクの上昇との関連が示唆されている。昼食・夕食の過食や血糖値急上昇のリスクも高まる。",
+      "sources": ["ハッサン・ダシュティ博士らの研究", "Newsweek Japan報道"],
+      "confidence": "moderate_to_high"
+    },
+    {
+      "claim_area": "冷水の胃腸・体温への影響",
+      "finding": "急激に大量の冷たい水を摂取すると、胃腸の血管が収縮して血流が一時的に低下し、消化機能や胃の蠕動運動が抑制される可能性がある（日本医師会、北斗病院の報告）。深部体温も一時的に低下（数分〜十数分で回復）。高齢者は若年者と比較して体温調節能力が低下しているため、冷たいものの過剰摂取は代謝低下や体調不良の懸念がある。一方で、冷水が胃・大腸反射を誘発し便秘解消に有用な面もある。臨床研究では、冷水による血圧上昇反応（pressor response）が高齢者で有意に大きいことが確認されている（NIH/PubMed）。結論: 高齢者においては個人の健康状態を考慮し、常温水または白湯を選ぶ方がリスクが少ない。",
+      "sources": ["日本医師会 (med.or.jp)", "北斗病院 (hokuto7.or.jp)", "NII学術論文 (nii.ac.jp)", "NIH/PubMed — pressor response in older adults", "千葉県健康情報"],
+      "confidence": "moderate_to_high — mechanism is supported; individual variation remains; framing as gentle preference is appropriate"
+    },
+    {
+      "claim_area": "朝の長時間座位と疲労",
+      "finding": "長時間の座位行動は死亡リスクを高める可能性がある。WHO 2020ガイドラインは高齢者に対し座位時間の削減を強く推奨。厚生労働省の身体活動指針も「座りっぱなしを避け、こまめに立ち上がる」ことを推奨。朝起きてから1時間以上動かずに座り続けると、体が低エネルギーモードのまま留まりやすい。",
+      "sources": ["WHO Physical Activity Guidelines 2020", "厚生労働省 健康づくりのための身体活動・運動ガイド", "日本老年医学会", "長寿科学振興財団"],
+      "confidence": "high"
+    },
+    {
+      "claim_area": "朝の急ぎ行動とストレス・コルチゾール",
+      "finding": "高齢者は加齢に伴い自律神経の調節機能が低下。朝急ぐことで交感神経が過剰に興奮し、血圧急上昇、血管・心臓への負担増加。コルチゾール（ストレスホルモン）は朝に最も分泌量が多い（Cortisol Awakening Response = CAR）。NIH/PubMedの研究では、CARの調節異常は加齢・慢性ストレス・疲労と関連することが確認されている。急ぎストレスが慢性化すると分泌バランスが崩れ、代謝・免疫機能・脳の海馬への悪影響。動悸、息切れ、立ちくらみ、慢性疲労感のリスク。",
+      "sources": ["NIH/PubMed — Cortisol Awakening Response (CAR) and aging", "オムロン健康情報", "Frontiers in Neuroendocrinology", "みんなの介護"],
+      "confidence": "high — CAR dysregulation in elderly is well-documented"
+    },
+    {
+      "claim_area": "理想的な朝のリズム・エネルギーペーシング",
+      "finding": "厚生労働省指針: 毎日決まった時間に起床→朝日を浴びて体内時計リセット→コップ1杯の水分補給→軽い活動→朝食で体温上昇と活動力向上。「ペーシング」概念: 作業療法（OT）のエビデンスベースの手法で、「疲れる前に休む」「活動の優先順位付け」「タスクの分散」を原則とする。朝に予定を詰め込むと「疲労の前借り」になり午後の活動に支障。World Physiotherapy、長寿科学振興財団、MSDマニュアルがペーシングを推奨。OTの「3Ps」原則: Pacing（配分）、Prioritizing（優先順位）、Planning（計画）。",
+      "sources": ["厚生労働省 e-ヘルスネット", "厚生労働省 身体活動・運動ガイド", "World Physiotherapy (world.physio)", "長寿科学振興財団 (tyojyu.or.jp)", "MSDマニュアル家庭版", "NIH/PubMed — pacing interventions for fatigue"],
+      "confidence": "high — pacing is established OT practice with published evidence"
+    }
+  ],
+  "practical_guidance_supported_by_evidence": [
+    "朝食は簡単でも摂る — 納豆、卵、ヨーグルト、牛乳など手軽な組み合わせで栄養補給（厚生労働省推奨）",
+    "冷水より常温水または白湯を選ぶ — 胃腸血管収縮・蠕動抑制の可能性を減らし、血圧急変リスクも軽減（日本医師会、NIH）。ただし最も重要なのは十分な水分摂取の維持",
+    "起きたら30分以内に軽く体を動かす — 座りっぱなしから脱して体を覚醒モードへ（WHO・厚生労働省ガイドライン）",
+    "着替えや準備を前夜に済ませ、朝は余裕を持つ — 交感神経の過剰興奮・CAR異常を防ぐ（NIH/PubMed, オムロン）",
+    "朝の予定を詰め込みすぎない — ペーシング原則に基づきエネルギー配分を1日全体で考え、朝に集中させない（World Physiotherapy, OTエビデンス）",
+    "「疲れてから休む」ではなく「疲れる前に休む」を意識 — OTのペーシング原則の基本"
+  ],
+  "unknowns_and_uncertainty": [
+    "冷水 vs 常温水: 胃腸血管収縮メカニズムと高齢者の血圧反応は確認されているが、「冷水が直接疲労を増やす」という因果関係の大規模臨床試験は限定的。framing は「体への負担を減らす選択肢」として提示",
+    "朝の急ぎ行動: CAR異常と慢性ストレスの関連は確立しているが、「朝急ぐこと」単体のRCTデータはない。ただし、自律神経・血圧・コルチゾールの一般メカニズムで十分に説明可能"
+  ],
+  "when_to_consult_clinician": [
+    "十分な休息をとっても1週間以上倦怠感が改善しない場合",
+    "日常生活（食事、着替え、家事）が辛い、または意欲が湧かない場合",
+    "疲労感に加え: 発熱、体重の急激な減少、食欲不振、息切れ、胸の痛み、動悸、気分の落ち込み、不眠、めまい、ふらつき、頭痛、足のむくみなどを伴う場合",
+    "突然の強い倦怠感（感染症や心血管疾患の可能性）",
+    "意識がぼんやりしている、会話が噛み合わない（脱水や重篤な疾患のサイン）",
+    "まずはかかりつけ医（内科）に相談、必要に応じて専門医へ"
+  ]
+}

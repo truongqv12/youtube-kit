@@ -1,0 +1,65 @@
+{
+  "overall_risk": "low",
+  "allowed_angles": [
+    "Identifying five common morning habits that may contribute to fatigue in seniors 60+, framed as gentle educational review.",
+    "Explaining physiological mechanisms behind each habit's impact: circadian clock reset (breakfast), gastric blood flow (cold water), sedentary inertia (sitting too long), autonomic stress (rushing), energy depletion (schedule overload).",
+    "Presenting practical daily adjustments using 'let's review together' framing rather than prescriptive commands.",
+    "Using the occupational therapy concept of 'pacing' (ペーシング) as a recognized, evidence-based strategy for energy management.",
+    "Including a clear 'when to consult a clinician' section for persistent fatigue or warning signs."
+  ],
+  "forbidden_angles": [
+    "Claiming that changing these five habits will cure chronic fatigue, prevent disease, or reverse aging.",
+    "Framing cold water as medically dangerous — evidence supports preference, not prohibition. Must not say '冷水は絶対にダメ'.",
+    "Suggesting these habit changes replace medication, especially for blood pressure, diabetes, or thyroid conditions.",
+    "Using disease-name shock framing (e.g., '脳卒中になる！', '糖尿病の原因！') to drive engagement.",
+    "Implying viewers are doing something 'wrong' in a judgmental tone — must maintain warm, non-blaming register.",
+    "Promising guaranteed energy improvement: '必ず元気になれる', 'これで疲れが治る' are banned."
+  ],
+  "mandatory_softeners": [
+    "Use exploratory verbs: '見直してみましょう', '確認していきましょう', '試してみるのもいいかもしれません'.",
+    "Frame cold water guidance as comfort-based choice, not medical prohibition: '体に優しい選択肢として常温水を試してみましょう'.",
+    "Include per-habit disclaimers when touching on blood pressure or digestion: '気になる場合は、かかりつけ医にご相談ください'.",
+    "Frame pacing/schedule advice as 'energy management' not 'you're doing too much': '朝のエネルギーを上手に配分する工夫'.",
+    "Add general disclaimer: 'この動画は日常の生活習慣を見直すきっかけとしてお届けしています。個別の症状や持病がある方は、必ず医師にご相談ください。'"
+  ],
+  "visual_restrictions": [
+    "Prohibit alarming portrayals of seniors collapsing, fainting, clutching chest, or in visible pain.",
+    "Maintain editorial manga style (seinen_soft_educational) — no photorealistic drift, no moe anime drift.",
+    "No medical authority symbols: no realistic stethoscopes, diagnostic screens, hospital beds, or red cross symbols unless the script line explicitly requires a clinical setting.",
+    "Cold water scenes: show a simple glass of water, not dramatic ice or frozen imagery that implies danger.",
+    "Rushing scenes: show gentle daily context (putting on shoes, walking to door), not dramatic speed lines or panic expressions.",
+    "All visible text in images must be Japanese only, max 6 words, avoid readable text unless required."
+  ],
+  "disclosure_notes": "This video provides general lifestyle education for daily wellness improvement, not individualized medical advice or diagnosis. It should be positioned as '朝の生活習慣の見直し' (reviewing morning lifestyle habits). The pacing concept is borrowed from occupational therapy but presented as a daily-life tip, not clinical intervention.",
+  "warnings_for_outline": [
+    "Must explicitly allocate a 'when to consult a clinician' section — do not let the 5 habits consume the entire duration.",
+    "Habit 2 (cold water) should be the shortest section — evidence is moderate, keep framing as gentle suggestion.",
+    "Habit 5 (schedule overload) must introduce 'pacing' concept naturally without making it feel like a clinical lecture.",
+    "Ensure the opening hook avoids blame framing: use curiosity ('なんとなく朝から疲れる…') not accusation ('あなたの習慣が間違っている').",
+    "The calm positive close must reinforce 'even one small change is enough' to prevent overwhelm."
+  ],
+  "warnings_for_script": [
+    "Strictly maintain 'warm_polite_educational' register throughout. No imperative commands ('やめなさい', 'すぐ変えて').",
+    "Use narrator patterns from language profile: 'この動画では、', '一緒に確認していきましょう。', '無理のない範囲で見直してみましょう。'",
+    "Cold water section: frame as '体感で判断してみてください' not '冷水は体に悪いです'.",
+    "Cortisol/CAR mention: do NOT use the technical term 'コルチゾール' in narration — translate to '体に負担のかかるストレスホルモン' or simply '体のストレス反応' to maintain accessibility.",
+    "Ensure narration-only execution: no dialogue, no character speech, no lip sync directives.",
+    "Every script unit must be TTS-safe: no parentheses, no formatting marks, no English abbreviations."
+  ],
+  "warnings_for_prompt_builders": [
+    "Keep image prompts peaceful and domestic — ordinary Japanese apartment, kitchen, neighborhood park.",
+    "Ensure Veo motion prompts do not add sudden violent movements, running, or unauthorized spoken dialogue.",
+    "Cold water scene: show a calm kitchen counter with a glass — avoid dramatic 'ice shattering' or 'freezing' visuals.",
+    "Rushing scene: gentle daily context (putting on shoes at genkan, walking toward door) with subtle time pressure cues, not exaggerated panic.",
+    "Host character (if used): must maintain consistent identity from reference, visibly elderly (65-75), silver-gray hair, gentle wrinkles.",
+    "Audio directive: all Veo prompts must include '(Silent video, no audio).' per system_principles.",
+    "Pacing/schedule scene: show a simple daily planner or calendar on a kitchen table, not a corporate time-management setup."
+  ],
+  "warnings_for_publication_assets": [
+    "Titles must use age anchors ('60代・70代の方') without reverting to clickbait or disease-shock.",
+    "Thumbnail must reflect 'concern_not_panic': calm manga illustration, low text density (max 4 words Japanese), no alarming expressions.",
+    "Title must not promise cure or guaranteed improvement: '疲れが治る' is forbidden, '見直してみませんか' is allowed.",
+    "Description must include soft disclaimer and source family mentions per publication_profile.",
+    "derive_shorts=0 for this video — do not generate Shorts publication assets."
+  ]
+}

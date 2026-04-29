@@ -1,0 +1,47 @@
+{
+  "project_id": "kenh_1_vid_002",
+  "topic_cluster": "morning habits",
+  "topic_angle": "朝にやりがちな疲れやすくなる習慣5つ",
+  "target_viewer": "Japanese senior viewers 60+ who want to understand why certain morning routines leave them feeling drained, and how to adjust small daily habits for calmer energy throughout the day",
+  "viewer_problem": "Many seniors follow the same morning routine for years without realizing some habits — like skipping breakfast, drinking cold water on an empty stomach, or rushing through morning chores — may be contributing to persistent tiredness or sluggishness during the day.",
+  "working_promise": "この動画では、朝の何気ない習慣の中から、疲れやすさにつながりやすい5つのポイントを整理して、無理のない見直し方を一緒に確認していきます。",
+  "safe_claim_boundary": "Can frame these as habits that are commonly associated with increased fatigue or physical strain in older adults according to health guidance. Cannot claim that changing these habits will cure chronic fatigue, prevent disease, or replace medical treatment.",
+  "forbidden_claims": [
+    "これをやめれば疲れが治る (stopping this will cure your fatigue)",
+    "医者に行かなくても大丈夫 (you don't need to see a doctor)",
+    "この習慣で病気を予防できる (this habit prevents disease)",
+    "薬の代わりになる (this replaces medication)",
+    "必ず元気になれる (you will definitely feel better)"
+  ],
+  "research_questions": [
+    "What are the physiological reasons why skipping or delaying breakfast increases fatigue risk in adults aged 60+? (Japanese geriatric nutrition guidelines preferred)",
+    "How does drinking very cold water on an empty stomach immediately after waking affect the digestive system and energy levels in older adults?",
+    "What does current evidence say about the relationship between prolonged morning inactivity (e.g., sitting for over an hour after waking) and daytime fatigue in seniors?",
+    "Is there evidence that rushing through morning tasks (hurried dressing, fast walking to errands) increases cortisol or physical strain in older adults?",
+    "What do Japanese health authorities (e.g., 厚生労働省, 日本老年医学会) recommend as an ideal morning pacing rhythm for seniors to maintain steady energy?",
+    "When should persistent morning fatigue prompt a senior to consult a clinician, and what warning signs distinguish normal age-related tiredness from something requiring medical attention?"
+  ],
+  "planned_sections": [
+    "Soft Hook: Relatable everyday scenario — a senior who follows the same morning routine every day but always feels tired by mid-morning, wondering why.",
+    "Why it matters: Brief explanation that the body's recovery and energy regulation change after 60, and small habit mismatches can compound fatigue without obvious cause.",
+    "Habit 1 — Skipping or delaying breakfast: How an empty stomach after overnight fasting strains energy reserves; what a simple, light morning meal looks like.",
+    "Habit 2 — Drinking ice-cold water first thing: Why room-temperature or warm water is gentler on the digestive system and circulation; a calm swap suggestion.",
+    "Habit 3 — Sitting still too long after waking: How prolonged inactivity after sleep keeps the body in low-energy mode; gentle movement ideas (not exercise, just light activity).",
+    "Habit 4 — Rushing through morning tasks: How hurrying raises stress hormones and physical strain; the value of pacing and small pauses.",
+    "Habit 5 — Overloading the morning schedule: How cramming errands into the first hours depletes energy reserves; a simpler morning rhythm.",
+    "When to ask a clinician: Warning signs like persistent fatigue despite rest, unexplained weight changes, or dizziness that suggest something beyond habit.",
+    "Calm Positive Close: Encouragement that even one or two small adjustments can make mornings feel noticeably calmer — no need to change everything at once."
+  ],
+  "packaging_seeds_longform": [
+    "Title Idea 1: 朝にやりがちな「疲れやすくなる習慣」5つ｜60代・70代の方へ",
+    "Title Idea 2: なんとなく疲れる朝、その習慣が原因かもしれません｜シニアの朝の見直し",
+    "Title Idea 3: 朝の何気ない習慣が疲れを招いている？｜穏やかに見直す5つのポイント",
+    "Thumbnail: Clean manga-style illustration of a senior woman sitting at a kitchen table in soft morning light, looking slightly puzzled at her untouched breakfast. Warm tones, low text density, concern-not-panic expression. Text overlay (max 4 words): 朝の習慣、大丈夫？"
+  ],
+  "packaging_seeds_shorts": [
+    "Note: derive_shorts=0 per intake spec. No Shorts derivatives for this video.",
+    "If Shorts are later enabled — Short 1 (breakfast skip): Quick hook about why skipping breakfast after 60 hits differently, pulling viewers to the full video.",
+    "If Shorts are later enabled — Short 2 (cold water swap): Gentle comparison of cold vs warm water in the morning for seniors, linking to the full routine review."
+  ],
+  "notes_for_research": "Focus on Japanese primary sources (厚生労働省, 日本老年医学会, NHK健康チャンネル). Prioritize geriatric nutrition, morning hydration, and age-related energy management. Ensure advice stays within daily-routine educational framing. Avoid overlapping with vid_001 content (which covered rising from bed, in-bed stretches, and first glass of water). This video focuses on habit mistakes that cause fatigue, not on the physical act of getting out of bed."
+}

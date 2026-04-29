@@ -27,8 +27,8 @@
   "channel_visual_continuity_level": "strict",
   "channel_host_continuity_level": "strict",
   "channel_strategy_mode": "topic_first_research_driven",
-  "default_longform_duration_min": 8,
-  "default_longform_duration_max": 12,
+  "default_longform_duration_min": 10,
+  "default_longform_duration_max": 15,
   "default_shorts_derivatives": 2,
   "veo_audio_mode": "silent"
 }

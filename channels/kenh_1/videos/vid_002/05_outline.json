@@ -1,0 +1,120 @@
+{
+  "project_id": "kenh_1_vid_002",
+  "target_duration_mins": "10-15",
+  "target_chars_range": "3200-4800",
+  "outline_sections": [
+    {
+      "section_number": 1,
+      "purpose": "Soft Hook — Curiosity-based morning fatigue scenario",
+      "spoken_focus": "Paint a relatable, warm picture of a senior who follows the same morning routine every day but always feels tired by mid-morning. Use curiosity framing ('なんとなく朝から疲れる…その原因、毎朝の何気ない習慣にあるかもしれません'). No blame, no accusation. Gently introduce the idea that five common habits may be contributing to this fatigue without the person realizing it.",
+      "key_points": [
+        "Welcome viewers gently using narrator patterns: 'この動画では、'.",
+        "Relatable scenario: waking up, going through the usual routine, but feeling sluggish by 10 AM.",
+        "Introduce the working promise: '朝の何気ない習慣の中から、疲れやすさにつながりやすい5つのポイントを、一緒に確認していきましょう。'",
+        "Set tone: this is a review together, not a lecture or warning."
+      ],
+      "estimated_chars_proportion": "350-450 characters"
+    },
+    {
+      "section_number": 2,
+      "purpose": "Context — Why the 60+ body responds differently to morning habits",
+      "spoken_focus": "Brief, warm educational explanation of how the body's energy regulation changes after 60. Use simple metaphors, not medical jargon. The body's 'engine startup' takes longer, the internal clock needs clearer signals, and small habit mismatches can compound fatigue without obvious cause.",
+      "key_points": [
+        "After 60, the body's circadian clock reset mechanism becomes slower — it needs stronger signals (light, food, movement) to switch from sleep mode to active mode.",
+        "Overnight fasting + dehydration means the body wakes up in a low-energy state.",
+        "Autonomic nervous system adjustments take longer — sudden demands can cause strain.",
+        "Frame: 'だからこそ、朝のちょっとした習慣が、一日の疲れやすさに影響しやすくなるんですね。'"
+      ],
+      "estimated_chars_proportion": "450-550 characters"
+    },
+    {
+      "section_number": 3,
+      "purpose": "Habit 1 — Skipping or delaying breakfast",
+      "spoken_focus": "The most evidence-backed section. Explain how an empty stomach after overnight fasting leaves the body without fuel for the circadian clock reset. Frame the fix as easy and practical — not a full meal, just something simple.",
+      "key_points": [
+        "Common pattern: not hungry in the morning, so skipping breakfast or just having coffee.",
+        "Why it matters: breakfast is the body's internal clock reset signal. Without it, the brain and muscles stay in 'sleep mode' longer, and energy throughout the day becomes unstable.",
+        "Frailty connection: chronic breakfast skipping is linked to nutritional deficiency and frailty risk in seniors (厚生労働省).",
+        "Practical fix: even a small combination — yogurt with banana, egg with rice, or milk with toast — is enough to send the 'wake up' signal.",
+        "Softener: '食欲がない朝もありますよね。そんなときは、ヨーグルトひとつでも十分です。'"
+      ],
+      "estimated_chars_proportion": "550-700 characters"
+    },
+    {
+      "section_number": 4,
+      "purpose": "Habit 2 — Drinking very cold water first thing",
+      "spoken_focus": "The shortest habit section per policy report guidance. Frame as comfort-based choice, not medical prohibition. Avoid saying cold water is 'bad' — instead explain that room-temperature water may be gentler on the body after a long sleep.",
+      "key_points": [
+        "Common pattern: grabbing ice-cold water from the fridge immediately after waking.",
+        "Mechanism (simplified): very cold liquid can temporarily tighten blood vessels in the stomach area, and for some seniors, this may cause a brief blood pressure spike. The body's temperature regulation is already slower after 60.",
+        "Frame as preference: '体に優しい選択肢として、常温のお水や白湯を試してみるのもいいかもしれません。'",
+        "Key disclaimer: hydration itself is the most important thing — whatever temperature you prefer, drinking water in the morning is always a good habit.",
+        "Softener: '冷たいお水が好きな方はそのままでも大丈夫ですよ。ただ、もしお腹が気になる方は、常温を試してみてください。'"
+      ],
+      "estimated_chars_proportion": "400-500 characters"
+    },
+    {
+      "section_number": 5,
+      "purpose": "Habit 3 — Sitting still too long after waking",
+      "spoken_focus": "Practical and encouraging. Show that this isn't about exercise — it's about sending gentle movement signals to wake the body up. Use WHO and 厚生労働省 backing for reducing sedentary time.",
+      "key_points": [
+        "Common pattern: waking up, sitting on the sofa or at the table for over an hour watching TV or reading before moving.",
+        "Why it matters: the body stays in low-energy 'sleep inertia' mode when no movement signal comes. Blood circulation stays sluggish, muscles stay cold.",
+        "WHO and 厚生労働省 both recommend reducing prolonged sitting for seniors.",
+        "Practical fix: not exercise — just light activity within the first 30 minutes. Examples: opening curtains and standing in sunlight, light kitchen puttering, a short walk to the mailbox, gentle arm and leg movements.",
+        "Frame: '運動ではなく、ほんの少しの動きで十分です。カーテンを開けに立つ、それだけでも体のスイッチが入りやすくなります。'"
+      ],
+      "estimated_chars_proportion": "500-650 characters"
+    },
+    {
+      "section_number": 6,
+      "purpose": "Habit 4 — Rushing through morning tasks",
+      "spoken_focus": "Relatable and calming. Many seniors feel they must hurry to complete tasks efficiently. Explain that rushing adds physical strain and stress that the aging body absorbs differently. Do NOT use 'cortisol' — use '体のストレス反応' instead.",
+      "key_points": [
+        "Common pattern: hurrying to get dressed, rushing to prepare breakfast, speed-walking to the store or clinic.",
+        "Why it matters: rushing triggers a stress response in the body — blood pressure rises, the heart works harder. After 60, the autonomic nervous system adjusts more slowly, so this strain lingers longer.",
+        "Connection to fatigue: the energy spent on stress response in the first hour is energy that won't be available later in the day.",
+        "Practical fix: prepare clothes and bags the night before. Build 10-15 minutes of buffer into the morning. Move at your own comfortable pace.",
+        "Softener: '急がなくていいんです。朝に余裕を持つだけで、体の負担はぐっと減ります。'"
+      ],
+      "estimated_chars_proportion": "500-650 characters"
+    },
+    {
+      "section_number": 7,
+      "purpose": "Habit 5 — Overloading the morning schedule",
+      "spoken_focus": "Introduce the pacing concept naturally without clinical terminology. Frame as a daily-life energy management tip. Validate that wanting to be productive is natural, but spreading tasks through the day preserves energy.",
+      "key_points": [
+        "Common pattern: cramming all errands and chores into the morning because 'the morning is when I have the most energy.'",
+        "Why it matters: using all available energy in the first few hours leaves nothing for the afternoon and evening — this is called 'energy front-loading'. It's a common cause of unexplained afternoon fatigue.",
+        "The pacing idea (simplified): '疲れる前に休む' — rest before you're exhausted, not after. Spread tasks across the day rather than concentrating them.",
+        "Practical fix: choose 1-2 important tasks for the morning, save the rest for after lunch or another day. Keep the morning routine simple and predictable.",
+        "Frame: '朝のエネルギーを全部使い切らない工夫。それだけで、午後の過ごしやすさが変わってくるかもしれません。'"
+      ],
+      "estimated_chars_proportion": "500-650 characters"
+    },
+    {
+      "section_number": 8,
+      "purpose": "When to consult a clinician",
+      "spoken_focus": "Serious but calm. Frame as caring caution, not alarmist warning. Short and actionable — viewers should know exactly when to act.",
+      "key_points": [
+        "These five adjustments are for daily wellness — they don't replace medical care.",
+        "When to seek help: fatigue that doesn't improve after a week of good rest; loss of appetite or unexplained weight change; persistent dizziness, chest pain, or breathlessness; loss of motivation or deep mood changes.",
+        "Action: 'まずはかかりつけ医に相談してみてください。'",
+        "Mandatory softener: 'この動画は日常の生活習慣を見直すきっかけとしてお届けしています。個別の症状や持病がある方は、必ず医師にご相談ください。'"
+      ],
+      "estimated_chars_proportion": "300-400 characters"
+    },
+    {
+      "section_number": 9,
+      "purpose": "Calm positive close",
+      "spoken_focus": "Warm encouragement. Reinforce that even one small change is enough. No need to overhaul everything at once. End with gratitude and a gentle goodbye.",
+      "key_points": [
+        "Brief recap: five morning habits that might be adding to fatigue — breakfast, water temperature, morning movement, pacing, and schedule.",
+        "Encouragement: 'まずは、気になったものをひとつだけ、明日の朝から試してみてください。'",
+        "Reassurance: 'すべてを変える必要はありません。ひとつでも見直すだけで、朝の過ごし方が少し楽になるかもしれません。'",
+        "Warm close: gratitude for watching, gentle goodbye."
+      ],
+      "estimated_chars_proportion": "250-350 characters"
+    }
+  ]
+}
