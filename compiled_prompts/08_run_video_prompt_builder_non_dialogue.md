@@ -45,6 +45,14 @@ Return:
 12. allowed_to_proceed
 
 ## Hard rules
+- `08_video_prompt_table.csv` is a checkpoint artifact for resume/debug/QC, not a production prompt table
+- do not write per-video scripts to generate or validate motion prompts; use reviewed repo scripts under `tools/pipeline/`
+- no exact duplicate `prompt_video_veo3` rows are allowed
+- repeating the same first motion sentence more than two times requires scene-specific variation
+- motion must derive from the actual Step 07 image prompt object/scene
+- do not use filler motion where the object does not support it: `display numbers hold steady` requires display/remote/thermometer context, and `steam/condensation` requires liquid or thermal context
+- generic `breathes naturally` cannot be the only subject micro-action
+- each prompt must include object-specific or subject-specific micro-action
 - this step is image-to-video only
 - `prompt_video_veo3` must be in English
 - each row is one focused motion beat only

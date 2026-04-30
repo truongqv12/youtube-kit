@@ -200,10 +200,16 @@ Step 10  →  Publication package (web access required)
 | **05** | Outline Builder | research + policy | `05_outline.json` |
 | **06** | Script Writer | outline + knowledge | `06_script_canonical.json` + full script |
 | **07A** | Retention Visual Plan | script + hook/pacing standards | `07A_retention_visual_plan.json` |
-| **07** | Image Prompt Builder | script + retention plan + visual profile | `07_image_prompt_table.csv` |
-| **08** | Video Prompt Builder | image prompts + retention plan + script | `08_video_prompt_table.csv` |
-| **09** | Three-Column Export | prompts + script | `09_final_three_column.csv` + QC report |
+| **07** | Image Prompt Builder | script + retention plan + visual profile | `07_image_prompt_table.csv` checkpoint |
+| **08** | Video Prompt Builder | image prompts + retention plan + script | `08_video_prompt_table.csv` checkpoint |
+| **09** | Three-Column Export | prompts + script | `09_final_three_column.csv` production + QC report |
 | **10** | Publication Package | export + **web** | `10_publication_package.json` |
+
+### Artifact roles
+
+- `07_image_prompt_table.csv` and `08_video_prompt_table.csv` are checkpoint artifacts for resume/debug/QC.
+- `09_final_three_column.csv` is the only production prompt table operators should copy into production tooling.
+- Use `tools/pipeline/validate-prompt-checkpoints.py` and `tools/pipeline/export-final-three-column.py`; do not ask AI agents to invent per-video scripts for standard Step 07/08/09 validation/export.
 
 ### Final Export — Exactly 3 Columns
 
@@ -302,10 +308,10 @@ vid_001/
 ├── 06_script_full.md            # Full script in markdown
 ├── 06_script_metrics.json       # Script metrics (duration, chars)
 ├── 07A_retention_visual_plan.json # Retention visual sidecar
-├── 07_image_prompt_table.csv    # Image prompt table
-├── 08_video_prompt_table.csv    # Video prompt table
-├── 09_final_three_column.csv    # ✅ Primary export — 3 columns
-├── 09_export_qc_report.md       # QC report
+├── 07_image_prompt_table.csv    # Checkpoint image prompt table
+├── 08_video_prompt_table.csv    # Checkpoint video prompt table
+├── 09_final_three_column.csv    # ✅ Production prompt table — 3 columns
+├── 09_export_qc_report.md       # QC report with checkpoint alignment
 ├── 10_publication_package.json  # Publication package
 └── 10_publication_package.md    # Publication package (readable)
 ```

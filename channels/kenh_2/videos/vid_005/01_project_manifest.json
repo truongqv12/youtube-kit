@@ -89,5 +89,11 @@
     "duration_max: 12 → 18 (intake override)",
     "derive_shorts: 2 → 0 (intake override, long-form only)",
     "register_profile: warm_polite_educational → warm_polite_practical (intake override)"
-  ]
+  ],
+  "artifact_roles": {
+    "07_image_prompt_table.csv": "checkpoint",
+    "08_video_prompt_table.csv": "checkpoint",
+    "09_final_three_column.csv": "production",
+    "09_export_qc_report.md": "qc_report"
+  }
 }

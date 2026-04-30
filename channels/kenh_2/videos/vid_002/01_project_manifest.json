@@ -113,5 +113,11 @@
     "description": "Final three-column merge — join script, image prompts, and video prompts into production-ready CSV",
     "required_input": "08_video_prompt_table.csv",
     "prompt": "compiled_prompts/09_run_three_column_exporter.md"
+  },
+  "artifact_roles": {
+    "07_image_prompt_table.csv": "checkpoint",
+    "08_video_prompt_table.csv": "checkpoint",
+    "09_final_three_column.csv": "production",
+    "09_export_qc_report.md": "qc_report"
   }
 }

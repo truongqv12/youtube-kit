@@ -22,7 +22,25 @@ Run in order:
 - Final 3-column file is `09_final_three_column.csv`
 - Title / thumbnail / description / shorts package is `10_publication_package.json` and `10_publication_package.md`
 
-## 6. Only publish when all 3 conditions are met
+## 6. Validate checkpoints and export production CSV
+
+Step 07/08 CSVs are checkpoint artifacts for resume/debug/QC. Use Step 09 CSV as the only production prompt table.
+
+```bash
+python tools/pipeline/validate-prompt-checkpoints.py --channel kenh_2 --video vid_006
+python tools/pipeline/export-final-three-column.py --channel kenh_2 --video vid_006
+```
+
+Windows examples:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File tools/pipeline/validate-prompt-checkpoints.ps1 -Channel kenh_2 -Video vid_006
+powershell -ExecutionPolicy Bypass -File tools/pipeline/export-final-three-column.ps1 -Channel kenh_2 -Video vid_006
+```
+
+Do not ask the AI agent to write temporary Python/CMD scripts for standard Step 07/08/09 validation or export. Use `tools/pipeline` scripts.
+
+## 7. Only publish when all 3 conditions are met
 - `09_export_qc_report.md` has no blocking errors
 - Publication package includes title, thumbnail, description, and keywords
 - 2 Shorts derivatives are ready to drive traffic to the long-form video

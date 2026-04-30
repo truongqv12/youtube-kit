@@ -19,6 +19,14 @@ Chat output should contain only:
 Do not paste full JSON, CSV, or Markdown artifact content into chat unless the operator explicitly asks for inline output.
 If direct file writing is unavailable, fall back to the response envelope above.
 
+## Artifact roles
+- Checkpoint artifact: resumable intermediate output for debug, QC, and safe resume. It may contain helper metadata.
+- Production artifact: operator-facing final deliverable for external production use.
+- `07_image_prompt_table.csv` is a Step 07 checkpoint artifact.
+- `08_video_prompt_table.csv` is a Step 08 checkpoint artifact.
+- `09_final_three_column.csv` is the only production prompt table.
+- `09_export_qc_report.md` must list source checkpoints and row alignment status.
+
 ## Final export
 Exactly 3 columns:
 - `script_text`

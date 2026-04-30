@@ -17,5 +17,11 @@
     "06B_tts_surface_report.md"
   ],
   "constraints_locked": true,
-  "next_step": "07_run_image_prompt_builder.md"
+  "next_step": "07_run_image_prompt_builder.md",
+  "artifact_roles": {
+    "07_image_prompt_table.csv": "checkpoint",
+    "08_video_prompt_table.csv": "checkpoint",
+    "09_final_three_column.csv": "production",
+    "09_export_qc_report.md": "qc_report"
+  }
 }

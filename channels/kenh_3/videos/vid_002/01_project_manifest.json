@@ -44,5 +44,11 @@
     "10_publication_package.json",
     "10_publication_package.md"
   ],
-  "next_step": "operator_review_or_manual_production"
+  "next_step": "operator_review_or_manual_production",
+  "artifact_roles": {
+    "07_image_prompt_table.csv": "checkpoint",
+    "08_video_prompt_table.csv": "checkpoint",
+    "09_final_three_column.csv": "production",
+    "09_export_qc_report.md": "qc_report"
+  }
 }

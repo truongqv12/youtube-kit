@@ -97,5 +97,11 @@
     "description": "Outline Builder — convert the strategy and research into a structured scene-by-scene outline",
     "required_input": "04_policy_report.json",
     "prompt": "compiled_prompts/05_run_outline_builder.md"
+  },
+  "artifact_roles": {
+    "07_image_prompt_table.csv": "checkpoint",
+    "08_video_prompt_table.csv": "checkpoint",
+    "09_final_three_column.csv": "production",
+    "09_export_qc_report.md": "qc_report"
   }
 }

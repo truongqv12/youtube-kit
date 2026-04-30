@@ -1,5 +1,12 @@
 # Artifact Contracts
 
+## Artifact roles
+- Checkpoint artifact = resumable intermediate for resume/debug/QC; it may include helper metadata.
+- Production artifact = operator-facing final deliverable.
+- `07_image_prompt_table.csv` and `08_video_prompt_table.csv` are checkpoint artifacts.
+- `09_final_three_column.csv` is the only production prompt table.
+- `09_export_qc_report.md` records source checkpoints, row counts, alignment, warnings, and errors.
+
 ## Hard contracts
 - external research required before script when topic requires it
 - `full_script == "\n".join(canonical_script_units)`

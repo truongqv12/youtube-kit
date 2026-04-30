@@ -20,4 +20,10 @@ Do not imply speech if non-dialogue mode is enabled.
 - prompt_video_veo3
 
 ## Output
-- `08_video_prompt_table.csv`
+- `08_video_prompt_table.csv` checkpoint artifact for resume/debug/QC
+
+## Automation rule
+Use repo scripts under `tools/pipeline/` for standard validation/export. Do not create per-video scripts.
+
+## Variation rule
+No exact duplicate `prompt_video_veo3` rows. Motion must derive from the actual Step 07 image object/scene and include object-specific or subject-specific micro-action.

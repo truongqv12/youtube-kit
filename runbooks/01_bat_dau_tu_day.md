@@ -12,6 +12,8 @@ This file explains how to run the pipeline manually, following the v3 process.
 - Any step with `Required reads` requires all listed files to be pasted before execution
 - Always require the AI to return `Preflight` first
 - Steps 07A, 07, 08, 09, and 10 must read `01_project_manifest.json` and use `06_script_canonical.json` as the script source-of-truth
+- Step 07/08 CSVs are checkpoint artifacts for resume/debug/QC; Step 09 CSV is the only production prompt table
+- Use `tools/pipeline/` scripts for Step 07/08/09 validation/export; do not ask AI to write temporary per-video scripts
 - Each channel only requires filling one file: `00_channel_seed.json`
 
 ## Short workflow

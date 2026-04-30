@@ -101,5 +101,11 @@
     "description": "Script writer — write TTS-safe canonical script units based on outline, research, and policy constraints",
     "required_input": "05_outline.json + 03_research_brief.json + 04_policy_report.json",
     "prompt": "compiled_prompts/06_run_script_writer_canonical.md"
+  },
+  "artifact_roles": {
+    "07_image_prompt_table.csv": "checkpoint",
+    "08_video_prompt_table.csv": "checkpoint",
+    "09_final_three_column.csv": "production",
+    "09_export_qc_report.md": "qc_report"
   }
 }

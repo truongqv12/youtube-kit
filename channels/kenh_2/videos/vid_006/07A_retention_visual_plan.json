@@ -2,110 +2,331 @@
   "project_id": "kenh_2_vid_006",
   "channel_id": "kenh_2",
   "pipeline_step": "07A_retention_visual_plan",
-  "generated_at": "2026-04-30T15:48:00+07:00",
+  "generated_at": "2026-04-30T21:15:00+07:00",
+  "source_files": [
+    "core/system_principles.md",
+    "core/policy_guardrails.md",
+    "core/hook_engineering_standard.md",
+    "core/pacing_control_standard.md",
+    "core/title_thumbnail_psychology_standard.md",
+    "core/output_conventions.md",
+    "knowledge/visual/00_visual_strategy.md",
+    "knowledge/visual/05_negative_visual_rules.md",
+    "channels/kenh_2/00_channel_config.json",
+    "channels/kenh_2/00_editorial_profile.json",
+    "channels/kenh_2/00_visual_profile.json",
+    "channels/kenh_2/videos/vid_006/01_project_manifest.json",
+    "channels/kenh_2/videos/vid_006/01_intake_spec.json",
+    "channels/kenh_2/videos/vid_006/02_topic_strategy.json",
+    "channels/kenh_2/videos/vid_006/03_research_brief.json",
+    "channels/kenh_2/videos/vid_006/04_policy_report.json",
+    "channels/kenh_2/videos/vid_006/05_outline.json",
+    "channels/kenh_2/videos/vid_006/06_script_canonical.json"
+  ],
 
   "effective_script_source": "06_script_canonical.json",
-  "step_06b_applied": true,
-
   "opening_strategy": "self_check_visual_question",
   "hook_type": "self_check_question",
-  "viewer_question": "自分は暑さ対策をしているつもりだけど、本当に大丈夫なのか？",
-  "allowed_non_linear_rows": [0, 1, 2],
-  "tension_curve": "low_start → mild_concern_at_sign_reveal → practical_relief → calm_close",
-  "daily_life_anchor": "エアコンのある日本の室内、コップの水、温湿度計、枕元の水",
+  "viewer_question": "暑さ対策はしているつもりだけど、見えていない危険サインはないだろうか？",
+  "allowed_non_linear_rows": [1, 2, 3],
+  "tension_curve": "moderate_opening → calm_background → moderate_sign1 → moderate_sign2 → moderate_sign3 → low_checklist → low_consult → low_close",
+  "daily_life_anchor": "夏の日本の住居：リビングに扇風機、半分引かれたカーテン、テーブルの上のコップ。見た目は普通だが温湿度計が31度を示している。",
   "thumbnail_emotion_hint": "gentle_concern",
 
   "retention_beats": [
     {
       "unit_index": 0,
       "script_alignment": "暑さ対策はちゃんとしている、そう思って夏を過ごしていませんか。",
-      "beat_type": "hook_question",
-      "viewer_question": "自分の対策は本当に十分？",
-      "visual_goal": "典型的な日本の夏の室内 — エアコンがついている部屋で穏やかに座る高齢者、でも温湿度計が高い数値を示している",
-      "motion_goal": "danger_reveal",
-      "attention_target": "温湿度計の数値に視線誘導",
-      "tension_level": "mild",
-      "safety_guardrail": "パニックなし、穏やかな室内シーン、脅迫的な要素なし"
+      "beat_type": "hook_entry",
+      "viewer_question": "私もそう思ってるけど、大丈夫なのかな？",
+      "visual_goal": "日本の夏のリビング全景。扇風機が回り、カーテン半開き、テーブルにコップ一杯の水。穏やかだが壁の温湿度計が31度を示す — 見落としの伏線。",
+      "motion_goal": "slow_pan_across_room — リビング全体をゆっくり見せ、最後に温湿度計の数字にフォーカス移動",
+      "attention_target": "温湿度計の31度表示（画面端で控えめに見えるが気づく人には気づく配置）",
+      "tension_level": "moderate",
+      "safety_guardrail": "平穏な日常シーン。パニック・恐怖要素なし。温度表示は事実ベースの伏線で、ショックではない。"
     },
     {
       "unit_index": 1,
       "script_alignment": "エアコンもつけているし、水も飲んでいる。",
-      "beat_type": "false_security_setup",
-      "viewer_question": "エアコンと水だけで安心？",
-      "visual_goal": "エアコンのリモコンとテーブルの上の水のコップ — 対策している安心感を表現",
-      "motion_goal": "contrast",
-      "attention_target": "日常的な対策アイテム",
-      "tension_level": "low",
-      "safety_guardrail": "日常品のみ、医療器具なし"
+      "beat_type": "false_security",
+      "viewer_question": "そう、私もやってるのに…何が足りないの？",
+      "visual_goal": "同じリビングのクローズアップ：エアコンのリモコン、半分飲まれたコップの水、安心感のあるディテール。でも壁の温湿度計は依然31度。",
+      "motion_goal": "object_inspection_push — リモコンとコップを順に見せる静かなプッシュ",
+      "attention_target": "エアコンリモコンの設定温度とコップの水位のコントラスト",
+      "tension_level": "moderate",
+      "safety_guardrail": "日用品のみ。医療機器や恐怖イメージなし。"
     },
     {
       "unit_index": 2,
       "script_alignment": "でも、それだけで本当に大丈夫かどうか、ふと気になることはありませんか。",
       "beat_type": "curiosity_pivot",
-      "viewer_question": "見落としているサインがある？",
-      "visual_goal": "同じ室内だが、窓からの日差しで壁に熱がたまっている様子を暗示するような光の演出",
-      "motion_goal": "danger_reveal",
-      "attention_target": "壁や窓際の微妙な熱の暗示",
-      "tension_level": "mild",
-      "safety_guardrail": "抽象的な暗示のみ、具体的な症状描写なし"
+      "viewer_question": "確かに…何を見落としているんだろう？",
+      "visual_goal": "銀髪の高齢女性（65-75歳、目元と口元に穏やかなしわ、リラックスした姿勢）がリビングの椅子に座り、ふと窓の外を見る。夏の柔らかい光。表情は穏やかだが少し考え込む。",
+      "motion_goal": "host_gentle_push — 人物の表情に寄るゆっくりしたプッシュ",
+      "attention_target": "高齢女性の考え込む表情と窓からの夏の光",
+      "tension_level": "moderate",
+      "safety_guardrail": "穏やかな表情。不安・恐怖・体調不良の描写なし。demographic lock: 65-75歳、銀髪、しわ2-3箇所以上。"
+    },
+    {
+      "unit_index": 3,
+      "script_alignment": "じつは、ふだんの暮らしの中に、気づきにくいサインがいくつか隠れていることがあるんです。",
+      "beat_type": "reveal_setup",
+      "viewer_question": "どんなサインが隠れているの？",
+      "visual_goal": "リビングの俯瞰ショット：日常の小物（コップ、扇風機、リモコン、カーテン）がそれぞれ柔らかくハイライトされるレイアウト。checklist-friendly構図。",
+      "motion_goal": "item_reveal_drift — 部屋の各ポイントをゆっくりドリフトで見せる",
+      "attention_target": "日常のアイテムが「サイン」のヒントになっている構図",
+      "tension_level": "moderate",
+      "safety_guardrail": "日用品のみ。ホラー的「隠れた危険」演出なし。warm tones維持。"
+    },
+    {
+      "unit_index": 4,
+      "script_alignment": "今日は、夏に見落としやすい3つのサインを、ひとつずつ一緒に確認していきます。",
+      "beat_type": "promise_payoff",
+      "viewer_question": "3つのサインって何？知りたい。",
+      "visual_goal": "3つのアイコン的イメージ：コップの水・温湿度計・夜のベッドサイド — 3分割またはゆるやかな並列レイアウト。retro-clean 2D illustration。",
+      "motion_goal": "checklist — 3つのアイテムが順にフェードイン的にドリフト表示",
+      "attention_target": "3つの視覚アンカー（水・温度計・枕元）が今後の内容を予告",
+      "tension_level": "low",
+      "safety_guardrail": "純粋な予告構図。恐怖・医療イメージなし。"
+    },
+    {
+      "unit_index": 5,
+      "script_alignment": "特別な道具はいりません。",
+      "beat_type": "barrier_removal",
+      "viewer_question": "簡単にできるなら聞いてみよう。",
+      "visual_goal": "シンプルなキッチンカウンター：コップと水差しだけ。minimal clutter、object clarity重視。",
+      "motion_goal": "daily_pause_observe — 静かな観察ショット",
+      "attention_target": "シンプルさ＝ハードルの低さの視覚的表現",
+      "tension_level": "low",
+      "safety_guardrail": "安心感を与える構図。pressure-free。"
+    },
+    {
+      "unit_index": 6,
+      "script_alignment": "毎日の暮らしの中で、どこに気をつけるかを整理するだけです。",
+      "beat_type": "method_preview",
+      "viewer_question": "整理するだけでいいの？やってみよう。",
+      "visual_goal": "日本の住居の廊下から各部屋へ視線が伸びるイメージ。リビング・キッチン・寝室が見える間取り的構図。",
+      "motion_goal": "environment_breathing_pan — 住居全体をゆっくりパン",
+      "attention_target": "家の中の各エリアが「チェックポイント」であることの暗示",
+      "tension_level": "low",
+      "safety_guardrail": "日本の一般的なアパート内装。locale governance準拠。"
+    },
+    {
+      "unit_index": 7,
+      "script_alignment": "それだけで、夏の過ごし方が少し変わるかもしれません。",
+      "beat_type": "soft_encouragement",
+      "viewer_question": "少し変わるなら、やってみたい。",
+      "visual_goal": "窓から差す柔らかい夏の午後の光。カーテンがそよぐ。穏やかなリビング。warm earth tones。",
+      "motion_goal": "environment_observe_tilt — 窓の光からリビングへのゆっくりしたチルト",
+      "attention_target": "安心感のある光と空間",
+      "tension_level": "low",
+      "safety_guardrail": "ポジティブな期待感。恐怖なし。"
     }
   ],
 
   "row_visual_overrides": [
     {
-      "unit_index": 0,
-      "override_type": "self_check_visual_question",
-      "visual_override_description": "Japanese summer living room with elderly woman sitting calmly near AC unit, but a wall-mounted thermo-hygrometer subtly shows 31°C — the viewer question is whether precautions are really enough",
-      "must_connect_to": ["viewer_question", "micro_topic", "safety_guardrail"],
-      "safety_note": "No panic, no dramatic color, just subtle environmental detail that invites self-reflection"
+      "row": 1,
+      "override_type": "non_linear_opening_scene",
+      "original_line_context": "暑さ対策はちゃんとしている、そう思って夏を過ごしていませんか。",
+      "override_visual": "スクリプトは疑問を投げかけるが、ビジュアルは「対策しているつもりの典型的シーン」を先に見せる：穏やかなリビング全景だが温湿度計が31度を示している。スクリプトの「疑問」に対して視覚的に「見落とし」を伏線として提示。",
+      "justification": "self_check_visual_question strategy: 視聴者に「自分の部屋も同じかも」と思わせる具体的シーンで入る。スクリプトの抽象的な問いかけを、具体的な生活シーンで視覚的に補強。",
+      "research_connection": "F02: 発生場所最多は住居。F06: 体感に頼ると室温31度でも気づかない。",
+      "safety_check": "パニック要素なし。温度表示は事実ベース（研究データF06の28度目安を踏まえ、31度は軽い超過を示す）。gore/diagnosis/cure要素なし。"
+    },
+    {
+      "row": 2,
+      "override_type": "detail_focus_for_false_security",
+      "original_line_context": "エアコンもつけているし、水も飲んでいる。",
+      "override_visual": "スクリプトは「対策済み」の安心感を述べるが、ビジュアルはその対策の不十分さを暗示するディテールショットで補強：リモコンの設定温度と実際の室温の差異、半分しか飲まれていない水。",
+      "justification": "false_security beat: 視覚的に「やっているつもり」の具体的アイテムを見せることで、視聴者の共感を引き出す。",
+      "research_connection": "F06: エアコン設定28度でも実際の室温は2-3度高いことがある。",
+      "safety_check": "日用品のクローズアップのみ。恐怖・医療要素なし。"
+    },
+    {
+      "row": 3,
+      "override_type": "character_introduction",
+      "original_line_context": "でも、それだけで本当に大丈夫かどうか、ふと気になることはありませんか。",
+      "override_visual": "スクリプトの「ふと気になる」を、高齢女性がふと考え込む表情で視覚化。direct-to-cameraではなく、窓の外を見るサイドアングル。",
+      "justification": "curiosity_pivot: 人物の表情で共感を作り、視聴者を「一緒に考える」モードに引き込む。demographic fidelity確保（65-75歳、銀髪、しわ）。",
+      "research_connection": "F05: 高齢者は暑さを自覚しにくい — この人物も暑さに気づいていない様子。",
+      "safety_check": "穏やかな表情。体調不良・不安・苦痛の描写なし。non_dialogue_mode準拠：口閉じ、direct-to-camera speech禁止。demographic lock: 65-75歳、visible aging cues 3つ以上（銀髪、目元のしわ、relaxed mature posture）。"
     }
   ],
 
   "motion_intents": [
-    {"unit_range": [0, 7], "intent": "danger_reveal", "note": "Opening hook — subtle reveal that precautions may not be enough"},
-    {"unit_range": [8, 16], "intent": "expert_emphasis", "note": "Background statistics and reasoning"},
-    {"unit_range": [17, 48], "intent": "checklist", "note": "Sign 1 dehydration — observation points and hydration routine"},
-    {"unit_range": [49, 68], "intent": "solution_demo", "note": "Sign 2 indoor heat — thermo-hygrometer, AC adjustment"},
-    {"unit_range": [69, 85], "intent": "contrast", "note": "Sign 3 nighttime — timer off vs staying on, morning dehydration risk"},
-    {"unit_range": [86, 101], "intent": "checklist", "note": "Daily morning/noon/night check routine"},
-    {"unit_range": [102, 108], "intent": "solution_demo", "note": "Consultation resources"},
-    {"unit_range": [109, 115], "intent": "checklist", "note": "Calm closing summary"}
+    {
+      "unit_range": [0, 0],
+      "section": "S01",
+      "intent": "danger_reveal",
+      "description": "穏やかな日常シーンの中に温湿度計31度を配置。カメラパンで最後に温度に気づかせる subtle reveal。"
+    },
+    {
+      "unit_range": [1, 1],
+      "section": "S01",
+      "intent": "contrast",
+      "description": "「対策している」アイテム（リモコン、コップ）と「実際の室温」のコントラストをオブジェクトプッシュで見せる。"
+    },
+    {
+      "unit_range": [2, 2],
+      "section": "S01",
+      "intent": "near_miss",
+      "description": "高齢女性がふと気になる表情 — 「もしかして？」の near-miss moment を人物フォーカスで表現。"
+    },
+    {
+      "unit_range": [3, 4],
+      "section": "S01",
+      "intent": "checklist",
+      "description": "3つのサインの予告構図。アイテムドリフトでchecklist感を出す。"
+    },
+    {
+      "unit_range": [5, 7],
+      "section": "S01",
+      "intent": "solution_demo",
+      "description": "ハードルの低さを視覚化。シンプルなキッチン→住居全体→柔らかい光で安心感。"
+    },
+    {
+      "unit_range": [8, 16],
+      "section": "S02",
+      "intent": "expert_emphasis",
+      "description": "背景情報セクション。統計データを calm に伝える：温湿度計クローズアップ、日本の住居内景。数字の visualize は温度計表示で。"
+    },
+    {
+      "unit_range": [17, 48],
+      "section": "S03",
+      "intent": "checklist",
+      "description": "サイン①脱水チェック。唇の乾燥→腋の確認→コップの水→6つの水分補給タイミング。object-focused practical shots。"
+    },
+    {
+      "unit_range": [49, 68],
+      "section": "S04",
+      "intent": "danger_reveal",
+      "description": "サイン②室内の暑さ。温湿度計設置→室温確認→エアコン設定の誤解を clarify。calm reveal of indoor heat trap。"
+    },
+    {
+      "unit_range": [69, 85],
+      "section": "S05",
+      "intent": "contrast",
+      "description": "サイン③夜間。AC timer切れ前後の contrast — 寝室の穏やかな夜→朝のだるさ暗示。枕元の水準備。"
+    },
+    {
+      "unit_range": [86, 101],
+      "section": "S06",
+      "intent": "checklist",
+      "description": "朝・昼・夜のチェックリスト。3-part timeline の illustrated summary。"
+    },
+    {
+      "unit_range": [102, 108],
+      "section": "S07",
+      "intent": "solution_demo",
+      "description": "相談先の整理。かかりつけ医・薬局・地域包括支援センターの穏やかなイメージ。"
+    },
+    {
+      "unit_range": [109, 115],
+      "section": "S08",
+      "intent": "solution_demo",
+      "description": "おわりに。柔らかい光のリビング、安心感のある closure。warm reassuring tone。"
+    }
   ],
 
   "title_thumbnail_angles": [
     {
-      "angle": "number_anchor + self_relevance",
-      "title_candidate": "夏に気づきにくい危険サイン3選【エアコンだけでは不十分？】",
-      "thumbnail_text": "3つのサイン",
-      "thumbnail_visual": "Elderly Japanese woman in summer living room with thermo-hygrometer showing high reading, gentle concern expression",
-      "ctr_psychology": "Number anchor (3) + self-check question creates immediate self-relevance for seniors who believe they are safe",
-      "safety_rationale": "No panic, no diagnosis, question format preserves trust"
+      "angle_id": "TTA01",
+      "title_candidate": "夏に気づきにくい危険サイン3選【60代・70代の暮らし】",
+      "ctr_psychology_angle": "number_anchor + self_relevance",
+      "viewer_question": "3つのサインって何だろう？自分は大丈夫かな？",
+      "script_alignment_reasoning": "スクリプト全体が3つのサイン（脱水・室内の暑さ・夜間の温度変化）を構造化しており、タイトルの「3選」と完全に一致。60代・70代は demographic_anchors.default_age_range (65-75) と整合。",
+      "safety_rationale": "「危険サイン」は bounded concern。「気づきにくい」は教育的フレーミング。guaranteed prevention / cure framing なし。",
+      "thumbnail_concept": {
+        "scene": "retro-clean 2D: 日本のリビング、温湿度計が31度を表示、半分飲まれたコップの水、柔らかい午後の光。warm earth tones。",
+        "text_overlay": "夏の危険サイン",
+        "text_word_count": 3,
+        "emotion": "gentle_concern",
+        "host_presence": "optional — 椅子に座る高齢女性のシルエットまたは不在"
+      }
     },
     {
-      "angle": "specificity + mild_consequence",
-      "title_candidate": "室内でも熱中症？ 65歳からの夏の見落とし",
-      "thumbnail_text": "室内でも危険",
-      "thumbnail_visual": "Split view — calm AC room vs thermo-hygrometer reading above 28°C, warm color accent on the number",
-      "ctr_psychology": "Specificity of indoor risk + age anchor creates surprise and self-relevance",
-      "safety_rationale": "Question mark softens claim, no guaranteed prevention language"
+      "angle_id": "TTA02",
+      "title_candidate": "「暑さ対策してるのに…」見落としやすい夏の3つのサイン",
+      "ctr_psychology_angle": "question_hook + mild_consequence",
+      "viewer_question": "対策してるのに足りないの？何を見落としてる？",
+      "script_alignment_reasoning": "スクリプト冒頭の「暑さ対策はちゃんとしている、そう思って」と直接連動。「…」の省略が curiosity gap を作る。",
+      "safety_rationale": "「見落としやすい」は bounded concern。「暑さ対策してるのに」は自分ごと感を作るが panic ではない。",
+      "thumbnail_concept": {
+        "scene": "retro-clean 2D: エアコンリモコンと温湿度計のクローズアップ。設定28度だが室温31度のズレが見える。soft warm lighting。",
+        "text_overlay": "見落としサイン",
+        "text_word_count": 3,
+        "emotion": "gentle_concern",
+        "host_presence": "absent — object-focused"
+      }
+    },
+    {
+      "angle_id": "TTA03",
+      "title_candidate": "室内でも要注意！シニアが見逃しやすい夏の危険サイン",
+      "ctr_psychology_angle": "specificity + mild_consequence",
+      "viewer_question": "室内にいても危ないの？",
+      "script_alignment_reasoning": "F02: 発生場所最多は住居。S04セクション全体が室内熱中症のメカニズムに対応。「室内でも」の specificity が視聴者の盲点を突く。",
+      "safety_rationale": "「要注意」は mild_alert レベル。panic や absolute danger ではない。",
+      "thumbnail_concept": {
+        "scene": "retro-clean 2D: 日本の寝室、夜のシーン。エアコンのタイマーランプ、枕元に水がない。穏やかだが「足りない」を暗示。",
+        "text_overlay": "室内も注意",
+        "text_word_count": 3,
+        "emotion": "mild_alert",
+        "host_presence": "optional"
+      }
     }
   ],
 
   "safety_guardrails": {
-    "no_gore_or_panic": true,
-    "no_diagnosis_implication": true,
-    "no_guaranteed_prevention": true,
-    "no_fake_authority": true,
-    "no_conspiracy_framing": true,
-    "mild_concern_allowed_first_15_sec_only": true,
-    "all_visual_overrides_connected_to_topic": true
+    "global": [
+      "NO gore, panic, diagnosis, cure implication, guaranteed prevention, conspiracy, or fake authority",
+      "NO lip sync, direct-to-camera speech, generated audio (non_dialogue_mode=true, veo_audio=silent)",
+      "NO photorealistic rendering — illustrated_lifestyle_handbook / retro_clean_2d only",
+      "NO youth drift — all human characters must show ≥2-3 visible aging cues (silver-gray hair, wrinkles, mature posture)",
+      "NO collapse/faint/unconscious/ambulance scenes (VR06: fear_intensity_ceiling=low)",
+      "NO branded products — generic thermometer/AC/glass illustrations only",
+      "Japan locale lock — Japanese apartment interiors, no cross-locale cues",
+      "Visible text: avoid by default, ja-JP only, max 6 words if needed"
+    ],
+    "per_beat": {
+      "rows_1_3": "Non-linear visuals allowed but must connect to approved micro-topic and daily-life anchor. No fear theater.",
+      "rows_4_plus": "Line-context locked. No non-linear overrides.",
+      "dehydration_section": "Show observable self-check signs only (lips, armpit, glass of water). No medical procedure imagery.",
+      "indoor_heat_section": "Focus on thermometer/hygrometer and AC remote. No distress or suffering visuals.",
+      "nighttime_section": "Calm bedroom scene. No nighttime emergency or ambulance imagery.",
+      "consult_section": "Gentle illustration of consultation concept. No hospital emergency room imagery."
+    }
   },
 
   "qc_checks": {
-    "opening_visual_connects_to_viewer_question": true,
-    "non_linear_rows_within_allowed_range": true,
-    "safety_guardrail_per_concern_beat": true,
-    "no_script_text_rewritten": true,
-    "no_step_07a_fields_in_final_export": true
+    "for_step_07": [
+      "Every image prompt must include style_lock.seed_image_style_raw as prefix or equivalent style anchors",
+      "Human characters must include ≥2-3 aging cues from demographic_anchors.age_presentation_keywords",
+      "Human characters must include ≥1 negative keyword from demographic_anchors.age_negative_keywords",
+      "Rows 1-3 may use row_visual_overrides; rows 4+ must be strictly line-context locked",
+      "No readable text in image by default; if used, ja-JP only, max 6 words",
+      "Locale check: all scenes must be identifiably Japanese domestic interiors",
+      "No medical equipment, hospital scenes, or emergency imagery unless script line explicitly requires",
+      "Summer visual cues (soft sunlight, fan, light curtain, lightweight clothing) present in relevant rows"
+    ],
+    "for_step_08": [
+      "Every Veo prompt must end with '(Silent video, no audio).'",
+      "No lip sync, no dialogue, no direct-to-camera speech",
+      "No foley, ambience, or room tone requests",
+      "Motion must match motion_intents from this plan",
+      "Motion variety: avoid repeating same motion type for >2 consecutive rows"
+    ],
+    "for_step_09": [
+      "Final export exactly 3 columns: script_text, prompt_img_nano, prompt_video_veo3",
+      "No Step 07A metadata fields in final export (no retention_beat_type, attention_target, visual_hook_override_used, opening_strategy, motion_intent)",
+      "Row order must match canonical_script_units order",
+      "script_text must come directly from 06_script_canonical.json canonical_script_units"
+    ],
+    "for_step_10": [
+      "Title must match one of title_thumbnail_angles or derivative thereof",
+      "Thumbnail emotion must be gentle_concern or mild_alert — no panic/strong_caution",
+      "Description must include soft disclaimer (DN01)",
+      "No shorts derivation (packaging_seeds_shorts.enabled=false)"
+    ]
   }
 }

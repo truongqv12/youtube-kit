@@ -14,12 +14,15 @@ Read exactly these paths. DO NOT use global workspace search for abstract filena
 - core/canonical_script_unit_standard.md
 - channels/{{TARGET_CHANNEL}}/videos/{{TARGET_VIDEO}}/01_project_manifest.json
 - channels/{{TARGET_CHANNEL}}/videos/{{TARGET_VIDEO}}/06_script_canonical.json
-- channels/{{TARGET_CHANNEL}}/videos/{{TARGET_VIDEO}}/07A_retention_visual_plan.json
 - channels/{{TARGET_CHANNEL}}/videos/{{TARGET_VIDEO}}/07_image_prompt_table.csv
 - channels/{{TARGET_CHANNEL}}/videos/{{TARGET_VIDEO}}/08_video_prompt_table.csv
 
 If Step 06B has been run, it must have already updated `06_script_canonical.json` in place.
-If you cannot read any required file, fail.
+
+## Optional reads
+- channels/{{TARGET_CHANNEL}}/videos/{{TARGET_VIDEO}}/07A_retention_visual_plan.json
+
+If you cannot read any required file, fail. If optional Step 07A is absent, continue without retention-specific QC.
 
 ## Preflight
 Return:
@@ -31,6 +34,11 @@ Return:
 6. allowed_to_proceed
 
 ## Hard rules
+- read `07_image_prompt_table.csv` and `08_video_prompt_table.csv` as checkpoint inputs
+- run `python tools/pipeline/validate-prompt-checkpoints.py --channel {{TARGET_CHANNEL}} --video {{TARGET_VIDEO}}` before final export when local tools are available
+- prefer `python tools/pipeline/export-final-three-column.py --channel {{TARGET_CHANNEL}} --video {{TARGET_VIDEO}}` for deterministic local export when available
+- `09_final_three_column.csv` is the only production prompt table
+- `09_export_qc_report.md` must include checkpoint status, row counts, and final column proof
 - `script_text` must come directly from `06_script_canonical.json.canonical_script_units`
 - Step 06B, if run, must have already normalized `06_script_canonical.json` in place
 - final export must contain exactly 3 columns only

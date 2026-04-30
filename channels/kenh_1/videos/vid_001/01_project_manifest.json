@@ -8,5 +8,11 @@
     "01_project_manifest.json"
   ],
   "constraints_locked": true,
-  "next_step": "02_run_topic_strategy.md"
+  "next_step": "02_run_topic_strategy.md",
+  "artifact_roles": {
+    "07_image_prompt_table.csv": "checkpoint",
+    "08_video_prompt_table.csv": "checkpoint",
+    "09_final_three_column.csv": "production",
+    "09_export_qc_report.md": "qc_report"
+  }
 }

@@ -99,5 +99,11 @@
     "description": "Script drafting — write TTS-ready canonical_script_units based on the outline, research brief, and policy constraints",
     "required_input": "05_outline.json",
     "prompt": "compiled_prompts/06_run_script_draft.md"
+  },
+  "artifact_roles": {
+    "07_image_prompt_table.csv": "checkpoint",
+    "08_video_prompt_table.csv": "checkpoint",
+    "09_final_three_column.csv": "production",
+    "09_export_qc_report.md": "qc_report"
   }
 }

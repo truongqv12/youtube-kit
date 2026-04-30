@@ -199,10 +199,16 @@ Step 10  →  Publication package (web access bắt buộc)
 | **05** | Outline Builder | research + policy | `05_outline.json` |
 | **06** | Script Writer | outline + knowledge | `06_script_canonical.json` + full script |
 | **07A** | Retention Visual Plan | script + hook/pacing standards | `07A_retention_visual_plan.json` |
-| **07** | Image Prompt Builder | script + retention plan + visual profile | `07_image_prompt_table.csv` |
-| **08** | Video Prompt Builder | image prompts + retention plan + script | `08_video_prompt_table.csv` |
-| **09** | Three-Column Export | prompts + script | `09_final_three_column.csv` + QC report |
+| **07** | Image Prompt Builder | script + retention plan + visual profile | `07_image_prompt_table.csv` checkpoint |
+| **08** | Video Prompt Builder | image prompts + retention plan + script | `08_video_prompt_table.csv` checkpoint |
+| **09** | Three-Column Export | prompts + script | `09_final_three_column.csv` production + QC report |
 | **10** | Publication Package | export + **web** | `10_publication_package.json` |
+
+### Vai trò artifact
+
+- `07_image_prompt_table.csv` và `08_video_prompt_table.csv` là checkpoint artifact để resume/debug/QC.
+- `09_final_three_column.csv` là production prompt table duy nhất operator dùng cho công cụ sản xuất.
+- Dùng `tools/pipeline/validate-prompt-checkpoints.py` và `tools/pipeline/export-final-three-column.py`; không yêu cầu AI agent tự viết script riêng cho Step 07/08/09 validation/export.
 
 ### Final export — 3 cột duy nhất
 
@@ -301,10 +307,10 @@ vid_001/
 ├── 06_script_full.md            # Script đầy đủ dạng markdown
 ├── 06_script_metrics.json       # Thống kê script (duration, chars)
 ├── 07A_retention_visual_plan.json # Sidecar kế hoạch retention visual
-├── 07_image_prompt_table.csv    # Bảng prompt ảnh
-├── 08_video_prompt_table.csv    # Bảng prompt video
-├── 09_final_three_column.csv    # ✅ File export chính — 3 cột
-├── 09_export_qc_report.md       # Báo cáo QC
+├── 07_image_prompt_table.csv    # Checkpoint bảng prompt ảnh
+├── 08_video_prompt_table.csv    # Checkpoint bảng prompt video
+├── 09_final_three_column.csv    # ✅ Bảng prompt production — 3 cột
+├── 09_export_qc_report.md       # Báo cáo QC với alignment checkpoint
 ├── 10_publication_package.json  # Package xuất bản
 └── 10_publication_package.md    # Package xuất bản (readable)
 ```

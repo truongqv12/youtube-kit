@@ -18,7 +18,13 @@ Read `01_project_manifest.json`. Always use `06_script_canonical.json`; Step 06B
 - line-context-locked prompt
 
 ## Output
-- `07_image_prompt_table.csv`
+- `07_image_prompt_table.csv` checkpoint artifact for resume/debug/QC
+
+## Automation rule
+Use repo scripts under `tools/pipeline/` for standard validation/export. Do not create per-video Python/CMD/PowerShell scripts.
+
+## Visible text rule
+`visible_text_policy=no_readable_text` forbids explicit readable numbers/text/displays in `prompt_img_nano`. If exact text is needed, use `exact_visible_text` and fill `visible_text_exact`.
 
 ## Retention handling
 - Normal rows stay line-context locked.

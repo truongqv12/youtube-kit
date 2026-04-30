@@ -46,6 +46,13 @@ Return:
 13. allowed_to_proceed
 
 ## Hard rules
+- `07_image_prompt_table.csv` is a checkpoint artifact for resume/debug/QC, not a production prompt table
+- do not write per-video Python/CMD/PowerShell scripts to generate or validate this table
+- if scaffold or validation is needed, use reviewed repo scripts under `tools/pipeline/`
+- `visible_text_policy=no_readable_text` forbids explicit readable numbers/text/displays in `prompt_img_nano`, including phrases such as `reads 31 degrees`, `57 percent`, `1000-1500ml`, `display showing 28`, and named checklist text
+- if exact text/numbers are required, set `visible_text_policy=exact_visible_text` and populate `visible_text_exact` with exact channel-language text only
+- every row needs a line-specific visual subject/action; repeated style prefix alone is not enough
+- process/metaphor rows must state what concept is represented and how it avoids medical overclaim
 - this is a narration-support pipeline, not a film storyboard pipeline
 - one canonical unit = one still-image keyframe
 - each prompt must express one main visual idea only
