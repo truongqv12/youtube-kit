@@ -2,7 +2,7 @@
 
 ## Overview
 - **Source Script:** `06_script_canonical.json`
-- **Output Script:** `06B_script_canonical.json`
+- **In-place Target Script:** `06_script_canonical.json`
 - **Units Before:** 94
 - **Units After:** 89
 - **Characters Before:** 3,315

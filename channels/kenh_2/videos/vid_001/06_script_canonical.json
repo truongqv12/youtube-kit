@@ -1,7 +1,7 @@
 {
   "project_id": "kenh_2_vid_001",
   "channel_id": "kenh_2",
-  "pipeline_step": "06B_script_canonical",
+  "pipeline_step": "06_script_canonical",
   "generated_at": "2026-04-22T12:13:00+07:00",
   "source_step": "06_script_canonical",
   "normalization_mode": "engine_agnostic",

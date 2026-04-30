@@ -15,7 +15,7 @@ Exactly 3 columns:
 
 ## Hard rules
 - `script_text` must come directly from the source-of-truth `canonical_script_units`.
-- Default script source is `06_script_canonical.json`; use `06B_script_canonical.json` only when the video manifest explicitly sets it as `script_source_of_truth`.
+- Script source is always `06_script_canonical.json`; Step 06B normalizes this artifact in place when used.
 - `script_text` must remain a TTS-safe spoken line with no formatting cleanup required.
 - `prompt_img_nano` is the still-image keyframe prompt.
 - `prompt_img_nano` must stay semantically locked to the current line, except bounded opening rows approved by `07A_retention_visual_plan.json`.

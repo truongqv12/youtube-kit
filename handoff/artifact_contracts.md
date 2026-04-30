@@ -5,7 +5,7 @@
 - `full_script == "\n".join(canonical_script_units)`
 - every `canonical_script_unit` must be TTS-safe spoken narration
 - final export exact 3 columns
-- downstream script source is `06_script_canonical.json` unless a video manifest explicitly sets `script_source_of_truth` to `06B_script_canonical.json`
+- downstream script source is always `06_script_canonical.json`; Step 06B normalizes this artifact in place when used
 - `script_text` rows == source-of-truth `canonical_script_units` in order
 - final export columns are:
   - script_text

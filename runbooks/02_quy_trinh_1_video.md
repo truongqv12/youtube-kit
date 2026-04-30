@@ -9,9 +9,9 @@ Create a new video directory with a clear identifier.
 - Fill in `channels/{{TARGET_CHANNEL}}/videos/{{TARGET_VIDEO}}/01_video_intake.json`
 
 ## 3. Script source rule
-- Default source: `06_script_canonical.json`
-- Use `06B_script_canonical.json` only when `01_project_manifest.json` explicitly sets `script_source_of_truth`
-- Steps 07A, 07, 08, 09, and 10 must use the same source
+- Source: `06_script_canonical.json`
+- If Step 06B is run, it normalizes `06_script_canonical.json`, `06_script_full.md`, and `06_script_metrics.json` in place
+- Steps 07A, 07, 08, 09, and 10 always use the `06_*` artifacts
 
 ## 4. Run prompts step by step
 Run in order:

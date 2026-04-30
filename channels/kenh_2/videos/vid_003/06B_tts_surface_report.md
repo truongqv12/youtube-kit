@@ -110,5 +110,5 @@ All 77 units pass:
 6. ✅ Remains warm, respectful, suited to older listeners
 
 ## Downstream integration note
-From Step 07 onward, use `06B_script_canonical.json` as the source of truth for `script_text`.
-Do not mix Step 06 and Step 06B outputs.
+From Step 07 onward, use `06_script_canonical.json` as the source of truth for `script_text`.
+Step 06B normalizes the Step 06 artifacts in place; do not create parallel script outputs.

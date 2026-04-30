@@ -4,7 +4,7 @@
 Export the final manual-production CSV and run minimal QC.
 
 ## Script source
-Read `01_project_manifest.json`. Use `06_script_canonical.json` by default. If manifest sets `script_source_of_truth` to `06B_script_canonical.json`, export `script_text` from `06B` and validate row counts against that source.
+Read `01_project_manifest.json`. Always export `script_text` from `06_script_canonical.json` and validate row counts against that source. Step 06B normalizes this artifact in place when used.
 
 ## Required final columns
 - script_text

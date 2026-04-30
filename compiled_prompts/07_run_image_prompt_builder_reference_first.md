@@ -21,7 +21,7 @@ Read exactly these paths. DO NOT use global workspace search for abstract filena
 - channels/{{TARGET_CHANNEL}}/videos/{{TARGET_VIDEO}}/06_script_canonical.json
 - channels/{{TARGET_CHANNEL}}/videos/{{TARGET_VIDEO}}/07A_retention_visual_plan.json
 
-If the video manifest explicitly sets `script_source_of_truth` to `06B_script_canonical.json`, read that file instead of `06_script_canonical.json` and state the reason in preflight.
+If Step 06B has been run, it must have already updated `06_script_canonical.json` in place.
 
 ## Optional reads
 - 00_language_profile.json
@@ -32,19 +32,18 @@ If you cannot read any required file, fail.
 ## Preflight
 Return:
 1. files_read
-2. manifest_script_source_setting
-3. effective_script_source
-4. override_reason
-5. optional_files_read
-3. rules_extracted_by_file
-4. channel_language_detected
-5. host_mode_detected
-6. reference_mode_detected
-7. style_taxonomy_detected
-8. locale_governance_detected
-9. visible_text_policy_detected
-10. continuity_policy_detected
-11. allowed_to_proceed
+2. effective_script_source: `06_script_canonical.json`
+3. step_06b_in_place_rule_detected
+4. optional_files_read
+5. rules_extracted_by_file
+6. channel_language_detected
+7. host_mode_detected
+8. reference_mode_detected
+9. style_taxonomy_detected
+10. locale_governance_detected
+11. visible_text_policy_detected
+12. continuity_policy_detected
+13. allowed_to_proceed
 
 ## Hard rules
 - this is a narration-support pipeline, not a film storyboard pipeline

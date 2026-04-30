@@ -18,22 +18,21 @@ Read exactly these paths. DO NOT use global workspace search for abstract filena
 - channels/{{TARGET_CHANNEL}}/videos/{{TARGET_VIDEO}}/07_image_prompt_table.csv
 - channels/{{TARGET_CHANNEL}}/videos/{{TARGET_VIDEO}}/08_video_prompt_table.csv
 
-If the video manifest explicitly sets `script_source_of_truth` to `06B_script_canonical.json`, read that file instead of `06_script_canonical.json` and export `script_text` from that source.
+If Step 06B has been run, it must have already updated `06_script_canonical.json` in place.
 If you cannot read any required file, fail.
 
 ## Preflight
 Return:
 1. files_read
-2. manifest_script_source_setting
-3. effective_script_source
-4. override_reason
-5. rules_extracted_by_file
-3. column_names_required
-4. allowed_to_proceed
+2. effective_script_source: `06_script_canonical.json`
+3. step_06b_in_place_rule_detected
+4. rules_extracted_by_file
+5. column_names_required
+6. allowed_to_proceed
 
 ## Hard rules
-- `script_text` must come directly from source-of-truth `canonical_script_units`
-- default source is `06_script_canonical.json`; manifest override to `06B_script_canonical.json` must be honored consistently
+- `script_text` must come directly from `06_script_canonical.json.canonical_script_units`
+- Step 06B, if run, must have already normalized `06_script_canonical.json` in place
 - final export must contain exactly 3 columns only
 - no extra metadata columns are allowed in the final export
 - row order must remain unchanged

@@ -22,7 +22,7 @@ Read exactly these paths. DO NOT use global workspace search for abstract filena
 - channels/{{TARGET_CHANNEL}}/videos/{{TARGET_VIDEO}}/07A_retention_visual_plan.json
 - channels/{{TARGET_CHANNEL}}/videos/{{TARGET_VIDEO}}/07_image_prompt_table.csv
 
-If the video manifest explicitly sets `script_source_of_truth` to `06B_script_canonical.json`, read that file instead of `06_script_canonical.json` and state the reason in preflight.
+If Step 06B has been run, it must have already updated `06_script_canonical.json` in place.
 
 ## Optional reads
 - 00_visual_profile.json
@@ -32,18 +32,17 @@ If you cannot read any required file, fail.
 ## Preflight
 Return:
 1. files_read
-2. manifest_script_source_setting
-3. effective_script_source
-4. override_reason
-5. optional_files_read
-3. rules_extracted_by_file
-4. i2v_mode_detected
-5. non_dialogue_mode_detected
-6. voiceover_mode_detected
-7. audio_prompt_mode_detected
-8. visible_text_preservation_detected
-9. scene_motion_bias_detected
-10. allowed_to_proceed
+2. effective_script_source: `06_script_canonical.json`
+3. step_06b_in_place_rule_detected
+4. optional_files_read
+5. rules_extracted_by_file
+6. i2v_mode_detected
+7. non_dialogue_mode_detected
+8. voiceover_mode_detected
+9. audio_prompt_mode_detected
+10. visible_text_preservation_detected
+11. scene_motion_bias_detected
+12. allowed_to_proceed
 
 ## Hard rules
 - this step is image-to-video only

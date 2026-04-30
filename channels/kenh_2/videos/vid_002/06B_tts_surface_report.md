@@ -3,7 +3,7 @@
 **Project:** kenh_2_vid_002  
 **Step:** 06B_tts_surface_normalized  
 **Source:** 06_script_canonical.json (96 units, 3211 chars)  
-**Result:** 06B_script_canonical.json (95 units, 3220 chars)  
+**In-place Target:** 06_script_canonical.json (95 units, 3220 chars)  
 **Generated:** 2026-04-25T00:21:00+07:00
 
 ---

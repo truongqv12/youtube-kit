@@ -22,7 +22,7 @@ Read exactly these paths. DO NOT use global workspace search for abstract filena
 - channels/{{TARGET_CHANNEL}}/videos/{{TARGET_VIDEO}}/09_export_qc_report.md
 - real web access
 
-Read `01_project_manifest.json`. Use `06_script_canonical.json` / `06_script_full.md` by default. If manifest sets `script_source_of_truth` to `06B_script_canonical.json`, use `06B_script_canonical.json` / `06B_script_full.md` consistently.
+Read `01_project_manifest.json`. Always use `06_script_canonical.json` / `06_script_full.md`. Step 06B normalizes these artifacts in place when used.
 
 ## Required outputs
 - 10_publication_package.json

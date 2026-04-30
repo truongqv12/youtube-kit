@@ -19,7 +19,7 @@
 - **Status:** ✅ PASS
 
 ## Content Integrity Quality Gates
-- **Script Text:** Passed-through purely from `06B_script_canonical.json`. No rewrites applied.
+- **Script Text:** Passed-through purely from `06_script_canonical.json`. No rewrites applied.
 - **Blank Prompts Evaluation:** No empty prompts detected in image or video arrays.
 - **Non-Dialogue Enforcement:** No generated Veo prompts contain speech triggers ("talks", "speaks", "direct-to-camera speech") or ask for new readable text. Audio safety string `(Silent video, no audio).` is present on all 95 Veo prompts.
 - **Row Alignment:** Source order preserved exactly.

@@ -26,7 +26,7 @@ Read exactly these paths. DO NOT use global workspace search for abstract filena
 - channels/{{TARGET_CHANNEL}}/videos/{{TARGET_VIDEO}}/06_script_canonical.json
 - channels/{{TARGET_CHANNEL}}/videos/{{TARGET_VIDEO}}/07A_retention_visual_plan.json
 
-If the video manifest explicitly sets `script_source_of_truth` to `06B_script_canonical.json`, read `06B_script_canonical.json` and `06B_script_full.md` instead of the Step 06 script files, then state the reason in preflight.
+If Step 06B has been run, it must have already updated `06_script_canonical.json` and `06_script_full.md` in place.
 - channels/{{TARGET_CHANNEL}}/videos/{{TARGET_VIDEO}}/09_final_three_column.csv
 - channels/{{TARGET_CHANNEL}}/videos/{{TARGET_VIDEO}}/09_export_qc_report.md
 
@@ -36,17 +36,16 @@ If there is no real web access, fail.
 ## Preflight
 Return:
 1. files_read
-2. manifest_script_source_setting
-3. effective_script_source
-4. override_reason
-5. rules_extracted_by_file
-3. required_inputs_detected
-4. target_audience_detected
-5. channel_language_detected
-6. web_access_detected
-7. market_scan_plan
-8. allowed_to_proceed
-9. failure_reason if false
+2. effective_script_source: `06_script_canonical.json`
+3. step_06b_in_place_rule_detected
+4. rules_extracted_by_file
+5. required_inputs_detected
+6. target_audience_detected
+7. channel_language_detected
+8. web_access_detected
+9. market_scan_plan
+10. allowed_to_proceed
+11. failure_reason if false
 
 ## Hard rules
 - must perform real web-based market scan before generating candidates

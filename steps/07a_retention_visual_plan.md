@@ -20,7 +20,7 @@ Create `07A_retention_visual_plan.json`, a sidecar artifact that guides stronger
 - `03_research_brief.json`
 - `04_policy_report.json`
 - `05_outline.json`
-- source-of-truth script: `06_script_canonical.json` unless manifest explicitly adopts `06B_script_canonical.json`
+- source-of-truth script: `06_script_canonical.json`; Step 06B normalizes this artifact in place when used
 
 ## Output
 
@@ -30,7 +30,7 @@ Create `07A_retention_visual_plan.json`, a sidecar artifact that guides stronger
 
 The artifact must include:
 
-- `script_source_of_truth`
+- `effective_script_source`
 - `opening_strategy`
 - `hook_type`
 - `viewer_question`

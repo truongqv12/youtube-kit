@@ -3,7 +3,7 @@
 **Project:** kenh_2_vid_001  
 **Generated:** 2026-04-22T12:15:00+07:00  
 **Source:** 06_script_canonical.json (113 units, 3696 chars)  
-**Output:** 06B_script_canonical.json (116 units, 3672 chars)  
+**Output:** 06_script_canonical.json (116 units, 3672 chars)  
 
 ## Summary
 

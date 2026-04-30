@@ -33,7 +33,7 @@ Read exactly these paths. DO NOT use global workspace search for abstract filena
 - channels/{{TARGET_CHANNEL}}/videos/{{TARGET_VIDEO}}/05_outline.json
 - channels/{{TARGET_CHANNEL}}/videos/{{TARGET_VIDEO}}/06_script_canonical.json
 
-If the video manifest explicitly sets `script_source_of_truth` to `06B_script_canonical.json`, read that file instead of `06_script_canonical.json` and state the reason in preflight.
+If Step 06B has been run, it must have already updated `06_script_canonical.json` in place.
 If you cannot read any required file, fail.
 
 ## Preflight
@@ -41,17 +41,16 @@ If you cannot read any required file, fail.
 Return:
 
 1. files_read
-2. manifest_script_source_setting
-3. effective_script_source
-4. override_reason
-5. rules_extracted_by_file
-4. hook_type_detected
-5. tension_level_detected
-6. opening_rows_detected
-7. allowed_non_linear_rows
-8. health_safety_boundaries
-9. allowed_to_proceed
-10. failure_reason if false
+2. effective_script_source: `06_script_canonical.json`
+3. step_06b_in_place_rule_detected
+4. rules_extracted_by_file
+5. hook_type_detected
+6. tension_level_detected
+7. opening_rows_detected
+8. allowed_non_linear_rows
+9. health_safety_boundaries
+10. allowed_to_proceed
+11. failure_reason if false
 
 ## Hard rules
 
@@ -104,7 +103,7 @@ After preflight, return exactly:
 
 ## Required structure
 
-- `script_source_of_truth`
+- `effective_script_source`
 - `opening_strategy`
 - `hook_type`
 - `viewer_question`

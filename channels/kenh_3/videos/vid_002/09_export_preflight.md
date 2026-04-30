@@ -1,7 +1,7 @@
 === PREFLIGHT START ===
 
 ## 1. files_read
-- channels/kenh_3/videos/vid_002/06B_script_canonical.json ✅
+- channels/kenh_3/videos/vid_002/06_script_canonical.json ✅
 - channels/kenh_3/videos/vid_002/07_image_prompt_table.csv ✅
 - channels/kenh_3/videos/vid_002/08_video_prompt_table.csv ✅
 - core/output_conventions.md ✅

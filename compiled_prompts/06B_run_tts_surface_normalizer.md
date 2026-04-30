@@ -58,7 +58,7 @@ Return:
 
 ## Core principle
 Treat Step 06 as the semantic source draft.
-Treat Step 06B as the portable spoken-surface refinement layer.
+Treat Step 06B as the portable spoken-surface refinement layer that updates the Step 06 artifacts in place.
 Do not widen topic scope, introduce new claims, or weaken safety softeners.
 
 ## Hard rules
@@ -68,6 +68,8 @@ Do not widen topic scope, introduce new claims, or weaken safety softeners.
 - keep every output line as a canonical script unit
 - every canonical unit must remain natural spoken narration
 - every canonical unit must remain usable as final `script_text`
+- normalized output must be written back to `06_script_canonical.json`, `06_script_full.md`, and `06_script_metrics.json`
+- downstream steps must keep using the `06_*` files; do not create a parallel script source
 - write for the ear, not for the page
 - one unit = one spoken thought, or two tightly linked clauses only
 - maximum 2 clauses per unit
@@ -256,28 +258,27 @@ Good:
 13. Revise until canonical-unit, duration, naturalness, and portability checks all pass.
 
 ## Output contract
-After preflight, return exactly:
-- `06B_script_canonical.json`
-- `06B_script_full.md`
-- `06B_script_metrics.json`
+After preflight, update these existing Step 06 artifacts in place:
+- `06_script_canonical.json`
+- `06_script_full.md`
+- `06_script_metrics.json`
+
+Then return exactly one new Step 06B sidecar artifact:
 - `06B_tts_surface_report.md`
 
 ## Required guarantees
-- `06B_script_full.md` must equal `"\n".join(06B_script_canonical.json.canonical_script_units)`
-- every line in `06B_script_canonical.json` must remain a canonical script unit
+- `06_script_full.md` must equal `"\n".join(06_script_canonical.json.canonical_script_units)` after normalization
+- every line in `06_script_canonical.json` must remain a canonical script unit
 - every line must remain TTS-safe spoken narration
-- the output must remain engine-agnostic
+- the normalized script must remain engine-agnostic
 - no later step may rewrite `script_text`
+- `06B_tts_surface_report.md` is the only new Step 06B artifact
+- downstream steps must keep using `06_script_canonical.json` and `06_script_full.md`
 
-## Recommended downstream integration
-If this step is adopted, downstream steps should treat `06B_script_canonical.json` as the source of truth for script lines.
-That means:
-- Step 07 should read `06B_script_canonical.json`
-- Step 08 should read `06B_script_canonical.json`
-- Step 09 should export `script_text` directly from `06B_script_canonical.json`
-
-If backward compatibility requires keeping old file names, perform that remapping explicitly in pipeline wiring.
-Do not silently mix Step 06 and Step 06B outputs.
+## In-place normalization rule
+Step 06B does not create a second script branch or emit separate script artifacts.
+It refines the Step 06 artifacts in place and records the normalization summary in `06B_tts_surface_report.md`.
+The report must include source metrics, output metrics, changed row count, split/merge count, and notable safety-preserving rewrites.
 
 ## Failure conditions
 - any required file not read

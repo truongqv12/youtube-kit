@@ -2,7 +2,7 @@
 
 ## Overview
 - Source: `06_script_canonical.json` (127 units, 3,398 chars)
-- Output: `06B_script_canonical.json` (128 units, 3,321 chars)
+- In-place target: `06_script_canonical.json` (128 units, 3,321 chars)
 - Delta: +1 unit, −77 chars (minor compression from surface cleanup)
 - Duration: 10.4 min (within 10–20 min target)
 - Engine-agnostic: ✅ No SSML, phoneme tags, or vendor-specific notation
