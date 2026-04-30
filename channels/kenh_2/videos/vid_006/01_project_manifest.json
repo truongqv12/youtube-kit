@@ -1,0 +1,105 @@
+{
+  "manifest_version": "1.0",
+  "project_id": "kenh_2_vid_006",
+  "channel_id": "kenh_2",
+  "channel_name": "ひとりでも安心 シニア暮らしノート",
+  "generated_at": "2026-04-30T14:55:00+07:00",
+  "pipeline_step": "05_outline_builder",
+  "pipeline_status": "step_05_complete",
+  "topic": {
+    "cluster": "heat and cold preparedness",
+    "angle": "夏に気づきにくい危険サイン3選",
+    "angle_en": "Three hard-to-notice danger signs in summer for seniors",
+    "viewer_problem": "Even seniors who believe they are taking summer precautions may be unknowingly accumulating heat stress. Being indoors does not guarantee safety, and drinking some water does not mean hydration is adequate.",
+    "working_promise": "Walk through 3 subtle summer danger signs — dehydration before thirst, indoor heat traps, and nighttime temperature shifts — with simple daily checks seniors can start today."
+  },
+  "duration": {
+    "min_minutes": 10,
+    "max_minutes": 18,
+    "estimated_minutes": 17.0,
+    "source": "02_topic_strategy section plan: 1020 sec = 17.0 min, within 10-18 target"
+  },
+  "tts": {
+    "voice": "ja_female_soft_01",
+    "chars_per_min": 320,
+    "estimated_script_chars_min": 3200,
+    "estimated_script_chars_max": 5760
+  },
+  "evidence": {
+    "min_sources": 5,
+    "min_official": 3,
+    "country_priority": [
+      "Japan"
+    ],
+    "allow_non_japan": true
+  },
+  "output_plan": {
+    "long_form": true,
+    "shorts": 0,
+    "shorts_override_reason": "explicit video-level directive: long-form only, do not derive shorts"
+  },
+  "active_profiles": {
+    "editorial": "jp_senior_safe_living_scenario_checklist",
+    "visual": "illustrated_lifestyle_handbook / retro_clean_domestic_senior",
+    "language": "jp_senior_safe_living_neutral",
+    "publication": "jp_senior_safe_living_handbook_package"
+  },
+  "key_constraints_summary": {
+    "non_dialogue_mode": true,
+    "lip_sync": false,
+    "veo_audio_mode": "silent",
+    "host_policy": "host_optional_reference_first",
+    "story_bias": "scenario_then_checklist",
+    "fear_ceiling": "low",
+    "age_lock": "65-75, HIGH priority",
+    "locale": "Japan national neutral",
+    "visible_text": "avoid_readable_text, ja-JP only, max 6 words"
+  },
+  "production_schedule": {
+    "month": 1,
+    "week": 2,
+    "weekday_slot": "Mon"
+  },
+  "artifacts": {
+    "step_00": {
+      "00_channel_config.json": "channels/kenh_2/00_channel_config.json",
+      "00_editorial_profile.json": "channels/kenh_2/00_editorial_profile.json",
+      "00_visual_profile.json": "channels/kenh_2/00_visual_profile.json",
+      "00_language_profile.json": "channels/kenh_2/00_language_profile.json",
+      "00_publication_profile.json": "channels/kenh_2/00_publication_profile.json"
+    },
+    "step_01": {
+      "01_intake_spec.json": "channels/kenh_2/videos/vid_006/01_intake_spec.json",
+      "01_project_manifest.json": "channels/kenh_2/videos/vid_006/01_project_manifest.json"
+    },
+    "step_02": {
+      "02_topic_strategy.json": "channels/kenh_2/videos/vid_006/02_topic_strategy.json",
+      "status": "complete"
+    },
+    "step_03": {
+      "03_research_brief.json": "channels/kenh_2/videos/vid_006/03_research_brief.json",
+      "03_source_log.md": "channels/kenh_2/videos/vid_006/03_source_log.md",
+      "status": "complete"
+    },
+    "step_04": {
+      "04_policy_report.json": "channels/kenh_2/videos/vid_006/04_policy_report.json",
+      "status": "complete"
+    },
+    "step_05": {
+      "05_outline.json": "channels/kenh_2/videos/vid_006/05_outline.json",
+      "status": "complete"
+    },
+    "step_06": {
+      "06_script_canonical.json": null,
+      "06_script_full.md": null,
+      "06_script_metrics.json": null,
+      "status": "pending"
+    }
+  },
+  "next_step": {
+    "step": "06_script_writer_canonical",
+    "description": "Script writer — write TTS-safe canonical script units based on outline, research, and policy constraints",
+    "required_input": "05_outline.json + 03_research_brief.json + 04_policy_report.json",
+    "prompt": "compiled_prompts/06_run_script_writer_canonical.md"
+  }
+}

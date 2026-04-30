@@ -1,0 +1,331 @@
+{
+  "project_id": "kenh_2_vid_006",
+  "channel_id": "kenh_2",
+  "pipeline_step": "04_policy_gate",
+  "generated_at": "2026-04-30T15:09:33+07:00",
+  "source_files": [
+    "core/system_principles.md",
+    "core/policy_guardrails.md",
+    "core/output_conventions.md",
+    "channels/kenh_2/videos/vid_006/01_intake_spec.json",
+    "channels/kenh_2/videos/vid_006/02_topic_strategy.json",
+    "channels/kenh_2/videos/vid_006/03_research_brief.json"
+  ],
+
+  "overall_risk": {
+    "level": "LOW",
+    "summary": "Chủ đề '夏に気づきにくい危険サイン3選' thuộc loại daily-life safety awareness, không đưa ra tuyên bố y tế mạnh. Research brief đã xác nhận đủ nguồn chính thống (4 official, 2 primary, 3 supporting). Tất cả claim nằm trong safe_claim_boundary. Rủi ro chính: (1) dễ trượt sang heat stroke medical mechanism quá sâu, (2) con số thống kê có thể bị dramatize. Rủi ro tổng thể thấp nếu downstream steps tuân thủ softener và restriction."
+  },
+
+  "allowed_angles": [
+    {
+      "angle": "夏に見落としやすい3つの危険サインを一緒に確認する（脱水・室内の暑さ・夜間の温度変化）",
+      "classification": "allowed_freely",
+      "note": "Core promise của video. Framing là 'confirm' và 'check', không phải 'prevent' hay 'cure'."
+    },
+    {
+      "angle": "総務省消防庁の統計を引用して室内熱中症の実態を簡潔に説明する",
+      "classification": "allowed_freely",
+      "note": "Statistics phải được trích dẫn bình tĩnh, không dramatize. Dùng '珍しいことではありません' thay vì shock framing."
+    },
+    {
+      "angle": "脱水の初期サイン（口渇以外）のセルフチェック方法を紹介する",
+      "classification": "allowed_with_softeners",
+      "note": "Nói về dấu hiệu quan sát được (唇の乾燥, 腋窩の乾燥, 倦怠感) nhưng PHẢI kèm softener: '気になる症状があれば、かかりつけ医にご相談ください'. Skin turgor test chỉ là 'tham khảo', không phải chẩn đoán."
+    },
+    {
+      "angle": "室温・湿度の見える化（温湿度計の活用）を提案する",
+      "classification": "allowed_freely",
+      "note": "Practical guidance không liên quan y tế trực tiếp. An toàn."
+    },
+    {
+      "angle": "エアコンの使い方と「室温28度」の正しい理解を伝える",
+      "classification": "allowed_with_softeners",
+      "note": "環境省の公式情報に基づく. PHẢI kèm: '体調に合わせて柔軟に調整してください'. KHÔNG dùng framing 'エアコンをつければ絶対安全'."
+    },
+    {
+      "angle": "夜間のエアコン運転と就寝前の水分補給について案内する",
+      "classification": "allowed_with_softeners",
+      "note": "PHẢI kèm softener: '持病がある方は水分量について医師にご確認ください'. Đây là uncertainty U02."
+    },
+    {
+      "angle": "水分補給のタイミングと目安量を紹介する",
+      "classification": "allowed_with_softeners",
+      "note": "1,000-1,500mL/日 là 'một般的な目安'. PHẢI kèm: '持病がある場合は医師の指示に従ってください'. KHÔNG dùng '〜を飲めば脱水にならない'."
+    },
+    {
+      "angle": "相談先の案内（かかりつけ医、地域包括支援センター、薬局）",
+      "classification": "allowed_freely",
+      "note": "Consult-a-professional framing. Quan trọng cho policy compliance."
+    }
+  ],
+
+  "forbidden_angles": [
+    {
+      "angle": "「これで熱中症ゼロ」「熱中症を完全に防げる」— guaranteed heatstroke prevention",
+      "reason": "Violates policy_guardrails.md (guaranteed prevention) + 02_topic_strategy.json forbidden_claims",
+      "enforcement": "Script, title, thumbnail, description đều phải tránh. Outline step phải kiểm tra từng line."
+    },
+    {
+      "angle": "「エアコンさえつければ絶対安全」— absolute safety with AC alone",
+      "reason": "Oversimplification. AC là một trong nhiều biện pháp, không phải giải pháp duy nhất.",
+      "enforcement": "Script phải dùng '〜のリスクを減らす工夫のひとつです' thay vì '〜で安全です'."
+    },
+    {
+      "angle": "「水を飲めば大丈夫」— oversimplified hydration sufficiency",
+      "reason": "Dangerous oversimplification. Hydration có nhiều yếu tố, đặc biệt với người có bệnh nền.",
+      "enforcement": "Script phải emphasize 'ルーチンとして' và kèm medical consultation reminder."
+    },
+    {
+      "angle": "「医者は教えてくれない夏の秘密」— anti-doctor conspiracy framing",
+      "reason": "Violates policy_guardrails.md explicitly. Forbidden hook pattern.",
+      "enforcement": "Title/hook/script phải tránh mọi biến thể."
+    },
+    {
+      "angle": "「薬いらずの暑さ対策」— medication replacement framing",
+      "reason": "Forbidden hook pattern + forbidden claim.",
+      "enforcement": "Tuyệt đối cấm trong mọi downstream asset."
+    },
+    {
+      "angle": "「これだけで十分です」— sufficiency guarantee",
+      "reason": "Contradicts softener rule 'acknowledge partial progress'. Video giới thiệu 3 signs, không phải toàn bộ hướng dẫn.",
+      "enforcement": "Script phải rõ ràng rằng đây là điểm bắt đầu, không phải giải pháp hoàn chỉnh."
+    },
+    {
+      "angle": "「毎年○万人が亡くなっています！」— death-count shock opening",
+      "reason": "Fear theater + disease-name shock bait. Forbidden hook pattern.",
+      "enforcement": "Dù data F01 có, KHÔNG dùng mortality stats làm hook. Dùng transport numbers nếu cần, với calm tone."
+    },
+    {
+      "angle": "Sử dụng hình ảnh realistic về người bệnh, ngất xỉu, hoặc cảnh cấp cứu",
+      "reason": "Violates fear_intensity_ceiling=low + 'avoid misleading visuals that appear as proof'.",
+      "enforcement": "Prompt builder phải giữ illustrated style, tránh distress scenes."
+    }
+  ],
+
+  "mandatory_softeners": [
+    {
+      "id": "SF01",
+      "context": "Khi nói về hiệu quả của bất kỳ biện pháp nào (水分補給, エアコン, 温湿度計)",
+      "required_framing": "Dùng 〜かもしれません / 〜につながることがあります / 〜の工夫のひとつです. KHÔNG dùng 〜で防げます / 〜で安全です.",
+      "applies_to": ["outline", "script"]
+    },
+    {
+      "id": "SF02",
+      "context": "Khi nhắc đến triệu chứng sức khỏe (脱水, 熱中症, めまい, 頭痛, 倦怠感)",
+      "required_framing": "Kèm 'かかりつけ医にご相談ください' hoặc '気になる場合は早めに相談しましょう'.",
+      "applies_to": ["outline", "script"]
+    },
+    {
+      "id": "SF03",
+      "context": "Khi đưa con số cụ thể (28度, 1,000-1,500mL, 50-60%)",
+      "required_framing": "Kèm '目安です' / '個人差があります' / '体調に合わせて調整してください'.",
+      "applies_to": ["outline", "script"]
+    },
+    {
+      "id": "SF04",
+      "context": "Khi nhắc đến水分摂取量 cho người có bệnh nền",
+      "required_framing": "Kèm '心不全や腎臓の病気がある方は、かかりつけ医にご確認ください'. Đây là uncertainty U02 từ research brief.",
+      "applies_to": ["outline", "script"]
+    },
+    {
+      "id": "SF05",
+      "context": "Tổng kết / closing section",
+      "required_framing": "Nhắc lại rằng nhận biết là bước đầu tiên: '気づくだけで変わります' / '少しずつ見直していきましょう' / '急がなくても大丈夫です'. KHÔNG tạo áp lực phải thay đổi ngay.",
+      "applies_to": ["outline", "script"]
+    }
+  ],
+
+  "visual_restrictions": [
+    {
+      "id": "VR01",
+      "rule": "Style PHẢI là illustrated_lifestyle_handbook / retro_clean_domestic_senior. KHÔNG photorealistic.",
+      "reason": "Tránh misleading visuals that appear as proof. Giữ warm, flat, non-threatening."
+    },
+    {
+      "id": "VR02",
+      "rule": "Nhân vật người phải hiển thị rõ ràng là người cao tuổi (65-75): tóc bạc, nếp nhăn, tư thế phù hợp tuổi. Tối thiểu 2-3 cues lão hóa.",
+      "reason": "demographic_anchors.age_lock_priority = HIGH. 2D illustration có xu hướng trẻ hóa, cần bù."
+    },
+    {
+      "id": "VR03",
+      "rule": "KHÔNG lip sync, KHÔNG direct-to-camera speech, KHÔNG generated audio track.",
+      "reason": "non_dialogue_mode=true, veo_audio_policy=silent."
+    },
+    {
+      "id": "VR04",
+      "rule": "Text hiển thị trong ảnh tối đa 6 từ, chỉ tiếng Nhật (ja-JP). Mặc định là avoid_readable_text.",
+      "reason": "visible_text_governance policy."
+    },
+    {
+      "id": "VR05",
+      "rule": "KHÔNG hiển thị thương hiệu sản phẩm cụ thể (tên hãng nhiệt kế, hãng AC).",
+      "reason": "Tránh quảng cáo ngầm. Giữ generic product illustration."
+    },
+    {
+      "id": "VR06",
+      "rule": "KHÔNG hiển thị cảnh người ngất xỉu, bất tỉnh, cảnh cấp cứu, hoặc cảnh nạn nhân熱中症.",
+      "reason": "fear_intensity_ceiling = low. Calm caution preferred over fear theater."
+    },
+    {
+      "id": "VR07",
+      "rule": "Bối cảnh phải là nhà ở Nhật Bản — phòng khách, phòng ngủ, nhà bếp kiểu Nhật. KHÔNG dùng cảnh nhà phương Tây.",
+      "reason": "locale_governance.target_country = Japan. forbidden_cross_locale_cues enforced."
+    },
+    {
+      "id": "VR08",
+      "rule": "Cảnh mùa hè phải thể hiện qua visual cues (ánh nắng, quạt, rèm, quần áo nhẹ) KHÔNG qua text overlay.",
+      "reason": "Seasonal context nên rõ ràng qua minh họa, không phải chữ."
+    }
+  ],
+
+  "disclosure_notes": [
+    {
+      "id": "DN01",
+      "note": "Video description phải có soft disclaimer: 'この動画は情報提供を目的としたものです。体調に不安がある方は、かかりつけ医にご相談ください。'",
+      "applies_to": ["publication_assets"]
+    },
+    {
+      "id": "DN02",
+      "note": "Hình ảnh minh họa (illustrated) tự nó đã tạo synthetic disclosure tự nhiên — không cần thêm label 'AI-generated' vì phong cách vốn đã rõ ràng là minh họa.",
+      "applies_to": ["prompt_builders"]
+    },
+    {
+      "id": "DN03",
+      "note": "Khi nhắc đến số liệu thống kê, nên ghi rõ nguồn (総務省消防庁, 環境省) trong narration hoặc description.",
+      "applies_to": ["outline", "script", "publication_assets"]
+    }
+  ],
+
+  "warnings_for_outline": [
+    {
+      "id": "WO01",
+      "severity": "MEDIUM",
+      "warning": "Section S02 (Background statistics): dùng số liệu bình tĩnh, KHÔNG dramatize. Tránh framing kiểu '毎年10万人が搬送されて...' mở đầu. Prefer: '室内でも熱中症は起こることがわかっています'.",
+      "actionable_instruction": "Outline phải ghi rõ emotional tone = calm_factual cho section này."
+    },
+    {
+      "id": "WO02",
+      "severity": "MEDIUM",
+      "warning": "Section S03 (Dehydration signs): dễ trượt sang y khoa quá sâu. Giữ ở mức 'dấu hiệu quan sát được trong cuộc sống hàng ngày', KHÔNG đi vào cơ chế sinh lý của dehydration.",
+      "actionable_instruction": "Outline cần note: 'giữ ở mức practical self-check, tránh medical mechanism'."
+    },
+    {
+      "id": "WO03",
+      "severity": "MEDIUM",
+      "warning": "Section S04 (Indoor heat): khi giải thích tại sao phòng nóng, KHÔNG dùng framing 'ngôi nhà của bạn đang giết bạn'. Giữ ở mức 'thỉnh thoảng phòng nóng hơn bạn nghĩ'.",
+      "actionable_instruction": "Outline phải ghi: 'factual mechanism brief, max 3-4 sentences, no fear amplification'."
+    },
+    {
+      "id": "WO04",
+      "severity": "LOW",
+      "warning": "Section S05 (Nighttime): evidence U01 cho biết nighttime stats hạn chế. KHÔNG assert cụ thể tỷ lệ夜間熱中症.",
+      "actionable_instruction": "Outline phải note: 'dùng framing 夜も注意が必要です, không assert số liệu cụ thể'."
+    }
+  ],
+
+  "warnings_for_script": [
+    {
+      "id": "WS01",
+      "severity": "HIGH",
+      "warning": "Mỗi khi nhắc biện pháp (水分補給, エアコン, 温湿度計), PHẢI dùng softener (SF01). KHÔNG viết câu khẳng định tuyệt đối như 'エアコンをつければ安心です'.",
+      "actionable_instruction": "Script writer kiểm tra từng câu liên quan đến hiệu quả. Thay '〜で安全' bằng '〜が安心につながることがあります'."
+    },
+    {
+      "id": "WS02",
+      "severity": "HIGH",
+      "warning": "KHÔNG dùng bất kỳ banned_phrases nào: 絶対に治る, 必ず防げる, 医者は教えてくれない, これだけで十分, これで事故ゼロ.",
+      "actionable_instruction": "Script writer chạy text search cho tất cả banned phrases trước khi finalize."
+    },
+    {
+      "id": "WS03",
+      "severity": "MEDIUM",
+      "warning": "Khi nhắc con số cụ thể (28度, 1,000-1,500mL, 50-60%), phải kèm qualifier (SF03).",
+      "actionable_instruction": "Script line chứa con số → thêm '〜が目安とされています' hoặc '〜と言われています'."
+    },
+    {
+      "id": "WS04",
+      "severity": "MEDIUM",
+      "warning": "Script phải TTS-safe. Không chứa formatting marks, không chứa emoji, không chứa markdown.",
+      "actionable_instruction": "Mỗi script_text line phải đọc tự nhiên bằng giọng nói. Kiểm tra bằng cách đọc to."
+    },
+    {
+      "id": "WS05",
+      "severity": "MEDIUM",
+      "warning": "Khi nhắc đến water intake (1,000-1,500mL), PHẢI immediately kèm SF04 về bệnh nền.",
+      "actionable_instruction": "Script line nhắc mL → thêm '持病がある方は、かかりつけ医にご確認ください' trong cùng paragraph."
+    },
+    {
+      "id": "WS06",
+      "severity": "LOW",
+      "warning": "Closing section (S08) phải dùng at least 1 safety_framing_pattern từ language_constraints.",
+      "actionable_instruction": "Chọn ít nhất 1 từ: 'ひとつずつ確認してみましょう', '気がついたときに直せば大丈夫です', '急がなくても大丈夫です'."
+    }
+  ],
+
+  "warnings_for_prompt_builders": [
+    {
+      "id": "WP01",
+      "severity": "HIGH",
+      "warning": "Style lock PHẢI enforce: 'illustrated lifestyle handbook, retro-clean 2D, warm domestic scenes, senior-friendly'. Mọi prompt phải chứa style anchor.",
+      "actionable_instruction": "Image prompt template phải có style_lock.seed_image_style_raw làm prefix."
+    },
+    {
+      "id": "WP02",
+      "severity": "HIGH",
+      "warning": "Nhân vật người cao tuổi PHẢI có ≥2 aging cues rõ ràng. Illustration bias trẻ hóa rất mạnh.",
+      "actionable_instruction": "Mỗi prompt chứa nhân vật → thêm: 'silver-gray hair, gentle wrinkles, relaxed mature posture'. Thêm negative: 'DO NOT make the character look younger than 60'."
+    },
+    {
+      "id": "WP03",
+      "severity": "HIGH",
+      "warning": "Veo prompt PHẢI có '(Silent video, no audio).' ở cuối. KHÔNG request ambience, foley, room tone.",
+      "actionable_instruction": "Veo prompt template phải tự động append directive này."
+    },
+    {
+      "id": "WP04",
+      "severity": "MEDIUM",
+      "warning": "KHÔNG tạo cảnh người ngất xỉu, bất tỉnh, hoặc cảnh cấp cứu.",
+      "actionable_instruction": "Prompt builder chạy negative check: nếu prompt chứa 'collapse', 'faint', 'unconscious', 'ambulance' → flag và rewrite sang object-focused shot."
+    },
+    {
+      "id": "WP05",
+      "severity": "MEDIUM",
+      "warning": "Bối cảnh mùa hè phải rõ ràng qua visual cues (ánh nắng, quạt, rèm, quần áo nhẹ) nhưng KHÔNG qua cảnh ngoài trời nắng gắt đáng sợ.",
+      "actionable_instruction": "Prompt nên focus indoor Japanese home scenes in summer. Ánh nắng nhẹ qua cửa sổ, không harsh direct sunlight."
+    },
+    {
+      "id": "WP06",
+      "severity": "LOW",
+      "warning": "Visible text trong ảnh: mặc định avoid. Nếu cần → tối đa 6 từ, tiếng Nhật only.",
+      "actionable_instruction": "Prompt builder kiểm tra visible_text_policy theo từng line. Default = 'no readable text'."
+    }
+  ],
+
+  "warnings_for_publication_assets": [
+    {
+      "id": "WA01",
+      "severity": "HIGH",
+      "warning": "Title KHÔNG được overpromise. Cấm framing kiểu '熱中症を完全に防ぐ方法', '絶対安全な夏の過ごし方', '医者が教えない夏の秘密'.",
+      "actionable_instruction": "Title candidates từ 02_topic_strategy đã pass review. Nếu cần thay đổi → chạy lại qua forbidden_claims check."
+    },
+    {
+      "id": "WA02",
+      "severity": "HIGH",
+      "warning": "Thumbnail KHÔNG được hiển thị cảnh nguy hiểm/sợ hãi. Emotion = gentle_concern. KHÔNG dùng biểu tượng cảnh báo đỏ lớn hay icon nguy hiểm.",
+      "actionable_instruction": "Thumbnail concept từ topic_strategy: domestic scene + thermometer + gentle tone. Giữ nguyên."
+    },
+    {
+      "id": "WA03",
+      "severity": "MEDIUM",
+      "warning": "Description phải có soft disclaimer (DN01).",
+      "actionable_instruction": "Append: 'この動画は情報提供を目的としたものです。体調に不安がある方は、かかりつけ医にご相談ください。'"
+    },
+    {
+      "id": "WA04",
+      "severity": "LOW",
+      "warning": "KHÔNG derive shorts cho video này (video-level directive).",
+      "actionable_instruction": "Publication step phải skip shorts generation. packaging_seeds_shorts.enabled = false đã set."
+    }
+  ]
+}

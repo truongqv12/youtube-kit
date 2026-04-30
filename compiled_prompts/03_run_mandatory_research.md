@@ -72,5 +72,8 @@ After preflight, return exactly:
 - no separation of facts and uncertainty
 
 ## Final instruction
-Use the response envelope from `core/output_conventions.md`.
-Return the preflight first, then the artifacts. If preflight fails, stop.
+Use file-first output mode from `core/output_conventions.md`.
+Write all artifacts directly under `channels/{{TARGET_CHANNEL}}/videos/{{TARGET_VIDEO}}/`.
+Return the preflight first, then only list files written, short validation summary, and unresolved questions. If preflight fails, stop.
+Do not paste full artifact bodies into chat unless the operator explicitly asks for inline output.
+If direct file writing is unavailable, fall back to the response envelope from `core/output_conventions.md`.

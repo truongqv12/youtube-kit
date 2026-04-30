@@ -1,0 +1,227 @@
+{
+  "project_id": "kenh_2_vid_006",
+  "channel_id": "kenh_2",
+  "pipeline_step": "02_topic_strategy",
+  "generated_at": "2026-04-30T14:59:56+07:00",
+  "source_files": [
+    "core/system_principles.md",
+    "core/topic_strategy_standard.md",
+    "core/policy_guardrails.md",
+    "channels/kenh_2/videos/vid_006/01_intake_spec.json",
+    "channels/kenh_2/00_editorial_profile.json",
+    "channels/kenh_2/00_publication_profile.json"
+  ],
+
+  "topic_cluster": "heat and cold preparedness",
+  "topic_angle": "夏に気づきにくい危険サイン3選",
+  "topic_angle_en": "Three hard-to-notice danger signs in summer for seniors",
+
+  "target_viewer": {
+    "age_band": "60+",
+    "living_situation": "lives alone or with minimal daily support",
+    "locale": "Japan, national neutral",
+    "daily_context": "spends most of the day indoors in a standard Japanese apartment, uses air conditioning inconsistently, may not notice subtle dehydration or indoor heat buildup until symptoms become serious",
+    "information_need": "wants a calm, specific checklist of summer danger signs that are easy to miss, so they can self-check daily without feeling anxious or overwhelmed"
+  },
+
+  "viewer_problem": "夏になると「暑さ対策はしている」と思っていても、実は気づきにくい形で体に負担がかかっていることがあります。室内にいるから大丈夫、水は飲んでいるから平気——そう思っていても、見落としやすいサインがいくつかあります。どこに注意すればいいのか、具体的に整理したいと感じている方は多いのではないでしょうか。",
+  "viewer_problem_en": "Even seniors who believe they are taking summer precautions may be unknowingly accumulating heat stress. Being indoors does not guarantee safety, and drinking some water does not mean hydration is adequate. Many want a specific, organized list of what to watch for but lack clear, calm guidance.",
+
+  "working_promise": "夏に見落としやすい3つの危険サインを、ひとつずつ一緒に確認していきます。特別な道具や大きな準備は必要ありません。毎日の暮らしの中で気をつけるポイントを整理するだけで、安心感が変わります。",
+  "working_promise_en": "We will walk through three summer danger signs that are easy to miss, one by one. No special equipment or major preparation needed — just organizing the daily checkpoints that can give you more peace of mind.",
+
+  "safe_claim_boundary": {
+    "this_video_claims": [
+      "夏には室内でも熱中症リスクがあり、気づきにくいサインが存在する",
+      "脱水の初期サイン（口の渇き以外）を知っておくと早めに対処しやすい",
+      "室内の温度・湿度を定期的に確認する習慣が役に立つ",
+      "夜間の気温変化にも注意が必要な場合がある",
+      "気になる症状があれば、早めにかかりつけ医に相談するとよい"
+    ],
+    "this_video_does_NOT_claim": [
+      "この方法で熱中症を完全に防げる",
+      "エアコンを使えば絶対に安全",
+      "水を飲んでいれば脱水にならない",
+      "医師の指導なしでも十分",
+      "この動画を見れば夏の体調管理は万全"
+    ]
+  },
+
+  "forbidden_claims": [
+    "「これで熱中症ゼロ」— guaranteed heatstroke prevention",
+    "「エアコンさえつければ絶対安全」— absolute safety with AC alone",
+    "「水を飲めば大丈夫」— oversimplified hydration sufficiency",
+    "「医者は教えてくれない夏の秘密」— anti-doctor conspiracy framing",
+    "「薬いらずの暑さ対策」— medication replacement framing",
+    "「これだけで十分です」— sufficiency guarantee",
+    "「毎年○人が亡くなっています！」— death-count shock opening"
+  ],
+
+  "research_questions": [
+    {
+      "id": "RQ1",
+      "question": "日本の高齢者における夏季の熱中症発生状況と室内発症の割合（総務省消防庁・厚生労働省の統計）",
+      "question_en": "Incidence of summer heatstroke among Japanese seniors and proportion of indoor cases — Fire and Disaster Management Agency, MHLW statistics",
+      "source_type_expected": "official statistics, government report"
+    },
+    {
+      "id": "RQ2",
+      "question": "高齢者が見落としやすい脱水の初期症状（口渇以外のサイン：皮膚の弾力、尿の色、倦怠感など）に関する医学的知見",
+      "question_en": "Early dehydration signs in seniors beyond thirst — skin turgor, urine color, fatigue — medical evidence",
+      "source_type_expected": "medical society guideline, geriatric review article"
+    },
+    {
+      "id": "RQ3",
+      "question": "室内熱中症のメカニズム：なぜ室内にいても危険なのか（断熱性能、エアコン未使用、湿度の影響）",
+      "question_en": "Mechanism of indoor heatstroke: why staying indoors is not safe enough — insulation, AC non-use, humidity effects",
+      "source_type_expected": "NHK health article, environmental health research, government advisory"
+    },
+    {
+      "id": "RQ4",
+      "question": "エアコンの適切な設定温度と高齢者向けの使い方の推奨（環境省・自治体の啓発資料）",
+      "question_en": "Recommended AC temperature settings and senior-friendly usage — Ministry of Environment, municipal advisories",
+      "source_type_expected": "government advisory, municipal pamphlet"
+    },
+    {
+      "id": "RQ5",
+      "question": "夜間の気温低下と高齢者の体温調節機能の関係（夜間熱中症・寝汗・明け方の脱水リスク）",
+      "question_en": "Nighttime temperature changes and thermoregulation in seniors — nocturnal heatstroke, night sweats, dawn dehydration risk",
+      "source_type_expected": "geriatric medicine review, sleep medicine article"
+    },
+    {
+      "id": "RQ6",
+      "question": "高齢者向けの夏の日常チェックリスト（自治体・地域包括支援センター配布資料）",
+      "question_en": "Daily summer safety checklists for seniors distributed by municipalities or regional support centers",
+      "source_type_expected": "municipal pamphlet, regional support center material"
+    },
+    {
+      "id": "RQ7",
+      "question": "高齢者の水分摂取の目安と、水分補給のタイミングに関する推奨（日本老年医学会等）",
+      "question_en": "Recommended daily fluid intake for seniors and optimal hydration timing — Japan Geriatrics Society etc.",
+      "source_type_expected": "medical society guideline, government health advisory"
+    }
+  ],
+
+  "planned_sections": [
+    {
+      "section_id": "S01",
+      "label": "オープニング — 「対策しているつもり」の落とし穴",
+      "label_en": "Opening — the blind spot of thinking you are already prepared",
+      "purpose": "soft hook with a relatable everyday scene: senior sitting in a room feeling fine, but subtle signs are already present",
+      "estimated_duration_sec": 90,
+      "editorial_note": "use self_check_question hook; avoid fear framing; anchor in daily routine"
+    },
+    {
+      "section_id": "S02",
+      "label": "なぜ夏は気づきにくいのか — 背景をかんたんに",
+      "label_en": "Why summer dangers are hard to notice — brief background",
+      "purpose": "provide brief factual context on indoor heatstroke statistics and why seniors are at higher risk",
+      "estimated_duration_sec": 120,
+      "editorial_note": "cite Fire and Disaster Management Agency stats calmly; tone is informational, not alarming"
+    },
+    {
+      "section_id": "S03",
+      "label": "サイン①：のどが渇く前に始まっている脱水",
+      "label_en": "Sign 1: Dehydration that begins before you feel thirsty",
+      "purpose": "first of three signs — subtle dehydration cues beyond thirst (skin turgor, urine color, fatigue)",
+      "estimated_duration_sec": 180,
+      "editorial_note": "object-focused shots: glass of water, urine color reference, hand skin check; practical daily check method"
+    },
+    {
+      "section_id": "S04",
+      "label": "サイン②：部屋の中なのに暑い — 室内熱中症のしくみ",
+      "label_en": "Sign 2: It is hot even indoors — how indoor heatstroke works",
+      "purpose": "second sign — indoor heat traps, AC non-use, humidity buildup",
+      "estimated_duration_sec": 180,
+      "editorial_note": "show thermometer/hygrometer placement, AC remote, curtain and ventilation tips; cite recommended temperature range"
+    },
+    {
+      "section_id": "S05",
+      "label": "サイン③：夜中に気づかない温度の変化",
+      "label_en": "Sign 3: Temperature changes you do not notice at night",
+      "purpose": "third sign — nighttime temperature drops after AC off, dawn dehydration, night sweats",
+      "estimated_duration_sec": 180,
+      "editorial_note": "bedroom scene with timer setting on AC, water bottle by pillow; calm tone about nighttime precautions"
+    },
+    {
+      "section_id": "S06",
+      "label": "毎日できるかんたんチェック — 朝・昼・夜",
+      "label_en": "Simple daily checks — morning, noon, night",
+      "purpose": "practical checklist consolidation: morning hydration check, daytime room temperature check, nighttime preparation",
+      "estimated_duration_sec": 120,
+      "editorial_note": "checklist-style summary with illustrated timeline; before-after mood comparison (anxious vs prepared)"
+    },
+    {
+      "section_id": "S07",
+      "label": "気になるときは — 相談先の整理",
+      "label_en": "When you are worried — where to consult",
+      "purpose": "when to contact family, pharmacist, or doctor; mention regional support center",
+      "estimated_duration_sec": 90,
+      "editorial_note": "soft consult-a-professional framing; mention 地域包括支援センター as a resource"
+    },
+    {
+      "section_id": "S08",
+      "label": "まとめ — 気づくだけで変わる夏の過ごし方",
+      "label_en": "Wrap-up — noticing changes how you spend summer",
+      "purpose": "calm reassuring close with recap of three signs and encouragement",
+      "estimated_duration_sec": 60,
+      "editorial_note": "emphasize partial progress is fine; warm close; channel subscribe encouragement if natural"
+    }
+  ],
+
+  "total_estimated_duration_sec": 1020,
+  "total_estimated_duration_min": 17.0,
+  "duration_within_target": true,
+  "duration_target": "10–18 min",
+
+  "hook_type_seed": "self_check_question",
+  "viewer_question": "夏の暑さ対策、本当にできていますか？気づきにくいサインを見逃していませんか？",
+  "viewer_question_en": "Are your summer precautions really enough? Could you be missing the subtle danger signs?",
+  "opening_visual_seed": "illustrated scene of a senior sitting calmly in a Japanese living room on a summer day, electric fan on, curtains half-drawn, a glass of water on the table — everything looks peaceful but a small thermometer on the wall shows 31°C; retro-clean 2D style, warm tones",
+  "thumbnail_emotion_hint": "gentle_concern",
+
+  "packaging_seeds_longform": {
+    "title_candidates": [
+      "夏に気づきにくい危険サイン3選【60代・70代の暮らし】",
+      "「暑さ対策してるのに…」見落としやすい夏の3つのサイン",
+      "室内でも要注意！シニアが見逃しやすい夏の危険サイン"
+    ],
+    "thumbnail_concept": {
+      "scene": "illustrated close-up of a Japanese living room in summer: thermometer showing 31°C on the wall, a half-full glass of water, and a small electric fan — warm earth tones, retro-clean 2D style, soft afternoon light",
+      "text_overlay": "夏の危険サイン3選",
+      "text_word_count": 4,
+      "emotion": "gentle_concern",
+      "host_presence": "optional — may appear resting in chair or absent"
+    },
+    "description_seed": "「暑さ対策はしてるつもり」——でも、見落としやすいサインが実はあるかもしれません。この動画では、夏に気づきにくい3つの危険サインを、ひとつずつ確認していきます。のどが渇く前の脱水サイン、室内でも起こる熱中症のしくみ、夜間の温度変化——毎日の暮らしの中でチェックできるポイントを整理しました。※この動画は情報提供を目的としたものです。体調に不安がある方は、かかりつけ医にご相談ください。"
+  },
+
+  "packaging_seeds_shorts": {
+    "enabled": false,
+    "count": 0,
+    "override_reason": "explicit video-level directive: long-form only, do not derive shorts",
+    "placeholder_concepts": [
+      {
+        "shorts_id": "placeholder_S1",
+        "concept": "「のどが渇いてからでは遅い？脱水の意外なサイン」— 15-second self-check quick tip focusing on skin turgor test",
+        "note": "NOT produced for this video; retained as future reference only"
+      },
+      {
+        "shorts_id": "placeholder_S2",
+        "concept": "「エアコンつけてるのに暑い？温度計を置いてみよう」— 15-second object-focus room temperature check",
+        "note": "NOT produced for this video; retained as future reference only"
+      }
+    ]
+  },
+
+  "notes_for_research": [
+    "RQ1 — prioritize Fire and Disaster Management Agency (総務省消防庁) heatstroke transport statistics; look for 2024 or 2025 summer data showing indoor vs outdoor breakdown and age-band distribution",
+    "RQ2 — look for Japan Geriatrics Society (日本老年医学会) or MHLW resources on early dehydration signs specific to elderly; skin turgor test reliability in aged skin may need nuance",
+    "RQ3 — NHK or government advisory on why indoor heatstroke happens: focus on insulation trapping heat, AC avoidance habits among seniors, and humidity as a compounding factor",
+    "RQ4 — Ministry of Environment (環境省) recommended room temperature 28°C; check if there are senior-specific adjustments; also check municipal leaflets for practical AC usage tips",
+    "RQ5 — nighttime heatstroke is underreported; look for sleep medicine or geriatric articles on nocturnal dehydration and AC timer settings; cite carefully as evidence may be thinner",
+    "RQ6 — search for municipal summer safety checklists (東京都、大阪市、名古屋市 etc.) as structural reference for the daily-check section",
+    "RQ7 — Japan Geriatrics Society fluid intake guidelines (typically 1.0-1.5L/day for seniors); note that excessive fluid intake warnings may also apply for certain conditions",
+    "General — all statistics should be from the last 3-5 years when possible; frame all data calmly without death-count shock; if citing mortality, use context-appropriate phrasing"
+  ]
+}

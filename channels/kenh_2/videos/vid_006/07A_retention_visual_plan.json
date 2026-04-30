@@ -1,0 +1,111 @@
+{
+  "project_id": "kenh_2_vid_006",
+  "channel_id": "kenh_2",
+  "pipeline_step": "07A_retention_visual_plan",
+  "generated_at": "2026-04-30T15:48:00+07:00",
+
+  "effective_script_source": "06_script_canonical.json",
+  "step_06b_applied": true,
+
+  "opening_strategy": "self_check_visual_question",
+  "hook_type": "self_check_question",
+  "viewer_question": "自分は暑さ対策をしているつもりだけど、本当に大丈夫なのか？",
+  "allowed_non_linear_rows": [0, 1, 2],
+  "tension_curve": "low_start → mild_concern_at_sign_reveal → practical_relief → calm_close",
+  "daily_life_anchor": "エアコンのある日本の室内、コップの水、温湿度計、枕元の水",
+  "thumbnail_emotion_hint": "gentle_concern",
+
+  "retention_beats": [
+    {
+      "unit_index": 0,
+      "script_alignment": "暑さ対策はちゃんとしている、そう思って夏を過ごしていませんか。",
+      "beat_type": "hook_question",
+      "viewer_question": "自分の対策は本当に十分？",
+      "visual_goal": "典型的な日本の夏の室内 — エアコンがついている部屋で穏やかに座る高齢者、でも温湿度計が高い数値を示している",
+      "motion_goal": "danger_reveal",
+      "attention_target": "温湿度計の数値に視線誘導",
+      "tension_level": "mild",
+      "safety_guardrail": "パニックなし、穏やかな室内シーン、脅迫的な要素なし"
+    },
+    {
+      "unit_index": 1,
+      "script_alignment": "エアコンもつけているし、水も飲んでいる。",
+      "beat_type": "false_security_setup",
+      "viewer_question": "エアコンと水だけで安心？",
+      "visual_goal": "エアコンのリモコンとテーブルの上の水のコップ — 対策している安心感を表現",
+      "motion_goal": "contrast",
+      "attention_target": "日常的な対策アイテム",
+      "tension_level": "low",
+      "safety_guardrail": "日常品のみ、医療器具なし"
+    },
+    {
+      "unit_index": 2,
+      "script_alignment": "でも、それだけで本当に大丈夫かどうか、ふと気になることはありませんか。",
+      "beat_type": "curiosity_pivot",
+      "viewer_question": "見落としているサインがある？",
+      "visual_goal": "同じ室内だが、窓からの日差しで壁に熱がたまっている様子を暗示するような光の演出",
+      "motion_goal": "danger_reveal",
+      "attention_target": "壁や窓際の微妙な熱の暗示",
+      "tension_level": "mild",
+      "safety_guardrail": "抽象的な暗示のみ、具体的な症状描写なし"
+    }
+  ],
+
+  "row_visual_overrides": [
+    {
+      "unit_index": 0,
+      "override_type": "self_check_visual_question",
+      "visual_override_description": "Japanese summer living room with elderly woman sitting calmly near AC unit, but a wall-mounted thermo-hygrometer subtly shows 31°C — the viewer question is whether precautions are really enough",
+      "must_connect_to": ["viewer_question", "micro_topic", "safety_guardrail"],
+      "safety_note": "No panic, no dramatic color, just subtle environmental detail that invites self-reflection"
+    }
+  ],
+
+  "motion_intents": [
+    {"unit_range": [0, 7], "intent": "danger_reveal", "note": "Opening hook — subtle reveal that precautions may not be enough"},
+    {"unit_range": [8, 16], "intent": "expert_emphasis", "note": "Background statistics and reasoning"},
+    {"unit_range": [17, 48], "intent": "checklist", "note": "Sign 1 dehydration — observation points and hydration routine"},
+    {"unit_range": [49, 68], "intent": "solution_demo", "note": "Sign 2 indoor heat — thermo-hygrometer, AC adjustment"},
+    {"unit_range": [69, 85], "intent": "contrast", "note": "Sign 3 nighttime — timer off vs staying on, morning dehydration risk"},
+    {"unit_range": [86, 101], "intent": "checklist", "note": "Daily morning/noon/night check routine"},
+    {"unit_range": [102, 108], "intent": "solution_demo", "note": "Consultation resources"},
+    {"unit_range": [109, 115], "intent": "checklist", "note": "Calm closing summary"}
+  ],
+
+  "title_thumbnail_angles": [
+    {
+      "angle": "number_anchor + self_relevance",
+      "title_candidate": "夏に気づきにくい危険サイン3選【エアコンだけでは不十分？】",
+      "thumbnail_text": "3つのサイン",
+      "thumbnail_visual": "Elderly Japanese woman in summer living room with thermo-hygrometer showing high reading, gentle concern expression",
+      "ctr_psychology": "Number anchor (3) + self-check question creates immediate self-relevance for seniors who believe they are safe",
+      "safety_rationale": "No panic, no diagnosis, question format preserves trust"
+    },
+    {
+      "angle": "specificity + mild_consequence",
+      "title_candidate": "室内でも熱中症？ 65歳からの夏の見落とし",
+      "thumbnail_text": "室内でも危険",
+      "thumbnail_visual": "Split view — calm AC room vs thermo-hygrometer reading above 28°C, warm color accent on the number",
+      "ctr_psychology": "Specificity of indoor risk + age anchor creates surprise and self-relevance",
+      "safety_rationale": "Question mark softens claim, no guaranteed prevention language"
+    }
+  ],
+
+  "safety_guardrails": {
+    "no_gore_or_panic": true,
+    "no_diagnosis_implication": true,
+    "no_guaranteed_prevention": true,
+    "no_fake_authority": true,
+    "no_conspiracy_framing": true,
+    "mild_concern_allowed_first_15_sec_only": true,
+    "all_visual_overrides_connected_to_topic": true
+  },
+
+  "qc_checks": {
+    "opening_visual_connects_to_viewer_question": true,
+    "non_linear_rows_within_allowed_range": true,
+    "safety_guardrail_per_concern_beat": true,
+    "no_script_text_rewritten": true,
+    "no_step_07a_fields_in_final_export": true
+  }
+}

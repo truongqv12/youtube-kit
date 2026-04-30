@@ -1,0 +1,198 @@
+{
+  "project_id": "kenh_2_vid_006",
+  "channel_id": "kenh_2",
+  "pipeline_step": "03_mandatory_research",
+  "generated_at": "2026-04-30T15:05:21+07:00",
+  "source_files": [
+    "core/system_principles.md",
+    "core/topic_strategy_standard.md",
+    "core/mandatory_research_standard.md",
+    "core/policy_guardrails.md",
+    "knowledge/japanese/00_language_strategy.md",
+    "channels/kenh_2/videos/vid_006/01_intake_spec.json",
+    "channels/kenh_2/videos/vid_006/02_topic_strategy.json"
+  ],
+  "evidence_summary": {
+    "total_sources": 9,
+    "official_sources": 4,
+    "primary_sources": 2,
+    "supporting_sources": 3,
+    "japan_based_sources": 9,
+    "meets_minimum": true
+  },
+
+  "facts": [
+    {
+      "fact_id": "F01",
+      "claim": "2025年の熱中症による救急搬送は全国10万510人で過去最多。65歳以上が5万7,433人（57.1%）を占める。",
+      "claim_en": "In 2025, heatstroke emergency transports reached a record 100,510 nationwide. Seniors 65+ accounted for 57,433 (57.1%).",
+      "source_ids": ["S01"],
+      "confidence": "high",
+      "rq_link": "RQ1"
+    },
+    {
+      "fact_id": "F02",
+      "claim": "発生場所として最多は「住居」で、2025年は3万8,292人（約38%）。室内でも熱中症は起こる。",
+      "claim_en": "The most common location was 'residence' — 38,292 cases (≈38%) in 2025. Indoor heatstroke is real.",
+      "source_ids": ["S01"],
+      "confidence": "high",
+      "rq_link": "RQ1"
+    },
+    {
+      "fact_id": "F03",
+      "claim": "高齢者は口渇感が鈍化し、のどが渇く前に脱水が始まっている場合がある。口渇以外の初期サイン：唇の乾燥、舌の乾き、唾液の粘り気、腋窩の乾燥、原因不明の微熱、立ちくらみ、倦怠感、足のつり。",
+      "claim_en": "Seniors have reduced thirst sensation. Dehydration may start before feeling thirsty. Early signs beyond thirst: dry lips/tongue, sticky saliva, dry armpits, unexplained low-grade fever, lightheadedness, fatigue, leg cramps.",
+      "source_ids": ["S02", "S03"],
+      "confidence": "high",
+      "rq_link": "RQ2"
+    },
+    {
+      "fact_id": "F04",
+      "claim": "高齢者の皮膚ツルゴール（ハンカチーフサイン）は加齢で自然低下するため、手の甲だけでは判定困難。鎖骨下の皮膚で確認が推奨される。尿の色も腎機能低下で脱水時でも濃くならない場合がある。",
+      "claim_en": "Skin turgor test (hand pinch) is unreliable in elderly due to natural elasticity loss — subclavicular skin is recommended. Urine color may not darken with dehydration due to reduced kidney concentration ability.",
+      "source_ids": ["S02", "S03"],
+      "confidence": "high",
+      "rq_link": "RQ2"
+    },
+    {
+      "fact_id": "F05",
+      "claim": "高齢者は皮膚の温度センサーが鈍化し、暑さを自覚しにくい。体温調節機能も低下しているため、室内でもエアコン未使用・高湿度で熱中症リスクが高まる。",
+      "claim_en": "Seniors have dulled skin temperature sensors and reduced thermoregulation. Combined with AC non-use and high humidity, indoor heatstroke risk increases significantly.",
+      "source_ids": ["S04", "S05"],
+      "confidence": "high",
+      "rq_link": "RQ3"
+    },
+    {
+      "fact_id": "F06",
+      "claim": "環境省の「室温28度」はエアコン設定温度ではなく室温の目安。実際の室温は設定温度より高くなることが多い。高齢者は体感に頼らず温湿度計で確認すべき。湿度は50-60%が目安。",
+      "claim_en": "The Ministry of Environment's '28°C' refers to room temperature, not AC setting. Actual room temp often exceeds the setting. Seniors should use a thermometer/hygrometer rather than relying on sensation. Target humidity: 50-60%.",
+      "source_ids": ["S05", "S06"],
+      "confidence": "high",
+      "rq_link": "RQ4"
+    },
+    {
+      "fact_id": "F07",
+      "claim": "夜間はエアコンのタイマーが切れた後に室温が上昇して熱中症になるケースが非常に多い。建物に蓄積された熱で外気温が下がっても室温が下がりにくい。就寝中もエアコンつけっぱなしが推奨。",
+      "claim_en": "Nighttime heatstroke commonly occurs after AC timer shuts off and room temp rises. Buildings retain heat even when outside temp drops. Keeping AC on all night is recommended.",
+      "source_ids": ["S07", "S05"],
+      "confidence": "high",
+      "rq_link": "RQ5"
+    },
+    {
+      "fact_id": "F08",
+      "claim": "寝る前にコップ一杯の水分摂取、枕元に水を置く習慣が推奨。通気性の良い寝具・パジャマ（綿やリネン）を選ぶ。",
+      "claim_en": "A glass of water before bed and keeping water by the pillow are recommended. Breathable bedding/pajamas (cotton, linen) should be chosen.",
+      "source_ids": ["S07"],
+      "confidence": "high",
+      "rq_link": "RQ5"
+    },
+    {
+      "fact_id": "F09",
+      "claim": "高齢者の飲み物からの水分摂取目安：1日1,000-1,500mL（食事以外）。体重1kgあたり約30mLが指標。のどが渇く前に「ルーチンとして飲む」ことが重要。推奨タイミング：起床時、食事時、入浴前後、外出前後、服薬時、就寝前。",
+      "claim_en": "Recommended fluid intake for seniors: 1,000-1,500mL/day from drinks (excluding food). ~30mL/kg body weight as indicator. Drink as routine, not when thirsty. Key timings: waking, meals, before/after bathing, going out, medication, bedtime.",
+      "source_ids": ["S08", "S09"],
+      "confidence": "high",
+      "rq_link": "RQ7"
+    }
+  ],
+
+  "practical_guidance": [
+    {
+      "guidance_id": "G01",
+      "guidance": "毎日の脱水セルフチェック：①唇・舌の乾燥を確認 ②腋窩の湿り気を確認 ③尿の回数が極端に減っていないか確認 ④「なんとなく元気がない」を見逃さない",
+      "guidance_en": "Daily dehydration self-check: ① check lip/tongue dryness ② check armpit moisture ③ check if urination frequency has dropped significantly ④ don't ignore 'feeling slightly off'",
+      "evidence_basis": "F03, F04",
+      "section_target": "S03"
+    },
+    {
+      "guidance_id": "G02",
+      "guidance": "室内の温湿度を温湿度計で見える化する。室温28度以下・湿度50-60%を目安に。体感に頼らない。",
+      "guidance_en": "Make indoor temp/humidity visible with a thermometer/hygrometer. Target: room temp ≤28°C, humidity 50-60%. Don't rely on body sensation.",
+      "evidence_basis": "F05, F06",
+      "section_target": "S04"
+    },
+    {
+      "guidance_id": "G03",
+      "guidance": "エアコンは設定温度26度前後を目安に、室温28度以下を維持。カーテン・すだれで直射日光を遮る。扇風機・サーキュレーターを併用。",
+      "guidance_en": "Set AC around 26°C to maintain room temp ≤28°C. Use curtains/blinds to block direct sunlight. Combine with fans/circulators.",
+      "evidence_basis": "F06",
+      "section_target": "S04"
+    },
+    {
+      "guidance_id": "G04",
+      "guidance": "夜間はエアコンをつけたまま就寝が望ましい。タイマー使用時は起床前までカバーする設定に。枕元に水を用意。通気性の良い寝具を選ぶ。",
+      "guidance_en": "Keep AC on overnight if possible. If using timer, set to cover until waking. Keep water by pillow. Use breathable bedding.",
+      "evidence_basis": "F07, F08",
+      "section_target": "S05"
+    },
+    {
+      "guidance_id": "G05",
+      "guidance": "水分補給は「のどが渇く前にルーチンとして」。起床時・食事時・入浴前後・外出前後・服薬時・就寝前の6タイミングを目安に、1回コップ半分〜1杯ずつ。",
+      "guidance_en": "Hydrate as routine before feeling thirsty. 6 key timings: waking, meals, before/after bathing, going out, medication, bedtime. Half to one cup each time.",
+      "evidence_basis": "F09",
+      "section_target": "S03, S06"
+    }
+  ],
+
+  "unknowns_and_uncertainty": [
+    {
+      "id": "U01",
+      "topic": "夜間熱中症の正確な発生率データ",
+      "note": "夜間熱中症は「タイマーが切れた後に起こる」ケースが多いとされるが、夜間限定の発生率の公式統計は限定的。搬送データは時間帯別の精密な内訳を公開していない場合がある。",
+      "note_en": "Nighttime heatstroke is reportedly common after AC timer off, but precise nighttime-only incidence statistics are limited. Transport data may not break down by hour precisely.",
+      "handling": "「夜間も注意が必要」と控えめに述べる。具体的な夜間発生率の断言は避ける。"
+    },
+    {
+      "id": "U02",
+      "topic": "高齢者の最適な水分摂取量の個人差",
+      "note": "1,000-1,500mL/日は一般的目安だが、心不全・腎不全などの持病がある場合は制限が必要。個人差が非常に大きい。",
+      "note_en": "1,000-1,500mL/day is a general guideline but may need restriction for heart failure, kidney disease, etc. Significant individual variation.",
+      "handling": "「一般的な目安として」と前置きし、持病がある場合は医師に相談を促す。"
+    },
+    {
+      "id": "U03",
+      "topic": "皮膚ツルゴールの高齢者への信頼性",
+      "note": "鎖骨下が推奨だが、一般の方がセルフチェックで正確に判断するのは難しい場合がある。",
+      "note_en": "Subclavicular skin is recommended but accurate self-assessment by laypersons may be difficult.",
+      "handling": "ツルゴールテストは「参考のひとつ」として紹介し、主要なセルフチェックは唇・舌の乾燥や全体的な体調変化に重点を置く。"
+    }
+  ],
+
+  "when_to_consult_clinician": [
+    {
+      "id": "C01",
+      "situation": "ぐったりしている、意識がはっきりしない、呼びかけへの反応が鈍い",
+      "action": "早急に医療機関を受診または救急車を呼ぶ",
+      "section_target": "S07"
+    },
+    {
+      "id": "C02",
+      "situation": "激しい頭痛、吐き気、意識がもうろうとする",
+      "action": "重症化の可能性あり — ためらわずに医療機関へ",
+      "section_target": "S07"
+    },
+    {
+      "id": "C03",
+      "situation": "心不全・腎不全などの持病がある場合の水分摂取量",
+      "action": "かかりつけ医に適切な水分量を確認する",
+      "section_target": "S03, S07"
+    },
+    {
+      "id": "C04",
+      "situation": "セルフチェックで脱水サインが複数当てはまり改善しない",
+      "action": "かかりつけ医や薬局に相談する",
+      "section_target": "S07"
+    }
+  ],
+
+  "section_evidence_mapping": {
+    "S01_opening": ["F01", "F02"],
+    "S02_background": ["F01", "F02", "F05"],
+    "S03_sign1_dehydration": ["F03", "F04", "F09", "G01", "G05"],
+    "S04_sign2_indoor_heat": ["F05", "F06", "G02", "G03"],
+    "S05_sign3_nighttime": ["F07", "F08", "G04"],
+    "S06_daily_checklist": ["G01", "G02", "G04", "G05"],
+    "S07_when_to_consult": ["C01", "C02", "C03", "C04"],
+    "S08_closing": ["F01"]
+  }
+}

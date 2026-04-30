@@ -1,0 +1,97 @@
+{
+  "project_id": "kenh_2_vid_006",
+  "channel_id": "kenh_2",
+  "pipeline_step": "06_script_metrics",
+  "generated_at": "2026-04-30T15:44:00+07:00",
+  "normalized_by": "06B_tts_surface_normalizer",
+
+  "duration_metrics": {
+    "total_chars": 3563,
+    "target_min_chars": 3200,
+    "target_max_chars": 5760,
+    "tts_chars_per_min": 320,
+    "estimated_duration_min": 11.1,
+    "duration_status": "PASS",
+    "note": "3563 chars trong range [3200, 5760]. Giảm 18 chars so với pre-normalization (3581) do loại bỏ dấu ngoặc kép và chuyển số sang chữ."
+  },
+
+  "unit_metrics": {
+    "total_canonical_units": 116,
+    "short_units_lte_25_chars": 33,
+    "medium_units_26_to_45_chars": 74,
+    "long_units_gt_45_chars": 9,
+    "rhythm_variety": "PASS — mix 28% short, 64% medium, 8% long"
+  },
+
+  "reconstruction_check": {
+    "full_script_equals_joined_units": true,
+    "status": "PASS"
+  },
+
+  "tts_safe_check": {
+    "headings_found": false,
+    "bullets_found": false,
+    "numbering_found": false,
+    "markdown_found": false,
+    "speaker_tags_found": false,
+    "bracketed_notes_found": false,
+    "emoji_found": false,
+    "engine_specific_notation_found": false,
+    "ssml_found": false,
+    "phoneme_tags_found": false,
+    "status": "PASS"
+  },
+
+  "banned_phrases_check": {
+    "banned_phrases_tested": ["絶対に治る", "必ず防げる", "医者は教えてくれない", "これだけで十分", "これで事故ゼロ"],
+    "found": [],
+    "status": "PASS"
+  },
+
+  "opening_hook_check": {
+    "opening_hook_passed": true,
+    "hook_type": "self_check_question",
+    "line_1_generic_intro": false,
+    "line_1_text": "暑さ対策はちゃんとしている、そう思って夏を過ごしていませんか。",
+    "promise_payoff_passed": true,
+    "status": "PASS"
+  },
+
+  "pacing_check": {
+    "cold_zone_warnings": [],
+    "repeated_transition_warnings": [],
+    "status": "PASS"
+  },
+
+  "rhythm_check": {
+    "max_consecutive_same_pattern": 2,
+    "stacked_connectives_detected": false,
+    "status": "PASS"
+  },
+
+  "breath_group_check": {
+    "overlong_units_detected": 0,
+    "status": "PASS"
+  },
+
+  "policy_compliance": {
+    "SF01_softener_used": true,
+    "SF02_consult_clinician_used": true,
+    "SF03_numbers_qualified": true,
+    "SF04_chronic_condition_warning": true,
+    "SF05_closing_safety_framing": true,
+    "status": "PASS"
+  },
+
+  "tts_surface_normalization": {
+    "landing_stability": "PASS — no suspended endings",
+    "pause_stability": "PASS — comma chains reduced",
+    "reading_stability": "PASS — numerals normalized to kanji spoken forms",
+    "prosodic_stability": "PASS — quotes simplified for spoken flow",
+    "portability": "PASS — engine-agnostic, no vendor notation",
+    "status": "PASS"
+  },
+
+  "overall_status": "PASS",
+  "overall_notes": "Script đã qua TTS Surface Normalization. Tất cả gates pass: duration (3563 chars, 11.1 min), reconstruction match, TTS-safe, engine-agnostic, reading stability improved. Sẵn sàng cho downstream steps."
+}

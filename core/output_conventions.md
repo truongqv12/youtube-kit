@@ -1,11 +1,23 @@
 # Output Conventions
 
 ## Response envelope
-Use this response envelope in every compiled prompt:
+Use this response envelope in every compiled prompt when the execution environment cannot write files directly:
 - `=== PREFLIGHT START ===`
 - `=== PREFLIGHT END ===`
 - `=== ARTIFACT: filename.ext ===`
 - `=== END ARTIFACT ===`
+
+## File-first output mode
+When the execution environment can write files directly, every compiled prompt MUST write each artifact to its target path instead of pasting full artifact bodies into chat.
+
+Chat output should contain only:
+- preflight result
+- files written with relative paths
+- short validation summary
+- unresolved questions, if any
+
+Do not paste full JSON, CSV, or Markdown artifact content into chat unless the operator explicitly asks for inline output.
+If direct file writing is unavailable, fall back to the response envelope above.
 
 ## Final export
 Exactly 3 columns:

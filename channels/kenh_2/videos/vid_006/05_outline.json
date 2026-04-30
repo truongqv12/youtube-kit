@@ -1,0 +1,299 @@
+{
+  "project_id": "kenh_2_vid_006",
+  "channel_id": "kenh_2",
+  "pipeline_step": "05_outline",
+  "generated_at": "2026-04-30T15:20:04+07:00",
+  "source_files": [
+    "core/system_principles.md",
+    "core/duration_control_standard.md",
+    "core/hook_engineering_standard.md",
+    "core/pacing_control_standard.md",
+    "channels/kenh_2/videos/vid_006/01_intake_spec.json",
+    "channels/kenh_2/videos/vid_006/02_topic_strategy.json",
+    "channels/kenh_2/videos/vid_006/03_research_brief.json",
+    "channels/kenh_2/videos/vid_006/04_policy_report.json"
+  ],
+
+  "micro_topic": "夏に気づきにくい危険サイン3選",
+  "micro_topic_en": "Three hard-to-notice danger signs in summer for seniors",
+  "micro_topic_scope_lock": "Chỉ bao gồm 3 danger signs (脱水の初期サイン, 室内の暑さ, 夜間の温度変化) trong bối cảnh sinh hoạt mùa hè tại nhà. KHÔNG mở rộng sang outdoor heatstroke, 運動中の熱中症, hoặc cơ chế y tế sâu.",
+
+  "hook_type": "self_check_question",
+  "viewer_question": "夏の暑さ対策はしているつもりだけど、見落としていることはないだろうか？",
+  "viewer_question_en": "I think I'm taking summer precautions, but could I be missing something?",
+  "hook_quality_reasoning": "Hook dùng self_check_question: gợi mở rằng nhiều người nghĩ mình đã chuẩn bị đủ nhưng thực ra có dấu hiệu khó nhận ra. Tạo curiosity gap mà không gây sợ hãi. Daily-life anchor rõ ràng: phòng khách mùa hè, cốc nước, quạt máy. Payoff promise: 3 dấu hiệu cụ thể + cách kiểm tra hàng ngày.",
+  "promise_payoff": "Lines 4-6 sẽ giới thiệu 3 dấu hiệu cụ thể (のどが渇く前の脱水, 部屋の中の暑さ, 夜間の温度変化) và cam kết hướng dẫn cách kiểm tra đơn giản trong sinh hoạt hàng ngày.",
+  "tension_level": "moderate",
+  "tension_level_reasoning": "bounded concern with practical safety review — mùa hè có rủi ro thực sự nhưng không dramatize, giữ ở mức educational awareness.",
+
+  "duration_budget": {
+    "target_min_min": 10,
+    "target_max_min": 18,
+    "tts_chars_per_min": 320,
+    "target_min_chars": 3200,
+    "target_max_chars": 5760,
+    "planned_total_min": 16.5,
+    "planned_total_chars_approx": 5280
+  },
+
+  "story_flow": "scenario_then_checklist",
+  "emotional_arc": "confident_blind_spot → calm_understanding → sign_by_sign_awareness → daily_routine_confidence",
+  "narrator_stance": "gentle_companion_narrator",
+
+  "sections": [
+    {
+      "section_id": "S01",
+      "label": "オープニング — 「対策してるから大丈夫」、本当にそうですか？",
+      "label_en": "Opening — 'I'm taking precautions, so I'm fine' — are you sure?",
+      "purpose": "soft_hook",
+      "section_entry_hook": "Cảnh quen thuộc: phòng khách mùa hè, quạt máy chạy, cốc nước trên bàn. Mọi thứ trông bình thường. Narrator hỏi nhẹ: 暑さ対策、ちゃんとしているつもりでも、見落としやすいサインがあるかもしれません。",
+      "spoken_flow_description": "Mở đầu bằng cảnh hàng ngày: ngồi trong phòng mùa hè, uống nước, bật quạt — cảm giác đã đủ. Nhưng narrator gợi ý rằng có những dấu hiệu khó nhận ra đang xảy ra. Không dramatize. Chỉ gợi lên 'à, có thể mình cũng vậy'. Sau đó giới thiệu: hôm nay cùng kiểm tra 3 dấu hiệu mà nhiều người thường bỏ qua.",
+      "key_beats": [
+        "Cảnh quen thuộc: ngồi trong phòng khách mùa hè, quạt máy, rèm kéo nửa",
+        "Narrator: 'エアコンもつけているし、水も飲んでいる。でも、それだけで本当に大丈夫でしょうか'",
+        "Gợi ý nhẹ: 'じつは、気づきにくいサインがいくつかあるんです'",
+        "Promise payoff: 'この動画では、夏に見落としやすい3つのサインを、ひとつずつ一緒に確認していきます'",
+        "Nhấn mạnh: đặc biệt trang thiết bị không cần, chỉ cần biết để ý ở đâu"
+      ],
+      "estimated_duration_sec": 80,
+      "estimated_chars": 430,
+      "emotional_tone": "warm_relatable",
+      "evidence_source": null,
+      "policy_notes": [
+        "Tránh fear hook. Không dùng số liệu tử vong làm câu mở đầu.",
+        "Dùng self_check_question framing, không phải disease-name shock.",
+        "Hook phải pay off by lines 4-6 theo hook_engineering_standard."
+      ],
+      "softeners_required": []
+    },
+    {
+      "section_id": "S02",
+      "label": "なぜ夏は気づきにくいのか — 背景をさらっと",
+      "label_en": "Why summer dangers are hard to notice — brief background",
+      "purpose": "context_setting",
+      "section_entry_hook": "Dẫn vào bằng câu hỏi: なぜ対策しているのに、危険が見えにくいのか？ — gợi curiosity trước khi đưa thống kê.",
+      "spoken_flow_description": "Giải thích ngắn gọn tại sao mùa hè khó nhận ra rủi ro: (a) người cao tuổi cảm nhận nóng kém hơn, (b) ở trong nhà không có nghĩa là an toàn — 38% ca搬送 xảy ra tại nhà, (c) hơn 57% ca搬送 là người trên 65 tuổi. Giữ tone calm_factual, dùng số liệu bình tĩnh.",
+      "key_beats": [
+        "Người cao tuổi: cảm biến nhiệt trên da giảm → không cảm thấy nóng dù phòng nóng",
+        "Dẫn số liệu bình tĩnh: '室内で熱中症になる方は、珍しくありません'（総務省消防庁 2025年）",
+        "Ngắn gọn: 搬送の57%が65歳以上、38%が住居 — giữ 2 con số, không liệt kê nhiều",
+        "Transition: 'では、どんなサインに気をつければいいのか。3つ、順番に見ていきましょう'"
+      ],
+      "estimated_duration_sec": 100,
+      "estimated_chars": 530,
+      "emotional_tone": "calm_factual",
+      "evidence_source": "03_research_brief.json → F01, F02, F05",
+      "policy_notes": [
+        "WO01: KHÔNG dramatize statistics. Prefer '珍しくありません' over '毎年10万人が'.",
+        "DN03: Ghi rõ nguồn 総務省消防庁 trong narration.",
+        "Giữ max 3-4 câu data, sau đó chuyển sang practical content."
+      ],
+      "softeners_required": []
+    },
+    {
+      "section_id": "S03",
+      "label": "サイン①：のどが渇く前に始まっている脱水",
+      "label_en": "Sign 1: Dehydration that begins before you feel thirsty",
+      "purpose": "practical_check_item",
+      "section_entry_hook": "Bắt đầu bằng surprising_fact nhỏ: 'のどが渇いたと感じたときには、もう脱水が始まっていることがあります' — tạo moment 'あ、知らなかった'.",
+      "spoken_flow_description": "Dấu hiệu đầu tiên: mất nước bắt đầu trước khi khát. Giải thích rằng người cao tuổi cảm giác khát giảm. Đưa ra 4 dấu hiệu quan sát được: (a) môi và lưỡi khô, (b) nách không có mồ hôi, (c) mệt mỏi không rõ lý do / chân chuột rút, (d) tiểu ít hơn bình thường. Nhắc rằng kiểm tra da (skin turgor) chỉ là 'tham khảo' ở người cao tuổi. Kết bằng mẹo uống nước theo routine: 6 thời điểm trong ngày.",
+      "key_beats": [
+        "Entry: のどの渇きは、脱水のサインとしては遅すぎることがあります",
+        "4 dấu hiệu quan sát hàng ngày: ①唇や舌が乾いている ②わきの下が乾いている ③なんとなく元気がない・足がつる ④トイレの回数がいつもより少ない",
+        "Lưu ý nhẹ: 皮膚をつまんで確認する方法もありますが、年齢による変化で判断が難しいこともあります — chỉ tham khảo",
+        "尿の色: 高齢者は脱水でも濃くならないことがある → 色だけで判断しないこと",
+        "Practical tip: 水分補給の6つのタイミング（起床時、食事時、入浴前後、外出前後、服薬時、就寝前）",
+        "1回コップ半分〜1杯ずつ、1日1,000〜1,500mLが一般的な目安",
+        "Softener: '持病がある方は、水分量についてかかりつけ医にご確認ください'"
+      ],
+      "estimated_duration_sec": 190,
+      "estimated_chars": 1010,
+      "emotional_tone": "practical_helpful",
+      "evidence_source": "03_research_brief.json → F03, F04, F09, G01, G05",
+      "policy_notes": [
+        "WO02: Giữ ở mức practical self-check, KHÔNG đi vào cơ chế sinh lý của dehydration.",
+        "SF01: '脱水のリスクを減らす工夫のひとつです', KHÔNG nói 'これで脱水にならない'.",
+        "SF03: 1,000-1,500mL là '一般的な目安'.",
+        "SF04: PHẢI kèm medical consultation cho người có bệnh nền.",
+        "Uncertainty U02, U03 phải được handle."
+      ],
+      "softeners_required": ["SF01", "SF03", "SF04"]
+    },
+    {
+      "section_id": "S04",
+      "label": "サイン②：部屋の中なのに暑い — 室内熱中症のしくみ",
+      "label_en": "Sign 2: It is hot even indoors — how indoor heatstroke works",
+      "purpose": "practical_check_item",
+      "section_entry_hook": "Bắt đầu bằng everyday_mistake_reveal: '「部屋にいるから大丈夫」——じつは、これが落とし穴になることがあります' — gợi rằng chính cảm giác an toàn của indoor mới là blind spot.",
+      "spoken_flow_description": "Dấu hiệu thứ hai: phòng nóng hơn bạn nghĩ. Giải thích ngắn: tường và trần tích nhiệt, nếu không dùng AC hoặc dùng không đúng cách thì phòng vẫn nóng dù bên ngoài đã mát. Đưa ra 3 mẹo: (a) đặt nhiệt ẩm kế ở nơi dễ thấy, (b) mục tiêu室温28度以下・湿度50-60%, (c) AC設定26度前後 + rèm + quạt. Nhắc rằng '28度' là nhiệt độ PHÒNG, không phải nhiệt độ cài đặt AC.",
+      "key_beats": [
+        "Entry: 部屋にいるから大丈夫、と思いがちですが...",
+        "Brief mechanism: 壁や天井が昼間の熱を溜めている → 夕方以降も室温が下がりにくい",
+        "高齢者は暑さを感じにくい → 体感に頼ると危ない",
+        "Mẹo 1: 温湿度計を部屋の見やすいところに置く — 数字で確認する習慣",
+        "Mẹo 2: 室温28度以下・湿度50〜60%が目安（環境省）",
+        "Important clarification: 28度はエアコンの設定温度ではなく、部屋の温度の目安",
+        "Mẹo 3: エアコンは設定26度前後を目安に + カーテン・すだれ + 扇風機で空気を回す",
+        "Softener: '体調に合わせて、無理のない範囲で調整してください'"
+      ],
+      "estimated_duration_sec": 190,
+      "estimated_chars": 1010,
+      "emotional_tone": "calm_practical",
+      "evidence_source": "03_research_brief.json → F05, F06, G02, G03",
+      "policy_notes": [
+        "WO03: Mechanism giải thích max 2-3 câu, sau đó vào practical tips.",
+        "SF01: 'リスクを減らす工夫のひとつです', KHÔNG nói 'エアコンをつければ安全'.",
+        "SF03: 28度, 50-60%, 26度 đều là '目安'.",
+        "DN03: Ghi rõ nguồn 環境省."
+      ],
+      "softeners_required": ["SF01", "SF03"]
+    },
+    {
+      "section_id": "S05",
+      "label": "サイン③：夜中に気づかない温度の変化",
+      "label_en": "Sign 3: Temperature changes you do not notice at night",
+      "purpose": "practical_check_item",
+      "section_entry_hook": "Bắt đầu bằng relatable_danger nhỏ: '夜、エアコンのタイマーが切れたあと、部屋がどうなっているか、ご存じですか？' — hướng vào moment cụ thể mà nhiều người không nghĩ đến.",
+      "spoken_flow_description": "Dấu hiệu thứ ba: thay đổi nhiệt độ ban đêm. AC timer tắt → phòng nóng lên → mồ hôi + mất nước trong khi ngủ. Đưa ra 3 mẹo: (a) nếu có thể, để AC suốt đêm thay vì dùng timer, (b) để nước bên gối, (c) chọn chăn ga / pyjama thoáng (cotton, linen). Nhắc rằng evidence về nighttime heatstroke numbers hạn chế → dùng framing 'cũng cần chú ý'.",
+      "key_beats": [
+        "Entry: 夜中にタイマーが切れると、建物の蓄熱で室温が上がることがあります",
+        "外気温が下がっても、部屋の温度はすぐには下がらない",
+        "寝ている間に汗をかいて、朝には脱水が進んでいることも",
+        "Mẹo 1: できればエアコンはつけたままにする — タイマーを使うなら起床前までカバー",
+        "Mẹo 2: 枕元に水を用意しておく",
+        "Mẹo 3: 通気性のよい寝具やパジャマを選ぶ（綿やリネン素材）",
+        "Softener: '夜の環境も、少し気にかけてみるだけで安心感が変わることがあります'"
+      ],
+      "estimated_duration_sec": 170,
+      "estimated_chars": 910,
+      "emotional_tone": "calm_practical",
+      "evidence_source": "03_research_brief.json → F07, F08, G04",
+      "policy_notes": [
+        "WO04: Nighttime stats hạn chế (U01). Dùng '夜も注意が必要です', KHÔNG assert số liệu cụ thể.",
+        "SF01: 'リスクを減らす工夫のひとつです'.",
+        "Không dramatize nighttime scenario."
+      ],
+      "softeners_required": ["SF01"]
+    },
+    {
+      "section_id": "S06",
+      "label": "毎日できるかんたんチェック — 朝・昼・夜",
+      "label_en": "Simple daily checks — morning, noon, night",
+      "purpose": "practical_summary",
+      "section_entry_hook": "Transition tự nhiên: '3つのサインを見てきましたが、毎日の中でどうチェックすればいいか、かんたんに整理してみましょう' — chuyển từ awareness sang action.",
+      "spoken_flow_description": "Tóm tắt thành checklist 3-part theo thời gian trong ngày: Sáng (uống nước, kiểm tra cơ thể), Trưa (kiểm tra nhiệt ẩm kế, AC), Tối (chuẩn bị nước bên gối, AC setting). Format ngắn gọn, dễ nhớ. Kết bằng encouragement: biết 3 điều này đã là bước tiến.",
+      "key_beats": [
+        "朝: 起きたらまずコップ一杯の水。体の調子を軽くチェック（だるさ、口の乾き）",
+        "昼: 温湿度計を確認 → 28度超えていたらエアコン調整。水分もこまめに",
+        "夜: 寝る前に水を枕元に。エアコンの設定を確認。涼しい寝具",
+        "Narrator: '覚えることは多くありません。朝・昼・夜のひとつずつだけで大丈夫です'",
+        "Encouragement: 'この3つを意識するだけで、安心感が少し変わるかもしれません'"
+      ],
+      "estimated_duration_sec": 100,
+      "estimated_chars": 530,
+      "emotional_tone": "encouraging_practical",
+      "evidence_source": "03_research_brief.json → G01, G02, G04, G05",
+      "policy_notes": [
+        "SF01: '安心感が変わるかもしれません', KHÔNG nói '安全になります'.",
+        "Giữ ngắn gọn, tránh lặp lại content từ S03-S05."
+      ],
+      "softeners_required": ["SF01"]
+    },
+    {
+      "section_id": "S07",
+      "label": "気になるときは — 相談先の整理",
+      "label_en": "When you are worried — where to consult",
+      "purpose": "consult_guidance",
+      "section_entry_hook": "Transition nhẹ nhàng: 'もし気になる症状があったときは、ひとりで抱えずに相談してみましょう' — chuyển sang support resources.",
+      "spoken_flow_description": "Hướng dẫn khi nào cần hỏi ai. Phân biệt: (a) nhẹ → かかりつけ医 hoặc 薬局, (b) nặng (ぐったり, 意識不明瞭) → 医療機関 hoặc 救急車. Nhắc nhẹ 地域包括支援センター cho hỗ trợ tổng hợp. Không tạo anxiety — framing là 'biết sẵn nơi liên hệ thì yên tâm hơn'.",
+      "key_beats": [
+        "Nhẹ: だるさが続く、食欲がない → まずはかかりつけ医や薬局に相談",
+        "Nặng: ぐったりしている、意識がはっきりしない → ためらわずに医療機関へ",
+        "日頃の相談先: 地域包括支援センター — 高齢者の暮らし全般をサポート",
+        "Narrator: '相談先を知っておくだけでも、安心につながります'"
+      ],
+      "estimated_duration_sec": 90,
+      "estimated_chars": 480,
+      "emotional_tone": "supportive_informative",
+      "evidence_source": "03_research_brief.json → C01, C02, C03, C04",
+      "policy_notes": [
+        "SF02: PHẢI nhắc かかりつけ医.",
+        "C01-C04 từ research brief phải được cover.",
+        "KHÔNG dramatize emergency scenarios."
+      ],
+      "softeners_required": ["SF02"]
+    },
+    {
+      "section_id": "S08",
+      "label": "おわりに — 気づくだけで、夏の過ごし方が変わります",
+      "label_en": "Closing — just noticing changes how you spend summer",
+      "purpose": "calm_close",
+      "section_entry_hook": null,
+      "spoken_flow_description": "Recap 3 dấu hiệu chính. Nhắc lại: không cần thay đổi lớn, chỉ cần biết để ý. Kết bằng warm tone: bắt đầu từ điều nhỏ nhất, thời gian của bạn, tốc độ của bạn.",
+      "key_beats": [
+        "Recap: ①のどの渇きの前の脱水 ②部屋の中の暑さ ③夜の温度変化",
+        "Narrator: '全部を一度にやる必要はありません。気がついたとき、ひとつだけ意識してみてください'",
+        "Safety framing pattern: '急がなくても大丈夫です。少しずつ、自分のペースで確認していきましょう'",
+        "Nhẹ nhàng kết thúc: 'この動画がお役に立てたら、また次回もご一緒にお話ししましょう'",
+        "KHÔNG dùng CTA mạnh (subscribe/like). Giữ tone companion."
+      ],
+      "estimated_duration_sec": 70,
+      "estimated_chars": 370,
+      "emotional_tone": "warm_reassuring",
+      "evidence_source": null,
+      "policy_notes": [
+        "SF05: Dùng '少しずつ' / '急がなくても大丈夫です'. KHÔNG tạo áp lực.",
+        "WS06: Dùng ít nhất 1 safety_framing_pattern từ language_constraints."
+      ],
+      "softeners_required": ["SF05"]
+    }
+  ],
+
+  "total_sections": 8,
+  "total_estimated_duration_sec": 990,
+  "total_estimated_duration_min": 16.5,
+  "total_estimated_chars": 5270,
+  "duration_within_target": true,
+
+  "duration_validation": {
+    "min_chars": 3200,
+    "max_chars": 5760,
+    "planned_chars": 5270,
+    "status": "PASS",
+    "note": "5270 chars nằm trong range [3200, 5760]. Outline đủ dày cho ~16.5 min narration. Core content (S03-S05) chiếm 2930 chars (~55%), cân bằng tốt giữa explanation và practical tips."
+  },
+
+  "scope_validation": {
+    "micro_topic_respected": true,
+    "scope_drifts_detected": [],
+    "note": "Tất cả 8 sections xoay quanh 3 danger signs cho sinh hoạt mùa hè tại nhà. Không mở rộng sang outdoor, 運動, hoặc medical treatment."
+  },
+
+  "policy_compliance_check": {
+    "forbidden_angles_avoided": true,
+    "mandatory_softeners_mapped": {
+      "SF01": ["S03", "S04", "S05", "S06"],
+      "SF02": ["S07"],
+      "SF03": ["S03", "S04"],
+      "SF04": ["S03"],
+      "SF05": ["S08"]
+    },
+    "outline_warnings_addressed": {
+      "WO01": "S02 emotional_tone = calm_factual. Statistics framed as '珍しくありません'. Max 2 con số.",
+      "WO02": "S03 scope = practical self-check signs. No physiological dehydration mechanism.",
+      "WO03": "S04 mechanism explanation max 2-3 sentences, then practical tips.",
+      "WO04": "S05 dùng '夜も注意が必要です', không assert nighttime-specific statistics."
+    }
+  },
+
+  "spoken_flow_quality_check": {
+    "reads_like_spoken_narration": true,
+    "section_turns_feel_natural": true,
+    "repetitive_patterns_avoided": true,
+    "opening_hook_passed": true,
+    "promise_payoff_rows": "lines 4-6 introduce 3 specific signs + daily check promise",
+    "cold_zone_warnings": [],
+    "repeated_transition_warnings": [],
+    "note": "Flow: self_check hook → brief context → 3 signs (mỗi sign có structure: entry hook → dấu hiệu → practical tips → softener) → daily checklist → consult → warm close. Mỗi section có emotional tone khác biệt + section_entry_hook riêng để tránh passive transitions."
+  }
+}
