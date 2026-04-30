@@ -11,7 +11,15 @@
     "max_text_words_ja": 4,
     "scene_preference": "kamishibai_framed_scene_or_gentle_moment",
     "color_warmth": "muted_warm_gouache_tones_with_paper_texture",
-    "style_feel": "hand-painted kamishibai card"
+    "style_feel": "hand-painted kamishibai card",
+    "emotion_spectrum": [
+      "calm_informational",
+      "gentle_concern",
+      "mild_alert",
+      "strong_caution"
+    ],
+    "emotion_selection": "choose_per_video_from_script_and_07A_plan",
+    "must_avoid_panic_or_medical_overclaim": true
   },
   "title_bias": {
     "allow_numbers": true,
@@ -24,7 +32,17 @@
     "must_avoid_overpromise": true,
     "must_avoid_fake_authority": true,
     "must_avoid_disease_cure_framing": true,
-    "must_avoid_fear_theater": true
+    "must_avoid_fear_theater": true,
+    "allowed_ctr_psychology_angles": [
+      "number_anchor",
+      "specificity",
+      "self_relevance",
+      "mild_consequence",
+      "question_hook"
+    ],
+    "must_include_ctr_angle_reasoning": true,
+    "must_align_with_opening_hook": true,
+    "must_avoid_panic_or_certainty_inflation": true
   },
   "description_bias": {
     "tone": "calm_gentle_storytelling",

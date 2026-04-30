@@ -17,10 +17,18 @@ Read exactly these paths. DO NOT use global workspace search for abstract filena
 - channels/{{TARGET_CHANNEL}}/videos/{{TARGET_VIDEO}}/04_policy_report.json
 - channels/{{TARGET_CHANNEL}}/videos/{{TARGET_VIDEO}}/06_script_full.md
 - channels/{{TARGET_CHANNEL}}/videos/{{TARGET_VIDEO}}/06_script_canonical.json
+- channels/{{TARGET_CHANNEL}}/videos/{{TARGET_VIDEO}}/07A_retention_visual_plan.json
 - channels/{{TARGET_CHANNEL}}/videos/{{TARGET_VIDEO}}/09_final_three_column.csv
 - channels/{{TARGET_CHANNEL}}/videos/{{TARGET_VIDEO}}/09_export_qc_report.md
 - real web access
 
+Read `01_project_manifest.json`. Use `06_script_canonical.json` / `06_script_full.md` by default. If manifest sets `script_source_of_truth` to `06B_script_canonical.json`, use `06B_script_canonical.json` / `06B_script_full.md` consistently.
+
 ## Required outputs
 - 10_publication_package.json
 - 10_publication_package.md
+
+## Retention packaging
+- Title candidates must include CTR psychology angle and reasoning.
+- Thumbnail candidates must choose an emotion level from the per-video spectrum.
+- Selected package must align with the Step 07A viewer question, opening hook, and actual script payoff.

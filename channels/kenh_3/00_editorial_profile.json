@@ -2,7 +2,7 @@
   "editorial_profile_id": "jp_senior_health_kamishibai_story",
   "channel_positioning": "japanese senior health kamishibai storytelling",
   "promise_style": "calm_gentle_story_learning",
-  "fear_intensity_ceiling": "low",
+  "fear_intensity_ceiling": "low_to_moderate_story_concern",
   "story_bias": "kamishibai_story_arc_then_reflection",
   "host_trust_role": "gentle_kamishibai_narrator",
   "episode_scope_bias": "one_micro_topic_per_story",
@@ -46,5 +46,20 @@
     "avoid absolute promises",
     "encourage consultation when symptoms are concerning",
     "acknowledge that everyone's pace is different"
-  ]
+  ],
+  "concern_framing_allowed": "moderate_only_with_educational_payoff",
+  "urgency_in_hook_allowed": "mild_urgency_only_in_first_10_to_15_seconds",
+  "consequence_mention_allowed": "true_with_educational_framing",
+  "hook_quality_gate": {
+    "allowed_hook_types": [
+      "relatable_danger",
+      "surprising_fact",
+      "self_check_question",
+      "everyday_mistake_reveal"
+    ],
+    "must_include_daily_life_anchor": true,
+    "must_pay_off_by_lines_4_to_6": true,
+    "forbid_generic_first_line_intro": true,
+    "forbid_panic_or_disease_shock": true
+  }
 }

@@ -58,6 +58,7 @@ seniorhealth_pipeline_topic_first_v3/
 │   ├── 04_policy_gate.md
 │   ├── 05_outline_builder.md
 │   ├── 06_script_writer_canonical.md
+│   ├── 07a_retention_visual_plan.md
 │   ├── 07_image_prompt_builder_reference_first.md
 │   ├── 08_video_prompt_builder_non_dialogue.md
 │   ├── 09_three_column_exporter.md
@@ -87,6 +88,7 @@ seniorhealth_pipeline_topic_first_v3/
 │   │           ├── 05_outline.json
 │   │           ├── 06_script_canonical.json
 │   │           ├── 06_script_full.md
+│   │           ├── 07A_retention_visual_plan.json
 │   │           ├── 07_image_prompt_table.csv
 │   │           ├── 08_video_prompt_table.csv
 │   │           ├── 09_final_three_column.csv
@@ -176,6 +178,7 @@ Step 03  →  Mandatory research (web access bắt buộc)
 Step 04  →  Policy gate (kiểm rào chắn y tế)
 Step 05  →  Outline builder
 Step 06  →  Script writer canonical (TTS-safe)
+Step 07A →  Retention visual plan (sidecar hook mở đầu)
 Step 07  →  Image prompt builder (Nano Banana, line-locked)
 Step 08  →  Video prompt builder (Veo 3, motion-only)
 Step 09  →  Three-column exporter + QC
@@ -195,8 +198,9 @@ Step 10  →  Publication package (web access bắt buộc)
 | **04** | Policy Gate | research + guardrails | `04_policy_report.json` |
 | **05** | Outline Builder | research + policy | `05_outline.json` |
 | **06** | Script Writer | outline + knowledge | `06_script_canonical.json` + full script |
-| **07** | Image Prompt Builder | script + visual profile | `07_image_prompt_table.csv` |
-| **08** | Video Prompt Builder | image prompts + script | `08_video_prompt_table.csv` |
+| **07A** | Retention Visual Plan | script + hook/pacing standards | `07A_retention_visual_plan.json` |
+| **07** | Image Prompt Builder | script + retention plan + visual profile | `07_image_prompt_table.csv` |
+| **08** | Video Prompt Builder | image prompts + retention plan + script | `08_video_prompt_table.csv` |
 | **09** | Three-Column Export | prompts + script | `09_final_three_column.csv` + QC report |
 | **10** | Publication Package | export + **web** | `10_publication_package.json` |
 
@@ -296,6 +300,7 @@ vid_001/
 ├── 06_script_canonical.json     # Script dưới dạng canonical units
 ├── 06_script_full.md            # Script đầy đủ dạng markdown
 ├── 06_script_metrics.json       # Thống kê script (duration, chars)
+├── 07A_retention_visual_plan.json # Sidecar kế hoạch retention visual
 ├── 07_image_prompt_table.csv    # Bảng prompt ảnh
 ├── 08_video_prompt_table.csv    # Bảng prompt video
 ├── 09_final_three_column.csv    # ✅ File export chính — 3 cột

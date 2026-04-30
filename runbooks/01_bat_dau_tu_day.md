@@ -11,6 +11,7 @@ This file explains how to run the pipeline manually, following the v3 process.
 - Do not trust that an AI has read a file just because it claims to have
 - Any step with `Required reads` requires all listed files to be pasted before execution
 - Always require the AI to return `Preflight` first
+- Steps 07A, 07, 08, 09, and 10 must read `01_project_manifest.json` and use the same script source-of-truth
 - Each channel only requires filling one file: `00_channel_seed.json`
 
 ## Short workflow
@@ -23,10 +24,11 @@ This file explains how to run the pipeline manually, following the v3 process.
 7. Run Step 04 policy gate
 8. Run Step 05 outline
 9. Run Step 06 script canonical
-10. Run Step 07 image prompt
-11. Run Step 08 video prompt
-12. Run Step 09 export + minimal QA
-13. Run Step 10 publication package
+10. Run Step 07A retention visual plan
+11. Run Step 07 image prompt
+12. Run Step 08 video prompt
+13. Run Step 09 export + minimal QA
+14. Run Step 10 publication package
 
 ## Operational notes
 - Do not start by finding a competitor video to follow.

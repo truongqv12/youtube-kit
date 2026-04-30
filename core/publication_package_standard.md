@@ -16,8 +16,9 @@ The package must help the operator choose title, thumbnail, description, search-
   - at least 8 Japan-targeted YouTube or adjacent-market examples
   - at least 5 directly relevant senior / health / explainer examples when available
   - at least 3 official or primary guidance sources for platform, accessibility, or health-policy constraints
-- Title, thumbnail, and description must match the actual script and must not overpromise.
+- Title, thumbnail, and description must match the actual script, opening hook, and `07A_retention_visual_plan.json` when present.
 - Health framing must remain educational, cautious, and non-alarmist.
+- Apply `core/title_thumbnail_psychology_standard.md` for CTR angles and thumbnail emotion selection.
 - Thumbnail text must be minimal and readable for older viewers.
 - Final output must be bilingual:
   - Japanese for publish use
@@ -33,8 +34,8 @@ The package must help the operator choose title, thumbnail, description, search-
 5. Readability / accessibility considerations for older viewers
 
 ## Required decision objects
-- 3 title candidates in Japanese
-- 3 thumbnail concepts in Japanese
-- 1 selected final package
+- 3 title candidates in Japanese, each with `ctr_psychology_angle`, `viewer_question`, and `ctr_prediction_reasoning`
+- 3 thumbnail concepts in Japanese, each with `emotion_level`, `safety_rationale`, and script alignment rationale
+- 1 selected final package linked to the opening hook and full script payoff
 - 2 Shorts derivatives with hook + cut-angle + CTA back to long-form
 - 1 short rationale for why the selected package is strongest for this channel and video

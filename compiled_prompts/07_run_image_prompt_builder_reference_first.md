@@ -16,8 +16,12 @@ Read exactly these paths. DO NOT use global workspace search for abstract filena
 - knowledge/visual/01_style_registry.md
 - knowledge/visual/05_negative_visual_rules.md
 - channels/{{TARGET_CHANNEL}}/00_channel_config.json
+- channels/{{TARGET_CHANNEL}}/videos/{{TARGET_VIDEO}}/01_project_manifest.json
 - channels/{{TARGET_CHANNEL}}/videos/{{TARGET_VIDEO}}/01_intake_spec.json
 - channels/{{TARGET_CHANNEL}}/videos/{{TARGET_VIDEO}}/06_script_canonical.json
+- channels/{{TARGET_CHANNEL}}/videos/{{TARGET_VIDEO}}/07A_retention_visual_plan.json
+
+If the video manifest explicitly sets `script_source_of_truth` to `06B_script_canonical.json`, read that file instead of `06_script_canonical.json` and state the reason in preflight.
 
 ## Optional reads
 - 00_language_profile.json
@@ -28,7 +32,10 @@ If you cannot read any required file, fail.
 ## Preflight
 Return:
 1. files_read
-2. optional_files_read
+2. manifest_script_source_setting
+3. effective_script_source
+4. override_reason
+5. optional_files_read
 3. rules_extracted_by_file
 4. channel_language_detected
 5. host_mode_detected
@@ -43,8 +50,10 @@ Return:
 - this is a narration-support pipeline, not a film storyboard pipeline
 - one canonical unit = one still-image keyframe
 - each prompt must express one main visual idea only
-- each prompt must be semantically locked to the exact current line
+- each prompt must be semantically locked to the exact current line, except bounded opening rows approved by `07A_retention_visual_plan.json`
 - before writing any final prompt, resolve a `line_context_frame`
+- inspect `row_visual_overrides` before building opening-row context frames
+- if an opening override is used, it must still connect to the viewer question, micro-topic, and safety guardrail from Step 07A
 - choose exactly one `scene_archetype` per row
 - use host only when trust, continuity, or reassurance truly helps
 - if `reference_first` is enabled and host is used, describe the host lightly and rely on the uploaded reference first
@@ -73,7 +82,9 @@ Build each `prompt_img_nano` in this order:
 ## Procedure
 1. Read all required files.
 2. Produce preflight.
-3. For each canonical unit, build a hidden `line_context_frame` containing:
+3. For each canonical unit, check whether Step 07A defines a row-level opening override.
+4. For approved opening overrides only, build a hidden `line_context_frame` that combines current script meaning with Step 07A visual goal, attention target, and safety guardrail.
+5. For all normal rows, build a hidden `line_context_frame` containing:
    - semantic_target
    - visualizable_core
    - scene_function
@@ -83,17 +94,18 @@ Build each `prompt_img_nano` in this order:
    - continuity_anchors
    - visible_text_need
    - risk_guardrails
-4. Infer local scene grouping from neighboring rows.
-5. Choose exactly one `scene_archetype`.
-6. Decide `host_usage` as `host` or `no_host`.
-7. Decide `visible_text_policy` as `no_readable_text` or `exact_visible_text`.
-8. Decide `prompt_mode` as one of:
+6. Infer local scene grouping from neighboring rows.
+7. Choose exactly one `scene_archetype`.
+8. Decide `host_usage` as `host` or `no_host`.
+9. Decide `visible_text_policy` as `no_readable_text` or `exact_visible_text`.
+10. Decide `prompt_mode` as one of:
    - `generate_locked`
    - `reference_first_locked`
    - `reference_preserve_edit`
    - `comparison_locked`
-9. Build one final `prompt_img_nano` per canonical unit.
-10. Keep row count aligned exactly with `canonical_script_units`.
+11. Add intermediate metadata columns only if useful: `retention_beat_type`, `attention_target`, `visual_hook_override_used`.
+12. Build one final `prompt_img_nano` per canonical unit.
+13. Keep row count aligned exactly with `canonical_script_units`.
 
 ## Quality gate for each row
 A row fails if any of the following are true:
@@ -119,11 +131,18 @@ After preflight, return exactly:
 - prompt_mode
 - prompt_img_nano
 
+Optional intermediate metadata columns:
+- retention_beat_type
+- attention_target
+- visual_hook_override_used
+
 ## Failure conditions
 - any required file not read
 - row count mismatch with canonical units
 - prompts behave like film scenes instead of support visuals
 - prompts are generic instead of line-context locked
+- opening visual override is unrelated to the script topic, viewer question, or safety guardrail
+- any non-linear override appears outside Step 07A allowed rows
 - continuity is absent or unstable across adjacent related rows
 - host is forced into scenes that should be no-host
 - readable text appears in the wrong language

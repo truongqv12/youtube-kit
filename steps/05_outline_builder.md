@@ -12,6 +12,16 @@ Read exactly these paths. DO NOT use global workspace search for abstract filena
 - channels/{{TARGET_CHANNEL}}/videos/{{TARGET_VIDEO}}/02_topic_strategy.json
 - channels/{{TARGET_CHANNEL}}/videos/{{TARGET_VIDEO}}/03_research_brief.json
 - channels/{{TARGET_CHANNEL}}/videos/{{TARGET_VIDEO}}/04_policy_report.json
+- core/hook_engineering_standard.md
+- core/pacing_control_standard.md
 
 ## Required outputs
 - 05_outline.json
+
+## Retention fields
+- `hook_type`
+- `viewer_question`
+- `hook_quality_reasoning`
+- `promise_payoff`
+- `tension_level`
+- `section_entry_hook`

@@ -4,6 +4,8 @@
 Turn each still image prompt into one Veo 3 image-to-video motion prompt.
 
 ## New key rule
+Read `07A_retention_visual_plan.json` and use row-level motion intent when available.
+Read `01_project_manifest.json`. Use the same script source-of-truth as Step 07A and Step 07.
 This prompt is motion-only.
 Do not re-describe the full image.
 Do not add new text.
@@ -13,6 +15,8 @@ Do not imply speech if non-dialogue mode is enabled.
 - i2v_mode
 - motion_strategy
 - recommended_duration_sec
+- motion_role
+- attention_target
 - prompt_video_veo3
 
 ## Output

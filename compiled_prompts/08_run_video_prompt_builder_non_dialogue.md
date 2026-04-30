@@ -16,9 +16,13 @@ Read exactly these paths. DO NOT use global workspace search for abstract filena
 - knowledge/visual/00_visual_strategy.md
 - knowledge/visual/05_negative_visual_rules.md
 - channels/{{TARGET_CHANNEL}}/00_channel_config.json
+- channels/{{TARGET_CHANNEL}}/videos/{{TARGET_VIDEO}}/01_project_manifest.json
 - channels/{{TARGET_CHANNEL}}/videos/{{TARGET_VIDEO}}/01_intake_spec.json
 - channels/{{TARGET_CHANNEL}}/videos/{{TARGET_VIDEO}}/06_script_canonical.json
+- channels/{{TARGET_CHANNEL}}/videos/{{TARGET_VIDEO}}/07A_retention_visual_plan.json
 - channels/{{TARGET_CHANNEL}}/videos/{{TARGET_VIDEO}}/07_image_prompt_table.csv
+
+If the video manifest explicitly sets `script_source_of_truth` to `06B_script_canonical.json`, read that file instead of `06_script_canonical.json` and state the reason in preflight.
 
 ## Optional reads
 - 00_visual_profile.json
@@ -28,7 +32,10 @@ If you cannot read any required file, fail.
 ## Preflight
 Return:
 1. files_read
-2. optional_files_read
+2. manifest_script_source_setting
+3. effective_script_source
+4. override_reason
+5. optional_files_read
 3. rules_extracted_by_file
 4. i2v_mode_detected
 5. non_dialogue_mode_detected
@@ -54,13 +61,24 @@ Return:
 - use general subject terms
 - preserve readable text from the source image exactly as-is when it exists
 - do not ask Veo to generate new readable text
-- motion must vary according to `scene_archetype` and line meaning
+- motion must vary according to `scene_archetype`, line meaning, and Step 07A `motion_intents`
+- every prompt must include camera motion, subject micro-action, attention target, pacing/mood preservation, and exact silent directive
+- avoid repeating the same motion strategy or role for more than 2 rows unless justified by the script
 - if `non_dialogue_mode=true` or `voiceover_mode=narration_only`, forbid spoken dialogue, on-screen narration, lip sync, direct-to-camera speech, singing, chanting, and mouth-performance acting
 - audio directive must be exactly: `(Silent video, no audio).`
 - do NOT request ambience, foley, room tone, or any soundscape — audio is handled by external TTS
 - this policy reduces `PUBLIC_ERROR_AUDIO_FILTERED` from Veo 3.1 safety system
 - the spoken script is handled by external TTS, not by on-screen performance
 - if a line needs stronger transformation, choose `first_last_frame_transition` instead of overloading a first-frame-only prompt
+
+## Retention motion roles
+Choose one per row from Step 07A when available:
+- `danger_reveal`
+- `near_miss`
+- `contrast`
+- `checklist`
+- `expert_emphasis`
+- `solution_demo`
 
 ## Motion strategy choices
 Choose exactly one per row:
@@ -90,13 +108,15 @@ Choose one recommended duration per row:
 
 ## Prompt construction formula
 Build each `prompt_video_veo3` in this order:
-1. camera motion
-2. subject micro-motion
-3. environmental micro-motion
-4. mood preservation
-5. text preservation if visible text exists
-6. silent audio directive: `(Silent video, no audio).`
-7. negative motion, performance, and audio constraints
+1. retention motion role
+2. camera motion
+3. subject micro-action
+4. attention target
+5. environmental micro-motion
+6. pacing and mood preservation
+7. text preservation if visible text exists
+8. silent audio directive: `(Silent video, no audio).`
+9. negative motion, performance, and audio constraints
 
 ## Procedure
 1. Read all required files.
@@ -108,11 +128,13 @@ Build each `prompt_video_veo3` in this order:
    - `visible_text_exact`
    - `prompt_mode`
    - `prompt_img_nano`
-4. Choose one scene-appropriate `motion_strategy`.
-5. Choose one `i2v_mode`.
-6. Choose one `recommended_duration_sec`.
-7. Build one Veo 3 image-to-video prompt in English using motion-only language.
-8. Keep row count aligned exactly with `canonical_script_units`.
+4. Read Step 07A `motion_intents` and `attention_target` for the row when available.
+5. Choose one retention motion role.
+6. Choose one scene-appropriate `motion_strategy`.
+7. Choose one `i2v_mode`.
+8. Choose one `recommended_duration_sec`.
+9. Build one Veo 3 image-to-video prompt in English using motion-only language.
+10. Keep row count aligned exactly with `canonical_script_units`.
 
 ## Quality gate for each row
 A row fails if any of the following are true:
@@ -121,6 +143,8 @@ A row fails if any of the following are true:
 - the prompt implies speech, vocalization, lip sync, or direct address in non-dialogue mode
 - the prompt asks for new readable text
 - the prompt uses a repeated stock template with no scene-specific variation
+- the prompt misses camera motion, subject action, or attention target
+- the same motion role repeats more than 2 rows without justification
 - the prompt implies character redesign or scene redesign
 - the prompt requests ambient audio, foley, room tone, or any generated soundscape
 
@@ -133,6 +157,8 @@ After preflight, return exactly:
 - i2v_mode
 - motion_strategy
 - recommended_duration_sec
+- motion_role
+- attention_target
 - prompt_video_veo3
 
 ## Failure conditions

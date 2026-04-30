@@ -12,6 +12,9 @@ Turn a rough topic idea into a clear, scriptable, researchable video thesis befo
 - Define what the video is **not** claiming.
 - Define 3 to 7 research questions that can be answered by official or primary sources.
 - Prefer daily-life usefulness over disease-name shock.
+- Include hook and packaging seeds that follow `core/hook_engineering_standard.md` and stay inside the safe claim boundary.
+- Choose a likely hook type from: `relatable_danger`, `surprising_fact`, `self_check_question`, `everyday_mistake_reveal`.
+- Define the viewer question that title, thumbnail, and opening visual should answer.
 - For this channel phase, default to wellness / routines / mobility / balance / hydration / breakfast / fatigue topics.
 
 ## Good micro-topic examples
@@ -36,6 +39,10 @@ A valid `02_topic_strategy.json` should include at least:
 - planned_sections
 - packaging_seeds_longform
 - packaging_seeds_shorts
+- hook_type_seed
+- viewer_question
+- opening_visual_seed
+- thumbnail_emotion_hint
 - notes_for_research
 
 ## Failure conditions

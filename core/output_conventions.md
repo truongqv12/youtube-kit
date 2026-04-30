@@ -14,10 +14,12 @@ Exactly 3 columns:
 - `prompt_video_veo3`
 
 ## Hard rules
-- `script_text` must come directly from `canonical_script_units`.
+- `script_text` must come directly from the source-of-truth `canonical_script_units`.
+- Default script source is `06_script_canonical.json`; use `06B_script_canonical.json` only when the video manifest explicitly sets it as `script_source_of_truth`.
 - `script_text` must remain a TTS-safe spoken line with no formatting cleanup required.
 - `prompt_img_nano` is the still-image keyframe prompt.
-- `prompt_img_nano` must stay semantically locked to the current line.
+- `prompt_img_nano` must stay semantically locked to the current line, except bounded opening rows approved by `07A_retention_visual_plan.json`.
+- retention metadata and Step 07A fields must stay in sidecar/intermediate artifacts, never in final export.
 - `prompt_video_veo3` is the image-to-video motion prompt.
 - `prompt_video_veo3` must stay motion-only and must not re-describe the full image.
 - If visible text is needed inside the image, it must be exact, short, and correct for `channel_language`.
@@ -37,3 +39,8 @@ Exactly 3 columns:
 - visible_text_exact
 - motion_strategy
 - line_context_frame
+- retention_beat_type
+- attention_target
+- visual_hook_override_used
+- opening_strategy
+- motion_intent

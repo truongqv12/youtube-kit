@@ -13,15 +13,20 @@ Read exactly these paths. DO NOT use global workspace search for abstract filena
 - core/policy_guardrails.md
 - core/output_conventions.md
 - core/publication_package_standard.md
+- core/title_thumbnail_psychology_standard.md
 - channels/{{TARGET_CHANNEL}}/00_channel_config.json
 - channels/{{TARGET_CHANNEL}}/00_language_profile.json
 - channels/{{TARGET_CHANNEL}}/00_visual_profile.json
+- channels/{{TARGET_CHANNEL}}/videos/{{TARGET_VIDEO}}/01_project_manifest.json
 - channels/{{TARGET_CHANNEL}}/videos/{{TARGET_VIDEO}}/01_intake_spec.json
 - channels/{{TARGET_CHANNEL}}/videos/{{TARGET_VIDEO}}/02_topic_strategy.json
 - channels/{{TARGET_CHANNEL}}/videos/{{TARGET_VIDEO}}/03_research_brief.json
 - channels/{{TARGET_CHANNEL}}/videos/{{TARGET_VIDEO}}/04_policy_report.json
 - channels/{{TARGET_CHANNEL}}/videos/{{TARGET_VIDEO}}/06_script_full.md
 - channels/{{TARGET_CHANNEL}}/videos/{{TARGET_VIDEO}}/06_script_canonical.json
+- channels/{{TARGET_CHANNEL}}/videos/{{TARGET_VIDEO}}/07A_retention_visual_plan.json
+
+If the video manifest explicitly sets `script_source_of_truth` to `06B_script_canonical.json`, read `06B_script_canonical.json` and `06B_script_full.md` instead of the Step 06 script files, then state the reason in preflight.
 - channels/{{TARGET_CHANNEL}}/videos/{{TARGET_VIDEO}}/09_final_three_column.csv
 - channels/{{TARGET_CHANNEL}}/videos/{{TARGET_VIDEO}}/09_export_qc_report.md
 
@@ -31,7 +36,10 @@ If there is no real web access, fail.
 ## Preflight
 Return:
 1. files_read
-2. rules_extracted_by_file
+2. manifest_script_source_setting
+3. effective_script_source
+4. override_reason
+5. rules_extracted_by_file
 3. required_inputs_detected
 4. target_audience_detected
 5. channel_language_detected
@@ -48,6 +56,9 @@ Return:
 - must not use misleading, exaggerated, or medically overpromising claims
 - thumbnail text must be minimal, readable, and in the channel language
 - output must be bilingual: Japanese publish copy plus Vietnamese operator explanation
+- title and thumbnail candidates must align with Step 07A viewer question, opening hook, and full script payoff
+- title candidates must include `ctr_psychology_angle` and `ctr_prediction_reasoning`
+- thumbnail candidates must include `emotion_level` from the per-video spectrum and `safety_rationale`
 - title candidates must not be near-duplicates with only one or two swapped words
 - thumbnail concepts must differ in click angle, not only in color or wording
 - derive exactly 2 Shorts candidates from the same long-form script
@@ -66,6 +77,8 @@ The market scan must include all of the following:
    - danger framing vs calm educational framing
    - number usage
    - promise style
+   - CTR psychology angle used by close examples
+   - safe concern framing benchmarks when available
 5. Check at least 3 official or primary sources for platform guidance, accessibility guidance, or health/policy constraints.
 6. Build a `search_gate_summary` that lists:
    - observed patterns
@@ -75,9 +88,9 @@ The market scan must include all of the following:
 
 ## Candidate generation rules
 After the market scan, generate:
-- exactly 3 title candidates in Japanese
-- exactly 3 thumbnail concept candidates
-- exactly 1 selected final package
+- exactly 3 title candidates in Japanese, each with `ctr_psychology_angle`, `viewer_question`, `script_alignment_reasoning`, `safety_rationale`, and `ctr_prediction_reasoning`
+- exactly 3 thumbnail concept candidates, each with `emotion_level`, `viewer_question`, `script_alignment_reasoning`, and `safety_rationale`
+- exactly 1 selected final package with rationale linking the CTR angle to the opening hook and full script payoff
 - exactly 2 Shorts derivatives
 
 Each Shorts derivative must include:
@@ -105,6 +118,8 @@ After preflight, return exactly:
 - no real web access
 - no market scan
 - title or thumbnail ideas overpromise
+- title or thumbnail candidates do not state CTR psychology angle, emotion level, or safety rationale
+- selected package does not align with Step 07A opening hook and actual script payoff
 - output is not bilingual
 - Shorts derivatives do not connect back to the long-form video
 

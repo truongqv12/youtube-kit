@@ -2,7 +2,7 @@
   "editorial_profile_id": "jp_senior_safe_living_scenario_checklist",
   "channel_positioning": "japanese senior safe-living illustrated handbook explainer",
   "promise_style": "calm_practical_safety_review",
-  "fear_intensity_ceiling": "low",
+  "fear_intensity_ceiling": "low_to_moderate_safety_concern",
   "story_bias": "scenario_checklist_then_safety_review",
   "host_trust_role": "gentle_companion_narrator",
   "episode_scope_bias": "one_domestic_scenario_per_video",
@@ -49,5 +49,20 @@
     "avoid absolute promises about accident prevention",
     "encourage family consultation for larger home modifications",
     "acknowledge that changes take time and partial progress is fine"
-  ]
+  ],
+  "concern_framing_allowed": "moderate_only_with_educational_payoff",
+  "urgency_in_hook_allowed": "mild_urgency_only_in_first_10_to_15_seconds",
+  "consequence_mention_allowed": "true_with_educational_framing",
+  "hook_quality_gate": {
+    "allowed_hook_types": [
+      "relatable_danger",
+      "surprising_fact",
+      "self_check_question",
+      "everyday_mistake_reveal"
+    ],
+    "must_include_daily_life_anchor": true,
+    "must_pay_off_by_lines_4_to_6": true,
+    "forbid_generic_first_line_intro": true,
+    "forbid_panic_or_disease_shock": true
+  }
 }

@@ -14,6 +14,8 @@ Read exactly these paths. DO NOT use global workspace search for abstract filena
 - core/duration_control_standard.md
 - core/canonical_script_unit_standard.md
 - core/policy_guardrails.md
+- core/hook_engineering_standard.md
+- core/pacing_control_standard.md
 - channels/{{TARGET_CHANNEL}}/00_channel_config.json
 - channels/{{TARGET_CHANNEL}}/00_language_profile.json
 - knowledge/japanese/00_language_strategy.md
@@ -46,7 +48,9 @@ Return:
 5. tts_mode_detected
 6. duration_targets_detected
 7. naturalness_plan_detected
-8. allowed_to_proceed
+8. hook_gate_detected
+9. pacing_warning_rules_detected
+10. allowed_to_proceed
 
 ## Hard rules
 - obey duration control standard
@@ -66,12 +70,48 @@ Return:
 - no machine-translated stiffness
 - no lecture-like connective stacking such as repeating `そして`, `また`, `さらに`, `そのため` line after line
 - no absolute certainty where the research only supports cautious guidance
+- first 1-3 canonical units must pass the hook gate from `core/hook_engineering_standard.md`
+- line 1 must not be a generic `この動画では...` intro
+- lines 4-6 should provide a practical promise payoff for the opening hook
+- report pacing warnings in `06_script_metrics.json` without rejecting otherwise safe scripts unless the opening hook hard-fails
 
 ## Quality preferences
 - prefer concrete daily-life scenes over abstract explanation
 - let important lines land with plain wording
 - favor reassuring usefulness over rhetorical flourish
 - keep older listeners' processing comfort in mind
+
+## Hook few-shot examples
+
+### Relatable danger
+
+Bad:
+この動画では、浴室で気をつけたいことを説明します。
+
+Good:
+お風呂場で、手すりに届く前に足元がふっと不安になることはありませんか。
+その小さな一瞬が、見直しの合図になることがあります。
+今日は、毎日の入浴を少し安心にする確認点を見ていきましょう。
+
+### Self-check question
+
+Bad:
+今回は、朝の習慣について紹介します。
+
+Good:
+朝起きてすぐ、いつもの勢いで立ち上がっていませんか。
+体がまだ目覚めきっていない時間は、少しふらつきやすいことがあります。
+まずは、無理なくできる最初の一歩を確認しましょう。
+
+### Everyday mistake reveal
+
+Bad:
+高齢者は水分補給が大切です。
+
+Good:
+夜のトイレを気にして、夕方から水分を控えすぎていませんか。
+楽にしたつもりの習慣が、翌朝のだるさにつながることがあります。
+今日は、控えるだけではない水分の整え方を考えます。
 
 ## Few-shot style examples
 
@@ -120,18 +160,26 @@ Fail if the script contains patterns like:
 4. Decide effective language mode and region handling.
 5. Draft the script from the outline and research brief.
 6. Write directly as `canonical_script_units`.
-7. Run a rhythm pass:
+7. Run an opening hook pass:
+   - reject generic first-line intro
+   - confirm first 1-3 units create self-relevance, curiosity, or mild urgency
+   - confirm lines 4-6 pay off the viewer question without overclaiming
+8. Run a pacing warning pass:
+   - flag more than 3 data/stat/mechanism lines without a daily-life anchor
+   - flag more than 2 medical mechanism lines without example
+   - flag passive section transitions such as `次は〜です`
+9. Run a rhythm pass:
    - vary sentence length
    - break monotony
    - reduce cloned syntax
-8. Run a breath-group pass:
+10. Run a breath-group pass:
    - split lines that carry more than one natural pause
-9. Run a spoken-Japanese pass:
+11. Run a spoken-Japanese pass:
    - replace written stiffness with natural educational speech
    - inject light colloquial markers only when appropriate
-10. Reconstruct `full_script` by newline join.
-11. Compute metrics.
-12. Revise until duration, reconstruction, TTS-safe, and naturalness checks all pass.
+12. Reconstruct `full_script` by newline join.
+13. Compute metrics, including `opening_hook_passed`, `promise_payoff_rows`, `cold_zone_warnings`, and `repeated_transition_warnings`.
+14. Revise until duration, reconstruction, TTS-safe, hook gate, and naturalness checks all pass.
 
 ## Output contract
 After preflight, return exactly:
@@ -154,6 +202,8 @@ After preflight, return exactly:
 - 3 or more consecutive units use the same syntactic pattern
 - too many overlong breath groups
 - script sounds generic, machine-translated, or lecture-like
+- first 1-3 canonical units fail the opening hook gate
+- first line uses generic `この動画では...` framing
 
 ## Final instruction
 Use the response envelope from `core/output_conventions.md`.

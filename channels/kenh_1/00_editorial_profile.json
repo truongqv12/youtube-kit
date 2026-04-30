@@ -43,5 +43,20 @@
     "use educational framing instead of cure framing",
     "avoid absolute promises",
     "encourage consultation when symptoms or risk factors are concerning"
-  ]
+  ],
+  "concern_framing_allowed": "moderate_only_with_educational_payoff",
+  "urgency_in_hook_allowed": "mild_urgency_only_in_first_10_to_15_seconds",
+  "consequence_mention_allowed": "true_with_educational_framing",
+  "hook_quality_gate": {
+    "allowed_hook_types": [
+      "relatable_danger",
+      "surprising_fact",
+      "self_check_question",
+      "everyday_mistake_reveal"
+    ],
+    "must_include_daily_life_anchor": true,
+    "must_pay_off_by_lines_4_to_6": true,
+    "forbid_generic_first_line_intro": true,
+    "forbid_panic_or_disease_shock": true
+  }
 }

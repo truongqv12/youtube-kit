@@ -112,6 +112,6 @@
     "step": "09_final_three_column",
     "description": "Final three-column merge — join script, image prompts, and video prompts into production-ready CSV",
     "required_input": "08_video_prompt_table.csv",
-    "prompt": "compiled_prompts/09_run_final_three_column.md"
+    "prompt": "compiled_prompts/09_run_three_column_exporter.md"
   }
 }
