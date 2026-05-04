@@ -1,0 +1,267 @@
+{
+  "project_id": "kenh_2_vid_009",
+  "channel_id": "kenh_2",
+  "pipeline_step": "05_outline",
+  "generated_at": "2026-05-03T15:05:00+07:00",
+  "source_files": [
+    "core/system_principles.md",
+    "core/duration_control_standard.md",
+    "core/hook_engineering_standard.md",
+    "core/pacing_control_standard.md",
+    "channels/kenh_2/videos/vid_009/01_intake_spec.json",
+    "channels/kenh_2/videos/vid_009/02_topic_strategy.json",
+    "channels/kenh_2/videos/vid_009/03_research_brief.json",
+    "channels/kenh_2/videos/vid_009/04_policy_report.json"
+  ],
+
+  "micro_topic": "病院に行く日に慌てないための準備",
+  "micro_topic_en": "Preparation so you don't panic on the day you go to the hospital",
+  "micro_topic_scope_lock": "Chỉ bao gồm các chuẩn bị sinh hoạt cho ngày đi khám bệnh (mang đồ, quần áo, chờ đợi). KHÔNG đi sâu vào việc điều trị bệnh, các thủ tục y tế phức tạp hay dùng thuốc.",
+
+  "duration_budget": {
+    "target_min_min": 10,
+    "target_max_min": 18,
+    "tts_chars_per_min": 320,
+    "target_min_chars": 3200,
+    "target_max_chars": 5760,
+    "planned_total_min": 16.5,
+    "planned_total_chars_approx": 5280
+  },
+
+  "story_flow": "scenario_then_checklist",
+  "emotional_arc": "familiar_worry → calm_understanding → step_by_step_review → reassured_confidence",
+  "narrator_stance": "gentle_companion_narrator",
+
+  "hook_engineering": {
+    "hook_type": "self_check_question",
+    "viewer_question": "通院の日の朝、探し物をして焦ったり、待ち時間でぐったり疲れてしまったりしていませんか？",
+    "hook_quality_reasoning": "Mở đầu bằng việc gọi tên chính xác sự mệt mỏi và lo âu thường thấy vào ngày đi khám bệnh (tìm đồ, chờ lâu). Nó thân thuộc, không làm người xem hoảng sợ, và dẫn trực tiếp vào giải pháp chuẩn bị.",
+    "promise_payoff": "通院日に慌てず安全に出かけられるよう、前日の準備と当日の見直しポイントを一緒に確認していきます。少しの工夫で通院の疲れを和らげる内容です。",
+    "tension_level": "low"
+  },
+
+  "sections": [
+    {
+      "section_id": "S01",
+      "label": "オープニング — 通院の日の朝、焦っていませんか？",
+      "label_en": "Opening — Are you rushing on the morning of a hospital visit?",
+      "purpose": "soft_hook",
+      "section_entry_hook": "通院の日の朝、探し物をして焦ったり、待ち時間でぐったり疲れてしまったりしていませんか？",
+      "spoken_flow_description": "Mở đầu bằng câu hỏi nhẹ nhàng về buổi sáng đi khám bệnh. Cho thấy hình ảnh một người hơi bối rối tìm thẻ bảo hiểm ở cửa. Sau đó đưa ra promise: hôm nay chúng ta sẽ xem lại các bước chuẩn bị từ hôm trước để giảm bớt mệt mỏi.",
+      "key_beats": [
+        "Câu hỏi tự kiểm tra: Bạn có hay cuống cuồng vào sáng ngày đi viện không?",
+        "Nhận ra rằng việc vội vã vừa làm mệt mỏi vừa tăng nguy cơ quên đồ",
+        "Narrator: '今日は、通院の疲れを和らげ、安全に出かけるための準備ポイントを一緒に確認していきます'",
+        "Nhấn mạnh: những chuẩn bị nhỏ giúp giảm bớt gánh nặng thể chất và tinh thần"
+      ],
+      "estimated_duration_sec": 90,
+      "estimated_chars": 480,
+      "emotional_tone": "warm_relatable",
+      "evidence_source": null,
+      "policy_notes": [
+        "Tránh fear hook. Không dùng cảnh ngã hay hoảng loạn quá mức.",
+        "Giữ ở mức 'bối rối tìm đồ'."
+      ],
+      "softeners_required": []
+    },
+    {
+      "section_id": "S02",
+      "label": "なぜ通院日に事故が起きやすいのか",
+      "label_en": "Why accidents easily happen on hospital days",
+      "purpose": "context_setting",
+      "section_entry_hook": "そもそも、なぜ通院や外出の日に思わぬケガをしてしまうことが多いのでしょうか？",
+      "spoken_flow_description": "Trích dẫn nhẹ nhàng dữ liệu từ Cơ quan Tiêu dùng: việc vội vã (do sợ trễ giờ khám) cộng với sự mệt mỏi hoặc tác dụng của thuốc dễ dẫn đến vấp ngã ngay cả ở những đoạn đường quen thuộc. KHÔNG doạ dẫm bằng con số, chỉ để người xem thấy tầm quan trọng của việc chuẩn bị trước.",
+      "key_beats": [
+        "Nêu lý do: tuổi tác làm giảm phản xạ + việc vội vã dễ làm mất thăng bằng",
+        "Nhắc nhẹ: thuốc uống có thể gây chóng mặt",
+        "Trích dẫn 消費者庁: việc vấp ngã thường xảy ra khi vội vã ở những nơi có bậc cửa hoặc đường quen",
+        "Transition: 'だからこそ、当日の朝に焦らない工夫が大切になります。具体的に3つのポイントを見ていきましょう'"
+      ],
+      "estimated_duration_sec": 120,
+      "estimated_chars": 640,
+      "emotional_tone": "calm_factual",
+      "evidence_source": "03_research_brief.json → S02_Background",
+      "policy_notes": [
+        "WO01: Dùng số liệu bình tĩnh, KHÔNG dramatize.",
+        "Tập trung vào 'sự vội vã/cuống cuồng gây ra tai nạn'."
+      ],
+      "softeners_required": []
+    },
+    {
+      "section_id": "S03",
+      "label": "見直し①：前日までに「通院セット」をまとめる",
+      "label_en": "Check 1: Pack a 'hospital set' by the day before",
+      "purpose": "practical_check_item",
+      "section_entry_hook": "1つ目のポイントは、持ち物の準備です。当日の朝、バッグの中をひっくり返していませんか？",
+      "spoken_flow_description": "Check item đầu tiên: bộ đồ đi khám. Gợi ý gom sổ khám, thẻ bảo hiểm, sổ tay thuốc vào một túi/hộp đựng duy nhất từ tối hôm trước. Nhắc việc mang theo tờ giấy ghi chú các câu hỏi muốn hỏi bác sĩ.",
+      "key_beats": [
+        "Gom các món đồ quan trọng vào 1 túi (thẻ bảo hiểm, sổ thuốc, phiếu khám)",
+        "Đặc biệt: Sổ tay thuốc (お薬手帳) nên gộp làm 1 quyển để tránh rủi ro tương tác thuốc",
+        "Mẹo: Chuẩn bị một tờ giấy ghi sẵn các triệu chứng và câu hỏi cho bác sĩ",
+        "Làm việc này từ tối hôm trước giúp sáng hôm sau nhẹ nhàng hơn"
+      ],
+      "estimated_duration_sec": 180,
+      "estimated_chars": 960,
+      "emotional_tone": "practical_helpful",
+      "evidence_source": "03_research_brief.json → S03_Check_1_Hospital_Set",
+      "policy_notes": [
+        "Tránh hiển thị thông tin thẻ bảo hiểm thật (dùng generic illustration)."
+      ],
+      "softeners_required": []
+    },
+    {
+      "section_id": "S04",
+      "label": "見直し②：着脱しやすい服と安全な靴",
+      "label_en": "Check 2: Easy-to-remove clothing and safe shoes",
+      "purpose": "practical_check_item",
+      "section_entry_hook": "2つ目は、当日の服装と靴です。診察室で慌てて服を脱いだ経験はありませんか？",
+      "spoken_flow_description": "Check item thứ hai: trang phục và giày. Khuyên mặc áo dễ kéo tay áo lên (để đo huyết áp, tiêm) và đồ dễ cởi. Nhắc về giày: nên đi giày mũi hơi cong, có khoá dán vững gót, tránh quần quá dài hoặc khăn quàng dài dễ vấp ngã. Luôn giữ hai tay trống bằng balo hoặc túi đeo chéo.",
+      "key_beats": [
+        "Quần áo: ưu tiên loại dễ kéo tay áo, thoải mái, không quá dài để tránh vấp",
+        "Tránh khăn quàng dài loà xoà",
+        "Giày: chọn giày mũi hơi cong lên để chống vấp, gót ôm sát chân, có khoá dán dễ mang",
+        "Nên dùng balo hoặc túi đeo chéo để hai tay luôn trống, dễ giữ thăng bằng",
+        "Softener: '足の形には個人差があるため、ご自身に合うものを選んでください'"
+      ],
+      "estimated_duration_sec": 180,
+      "estimated_chars": 960,
+      "emotional_tone": "practical_supportive",
+      "evidence_source": "03_research_brief.json → S04_Check_2_Clothing_Shoes",
+      "policy_notes": [
+        "SF01: Kèm '足の形には個人差があります'."
+      ],
+      "softeners_required": ["SF01"]
+    },
+    {
+      "section_id": "S05",
+      "label": "見直し③：待ち時間をラクにする工夫",
+      "label_en": "Check 3: Ideas to make waiting time easier",
+      "purpose": "practical_check_item",
+      "section_entry_hook": "3つ目のポイントは、病院の待合室での過ごし方です。",
+      "spoken_flow_description": "Check item thứ ba: cách vượt qua lúc chờ đợi lâu. Khuyên mang áo khoác mỏng vì bệnh viện thường lạnh. Nhắc uống nước (không cafein) thường xuyên để tránh mất nước và nguy cơ huyết khối. Chỉ cho các động tác nhẹ (nhón gót, xoay cổ chân) khi ngồi chờ.",
+      "key_beats": [
+        "Bệnh viện thường khó điều chỉnh nhiệt độ → mang theo áo khoác mỏng/cardigan",
+        "Ngồi lâu có thể làm máu lưu thông kém, gây nguy cơ huyết khối (エコノミークラス症候群)",
+        "Cách phòng: uống nước lọc/trà lúa mạch (tránh cafein) để không bị mất nước",
+        "Softener quan trọng: '持病などで水分制限がある方は、主治医の指示に従ってください'",
+        "Bài tập nhẹ: ngồi tại chỗ nhón gót chân, xoay cổ chân để máu lưu thông tốt hơn"
+      ],
+      "estimated_duration_sec": 180,
+      "estimated_chars": 960,
+      "emotional_tone": "calm_practical",
+      "evidence_source": "03_research_brief.json → S05_Check_3_Waiting_Room",
+      "policy_notes": [
+        "WO02: Giới hạn scope ở các bài tập nhẹ và uống nước. Không đi vào giải phẫu y khoa phức tạp.",
+        "SF02: Bắt buộc nhắc '水分制限の指示を受けている場合は主治医に...'"
+      ],
+      "softeners_required": ["SF02"]
+    },
+    {
+      "section_id": "S06",
+      "label": "before-after イメージ — 焦る朝と落ち着いた朝",
+      "label_en": "Before-after image — a rushed morning vs a calm morning",
+      "purpose": "visual_comparison",
+      "section_entry_hook": "ここで、準備をしなかった朝と、準備をしておいた朝を比べてみましょう。",
+      "spoken_flow_description": "Trực quan hóa sự khác biệt. So sánh cảnh buổi sáng vội vã lục lọi đồ đạc với cảnh thong thả nhấc chiếc túi đã chuẩn bị sẵn và mặc chiếc áo khoác gọn gàng ra cửa.",
+      "key_beats": [
+        "Trước (Rushed): tìm chìa khoá, tìm thẻ bảo hiểm, đi vội vàng dễ vấp",
+        "Sau (Calm): chiếc túi 'hospital set' đặt gọn ở hành lang, mang giày vừa vặn, uống ngụm nước rồi đi",
+        "Narrator: '大掛かりなことではなく、前日のちょっとした見直しが、当日の安心につながります'"
+      ],
+      "estimated_duration_sec": 90,
+      "estimated_chars": 480,
+      "emotional_tone": "encouraging_modest",
+      "evidence_source": null,
+      "policy_notes": [
+        "Visual phải rõ ràng là illustration, không phải ảnh thực.",
+        "Không làm phóng đại."
+      ],
+      "softeners_required": []
+    },
+    {
+      "section_id": "S07",
+      "label": "一人で難しい場合は — 移動支援の活用",
+      "label_en": "When it is hard to do alone — using transportation support",
+      "purpose": "consult_guidance",
+      "section_entry_hook": "それでも、やはり一人での通院が負担になってきたと感じたら...",
+      "spoken_flow_description": "Giới thiệu các lựa chọn hỗ trợ di chuyển. Nhắc đến Care Taxi (có dùng bảo hiểm chăm sóc) và xe trợ giúp của phường/xã. Nhấn mạnh việc nên tham khảo ý kiến Care Manager.",
+      "key_beats": [
+        "Việc đi lại mệt mỏi là chuyện bình thường, đừng cố quá sức",
+        "Có các dịch vụ như 介護タクシー (nếu có chứng nhận cần chăm sóc) hoặc dịch vụ đưa đón của địa phương",
+        "Softener: '自治体によって条件や制度が異なります'",
+        "Khuyên: 'まずは担当のケアマネジャーや地域包括支援センターに相談してみてください'"
+      ],
+      "estimated_duration_sec": 90,
+      "estimated_chars": 480,
+      "emotional_tone": "supportive_informative",
+      "evidence_source": "03_research_brief.json → S07_Where_to_Consult",
+      "policy_notes": [
+        "SF03: Kèm '自治体によって条件や制度が異なります' / 'ケアマネジャーや窓口にご相談ください'."
+      ],
+      "softeners_required": ["SF03"]
+    },
+    {
+      "section_id": "S08",
+      "label": "まとめ — 安全第一で無理なく出かけましょう",
+      "label_en": "Wrap-up — go out safely without overexerting",
+      "purpose": "calm_close",
+      "section_entry_hook": "いかがでしたか？今日からできる工夫はありましたでしょうか。",
+      "spoken_flow_description": "Tóm tắt ngắn gọn. Nhắc lại 3 điểm: Túi đồ, Giày/Áo, Phòng chờ. Nhắn nhủ nhẹ nhàng hãy bắt đầu từ điều dễ nhất.",
+      "key_beats": [
+        "Recap: ①持ち物のセット化 ②着脱しやすい服と靴 ③待合室での水分補給",
+        "Narrator: '全部を一度にやる必要はありません。次回病院に行くときに、ひとつだけでも試してみてください'",
+        "Safety framing pattern: '少しの工夫で疲れを和らげることができます。無理せず安全第一でお出かけください'",
+        "Chào tạm biệt nhẹ nhàng."
+      ],
+      "estimated_duration_sec": 60,
+      "estimated_chars": 320,
+      "emotional_tone": "warm_reassuring",
+      "evidence_source": null,
+      "policy_notes": [
+        "SF04: Nhắc nhở nhẹ nhàng: '少しの工夫で疲れを和らげることができます' / '無理せず安全第一で'."
+      ],
+      "softeners_required": ["SF04"]
+    }
+  ],
+
+  "total_sections": 8,
+  "total_estimated_duration_sec": 990,
+  "total_estimated_duration_min": 16.5,
+  "total_estimated_chars": 5280,
+  "duration_within_target": true,
+
+  "duration_validation": {
+    "min_chars": 3200,
+    "max_chars": 5760,
+    "planned_chars": 5280,
+    "status": "PASS",
+    "note": "5280 chars is within [3200, 5760] range, targeting 16.5 mins exactly."
+  },
+
+  "scope_validation": {
+    "micro_topic_respected": true,
+    "scope_drifts_detected": [],
+    "note": "Focus remains tightly on the preparation before and during a hospital visit, without straying into medical treatment advice."
+  },
+
+  "policy_compliance_check": {
+    "forbidden_angles_avoided": true,
+    "mandatory_softeners_mapped": {
+      "SF01": ["S04"],
+      "SF02": ["S05"],
+      "SF03": ["S07"],
+      "SF04": ["S08"]
+    },
+    "outline_warnings_addressed": {
+      "WO01": "S02 strictly sticks to calm_factual without overplaying statistics.",
+      "WO02": "S05 avoids explaining the deep mechanics of economy class syndrome."
+    }
+  },
+
+  "spoken_flow_quality_check": {
+    "reads_like_spoken_narration": true,
+    "section_turns_feel_natural": true,
+    "repetitive_patterns_avoided": true,
+    "note": "The transition hooks between sections act as natural spoken questions that guide the viewer through the narrative logically."
+  }
+}

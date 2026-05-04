@@ -1,0 +1,225 @@
+{
+  "project_id": "kenh_2_vid_009",
+  "channel_id": "kenh_2",
+  "pipeline_step": "04_policy_gate",
+  "generated_at": "2026-05-03T14:10:00+07:00",
+  "source_files": [
+    "core/system_principles.md",
+    "core/policy_guardrails.md",
+    "core/output_conventions.md",
+    "channels/kenh_2/videos/vid_009/01_intake_spec.json",
+    "channels/kenh_2/videos/vid_009/02_topic_strategy.json",
+    "channels/kenh_2/videos/vid_009/03_research_brief.json"
+  ],
+
+  "overall_risk": {
+    "level": "LOW",
+    "summary": "Chủ đề chuẩn bị cho ngày đi khám bệnh. Nội dung chủ yếu xoay quanh mẹo sinh hoạt thực tế (cách mang đồ, chọn giày/quần áo, cách uống nước ở phòng chờ), không can thiệp sâu vào chuyên môn y tế về bệnh lý cá nhân. Research brief phân biệt rõ các fact và mẹo thực tế. Rủi ro tổng thể thấp nếu downstream steps tuân thủ chặt các quy định về hình ảnh minh hoạ (không doạ dẫm ngã) và các từ khóa disclaimer."
+  },
+
+  "allowed_angles": [
+    {
+      "angle": "通院前日と当日の準備ポイントを一緒に確認する",
+      "classification": "allowed_freely",
+      "note": "Core promise của video. Mang tính chất checklist và review, rất an toàn."
+    },
+    {
+      "angle": "消費者庁や東京消防庁の統計に基づき、急ぎや焦りが転倒リスクになることを冷静に伝える",
+      "classification": "allowed_freely",
+      "note": "Chỉ dùng để set context, không dùng để doạ dẫm."
+    },
+    {
+      "angle": "お薬手帳や保険証を一つのポーチにまとめる工夫",
+      "classification": "allowed_freely",
+      "note": "Practical tip, hoàn toàn an toàn."
+    },
+    {
+      "angle": "安全な靴選びや着脱しやすい服装のアドバイス",
+      "classification": "allowed_with_softeners",
+      "note": "Khuyên nên chọn giày có mũi hơi cong lên hoặc dùng khoá dán (Velcro), nhưng phải kèm softener: '足の形には個人差があるため、ご自身に合うものを選んでください'."
+    },
+    {
+      "angle": "待合室での水分補給や座ったままの運動",
+      "classification": "allowed_with_softeners",
+      "note": "Tránh dùng từ 'エコノミークラス症候群を完全に防ぐ', chỉ nói '血流を促す工夫'. Đối với nước uống, PHẢI kèm: '水分制限がある方は主治医の指示に従ってください'."
+    },
+    {
+      "angle": "介護タクシーや自治体の移動支援制度の紹介",
+      "classification": "allowed_with_softeners",
+      "note": "Chỉ giới thiệu như một tuỳ chọn. PHẢI kèm: '自治体によって条件が異なる' và khuyên tham vấn Care Manager."
+    }
+  ],
+
+  "forbidden_angles": [
+    {
+      "angle": "「これを着れば絶対に転ばない」— guaranteed fall prevention",
+      "reason": "Vi phạm quy định cấm hứa hẹn phòng ngừa tuyệt đối.",
+      "enforcement": "Script, title, thumbnail tuyệt đối không dùng."
+    },
+    {
+      "angle": "「これでエコノミークラス症候群にはならない」— absolute medical prevention certainty",
+      "reason": "Tuyên bố y tế chắc chắn, vi phạm policy_guardrails.",
+      "enforcement": "Dùng '〜のリスクを減らす工夫' thay vì '〜にならない方法'."
+    },
+    {
+      "angle": "「病院の待ち時間がなくなる裏技」— misleading/overpromise",
+      "reason": "Overpromise, nằm ngoài khả năng kiểm soát của bệnh nhân.",
+      "enforcement": "Focus vào việc 'làm cho thời gian chờ đợi bớt mệt mỏi', không phải 'làm giảm thời gian chờ'."
+    },
+    {
+      "angle": "Bất kỳ lời khuyên nào về việc bỏ dùng thuốc hoặc không cần đi khám bệnh nữa",
+      "reason": "Anti-doctor/medication-replacement framing là nghiêm cấm.",
+      "enforcement": "Không bao giờ dùng trong niche này."
+    },
+    {
+      "angle": "Cảnh ngã thực tế hoặc gây sốc thị giác",
+      "reason": "Fear theater is forbidden.",
+      "enforcement": "Prompt builder phải tránh các keyword như 'slip', 'fall', 'collapse'."
+    }
+  ],
+
+  "mandatory_softeners": [
+    {
+      "id": "SF01",
+      "context": "Khi nói về mẹo chọn giày dép/quần áo",
+      "required_framing": "Kèm '足の形には個人差があります' / 'ご自身に合うものを選んでください'.",
+      "applies_to": ["outline", "script"]
+    },
+    {
+      "id": "SF02",
+      "context": "Khi khuyên uống nước trong lúc chờ khám",
+      "required_framing": "Kèm '持病などで水分制限がある方は、主治医の指示に従ってください'.",
+      "applies_to": ["outline", "script"]
+    },
+    {
+      "id": "SF03",
+      "context": "Khi nói về dịch vụ hỗ trợ di chuyển (Care Taxi, v.v.)",
+      "required_framing": "Kèm '自治体によって条件や制度が異なります' / 'ケアマネジャーや窓口にご相談ください'.",
+      "applies_to": ["outline", "script"]
+    },
+    {
+      "id": "SF04",
+      "context": "Tổng kết / closing section",
+      "required_framing": "Nhắc nhở nhẹ nhàng: '少しの工夫で疲れを和らげることができます' / '無理せず安全第一で'.",
+      "applies_to": ["outline", "script"]
+    }
+  ],
+
+  "visual_restrictions": [
+    {
+      "id": "VR01",
+      "rule": "Style PHẢI là illustrated_lifestyle_handbook / retro_clean_domestic_senior. KHÔNG photorealistic.",
+      "reason": "Tránh misleading visuals. Giữ warm, flat, non-threatening."
+    },
+    {
+      "id": "VR02",
+      "rule": "Nhân vật người cao tuổi PHẢI có ≥2 aging cues rõ ràng (tóc bạc, nếp nhăn, tư thế).",
+      "reason": "demographic_anchors.age_lock_priority = HIGH."
+    },
+    {
+      "id": "VR03",
+      "rule": "KHÔNG lip sync, KHÔNG direct-to-camera speech, KHÔNG generated audio track.",
+      "reason": "non_dialogue_mode=true, veo_audio_policy=silent."
+    },
+    {
+      "id": "VR04",
+      "rule": "Text hiển thị trong ảnh tối đa 6 từ, chỉ tiếng Nhật (ja-JP). Mặc định là avoid_readable_text.",
+      "reason": "visible_text_governance policy."
+    },
+    {
+      "id": "VR05",
+      "rule": "KHÔNG hiển thị cảnh ngã thực tế, cảnh chảy máu, cảnh đau đớn nhăn nhó.",
+      "reason": "fear_intensity_ceiling = low_to_moderate_safety_concern. Calm caution preferred."
+    },
+    {
+      "id": "VR06",
+      "rule": "Before-after comparison phải rõ ràng là minh họa.",
+      "reason": "Tránh synthetic disclosure risk."
+    }
+  ],
+
+  "disclosure_notes": [
+    {
+      "id": "DN01",
+      "note": "Video description phải có soft disclaimer: 'この動画は情報提供を目的としたものです。体調に不安がある方は、かかりつけ医にご相談ください。'",
+      "applies_to": ["publication_assets"]
+    },
+    {
+      "id": "DN02",
+      "note": "Nếu nhắc đến số liệu thống kê (消費者庁), ghi rõ nguồn trong narration hoặc description.",
+      "applies_to": ["outline", "script", "publication_assets"]
+    }
+  ],
+
+  "warnings_for_outline": [
+    {
+      "id": "WO01",
+      "severity": "MEDIUM",
+      "warning": "Section S02 (Background statistics): dùng số liệu bình tĩnh, KHÔNG dramatize. Tập trung vào việc 'sự vội vã/cuống cuồng gây ra tai nạn' thay vì 'đi viện nguy hiểm'.",
+      "actionable_instruction": "Outline phải ghi rõ emotional tone = calm_factual cho section này."
+    },
+    {
+      "id": "WO02",
+      "severity": "LOW",
+      "warning": "Section S05 (Waiting room): Giới hạn scope ở các bài tập nhẹ (nhón gót chân) và uống nước. Không đi vào giải phẫu y khoa phức tạp.",
+      "actionable_instruction": "Outline cần note: 'giữ ở mức practical tips'."
+    }
+  ],
+
+  "warnings_for_script": [
+    {
+      "id": "WS01",
+      "severity": "HIGH",
+      "warning": "Mỗi khi nhắc biện pháp phòng ngừa ngã hoặc tránh huyết khối tĩnh mạch, PHẢI dùng softener. KHÔNG viết câu khẳng định tuyệt đối.",
+      "actionable_instruction": "Thay '〜で安全' bằng '〜が安心につながることがあります'."
+    },
+    {
+      "id": "WS02",
+      "severity": "HIGH",
+      "warning": "Đặc biệt lưu ý softener SF02 khi khuyên uống nước. Rất nhiều người già có giới hạn về lượng nước do bệnh tim/thận.",
+      "actionable_instruction": "Script writer bắt buộc chèn câu '水分制限の指示を受けている場合は...'."
+    },
+    {
+      "id": "WS03",
+      "severity": "MEDIUM",
+      "warning": "Script phải TTS-safe. Không chứa formatting marks, không chứa emoji.",
+      "actionable_instruction": "Mỗi script_text line phải đọc tự nhiên bằng giọng nói."
+    }
+  ],
+
+  "warnings_for_prompt_builders": [
+    {
+      "id": "WP01",
+      "severity": "HIGH",
+      "warning": "KHÔNG tạo cảnh ngã, trượt ngã, hoặc nhân vật hoảng loạn quá độ.",
+      "actionable_instruction": "Prompt builder chạy negative check: 'fall', 'slip', 'injury', 'panic' → flag và rewrite sang object-focused shot hoặc nhân vật chỉ hơi bối rối nhẹ."
+    },
+    {
+      "id": "WP02",
+      "severity": "HIGH",
+      "warning": "Style lock PHẢI enforce: 'illustrated lifestyle handbook, retro-clean 2D, warm domestic scenes, senior-friendly'.",
+      "actionable_instruction": "Image prompt template phải có style_lock.seed_image_style_raw làm prefix."
+    },
+    {
+      "id": "WP03",
+      "severity": "MEDIUM",
+      "warning": "Các vật dụng trong túi đi viện (thẻ bảo hiểm, sổ khám bệnh) nên vẽ generic, không giống hệt giấy tờ thật để tránh vi phạm AI generation guidelines của Google/Midjourney.",
+      "actionable_instruction": "Dùng prompt: 'a generic medical notebook illustration', không request 'real Japanese health insurance card'."
+    }
+  ],
+
+  "warnings_for_publication_assets": [
+    {
+      "id": "WA01",
+      "severity": "HIGH",
+      "warning": "Title KHÔNG được overpromise. Cấm framing kiểu '絶対に遅刻しない', '通院が100%楽になる'.",
+      "actionable_instruction": "Giữ nguyên các Title candidates từ 02_topic_strategy đã pass review."
+    },
+    {
+      "id": "WA02",
+      "severity": "MEDIUM",
+      "warning": "Description phải có soft disclaimer (DN01).",
+      "actionable_instruction": "Append: 'この動画は情報提供を目的としたものです。体調に不安がある方は、かかりつけ医にご相談ください。'"
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "project_id": "kenh_2_vid_009",
+  "channel_id": "kenh_2",
+  "pipeline_step": "03_research_brief",
+  "generated_at": "2026-05-03T13:25:00+07:00",
+  "source_files": [
+    "core/system_principles.md",
+    "core/topic_strategy_standard.md",
+    "core/mandatory_research_standard.md",
+    "core/policy_guardrails.md",
+    "knowledge/japanese/00_language_strategy.md",
+    "channels/kenh_2/videos/vid_009/01_intake_spec.json",
+    "channels/kenh_2/videos/vid_009/02_topic_strategy.json"
+  ],
+  "source_log_path": "channels/kenh_2/videos/vid_009/03_source_log.md",
+  
+  "evidence_by_section": {
+    "S02_Background": {
+      "facts": [
+        "高齢者の転倒は、筋力やバランス機能の低下に加えて、急ぐことや焦りなどの不注意が複合的に重なって発生しやすい（消費者庁）。",
+        "外出時や不慣れな場所（病院など）での段差は、転倒リスクを高める要因となる。"
+      ],
+      "practical_guidance": [],
+      "uncertainty_unknowns": [],
+      "when_to_consult": []
+    },
+    "S03_Check_1_Hospital_Set": {
+      "facts": [
+        "複数の医療機関にかかる場合でも、お薬手帳は1冊にまとめることで飲み合わせのリスクを防げる。"
+      ],
+      "practical_guidance": [
+        "保険証、診察券、お薬手帳などの必須アイテムは、前日のうちに1つのポーチやバッグにまとめておく。",
+        "医師に聞きたいことや症状をメモに書いて準備しておくと、当日の診察がスムーズになる。"
+      ],
+      "uncertainty_unknowns": [
+        "マイナ保険証の対応状況は医療機関によって異なるため、念のため従来の保険証も持参すると安心。"
+      ],
+      "when_to_consult": []
+    },
+    "S04_Check_2_Clothing_Shoes": {
+      "facts": [
+        "靴のつま先が適度に反り上がっているものは、段差でのつまずきを防ぐ効果がある。",
+        "着脱が簡単でかかとをしっかり固定できる面ファスナー（マジックテープ）の靴が、歩行の安定に適している。"
+      ],
+      "practical_guidance": [
+        "診察で血圧を測ったり注射をしたりするため、袖がまくりやすい、または着脱しやすい服を選ぶ。",
+        "裾が長すぎるズボンや長いストールは転倒の原因になるため避ける。",
+        "荷物はリュックやウエストポーチにし、両手を空けておく。"
+      ],
+      "uncertainty_unknowns": [
+        "個人の足の変形（外反母趾など）に合う靴は千差万別である。"
+      ],
+      "when_to_consult": [
+        "足にトラブルがあり合う靴が見つからない場合は、理学療法士やシューフィッターに相談する。"
+      ]
+    },
+    "S05_Check_3_Waiting_Room": {
+      "facts": [
+        "待合室で長時間同じ姿勢で座り続けると、血流が滞りエコノミークラス症候群（静脈血栓塞栓症）のリスクが高まる（厚生労働省）。",
+        "高齢者は喉の渇きを感じにくいため、無自覚のうちに脱水に陥りやすい。"
+      ],
+      "practical_guidance": [
+        "カフェインを含まない水分（水や麦茶など）を持参し、喉が渇く前にこまめに飲む。",
+        "座ったまま、かかとの上げ下ろしや足首を回す運動をしてふくらはぎの血流を促す。",
+        "病院内は温度調節が難しいことがあるため、サッと羽織れるカーディガンなどを一枚持参する。"
+      ],
+      "uncertainty_unknowns": [],
+      "when_to_consult": [
+        "水分制限の指示を受けている場合は、持参する水分の量や種類について主治医に従う。"
+      ]
+    },
+    "S07_Where_to_Consult": {
+      "facts": [
+        "要介護1以上の認定を受けている場合、ケアプランに位置付けられていれば、介護保険を利用した「介護タクシー（通院等乗降介助）」を利用できる。",
+        "介護タクシーの運賃自体は全額自己負担となる。"
+      ],
+      "practical_guidance": [
+        "一人での通院が不安になってきたら、無理をせずに介護タクシーや自治体の移動支援制度の活用を検討する。"
+      ],
+      "uncertainty_unknowns": [
+        "自治体ごとに独自のタクシー利用券やボランティア送迎の条件が異なるため、一律のルールはない。"
+      ],
+      "when_to_consult": [
+        "通院の移動に不安を感じた時点で、まずは担当のケアマネジャーや地域包括支援センターに相談する。"
+      ]
+    }
+  },
+  
+  "policy_compliance": {
+    "meets_evidence_requirements": true,
+    "total_sources": 5,
+    "official_or_primary_sources": 3,
+    "medical_claims_verified": true,
+    "promises_no_cure_or_guarantee": true
+  },
+  
+  "lexicon_integration": {
+    "target_domain": "outing_readiness",
+    "required_keywords": ["外出", "買い物", "通院", "持ち物", "靴", "天気確認"]
+  }
+}

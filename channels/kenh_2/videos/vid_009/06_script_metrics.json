@@ -1,0 +1,15 @@
+{
+  "duration_validation": {
+    "target_min_chars": 3200,
+    "target_max_chars": 5760,
+    "planned_chars": 5280,
+    "actual_chars": 4016,
+    "status": "PASS",
+    "note": "Actual chars 4016 falls comfortably within the target [3200, 5760] range for safe TTS pace after surface normalization."
+  },
+  "opening_hook_passed": true,
+  "promise_payoff_rows": [4, 5, 6],
+  "cold_zone_warnings": 0,
+  "repeated_transition_warnings": 0,
+  "visual_pacing_notes": "Well varied hooks, softeners included natively in the text."
+}

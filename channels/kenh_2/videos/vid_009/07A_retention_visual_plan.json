@@ -1,0 +1,87 @@
+{
+  "effective_script_source": "06_script_canonical.json",
+  "opening_strategy": "everyday_mistake_reveal",
+  "hook_type": "self_check_question",
+  "viewer_question": "Why do I get so exhausted just from going to the clinic, and how can I prevent it?",
+  "allowed_non_linear_rows": [
+    1,
+    2,
+    3
+  ],
+  "tension_curve": "gentle_concern_to_calm_informational",
+  "daily_life_anchor": "frantically searching for health insurance card at the Japanese entryway (genkan)",
+  "thumbnail_emotion_hint": "gentle_concern",
+  "retention_beats": [
+    {
+      "unit_index": 1,
+      "script_alignment": "通院の日の朝、探し物をして焦ったり、待ち時間でぐったり疲れてしまったりしていませんか？",
+      "beat_type": "hook_question",
+      "viewer_question": "Do I do this too?",
+      "visual_goal": "Show a visibly senior character (65-75) looking stressed while rummaging through a bag in a Japanese entryway.",
+      "motion_goal": "frantic_search_micro",
+      "attention_target": "the messy bag and the stressed expression",
+      "tension_level": "gentle_concern",
+      "safety_guardrail": "No extreme panic, chest clutching, or falling. Just everyday mild frustration."
+    },
+    {
+      "unit_index": 2,
+      "script_alignment": "「あれ、保険証はどこにしまったかしら」と、玄関先で慌ててしまう方もいらっしゃるかもしれません。",
+      "beat_type": "relatable_scenario",
+      "viewer_question": "Yes, I often lose my insurance card. Is this dangerous?",
+      "visual_goal": "Close-up of weathered hands holding multiple disorganized cards and papers at the genkan.",
+      "motion_goal": "object_inspection_push",
+      "attention_target": "disorganized cards and papers",
+      "tension_level": "gentle_concern",
+      "safety_guardrail": "Maintain domestic safety, no medical emergency imagery."
+    },
+    {
+      "unit_index": 3,
+      "script_alignment": "予約の時間に遅れないようにと、つい足早になってしまうこともありますね。",
+      "beat_type": "consequence_hint",
+      "viewer_question": "What happens when I rush?",
+      "visual_goal": "Senior person putting on shoes hurriedly at the genkan, slightly off balance.",
+      "motion_goal": "daily_action_follow",
+      "attention_target": "rushed footwear action",
+      "tension_level": "mild_alert",
+      "safety_guardrail": "Do not show an actual fall. Just the visual cue of rushing."
+    }
+  ],
+  "row_visual_overrides": {
+    "1": {
+      "override_reason": "Non-linear visual needed to strongly anchor the emotional hook of 'exhausting hospital mornings' before explaining the details.",
+      "override_visual": "Split composition or quick sequence showing a messy bag vs a clock, implying feeling overwhelmed, rather than literally showing a hospital."
+    }
+  },
+  "motion_intents": [
+    "contrast",
+    "checklist"
+  ],
+  "title_thumbnail_angles": [
+    {
+      "ctr_psychology_angle": "self_relevance",
+      "viewer_question": "Why am I always so tired after the hospital?",
+      "script_alignment_reasoning": "Directly matches the opening hook about hospital fatigue.",
+      "safety_rationale": "Frames the issue as a practical fatigue problem, not a disease or medical emergency.",
+      "ctr_prediction_reasoning": "Resonates strongly with the elderly audience's lived experience of hospital visits being a full-day exhausting chore."
+    },
+    {
+      "ctr_psychology_angle": "number_anchor",
+      "viewer_question": "What 3 things should I prepare?",
+      "script_alignment_reasoning": "Highlights the 3 preparation steps mentioned in the script.",
+      "safety_rationale": "Actionable, non-medical checklist.",
+      "ctr_prediction_reasoning": "Numbered lists provide a clear promise of value and easy consumption."
+    }
+  ],
+  "safety_guardrails": [
+    "No extreme panic, chest clutching, or falling.",
+    "Maintain domestic safety, no medical emergency imagery.",
+    "Do not show an actual fall. Just the visual cue of rushing.",
+    "Characters must explicitly show senior age cues (gray hair, wrinkles, mature posture) per the visual profile."
+  ],
+  "qc_checks": [
+    "Does the visual for row 1 show relatable daily frustration without medical panic?",
+    "Are the characters visibly senior (65-75) with gray hair and wrinkles per the visual profile?",
+    "Is the environment a clear Japanese domestic entryway (genkan)?",
+    "Is the visual plan non-linear only for the allowed opening rows (1-3)?"
+  ]
+}

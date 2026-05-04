@@ -1,0 +1,208 @@
+{
+  "project_id": "kenh_2_vid_009",
+  "channel_id": "kenh_2",
+  "pipeline_step": "02_topic_strategy",
+  "generated_at": "2026-05-03T13:21:18+07:00",
+  "source_files": [
+    "core/system_principles.md",
+    "core/topic_strategy_standard.md",
+    "core/policy_guardrails.md",
+    "channels/kenh_2/videos/vid_009/01_intake_spec.json",
+    "channels/kenh_2/00_editorial_profile.json",
+    "channels/kenh_2/00_publication_profile.json"
+  ],
+
+  "topic_cluster": "hospital and outings",
+  "topic_angle": "病院に行く日に慌てないための準備",
+  "topic_angle_en": "Preparation so you don't panic on the day you go to the hospital",
+
+  "target_viewer": {
+    "age_band": "60+",
+    "living_situation": "lives alone or with minimal daily support",
+    "locale": "Japan, national neutral",
+    "daily_context": "Has scheduled or occasional hospital visits. Often feels anxious about forgetting things, missing the bus, or getting tired in the waiting room.",
+    "information_need": "wants a calm, practical checklist of things to prepare the night before and the morning of the visit to ensure a smooth, safe outing."
+  },
+
+  "viewer_problem": "病院に行く日は、忘れ物がないか、時間に間に合うかと朝から焦ってしまい、転倒や疲労の原因になりがちです。当日慌てないための具体的な準備ポイントを知りたいと感じています。",
+  "viewer_problem_en": "On hospital visit days, rushing in the morning out of fear of forgetting things or being late often causes fatigue or even falls. Seniors want specific preparation tips to avoid panicking on the day of the visit.",
+
+  "working_promise": "通院日に慌てず安全に出かけられるよう、前日の準備と当日の見直しポイントを一緒に確認していきます。少しの工夫で通院の疲れを和らげる内容です。",
+  "working_promise_en": "We will walk through preparation points for the day before and the morning of a hospital visit so you can leave home calmly and safely. Simple adjustments to reduce the fatigue of hospital visits.",
+
+  "safe_claim_boundary": {
+    "this_video_claims": [
+      "前日に持ち物をまとめることで当日の焦りを減らせる",
+      "脱ぎ着しやすい服や歩きやすい靴を選ぶと診察がスムーズになり、転倒予防にもなる",
+      "待ち時間の寒さ対策や水分補給の準備が疲労軽減につながる",
+      "無理をして一人で行かず、必要な時はサポートを頼むのが大切"
+    ],
+    "this_video_does_NOT_claim": [
+      "これを見れば絶対に忘れ物をしない",
+      "この通りにすれば絶対に転ばない",
+      "病気が治る・通院が不要になる",
+      "病院の待ち時間が必ず短くなる"
+    ]
+  },
+
+  "forbidden_claims": [
+    "「これで事故ゼロ」—guaranteed accident prevention",
+    "「絶対に転ばない」—absolute fall prevention promise",
+    "「通院のストレスが完全に消える」—complete stress elimination",
+    "「医者は教えてくれない通院の秘密」—anti-doctor conspiracy framing",
+    "「これだけで十分です」—sufficiency guarantee"
+  ],
+
+  "research_questions": [
+    {
+      "id": "RQ1",
+      "question": "高齢者の通院・外出時における主な転倒・事故の原因（消費者庁や東京消防庁のデータ）",
+      "question_en": "Leading causes of falls/accidents among seniors during hospital visits or outings (Consumer Affairs Agency / Tokyo Fire Dept)",
+      "source_type_expected": "official statistics"
+    },
+    {
+      "id": "RQ2",
+      "question": "通院時の持ち物チェックリストに関する自治体や医療機関の推奨（お薬手帳、保険証、メモ等）",
+      "question_en": "Municipal or medical institution recommendations for hospital visit checklists (medication notebook, insurance card, memo)",
+      "source_type_expected": "medical institution guide, municipal health page"
+    },
+    {
+      "id": "RQ3",
+      "question": "高齢者の外出時の靴や服装選びの安全基準（転倒予防ガイドライン等）",
+      "question_en": "Safety standards for seniors' footwear and clothing when going out (fall prevention guidelines)",
+      "source_type_expected": "government guideline, physical therapy association"
+    },
+    {
+      "id": "RQ4",
+      "question": "病院の待合室での疲労軽減・エコノミークラス症候群予防・水分補給に関する医学的推奨",
+      "question_en": "Medical recommendations for reducing fatigue, preventing economy class syndrome, and hydration in hospital waiting rooms",
+      "source_type_expected": "medical society guideline, health ministry"
+    },
+    {
+      "id": "RQ5",
+      "question": "通院サポート（介護タクシーや自治体の移動支援制度）の概要と利用条件",
+      "question_en": "Overview and conditions for using hospital visit support (care taxis, municipal transportation support)",
+      "source_type_expected": "government official page, care insurance resource"
+    }
+  ],
+
+  "planned_sections": [
+    {
+      "section_id": "S01",
+      "label": "オープニング — 通院の日の朝、焦っていませんか？",
+      "label_en": "Opening — Are you rushing on the morning of a hospital visit?",
+      "purpose": "soft hook with a relatable domestic scene (looking for an insurance card or rushing out)",
+      "estimated_duration_sec": 90,
+      "editorial_note": "relatable stress of hospital days; no fear framing"
+    },
+    {
+      "section_id": "S02",
+      "label": "なぜ通院日に事故が起きやすいのか",
+      "label_en": "Why accidents easily happen on hospital days",
+      "purpose": "provide brief factual context about rushing and fatigue causing falls",
+      "estimated_duration_sec": 120,
+      "editorial_note": "cite statistics calmly; emphasize that rushing leads to tripping at the entryway or steps"
+    },
+    {
+      "section_id": "S03",
+      "label": "見直し①：前日までに「通院セット」をまとめる",
+      "label_en": "Check 1: Pack a 'hospital set' by the day before",
+      "purpose": "first check item — grouping insurance card, medication notebook, appointment slip, and a memo for the doctor",
+      "estimated_duration_sec": 180,
+      "editorial_note": "object-focused shots of a designated bag and cards; reduces morning cognitive load"
+    },
+    {
+      "section_id": "S04",
+      "label": "見直し②：着脱しやすい服と安全な靴",
+      "label_en": "Check 2: Easy-to-remove clothing and safe shoes",
+      "purpose": "second check item — practical wardrobe choices for examinations and safe walking",
+      "estimated_duration_sec": 180,
+      "editorial_note": "mention avoiding tight sleeves if blood drawn, and slip-on shoes that won't fall off; focus on fall prevention"
+    },
+    {
+      "section_id": "S05",
+      "label": "見直し③：待ち時間をラクにする工夫",
+      "label_en": "Check 3: Ideas to make waiting time easier",
+      "purpose": "third check item — temperature control (cardigan) and hydration (small water bottle)",
+      "estimated_duration_sec": 180,
+      "editorial_note": "hospitals can be cold; staying hydrated prevents fatigue and other risks"
+    },
+    {
+      "section_id": "S06",
+      "label": "before-after イメージ — 焦る朝と落ち着いた朝",
+      "label_en": "Before-after image — a rushed morning vs a calm morning",
+      "purpose": "visual comparison showing the entryway departure",
+      "estimated_duration_sec": 90,
+      "editorial_note": "illustrated before-after side by side; contrast searching for keys vs grabbing the ready bag"
+    },
+    {
+      "section_id": "S07",
+      "label": "一人で難しい場合は — 移動支援の活用",
+      "label_en": "When it is hard to do alone — using transportation support",
+      "purpose": "when to ask family, care taxi, or municipality for help",
+      "estimated_duration_sec": 90,
+      "editorial_note": "mention care insurance and local support; soft consult-a-professional framing"
+    },
+    {
+      "section_id": "S08",
+      "label": "まとめ — 安全第一で無理なく出かけましょう",
+      "label_en": "Wrap-up — go out safely without overexerting",
+      "purpose": "calm reassuring close with recap of the points",
+      "estimated_duration_sec": 60,
+      "editorial_note": "encourage taking it one step at a time; acknowledge that just preparing the bag is a great start"
+    }
+  ],
+
+  "total_estimated_duration_sec": 990,
+  "total_estimated_duration_min": 16.5,
+  "duration_within_target": true,
+  "duration_target": "10-18 min",
+
+  "packaging_seeds_longform": {
+    "title_candidates": [
+      "病院に行く日に慌てないための準備3つ【60代・70代の暮らし】",
+      "通院の朝、焦らないために。見直したい持ち物と服装",
+      "シニアの通院準備 安全に、少しでもラクに出かける工夫"
+    ],
+    "thumbnail_concept": {
+      "scene": "illustrated close-up of a neat 'hospital bag' with a medication notebook and a warm cardigan next to safe walking shoes at the entryway — warm tones, retro-clean 2D style",
+      "text_overlay": "通院の朝 慌てない準備",
+      "text_word_count": 4,
+      "emotion": "warm_reassuring",
+      "host_presence": "optional — may appear in small corner or absent"
+    },
+    "description_seed": "病院に行く日の朝、探し物で焦っていませんか？通院の疲れを和らげ、安全に出かけるための準備ポイントを3つに絞ってお話しします。持ち物、服装、待ち時間の工夫など、今日からできる見直しです。※この動画は情報提供を目的としたものです。"
+  },
+
+  "packaging_seeds_shorts": {
+    "enabled": false,
+    "count": 0,
+    "override_reason": "video-level directive: long-form only, do not derive shorts",
+    "placeholder_concepts": [
+      {
+        "shorts_id": "placeholder_S1",
+        "concept": "「通院の服、袖はまくりやすいですか？」— 15-second clothing quick check",
+        "note": "NOT produced for this video; retained as future reference only"
+      },
+      {
+        "shorts_id": "placeholder_S2",
+        "concept": "「お薬手帳は前日にバッグへ」— 15-second packing tip",
+        "note": "NOT produced for this video; retained as future reference only"
+      }
+    ]
+  },
+
+  "hook_type_seed": "self_check_question",
+  "viewer_question": "通院の日の朝、探し物をして焦ったり、待ち時間でぐったり疲れてしまったりしていませんか？",
+  "opening_visual_seed": "A senior looking slightly flustered at the entryway holding a hospital appointment slip but missing something, then transitioning to a calm scene with a prepared bag.",
+  "thumbnail_emotion_hint": "warm_reassuring_not_alarming",
+
+  "notes_for_research": [
+    "RQ1 — prioritize Consumer Affairs Agency (消費者庁) or similar traffic/fall statistics for seniors rushing in the morning",
+    "RQ2 — look for simple visual checklists provided by local clinics or municipalities regarding what to bring",
+    "RQ3 — reference physical therapy associations on safe footwear for seniors (e.g. avoiding slip-ons that are too loose, choosing secure but easy-to-wear shoes)",
+    "RQ4 — hydration and temperature management are key for seniors in waiting rooms; reference geriatric medicine guidelines",
+    "RQ5 — briefly outline that care taxis (介護タクシー) or municipal volunteer transport exist so viewers know they have options",
+    "General — maintain a supportive tone; the goal is reducing cognitive load and physical fatigue on hospital days"
+  ]
+}
