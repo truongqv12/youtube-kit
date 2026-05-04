@@ -1,0 +1,197 @@
+{
+  "project_id": "kenh_2_vid_010",
+  "channel_id": "kenh_2",
+  "pipeline_step": "10_publication_package",
+  "generated_at": "2026-05-04T16:42:12+07:00",
+  "search_gate_summary": {
+    "web_access_detected": true,
+    "market_scan_examples_count": 8,
+    "close_or_adjacent_examples_count": 8,
+    "examples": [
+      {
+        "title": "外出がもっと楽しくなる！高齢者の持ち物チェックリスト",
+        "source_type": "YouTube result",
+        "pattern": "direct checklist promise for seniors",
+        "relevance": "close"
+      },
+      {
+        "title": "知らないと損！病院の診察で後悔しない完全準備ガイド",
+        "source_type": "YouTube result",
+        "pattern": "hospital-prep guide with stronger loss-framing",
+        "relevance": "close but stronger than this channel should use"
+      },
+      {
+        "title": "【保存版】高齢者がバッグに入れるべき安心アイテム15選",
+        "source_type": "YouTube result",
+        "pattern": "saved-version + number anchor + safety items",
+        "relevance": "close"
+      },
+      {
+        "title": "【完全版】ばあちゃんが解説！これで旅行が楽しめる！必要物品とパッキング",
+        "source_type": "YouTube result",
+        "pattern": "older host credibility + complete packing guide",
+        "relevance": "adjacent"
+      },
+      {
+        "title": "【80代ばあちゃん】愛用するお気に入りのバッグを紹介",
+        "source_type": "YouTube result",
+        "pattern": "senior personal bag content, soft self-relevance",
+        "relevance": "adjacent"
+      },
+      {
+        "title": "【バッグの中身】目的でパターンを決めるバッグと持ち物",
+        "source_type": "YouTube result",
+        "pattern": "bag contents organized by use case",
+        "relevance": "adjacent"
+      },
+      {
+        "title": "【100均DIY】介護バッグの作り方",
+        "source_type": "YouTube result",
+        "pattern": "care bag utility angle",
+        "relevance": "adjacent"
+      },
+      {
+        "title": "老人ホームの持ち物チェックリスト【必須＆あると便利】2025",
+        "source_type": "YouTube adjacent result",
+        "pattern": "checklist with essential/convenient contrast",
+        "relevance": "adjacent"
+      }
+    ],
+    "official_guidance_sources": [
+      {
+        "id": "YG1",
+        "title": "YouTube Help — Thumbnail & title tips",
+        "url": "https://support.google.com/youtube/answer/12340300?hl=en",
+        "takeaway": "Target the viewer clearly; text should be easy to read."
+      },
+      {
+        "id": "YG2",
+        "title": "YouTube Help — Spam, deceptive practices, & scams policies",
+        "url": "https://support.google.com/youtube/answer/2801973?hl=en",
+        "takeaway": "Titles and thumbnails must not mislead viewers about what appears in the video."
+      },
+      {
+        "id": "YG3",
+        "title": "Digital Agency Japan — Web Accessibility Statement",
+        "url": "https://www.digital.go.jp/en/accessibility-statement",
+        "takeaway": "Use JIS/WCAG accessibility thinking for older viewers and readable text."
+      },
+      {
+        "id": "YG4",
+        "title": "MEXT — Web Accessibility",
+        "url": "https://www.mext.go.jp/en/other/title01/detail01/1375288.htm",
+        "takeaway": "Readable images require good contrast and readable font choices."
+      }
+    ],
+    "observed_patterns": [
+      "Numbered checklist titles are common for possession/preparation topics.",
+      "Words like 保存版 and 完全版 are common but can feel too broad or heavy for this calm channel.",
+      "Senior bag-content videos often use direct object imagery and simple text.",
+      "Hospital-prep titles can become too fear-based; this package should soften the hook."
+    ],
+    "recommended_patterns_for_channel": [
+      "Use a number anchor with a clear hospital-visit context.",
+      "Keep thumbnail text to two or three short Japanese words.",
+      "Show a clinic bag, card pouch, and medicine notebook-like object, not a hospital emergency.",
+      "Use gentle_concern emotion rather than shock."
+    ],
+    "patterns_to_avoid": [
+      "知らないと損 used too strongly",
+      "医者は教えてくれない",
+      "絶対忘れない",
+      "panic face or red emergency marks",
+      "fake readable insurance cards"
+    ]
+  },
+  "title_candidates": [
+    {
+      "title_ja": "通院の日の持ち物チェック5つ",
+      "title_vi": "5 món/nhóm đồ cần kiểm tra vào ngày đi khám",
+      "ctr_psychology_angle": "number_anchor",
+      "viewer_question": "通院の日の朝、何を持てば受付から帰り道まで落ち着いて過ごせるのか？",
+      "script_alignment_reasoning": "The script is explicitly organized into five item groups.",
+      "safety_rationale": "Checklist wording avoids guaranteed prevention or medical promises.",
+      "ctr_prediction_reasoning": "Market scan shows checklist and number-anchor topics are clear for preparation content; this is the cleanest and least misleading."
+    },
+    {
+      "title_ja": "病院に行く朝、まず確認したい持ち物",
+      "title_vi": "Sáng đi bệnh viện, nên kiểm tra đồ gì trước?",
+      "ctr_psychology_angle": "self_relevance",
+      "viewer_question": "What should I check before leaving home?",
+      "script_alignment_reasoning": "Matches the opening scene of searching the bag at the genkan.",
+      "safety_rationale": "Soft daily routine framing, no fear inflation.",
+      "ctr_prediction_reasoning": "Strong self-relevance for viewers who have felt rushed before appointments."
+    },
+    {
+      "title_ja": "60代からの通院バッグの整え方",
+      "title_vi": "Cách chuẩn bị túi đi khám từ tuổi 60",
+      "ctr_psychology_angle": "specificity",
+      "viewer_question": "How should I organize my clinic bag at my age?",
+      "script_alignment_reasoning": "The script repeatedly anchors to senior hospital outings and bag organization.",
+      "safety_rationale": "Age anchor reflects audience, not a medical claim.",
+      "ctr_prediction_reasoning": "Likely lower urgency but strong fit for channel trust and repeat viewers."
+    }
+  ],
+  "thumbnail_candidates": [
+    {
+      "concept_id": "T1",
+      "thumbnail_text_ja": "忘れ物チェック",
+      "thumbnail_text_vi": "Kiểm tra đồ quên",
+      "emotion_level": "gentle_concern",
+      "visual_concept": "Senior Japanese person at a genkan looking at an open clinic bag, with a pouch and medicine notebook-like object visible but no readable text.",
+      "viewer_question": "Did I forget something before going to the clinic?",
+      "script_alignment_reasoning": "Directly matches the first three canonical units and Step 07A hook.",
+      "safety_rationale": "Everyday concern only, no fall or emergency.",
+      "ctr_prediction_reasoning": "Clear object-based scene plus short text should be readable for older viewers."
+    },
+    {
+      "concept_id": "T2",
+      "thumbnail_text_ja": "通院5点",
+      "thumbnail_text_vi": "5 nhóm đồ đi khám",
+      "emotion_level": "calm_informational",
+      "visual_concept": "Five small unlabeled pouches arranged neatly on a table beside a clinic bag.",
+      "viewer_question": "What are the five things?",
+      "script_alignment_reasoning": "Matches the five-check script structure.",
+      "safety_rationale": "Most neutral and least alarming concept.",
+      "ctr_prediction_reasoning": "Numbered thumbnail text may perform well in checklist markets, though less emotional than T1."
+    },
+    {
+      "concept_id": "T3",
+      "thumbnail_text_ja": "朝あわてない",
+      "thumbnail_text_vi": "Sáng không vội",
+      "emotion_level": "gentle_concern",
+      "visual_concept": "Before-after style split without readable text: scattered cards on one side, prepared bag on the other.",
+      "viewer_question": "How can I avoid rushing on clinic morning?",
+      "script_alignment_reasoning": "Matches script payoff: prepare the night before and place the bag near the genkan.",
+      "safety_rationale": "No emergency or guarantee; only a preparation contrast.",
+      "ctr_prediction_reasoning": "Contrast thumbnails are common and can quickly communicate the transformation."
+    }
+  ],
+  "selected_package": {
+    "selected_title_ja": "通院の日の持ち物チェック5つ",
+    "selected_title_vi": "5 món/nhóm đồ cần kiểm tra vào ngày đi khám",
+    "selected_thumbnail_concept_id": "T1",
+    "selected_thumbnail_text_ja": "忘れ物チェック",
+    "description_ja": "通院の日の朝、診察券やお薬手帳を探して慌ててしまうことはありませんか。\nこの動画では、受付で必要なもの、診察で伝えるもの、待ち時間を少し楽にするもの、帰り道まで安心して過ごすためのものを、五つのまとまりで確認します。\n\nご紹介する内容は、毎日の暮らしの中でできる準備の見直しです。薬や水分制限などについて不安がある場合は、主治医や薬剤師にご相談ください。\n\n#通院準備 #シニアの暮らし #お薬手帳 #持ち物チェック #ひとり暮らし",
+    "description_vi": "Mô tả nhấn vào việc chuẩn bị đồ đi khám theo 5 nhóm: giấy tờ tiếp nhận, sổ thuốc, ghi chú trao đổi với bác sĩ, đồ dùng khi chờ, và đồ hỗ trợ đường về. Có disclaimer mềm về thuốc và hạn chế nước.",
+    "thumbnail_prompt_nano": "Generate a YouTube thumbnail in retro-clean 2D illustrated lifestyle handbook style. A clearly senior Japanese person with gray hair and gentle concern stands at a Japanese genkan beside an open clinic bag, a blank card pouch, and a medicine notebook-like object. Large readable Japanese thumbnail text: 忘れ物チェック. Warm soft colors, high readability, simple composition, no fake official document details, no panic, no medical emergency.",
+    "why_selected": "The number-anchor title states the exact value of the script, while the thumbnail answers the opening viewer question about forgetting items on a clinic morning. It is specific enough for click clarity and calm enough for the channel's safety tone."
+  },
+  "shorts_derivatives": [],
+  "shorts_override_reason": "Video-level publication_goals.derive_shorts is 0 and special_notes say long-form only; do not derive shorts.",
+  "tags_ja": [
+    "通院準備",
+    "持ち物チェック",
+    "シニアの暮らし",
+    "お薬手帳",
+    "高齢者 外出",
+    "ひとり暮らし",
+    "病院 持ち物"
+  ],
+  "upload_notes_vi": [
+    "Dùng thumbnail T1 nếu muốn CTR tốt nhưng vẫn nhẹ nhàng.",
+    "Không dùng chữ đỏ quá gắt hoặc mặt hoảng loạn.",
+    "Nếu làm A/B, thử T2 với title số 5 để đo nhóm khán giả thích checklist thuần."
+  ],
+  "policy_qc": "PASS"
+}

@@ -1,0 +1,152 @@
+{
+  "project_id": "kenh_1_vid_003",
+  "research_scope": "Persistent morning sluggishness in Japanese seniors, differentiated from earlier videos about rising mechanics, hydration, breakfast, cold water, inactivity, rushing, or overpacked schedules.",
+  "source_requirements": {
+    "min_sources": 5,
+    "min_official_or_primary": 3,
+    "actual_sources": 9,
+    "official_or_primary_count": 9
+  },
+  "facts": [
+    {
+      "claim": "Morning light helps adjust the body clock and can support waking rhythm.",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "claim": "Evening and bedroom light, including smartphone/tablet light, can delay circadian rhythm and disturb sleep readiness.",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "claim": "Sleep problems can contribute to daytime sleepiness, fatigue, attention problems, and lower quality of life.",
+      "source_ids": [
+        "S2",
+        "S3",
+        "S4"
+      ]
+    },
+    {
+      "claim": "Morning fatigue with strong sleepiness can be related to sleep disorders, medication side effects, or mental health conditions, not only age.",
+      "source_ids": [
+        "S3",
+        "S4",
+        "S5"
+      ]
+    },
+    {
+      "claim": "High-risk clues such as loud snoring, witnessed pauses in breathing, non-restorative sleep, morning headache, and marked daytime sleepiness can suggest sleep apnea and should be discussed clinically.",
+      "source_ids": [
+        "S6"
+      ]
+    },
+    {
+      "claim": "Appetite loss or unintentional weight change in older adults should not be dismissed as just age.",
+      "source_ids": [
+        "S7"
+      ]
+    }
+  ],
+  "practical_guidance_supported": [
+    "After waking, open curtains and bring daylight into the room; if standing is difficult, sit safely near a bright window first.",
+    "Keep the wake-up time reasonably stable rather than forcing a very early schedule.",
+    "At night, reduce strong white/blue light and avoid taking a smartphone or tablet into bed when possible.",
+    "Make the sleep environment dark, quiet, and comfortable; use curtains or bedding/air conditioning/heating as needed.",
+    "If sluggishness continues, keep a simple note of sleep time, wake time, snoring reports, morning headache, daytime sleepiness, appetite, weight, mood, and medication timing."
+  ],
+  "uncertainty_unknowns": [
+    "A video cannot identify the cause of an individual viewer's morning fatigue.",
+    "Morning light is helpful for many body-clock issues, but older adults who already become sleepy too early in the evening should avoid forcing very early bright-light exposure without professional advice.",
+    "The correct response depends on medications, chronic illness, sleep disorder risk, mental health, and recent health changes."
+  ],
+  "when_to_ask_a_clinician": [
+    "Strong morning fatigue persists despite sleep-environment adjustments.",
+    "Family notices loud snoring, choking, or pauses in breathing during sleep.",
+    "Morning headache, severe daytime sleepiness, or unintended dozing occurs.",
+    "Chest pain, breathlessness, marked dizziness, loss of appetite, weight change, or deep low mood appears.",
+    "Medication was recently changed or morning sluggishness may match medication timing."
+  ],
+  "non_overlap_notes": {
+    "vid_001": "Do not teach slow rising, bed stretches, or first glass of water as the main solution.",
+    "vid_002": "Do not retell breakfast, water temperature, sitting still, rushing, or schedule overload habits.",
+    "vid_003": "Focus on body-clock light, night sleep environment, and clinical-consultation signals."
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "type": "official",
+      "title": "快眠と生活習慣 - 健康日本21アクション支援システム",
+      "publisher": "厚生労働省系 健康日本21アクション支援システム / e-ヘルスネット",
+      "url": "https://kennet.mhlw.go.jp/information/information/heart/k-01-004.html",
+      "used_for": "朝に光を浴びること、夕方以降の光やスマートフォン光が体内時計を遅らせること、カーテンを開ける実用策。"
+    },
+    {
+      "id": "S2",
+      "type": "official",
+      "title": "健康づくりのための睡眠ガイド2023",
+      "publisher": "厚生労働省",
+      "url": "https://www.mhlw.go.jp/content/10904750/001181265.pdf",
+      "used_for": "睡眠不足と疲労・眠気、光環境、寝室の明るさ・温度・騒音、就寝前の入浴タイミングに関するガイド。"
+    },
+    {
+      "id": "S3",
+      "type": "official",
+      "title": "睡眠障害 キーワード - 生活習慣病などの情報",
+      "publisher": "厚生労働省系 健康日本21アクション支援システム / e-ヘルスネット",
+      "url": "https://kennet.mhlw.go.jp/information/information/keywords/sleep-disorder.html",
+      "used_for": "日中の眠気は睡眠不足だけでなく睡眠障害、薬剤副作用、うつ病などでも起こること。強い眠気では診察・検査が重要。"
+    },
+    {
+      "id": "S4",
+      "type": "official",
+      "title": "昼間の眠気 – 睡眠不足だけではなく睡眠･覚醒障害にも注意が必要",
+      "publisher": "厚生労働省系 健康日本21アクション支援システム / e-ヘルスネット",
+      "url": "https://kennet.mhlw.go.jp/information/information/heart/k-02-002.html",
+      "used_for": "眠気の原因は複数で、強い昼間の眠気や居眠りで生活に支障がある場合は睡眠障害専門の医療機関で検査・治療を受けること。"
+    },
+    {
+      "id": "S5",
+      "type": "official",
+      "title": "概日リズム睡眠・覚醒障害",
+      "publisher": "厚生労働省系 健康日本21アクション支援システム / e-ヘルスネット",
+      "url": "https://kennet.mhlw.go.jp/information/information/heart/k-02-006.html",
+      "used_for": "体内時計の障害では眠気・不眠・倦怠感などが起こり得ること、専門医相談が必要な場合。"
+    },
+    {
+      "id": "S6",
+      "type": "primary",
+      "title": "高齢者の睡眠時無呼吸症候群(OSAS)の診療",
+      "publisher": "国立長寿医療研究センター",
+      "url": "https://www.ncgg.go.jp/hospital/iryokankei/letter/012.html",
+      "used_for": "高齢者の睡眠時無呼吸症候群で大きないびき、熟睡感の欠如、全身倦怠感、朝の頭痛、日中の眠気などが見られること。"
+    },
+    {
+      "id": "S7",
+      "type": "primary",
+      "title": "高齢者の食欲低下について",
+      "publisher": "国立長寿医療研究センター",
+      "url": "https://www.ncgg.go.jp/hospital/navi/33.html",
+      "used_for": "高齢者では食欲低下や体重減少の背景に疾患が隠れることがあり、早めの検査が大切という相談目安。"
+    },
+    {
+      "id": "S8",
+      "type": "official_platform",
+      "title": "Thumbnail & title tips",
+      "publisher": "YouTube Help",
+      "url": "https://support.google.com/youtube/answer/12340300?hl=en",
+      "used_for": "視聴者と発見経路を考えたタイトル、サムネイル・タイトルのレビュー、投稿後のAnalytics確認。"
+    },
+    {
+      "id": "S9",
+      "type": "official_platform",
+      "title": "Thumbnails policy",
+      "publisher": "YouTube Help",
+      "url": "https://support.google.com/youtube/answer/9229980?hl=en",
+      "used_for": "サムネイルはコミュニティガイドラインに沿い、有害・危険・誤解を招く表現を避ける。"
+    }
+  ]
+}

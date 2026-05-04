@@ -1,0 +1,92 @@
+{
+  "effective_script_source": "06_script_canonical.json",
+  "opening_strategy": "self_check_question_with_everyday_heaviness",
+  "hook_type": "self_check_question",
+  "viewer_question": "Why does my body feel heavy in the morning even after I think I slept?",
+  "allowed_non_linear_rows": [
+    0,
+    1,
+    2
+  ],
+  "tension_curve": "gentle_concern_to_calm_informational",
+  "daily_life_anchor": "older Japanese viewer sitting quietly in a dim morning bedroom before opening the curtains",
+  "thumbnail_emotion_hint": "gentle_concern",
+  "retention_beats": [
+    {
+      "unit_index": 0,
+      "script_alignment": "朝、目が覚めた瞬間から、もう体が重い。",
+      "beat_type": "hook_question",
+      "viewer_question": "Is this the heavy morning feeling I have?",
+      "visual_goal": "Show a visibly elderly Japanese woman sitting on the bed edge in a dim room, calm heaviness but no panic.",
+      "motion_goal": "slow_attention_pull_to_tired_posture",
+      "attention_target": "the slightly slumped posture in the dim morning room",
+      "tension_level": "gentle_concern",
+      "safety_guardrail": "No collapse, no emergency, no exaggerated sickness."
+    },
+    {
+      "unit_index": 1,
+      "script_alignment": "布団の中で十分休んだはずなのに、起きる気力がなかなか湧いてこない。",
+      "beat_type": "relatable_scenario",
+      "viewer_question": "Why am I not refreshed?",
+      "visual_goal": "Bedside scene with rumpled bedding and soft dawn light behind closed curtains.",
+      "motion_goal": "object_and_light_micro_shift",
+      "attention_target": "closed curtains and rumpled bedding",
+      "tension_level": "gentle_concern",
+      "safety_guardrail": "Keep calm domestic mood."
+    },
+    {
+      "unit_index": 2,
+      "script_alignment": "そんな朝が、何日も続いていませんか。",
+      "beat_type": "pattern_confirmation",
+      "viewer_question": "It has continued for days — should I review something?",
+      "visual_goal": "Small calendar and morning cup on a Japanese bedside table without readable text.",
+      "motion_goal": "quiet_repeat_pattern_cue",
+      "attention_target": "the repeated-morning bedside arrangement",
+      "tension_level": "gentle_concern",
+      "safety_guardrail": "No visible dates or numbers."
+    }
+  ],
+  "row_visual_overrides": {
+    "0": {
+      "override_reason": "Opening row can show the heavy morning feeling more concretely than the literal phrase alone.",
+      "override_visual": "Dim bedroom, senior posture, dawn light not yet entering fully."
+    }
+  },
+  "motion_intents": [
+    "danger_reveal",
+    "near_miss",
+    "contrast",
+    "checklist",
+    "expert_emphasis",
+    "solution_demo"
+  ],
+  "title_thumbnail_angles": [
+    {
+      "ctr_psychology_angle": "self_relevance",
+      "viewer_question": "Why am I still heavy in the morning?",
+      "script_alignment_reasoning": "Matches the first hook line and the three-point review payoff.",
+      "safety_rationale": "Frames a common daily problem without diagnosing disease.",
+      "ctr_prediction_reasoning": "Self-check wording fits senior health channels while avoiding panic bait."
+    },
+    {
+      "ctr_psychology_angle": "number_anchor",
+      "viewer_question": "What three things should I review?",
+      "script_alignment_reasoning": "Directly matches the script's three-part structure.",
+      "safety_rationale": "Clear checklist framing without promising a cure.",
+      "ctr_prediction_reasoning": "Numbered review points reduce cognitive load for senior viewers."
+    }
+  ],
+  "safety_guardrails": [
+    "No diagnosis imagery, hospital emergency, oxygen mask, collapse, choking panic, or body-horror medical visuals.",
+    "Characters must visibly read as 60+ with gray hair, wrinkles, age-appropriate posture, and weathered hands.",
+    "Visuals must stay Japanese domestic or calm clinic-consultation context.",
+    "No non-linear retention visual outside rows 0-2.",
+    "Consultation-record rows use notebook and calm clinic/home cues, not panic diagnosis visuals.",
+    "Consultation-record rows use notebook and calm clinic/home cues, not panic diagnosis visuals."
+  ],
+  "qc_checks": [
+    "Opening rows show heavy morning feeling, not a fall or acute illness.",
+    "Visual plan does not duplicate vid_001 or vid_002 core scenes.",
+    "Thumbnail emotion stays gentle_concern."
+  ]
+}

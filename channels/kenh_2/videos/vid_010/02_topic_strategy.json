@@ -1,0 +1,186 @@
+{
+  "project_id": "kenh_2_vid_010",
+  "channel_id": "kenh_2",
+  "pipeline_step": "02_topic_strategy",
+  "generated_at": "2026-05-04T16:42:12+07:00",
+  "source_files": [
+    "core/system_principles.md",
+    "core/topic_strategy_standard.md",
+    "core/policy_guardrails.md",
+    "channels/kenh_2/videos/vid_010/01_intake_spec.json",
+    "channels/kenh_2/00_editorial_profile.json",
+    "channels/kenh_2/00_publication_profile.json"
+  ],
+  "topic_cluster": "hospital and outings",
+  "topic_angle": "通院の日の持ち物チェック5つ",
+  "topic_angle_en": "Five-item checklist for what to bring on a hospital visit day",
+  "target_viewer": {
+    "age_band": "60+",
+    "living_situation": "lives alone or handles hospital visits mostly by themselves",
+    "locale": "Japan, national neutral",
+    "daily_context": "Has regular hospital or clinic visits and worries about forgetting cards, medicine information, or small items while rushing in the morning.",
+    "information_need": "wants a calm, easy-to-follow checklist that can be prepared the day before."
+  },
+  "viewer_problem": "通院の日の朝は、保険の確認、診察券、お薬手帳、質問メモなどがばらばらになり、出発前から焦ってしまうことがあります。焦りや荷物の持ちにくさが、疲れやつまずきにもつながりやすいと感じています。",
+  "viewer_problem_en": "On hospital visit mornings, insurance confirmation, appointment cards, medication notebook, and notes can be scattered, causing rushing before leaving home. The rushing and awkward bag handling can contribute to fatigue and tripping.",
+  "working_promise": "通院の日に慌てず出かけられるよう、前日までにまとめたい持ち物を五つに分けて、受付、診察、待ち時間、帰り道まで確認します。",
+  "working_promise_en": "Organize five groups of items to prepare before a hospital visit, covering reception, consultation, waiting time, and the return trip.",
+  "safe_claim_boundary": {
+    "this_video_claims": [
+      "持ち物を前日にまとめると、当日の探し物と焦りを減らしやすい",
+      "マイナ保険証または資格確認書、診察券、予約票などは受付で必要になりやすい",
+      "お薬手帳を一冊にまとめると、医師や薬剤師が薬の情報を確認しやすい",
+      "水分や羽織もの、連絡先などの準備は、待ち時間と帰り道の負担を軽くする助けになる",
+      "歩きやすい靴と両手が使えるバッグは、外出時の安全確認に役立つ"
+    ],
+    "this_video_does_NOT_claim": [
+      "この五つを持てば絶対に忘れ物をしない",
+      "この通りにすれば転倒や事故を必ず防げる",
+      "医師の診察や薬剤師の確認が不要になる",
+      "病気が治る、通院回数を減らせる、待ち時間を短くできる"
+    ]
+  },
+  "forbidden_claims": [
+    "絶対に忘れない",
+    "事故ゼロ",
+    "通院が不要になる",
+    "医者は教えてくれない",
+    "これだけで十分"
+  ],
+  "research_questions": [
+    {
+      "id": "RQ1",
+      "question": "通院受付で基本になる保険確認書類は何か。マイナ保険証、資格確認書、診察券の扱いはどう説明すべきか。",
+      "source_type_expected": "Japan official health ministry guidance"
+    },
+    {
+      "id": "RQ2",
+      "question": "お薬手帳を一冊にまとめる理由と、薬やサプリの情報共有で注意すべき点は何か。",
+      "source_type_expected": "health ministry or pharmacy association guidance"
+    },
+    {
+      "id": "RQ3",
+      "question": "高齢者の外出時の転倒予防に関して、靴や荷物の持ち方で安全に触れられる範囲はどこか。",
+      "source_type_expected": "consumer safety or labor/health official fall prevention guidance"
+    },
+    {
+      "id": "RQ4",
+      "question": "長時間座る待ち時間で、水分補給や軽い足の運動をどの程度一般的に勧められるか。",
+      "source_type_expected": "MHLW or official/public health guidance"
+    },
+    {
+      "id": "RQ5",
+      "question": "一人での通院に不安がある場合、どのような相談先へつなぐのが安全か。",
+      "source_type_expected": "municipal/elder support guidance"
+    }
+  ],
+  "planned_sections": [
+    {
+      "section_id": "S01",
+      "label": "オープニング — 通院バッグを前日に整えていますか",
+      "label_en": "Opening — Is your clinic bag ready the day before?",
+      "purpose": "relatable self-check question about searching for cards in the morning",
+      "estimated_duration_sec": 90,
+      "editorial_note": "mild concern only; no panic"
+    },
+    {
+      "section_id": "S02",
+      "label": "通院の日に忘れ物が不安になる理由",
+      "label_en": "Why forgotten items matter on hospital visit days",
+      "purpose": "connect rushing, fatigue, and fall/outing safety",
+      "estimated_duration_sec": 110,
+      "editorial_note": "use official fall-prevention context calmly"
+    },
+    {
+      "section_id": "S03",
+      "label": "確認一：受付で必要なカード類",
+      "label_en": "Check 1: reception cards and qualification documents",
+      "purpose": "マイナ保険証または資格確認書、診察券、予約票をまとめる",
+      "estimated_duration_sec": 155,
+      "evidence_need": "MHLW insurance qualification information"
+    },
+    {
+      "section_id": "S04",
+      "label": "確認二：お薬手帳と今飲んでいる薬",
+      "label_en": "Check 2: medication notebook and current medicines",
+      "purpose": "お薬手帳は一冊にまとめ、薬やサプリも伝える",
+      "estimated_duration_sec": 170,
+      "evidence_need": "MHLW medication notebook guidance"
+    },
+    {
+      "section_id": "S05",
+      "label": "確認三：医師に伝えるメモ",
+      "label_en": "Check 3: short memo for the doctor",
+      "purpose": "症状、質問、薬の気になる点を紙にして伝え忘れを防ぐ",
+      "estimated_duration_sec": 135,
+      "evidence_need": "medical communication and medication safety"
+    },
+    {
+      "section_id": "S06",
+      "label": "確認四：待ち時間を楽にするもの",
+      "label_en": "Check 4: items for waiting-room comfort",
+      "purpose": "水分、羽織もの、眼鏡・補聴器、必要な小物を準備",
+      "estimated_duration_sec": 170,
+      "evidence_need": "hydration and long sitting guidance"
+    },
+    {
+      "section_id": "S07",
+      "label": "確認五：帰り道まで安全にするもの",
+      "label_en": "Check 5: items that keep the return trip safe",
+      "purpose": "連絡先、交通費、携帯電話、両手が空くバッグ、歩きやすい靴",
+      "estimated_duration_sec": 170,
+      "evidence_need": "fall prevention and footwear"
+    },
+    {
+      "section_id": "S08",
+      "label": "前日の置き場所と当日の持ち出し方",
+      "label_en": "Where to place the set the night before",
+      "purpose": "玄関近くの決まった場所に置き、朝に落ち着いて確認",
+      "estimated_duration_sec": 105,
+      "editorial_note": "before-after contrast without exaggeration"
+    },
+    {
+      "section_id": "S09",
+      "label": "一人で不安な時の相談先",
+      "label_en": "When to ask for support",
+      "purpose": "地域包括支援センター、家族、医療機関への相談",
+      "estimated_duration_sec": 90,
+      "editorial_note": "do not shame independence"
+    },
+    {
+      "section_id": "S10",
+      "label": "まとめ — 次の通院前にひとつだけ整える",
+      "label_en": "Closing — prepare one item before the next visit",
+      "purpose": "repeat five checks and close calmly",
+      "estimated_duration_sec": 75,
+      "editorial_note": "gentle call to action"
+    }
+  ],
+  "packaging_seeds_longform": [
+    {
+      "title_seed": "通院の日、忘れ物を減らす持ち物チェック5つ",
+      "angle": "number_anchor",
+      "safety_note": "チェックリスト framing only"
+    },
+    {
+      "title_seed": "病院に行く朝、まず確認したいもの",
+      "angle": "self_relevance",
+      "safety_note": "daily routine without fear"
+    },
+    {
+      "title_seed": "60代からの通院バッグの整え方",
+      "angle": "specificity",
+      "safety_note": "age anchor used as audience relevance only"
+    }
+  ],
+  "packaging_seeds_shorts": [],
+  "hook_type_seed": "self_check_question",
+  "viewer_question": "通院の日の朝、何を持てば受付から帰り道まで落ち着いて過ごせるのか？",
+  "opening_visual_seed": "Japanese senior at the genkan gently checking a clinic bag, with scattered cards and a medicine notebook nearby, before leaving for a hospital visit.",
+  "thumbnail_emotion_hint": "gentle_concern",
+  "notes_for_research": [
+    "Use 2026 health insurance reception wording carefully.",
+    "Separate medication notebook guidance from medical advice.",
+    "Do not overstate fall prevention; use preparation and caution framing."
+  ]
+}

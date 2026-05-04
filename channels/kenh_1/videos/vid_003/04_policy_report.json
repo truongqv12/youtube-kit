@@ -1,0 +1,63 @@
+{
+  "project_id": "kenh_1_vid_003",
+  "overall_status": "PASS_WITH_CONSTRAINTS",
+  "policy_dimensions": {
+    "medical_misinformation_risk": {
+      "level": "moderate",
+      "risk": "Morning fatigue can be a symptom of multiple medical conditions, so script must not diagnose or imply a universal cure.",
+      "allowed": [
+        "educational explanation",
+        "sleep and light environment guidance",
+        "symptom record",
+        "clinician consultation cues"
+      ],
+      "forbidden": [
+        "guaranteed cure",
+        "self-diagnosis",
+        "replace tests or medication",
+        "medical fear hook"
+      ]
+    },
+    "topic_scope_risk": {
+      "level": "moderate",
+      "risk": "The angle is close to vid_002's morning fatigue habit video.",
+      "constraint": "Do not center breakfast, water temperature, long sitting, rushing, or overloading the morning schedule."
+    },
+    "visual_misunderstanding_risk": {
+      "level": "low_to_moderate",
+      "risk": "Sleep apnea or health symptoms could be visualized too dramatically.",
+      "constraint": "No choking panic, collapse, oxygen mask, emergency room, or diagnostic proof imagery. Use calm symbolic visuals and everyday records."
+    },
+    "title_thumbnail_overpromise_risk": {
+      "level": "moderate",
+      "risk": "Titles about morning fatigue can slide into miracle or hidden-disease bait.",
+      "constraint": "Use gentle concern; title should promise review points, not solution or diagnosis."
+    }
+  },
+  "claim_boundaries_for_script": [
+    "Say: morning light can help reset daily rhythm.",
+    "Say: night light and bedroom environment can affect sleep quality.",
+    "Say: persistent fatigue is worth recording and discussing with a clinician.",
+    "Do not say: these three points will cure morning fatigue.",
+    "Do not say: morning fatigue always means sleep apnea, depression, or a serious disease."
+  ],
+  "required_softeners": [
+    "〜かもしれません。",
+    "無理のない範囲で。",
+    "気になる場合は、かかりつけ医に相談してみてください。",
+    "個別の症状や持病がある方は、自己判断しないでください。"
+  ],
+  "non_overlap_enforcement": {
+    "allowed_mentions": "Briefly acknowledging food/hydration/schedule as not today's focus is allowed, but the script should not teach those items.",
+    "forbidden_reteaching": [
+      "slow rise routine",
+      "in-bed exercise sequence",
+      "first water glass",
+      "breakfast examples",
+      "cold-water swap",
+      "morning movement examples",
+      "rush/schedule overload solution"
+    ]
+  },
+  "allowed_to_proceed": true
+}

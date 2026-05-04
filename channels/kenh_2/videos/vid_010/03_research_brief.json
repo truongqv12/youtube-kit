@@ -1,0 +1,212 @@
+{
+  "project_id": "kenh_2_vid_010",
+  "channel_id": "kenh_2",
+  "pipeline_step": "03_mandatory_research",
+  "generated_at": "2026-05-04T16:42:12+07:00",
+  "web_access_detected": true,
+  "source_counts": {
+    "total": 8,
+    "official_or_primary": 7,
+    "supporting": 1,
+    "japan_based": 8
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "label": "official",
+      "title": "消費者庁 — 高齢者の事故を防ぐために",
+      "url": "https://www.caa.go.jp/policies/policy/consumer_safety/caution/caution_055/",
+      "publisher": "Consumer Affairs Agency, Japan",
+      "used_for": [
+        "fall and accident risk context",
+        "calm safety framing"
+      ],
+      "key_points": [
+        "高齢者の事故予防では転倒・転落に注意が必要。",
+        "動画では事故保証ではなく、焦りを減らす準備として扱う。"
+      ]
+    },
+    {
+      "id": "S2",
+      "label": "official",
+      "title": "厚生労働省・日本薬剤師会 — 知っておきたい薬の知識／お薬手帳",
+      "url": "https://www.mhlw.go.jp/topics/bukyoku/iyaku/d_health/dl/pamphlet.pdf",
+      "publisher": "MHLW / Japan Pharmaceutical Association",
+      "used_for": [
+        "medicine notebook guidance",
+        "medication communication"
+      ],
+      "key_points": [
+        "医師や薬剤師が全ての薬を把握できるよう、お薬手帳は一冊にまとめ継続記録する。",
+        "副作用、飲み合わせ、薬の量の確認に役立つ。"
+      ]
+    },
+    {
+      "id": "S3",
+      "label": "official",
+      "title": "厚生労働省 — 資格確認書について（マイナ保険証を使わない場合の受診方法）",
+      "url": "https://www.mhlw.go.jp/stf/newpage_45470.html",
+      "publisher": "MHLW",
+      "used_for": [
+        "2026 reception document wording",
+        "qualification certificate"
+      ],
+      "key_points": [
+        "マイナ保険証を保有していない方には資格確認書が交付される。",
+        "高齢者など配慮が必要な方は申請により資格確認書交付対象となる場合がある。"
+      ]
+    },
+    {
+      "id": "S4",
+      "label": "official",
+      "title": "厚生労働省 — 資格確認方法について",
+      "url": "https://www.mhlw.go.jp/stf/newpage_50657.html",
+      "publisher": "MHLW",
+      "used_for": [
+        "backup response when MyNa insurance reception fails",
+        "insurance card transition wording"
+      ],
+      "key_points": [
+        "マイナ保険証が使えない事情がある場合の資格確認方法が示されている。",
+        "受付書類は地域や加入保険で違う場合があるため、かかりつけ医や保険者確認が安全。"
+      ]
+    },
+    {
+      "id": "S5",
+      "label": "official",
+      "title": "厚生労働省 — エコノミークラス症候群の予防のために",
+      "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000170807.html",
+      "publisher": "MHLW",
+      "used_for": [
+        "long sitting, hydration and calf movement",
+        "waiting room comfort guidance"
+      ],
+      "key_points": [
+        "長時間座って足を動かさない状態では血行不良が起きやすい。",
+        "予防として軽い体操、こまめな水分、かかとの上げ下ろし等が示されている。"
+      ]
+    },
+    {
+      "id": "S6",
+      "label": "official",
+      "title": "環境省 — 高齢者のための熱中症対策",
+      "url": "https://www.wbgt.env.go.jp/pdf/pr/heatillness_leaflet_senior_2021.pdf",
+      "publisher": "Ministry of the Environment, Japan",
+      "used_for": [
+        "senior hydration sensitivity",
+        "outing comfort"
+      ],
+      "key_points": [
+        "高齢者は体内の水分が不足しがちで、暑さやのどの渇きに対する感覚が鈍くなる。",
+        "持病がある場合はかかりつけ医に相談する注意書きを入れる。"
+      ]
+    },
+    {
+      "id": "S7",
+      "label": "official",
+      "title": "厚生労働省 — 転倒予防のために適切な靴を選びましょう",
+      "url": "https://www.mhlw.go.jp/content/11200000/000838433.pdf",
+      "publisher": "MHLW",
+      "used_for": [
+        "footwear safety",
+        "return trip safety"
+      ],
+      "key_points": [
+        "足に合った靴は疲労軽減や事故防止につながる。",
+        "靴の屈曲性、つま先の高さ、靴底のすり減りなどが転倒予防の観点で重要。"
+      ]
+    },
+    {
+      "id": "S8",
+      "label": "supporting",
+      "title": "国立長寿医療研究センター — 入院時に必要なもの",
+      "url": "https://www.ncgg.go.jp/hospital/nyuin/hitsuyo.html",
+      "publisher": "National Center for Geriatrics and Gerontology",
+      "used_for": [
+        "examples of medical visit items",
+        "shoe and medication item examples"
+      ],
+      "key_points": [
+        "入院向けだが、お薬手帳、薬、補聴器、履きやすい靴など医療機関で必要になりやすい物の参考になる。",
+        "外来通院には過剰な荷物を避け、必要なものだけに絞る。"
+      ]
+    }
+  ],
+  "evidence_summary": {
+    "facts": [
+      {
+        "claim": "通院受付では、現在の保険確認としてマイナ保険証または資格確認書が基本になる。",
+        "support": [
+          "S3",
+          "S4"
+        ],
+        "script_use": "受付セットの確認"
+      },
+      {
+        "claim": "お薬手帳は一冊にまとめて継続記録すると、医師や薬剤師が薬の全体像を確認しやすい。",
+        "support": [
+          "S2"
+        ],
+        "script_use": "お薬セットの確認"
+      },
+      {
+        "claim": "高齢者の外出・生活では転倒への注意が必要で、靴のフィット感や靴底、つま先の高さなどは安全確認の対象になる。",
+        "support": [
+          "S1",
+          "S7"
+        ],
+        "script_use": "帰り道までの安全セット"
+      },
+      {
+        "claim": "長く座る場面では、軽い体操やかかとの上げ下ろし、こまめな水分補給が一般的な予防策として示されている。",
+        "support": [
+          "S5"
+        ],
+        "script_use": "待合室での過ごし方"
+      },
+      {
+        "claim": "高齢者は体内水分が不足しやすく、のどの渇きを感じにくいことがある。",
+        "support": [
+          "S6"
+        ],
+        "script_use": "水分の持参と医師指示への注意"
+      }
+    ],
+    "practical_guidance_allowed": [
+      "前日の夜に通院バッグをひとつの場所にまとめる。",
+      "受付書類、診察券、予約票、お薬手帳、薬の情報、質問メモを小分けポーチに入れる。",
+      "待ち時間のために水分、羽織もの、眼鏡・補聴器、携帯電話を確認する。",
+      "帰り道まで考えて、両手が空くバッグと歩きやすい靴を選ぶ。",
+      "水分制限や薬の不安がある場合は主治医・薬剤師へ確認する。"
+    ],
+    "unknowns_and_uncertainty": [
+      "必要な受付書類は加入保険、自治体、医療機関、時期により変わる可能性がある。",
+      "持参すべき薬や検査関連の物は診療科・検査内容によって異なる。",
+      "歩行補助具や介助サービスの必要性は本人の状態により異なる。"
+    ],
+    "when_to_consult": [
+      "水分制限、腎臓・心臓の病気、利尿薬などがある場合は、水分の量を主治医に確認する。",
+      "薬の副作用や飲み合わせが気になる場合は、自己判断で中止せず医師・薬剤師に相談する。",
+      "一人での通院や帰宅が不安な場合は、家族、ケアマネジャー、地域包括支援センター、医療機関に相談する。"
+    ]
+  },
+  "research_to_outline_map": {
+    "S01": "mild concern only; no panic",
+    "S02": "use official fall-prevention context calmly",
+    "S03": "MHLW insurance qualification information",
+    "S04": "MHLW medication notebook guidance",
+    "S05": "medical communication and medication safety",
+    "S06": "hydration and long sitting guidance",
+    "S07": "fall prevention and footwear",
+    "S08": "before-after contrast without exaggeration",
+    "S09": "do not shame independence",
+    "S10": "gentle call to action"
+  },
+  "disallowed_script_claims": [
+    "この五つを持てば絶対に忘れ物をしない",
+    "この通りにすれば転倒や事故を必ず防げる",
+    "医師の診察や薬剤師の確認が不要になる",
+    "病気が治る、通院回数を減らせる、待ち時間を短くできる"
+  ],
+  "research_gate_status": "PASS"
+}

@@ -1,0 +1,49 @@
+{
+  "project_id": "kenh_1_vid_003",
+  "topic_cluster": "morning habits",
+  "topic_angle": "朝のだるさが続く人が見直したいこと3つ",
+  "target_viewer": "Japanese senior viewers 60+ who wake up feeling heavy or unrefreshed for several days and want calm, practical, non-alarmist guidance.",
+  "viewer_problem": "Some viewers feel morning sluggishness even after lying in bed long enough. They may assume it is simply age, but the cause may relate to body-clock light cues, previous-night sleep environment, or an underlying sleep/health issue that should be recorded and discussed with a clinician.",
+  "working_promise": "この動画では、朝のだるさが続くときに、食事や水分の話ではなく、光・夜の環境・相談の目安という3つの視点から、無理なく見直せるポイントを整理します。",
+  "safe_claim_boundary": "Can say these checks may help the body switch into morning mode and may reveal sleep-quality or medical-consultation clues. Cannot claim they cure fatigue, diagnose a disease, replace medical evaluation, or guarantee better sleep.",
+  "forbidden_claims": [
+    "朝日だけでだるさが治る",
+    "病院に行かなくても原因がわかる",
+    "サプリや食品で完全に解決する",
+    "睡眠時無呼吸やうつ病を動画内で診断できる",
+    "vid_001の起き上がり・水分補給・寝床体操の再説明",
+    "vid_002の朝食・水温・座りっぱなし・急ぎすぎ・予定詰め込みの再説明"
+  ],
+  "research_questions": [
+    "How does morning light exposure affect circadian rhythm and wakefulness, especially for older adults?",
+    "What previous-night light and bedroom environment factors are officially recommended for better sleep quality?",
+    "What symptoms suggest morning fatigue may be related to sleep disorders such as obstructive sleep apnea?",
+    "What does official health guidance say about daytime sleepiness, medication side effects, mental health, and when to seek diagnosis or testing?",
+    "How can a senior-friendly symptom record be framed without causing panic or self-diagnosis?"
+  ],
+  "planned_sections": [
+    "Soft hook: waking up already tired and wondering whether it is just age.",
+    "Scope clarification: this video is not repeating rising method, water, breakfast, or overbusy schedule; it reviews three different causes of persistent morning dullness.",
+    "Context: morning sluggishness can come from the body clock, sleep quality, or health factors, so the goal is to observe calmly.",
+    "Review 1 — morning light cue: curtains, window-side daylight, stable wake rhythm, no forced early exposure for people already too early-morning shifted.",
+    "Review 2 — previous-night environment: reduce bright screen/light in bedroom, make the room quiet/dark/comfortable, avoid very hot late bathing that wakes the body.",
+    "Review 3 — record and consult: note sleep time, snoring/apnea reports, morning headache, daytime sleepiness, appetite/weight/mood changes, and medication timing.",
+    "When to ask a clinician: persistent severe fatigue, strong daytime sleepiness, snoring/apnea reports, chest pain, breathlessness, weight loss, or low mood.",
+    "Calm close: change one environmental cue and keep a simple record."
+  ],
+  "packaging_seeds_longform": [
+    "Title Idea 1: 朝のだるさが続く人へ｜60代から見直したい3つのこと",
+    "Title Idea 2: 寝たのに朝から重い…シニアが確認したい3つのサイン",
+    "Title Idea 3: 朝の体が重い日は、ここを見直す｜光・寝室・相談の目安",
+    "Thumbnail: elderly Japanese woman opening curtains with one hand while a bedside smartphone glows dimly behind her; calm concern, low text density; text overlay max 4 Japanese words: 朝から重い？"
+  ],
+  "packaging_seeds_shorts": [
+    "No Shorts derivatives because 01_intake_spec.json sets derive_shorts=0.",
+    "If later enabled: one Short can focus on curtains and morning light, another on symptom notes before consultation."
+  ],
+  "hook_type_seed": "self_check_question",
+  "viewer_question": "Why do I still feel heavy in the morning even when I think I slept enough?",
+  "opening_visual_seed": "A visibly elderly Japanese woman sitting quietly at the edge of a futon or bed in soft dawn light, not falling or panicking, with a sense of unrefreshed heaviness.",
+  "thumbnail_emotion_hint": "gentle_concern",
+  "notes_for_research": "Deliberately avoid overlap with kenh_1 vid_001 and vid_002. Use Japanese official sources for sleep, circadian rhythm, and daytime sleepiness. Keep symptom discussion as consult guidance, not diagnosis."
+}

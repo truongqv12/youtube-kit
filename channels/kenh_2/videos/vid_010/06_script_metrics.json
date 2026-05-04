@@ -1,0 +1,19 @@
+{
+  "project_id": "kenh_2_vid_010",
+  "pipeline_step": "06_script_metrics",
+  "generated_at": "2026-05-04T16:42:12+07:00",
+  "canonical_unit_count": 111,
+  "character_count_no_newlines": 3247,
+  "estimated_minutes_at_320_cpm": 10.15,
+  "target_duration_min": 10,
+  "target_duration_max": 18,
+  "duration_gate": "PASS",
+  "banned_phrase_scan": {
+    "status": "PASS",
+    "matches": []
+  },
+  "canonical_unit_gate": {
+    "status": "PASS",
+    "notes": "All units are plain spoken narration lines with no headings or production notes."
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "project_id": "kenh_1_vid_003",
+  "total_units": 110,
+  "total_chars": 3227,
+  "tts_chars_per_min": 320,
+  "estimated_duration_min": 10.08,
+  "target_duration_range": "10-15 min",
+  "target_chars_range": "3200-4800",
+  "duration_check": "PASS",
+  "reconstruction_check": "PASS — full_script equals newline join of canonical_script_units",
+  "tts_safe_check": "PASS — no headings, labels, bullets, speaker tags, brackets, or production notes",
+  "naturalness_check": "PASS — line lengths and sentence patterns varied for senior TTS",
+  "banned_phrases_check": "PASS — no instances of 絶対に治る, 必ず防げる, 医者が隠している, 薬はやめて大丈夫",
+  "non_overlap_check": "PASS — does not reteach vid_001 slow-rise/stretch/hydration or vid_002 breakfast/cold-water/inactivity/rushing/schedule-overload topics"
+}

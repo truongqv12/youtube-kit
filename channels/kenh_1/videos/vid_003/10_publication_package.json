@@ -1,0 +1,156 @@
+{
+  "search_gate_summary": {
+    "observed_patterns": [
+      "Many Japan-targeted senior morning-health videos use warning words such as 警告, 絶対, NG, 禁忌.",
+      "Numbered titles with 3 or 5 habits are common and easy to parse.",
+      "Several competitor examples promise life-span change, disease risk reduction, or clear improvement, which is unsafe for this channel.",
+      "Thumbnail concepts often show worried seniors, morning bedroom/kitchen scenes, and large short Japanese text.",
+      "Search results around 朝のだるさ often drift into exercise, breakfast, nutrients, or alarmist disease framing."
+    ],
+    "close_examples_scanned": [
+      {
+        "title": "【医師が警告】65歳以上が朝に絶対にやってはいけない3つの習慣…命を縮めるかも？",
+        "pattern": "warning + age anchor + forbidden habits",
+        "fit": "mismatch: too alarmist for this channel"
+      },
+      {
+        "title": "【寿命が変わる】高齢者が朝やるべき健康習慣5選",
+        "pattern": "life-span promise + numbered habits",
+        "fit": "mismatch: overpromise"
+      },
+      {
+        "title": "【警告】65歳以上が朝に絶対やってはいけない3つの禁忌とは？",
+        "pattern": "strong warning + taboo wording",
+        "fit": "mismatch: panic/NG framing"
+      },
+      {
+        "title": "【寝たままできる】朝のだるさはこれで改善 3つの超簡単体操",
+        "pattern": "direct improvement promise + exercises",
+        "fit": "mismatch: duplicates vid_001-style movement and overpromises"
+      },
+      {
+        "title": "医師が警告！朝5時前にやると不眠悪化するNG習慣TOP3",
+        "pattern": "doctor warning + exact time + NG",
+        "fit": "partial: timing specificity useful, but warning tone too strong"
+      },
+      {
+        "title": "朝がだるい人、これやらないと一生変わりません",
+        "pattern": "absolute transformation claim",
+        "fit": "mismatch: certainty inflation"
+      },
+      {
+        "title": "寝ても疲れが取れない人へ｜疲労を回復に向かわせる7つの習慣",
+        "pattern": "self relevance + recovery direction",
+        "fit": "partial: softer but broader than this micro-topic"
+      },
+      {
+        "title": "寝ても疲れが取れない60代へ｜足りない栄養素3つと食事法",
+        "pattern": "age + nutrient list",
+        "fit": "mismatch: nutrition angle overlaps other content and narrows incorrectly"
+      }
+    ],
+    "likely_fit_for_channel": [
+      "Use age/self-relevance and a small number anchor.",
+      "Keep title direct but not panic-based.",
+      "Use a calm manga senior in a morning bedroom/window setting.",
+      "Thumbnail text should be four Japanese words or fewer."
+    ],
+    "likely_mismatch_for_channel": [
+      "Absolute words such as 絶対, 禁忌, 命を縮める, 一生変わりません.",
+      "Food/nutrient/exercise promise that overlaps vid_001 or vid_002.",
+      "Medical authority clickbait such as 医師が警告 if not actually doctor-led."
+    ],
+    "things_to_avoid": [
+      "Do not imply diagnosis of sleep apnea or depression.",
+      "Do not show collapse, panic, oxygen masks, or emergency hospital scenes.",
+      "Do not copy competitor warning title structures."
+    ],
+    "platform_guidance_sources": [
+      "S8",
+      "S9"
+    ]
+  },
+  "title_candidates": [
+    {
+      "title_ja": "朝のだるさが続く人へ｜60代から見直したい3つのこと",
+      "title_vi": "Dành cho người hay uể oải buổi sáng: 3 điểm nên xem lại từ tuổi 60",
+      "ctr_psychology_angle": "number_anchor",
+      "viewer_question": "何を三つ見直せばいいのか？",
+      "script_alignment_reasoning": "Directly matches the three script pillars: light, bedroom environment, and symptom record/consultation.",
+      "safety_rationale": "Promises review points, not cure or diagnosis.",
+      "ctr_prediction_reasoning": "Uses common numbered-list clarity from market scan while avoiding warning-bait words."
+    },
+    {
+      "title_ja": "寝たのに朝から重い…シニアが確認したい3つのサイン",
+      "title_vi": "Đã ngủ mà sáng vẫn nặng người: 3 dấu hiệu người cao tuổi nên kiểm tra",
+      "ctr_psychology_angle": "self_relevance",
+      "viewer_question": "自分の朝の重さは見直すべきサインなのか？",
+      "script_alignment_reasoning": "Matches opening hook and the third section about recording signs.",
+      "safety_rationale": "Uses sign/check framing without saying the viewer has a disease.",
+      "ctr_prediction_reasoning": "Self-relevance is strong for search/browse while still calmer than competitor alarm titles."
+    },
+    {
+      "title_ja": "朝の体が重い日は、ここを見直す｜光・寝室・相談の目安",
+      "title_vi": "Ngày sáng dậy nặng người: xem lại ánh sáng, phòng ngủ và mốc cần tư vấn",
+      "ctr_psychology_angle": "specificity",
+      "viewer_question": "朝・夜・相談のどこを見ればいいのか？",
+      "script_alignment_reasoning": "Names all three pillars without adding claims outside the script.",
+      "safety_rationale": "Most precise and least likely to overpromise.",
+      "ctr_prediction_reasoning": "High trust and clarity, though slightly less emotional than candidate 1 or 2."
+    }
+  ],
+  "thumbnail_candidates": [
+    {
+      "concept_ja": "薄暗い寝室で、銀髪の高齢女性がカーテンに手をかけている。奥に暗いスマホの光。大きな文字は『朝から重い？』。",
+      "concept_vi": "Phòng ngủ hơi tối, cụ bà tóc bạc đang chạm rèm cửa; phía sau có ánh điện thoại mờ. Text: 『朝から重い？』.",
+      "thumbnail_text_ja": "朝から重い？",
+      "emotion_level": "gentle_concern",
+      "viewer_question": "この朝の重さ、自分も当てはまる？",
+      "script_alignment_reasoning": "Combines opening hook, light cue, and night screen environment.",
+      "safety_rationale": "Concerned but no medical panic.",
+      "ctr_psychology_angle": "self_relevance"
+    },
+    {
+      "concept_ja": "朝の窓、静かな寝室、メモ帳を三分割風に見せる漫画構図。文字は『3つ確認』。",
+      "concept_vi": "Bố cục manga ba vùng: cửa sổ buổi sáng, phòng ngủ yên tĩnh, sổ ghi chú. Text: 『3つ確認』.",
+      "thumbnail_text_ja": "3つ確認",
+      "emotion_level": "calm_informational",
+      "viewer_question": "確認する三つは何か？",
+      "script_alignment_reasoning": "Directly maps to the three review pillars.",
+      "safety_rationale": "Checklist feel, no fear trigger.",
+      "ctr_psychology_angle": "number_anchor"
+    },
+    {
+      "concept_ja": "高齢男性が朝のテーブルでメモ帳を見つめ、窓から柔らかい光が入る。文字は『だるさ続く』。",
+      "concept_vi": "Cụ ông nhìn sổ ghi chú bên bàn buổi sáng, ánh sáng nhẹ từ cửa sổ. Text: 『だるさ続く』.",
+      "thumbnail_text_ja": "だるさ続く",
+      "emotion_level": "gentle_concern",
+      "viewer_question": "続くなら何を記録すればいい？",
+      "script_alignment_reasoning": "Emphasizes the consultation-record section, which differentiates vid_003 from earlier videos.",
+      "safety_rationale": "No diagnosis or emergency framing.",
+      "ctr_psychology_angle": "mild_consequence"
+    }
+  ],
+  "selected_package": {
+    "selected_title_ja": "朝のだるさが続く人へ｜60代から見直したい3つのこと",
+    "selected_title_vi": "Dành cho người hay uể oải buổi sáng: 3 điểm nên xem lại từ tuổi 60",
+    "selected_thumbnail_text_ja": "朝から重い？",
+    "selected_thumbnail_concept_ja": "薄暗い寝室で、銀髪の高齢女性がカーテンに手をかけている。奥に暗いスマホの光。大きな文字は『朝から重い？』。編集漫画調、穏やかな心配、低密度。",
+    "description_ja": "朝起きた瞬間から体が重い。寝たはずなのに、なかなか動き出せない。そんな朝が続くとき、年齢のせいだけと片づけず、光・寝室環境・記録と相談の目安を落ち着いて確認してみましょう。この動画では、60代・70代の方に向けて、朝のだるさが続くときに見直したい3つのポイントを、やさしく整理します。\n\nこの動画は日常の生活習慣を見直すきっかけとしてお届けしています。強い眠気、息切れ、胸の痛み、体重の変化、気分の落ち込みなどがある場合は、自己判断せず、かかりつけ医にご相談ください。",
+    "description_vi_operator_note": "Mô tả nhấn vào 3 trụ cột khác vid_001/vid_002: ánh sáng, môi trường ngủ đêm trước, ghi chú/đi khám. Không hứa chữa khỏi.",
+    "keywords_ja": [
+      "朝のだるさ",
+      "シニア健康",
+      "60代 健康",
+      "睡眠習慣",
+      "体内時計",
+      "寝室環境",
+      "高齢者 眠気",
+      "生活習慣 見直し"
+    ],
+    "rationale": "The selected title uses a number anchor with direct self-relevance and avoids competitor-style alarm wording. The thumbnail uses the opening question and the visual cue of curtains/smartphone to connect to the script's first two pillars.",
+    "safety_rationale": "No cure, no diagnosis, no hidden-disease fear. Consult guidance appears in the description."
+  },
+  "shorts_derivatives": [],
+  "shorts_policy_note": "No Shorts derivatives generated because `01_intake_spec.json` sets publication_goals.derive_shorts=0 and special_notes says long-form only."
+}

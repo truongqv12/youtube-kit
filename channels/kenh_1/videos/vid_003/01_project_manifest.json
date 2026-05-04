@@ -1,0 +1,48 @@
+{
+  "project_id": "kenh_1_vid_003",
+  "channel_id": "kenh_1",
+  "target_channel": "kenh_1",
+  "target_video": "vid_003",
+  "created_at_utc": "2026-05-04T15:08:47+00:00",
+  "pipeline": "compiled_prompts_full_pipeline_01_to_10",
+  "source_intake_path": "channels/kenh_1/videos/vid_003/01_intake_spec.json",
+  "runtime_profiles": {
+    "channel_config": "channels/kenh_1/00_channel_config.json",
+    "language_profile": "channels/kenh_1/00_language_profile.json",
+    "visual_profile": "channels/kenh_1/00_visual_profile.json",
+    "editorial_profile": "channels/kenh_1/00_editorial_profile.json",
+    "publication_profile": "channels/kenh_1/00_publication_profile.json"
+  },
+  "duration_control": {
+    "target_duration_min": 10,
+    "target_duration_max": 15,
+    "tts_chars_per_min": 320,
+    "target_chars_min": 3200,
+    "target_chars_max": 4800
+  },
+  "publication_goals": {
+    "long_form_primary": true,
+    "derive_shorts": 0
+  },
+  "non_overlap_lock": {
+    "avoid_vid_001": [
+      "slow bed rise",
+      "in-bed stretches",
+      "first glass of water",
+      "orthostatic/fall prevention as main topic"
+    ],
+    "avoid_vid_002": [
+      "skipping breakfast",
+      "cold water first thing",
+      "sitting still too long",
+      "rushing morning tasks",
+      "overloading morning schedule"
+    ],
+    "vid_003_focus": [
+      "morning daylight and body clock",
+      "previous-night sleep environment",
+      "symptom record and clinician consultation when sluggishness persists"
+    ]
+  },
+  "status": "generated"
+}

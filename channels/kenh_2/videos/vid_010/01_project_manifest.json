@@ -1,0 +1,136 @@
+{
+  "manifest_version": "1.0",
+  "project_id": "kenh_2_vid_010",
+  "channel_id": "kenh_2",
+  "channel_name": "ひとりでも安心 シニア暮らしノート",
+  "generated_at": "2026-05-04T16:42:12+07:00",
+  "pipeline_step": "10_publication_package",
+  "pipeline_status": "step_10_complete",
+  "topic": {
+    "cluster": "hospital and outings",
+    "angle": "通院の日の持ち物チェック5つ",
+    "angle_en": "Five-item checklist for what to bring on a hospital visit day",
+    "viewer_problem": "Japanese senior viewers want practical, safety-oriented daily-life guidance that reduces anxiety and helps them prepare calmly.",
+    "working_promise": "通院の日に受付で慌てず、診察で伝え忘れず、待ち時間も少し楽に過ごせるよう、前日までに整えたい持ち物を五つに分けて確認します。"
+  },
+  "duration": {
+    "min_minutes": 10,
+    "max_minutes": 18,
+    "estimated_minutes": 13,
+    "source": "video_intake_override"
+  },
+  "tts": {
+    "voice": "ja_female_soft_01",
+    "chars_per_min": 320,
+    "estimated_script_chars_min": 3200,
+    "estimated_script_chars_max": 5760
+  },
+  "evidence": {
+    "min_sources": 5,
+    "min_official": 3,
+    "country_priority": [
+      "Japan"
+    ],
+    "allow_non_japan": true
+  },
+  "output_plan": {
+    "long_form": true,
+    "shorts": 0,
+    "shorts_override_reason": "explicit video-level directive: long-form only; do not derive shorts"
+  },
+  "active_profiles": {
+    "editorial": "jp_senior_safe_living_scenario_checklist",
+    "visual": "illustrated_lifestyle_handbook / retro_clean_2d_domestic",
+    "language": "jp_senior_safe_living_neutral",
+    "publication": "jp_senior_safe_living_handbook_package"
+  },
+  "key_constraints_summary": {
+    "non_dialogue_mode": true,
+    "lip_sync": false,
+    "veo_audio_mode": "silent",
+    "host_policy": "host_optional_reference_first",
+    "story_bias": "scenario_then_checklist",
+    "fear_ceiling": "low_to_moderate_safety_concern",
+    "age_lock": "visible senior age cues whenever people appear",
+    "locale": "Japan national neutral",
+    "visible_text": "avoid_readable_text, ja-JP only if unavoidable"
+  },
+  "production_schedule": {
+    "month": 1,
+    "week": 2,
+    "weekday_slot": "Fri"
+  },
+  "artifacts": {
+    "step_00": {
+      "00_channel_config.json": "channels/kenh_2/00_channel_config.json",
+      "00_editorial_profile.json": "channels/kenh_2/00_editorial_profile.json",
+      "00_visual_profile.json": "channels/kenh_2/00_visual_profile.json",
+      "00_language_profile.json": "channels/kenh_2/00_language_profile.json",
+      "00_publication_profile.json": "channels/kenh_2/00_publication_profile.json"
+    },
+    "step_01": {
+      "01_intake_spec.json": "channels/kenh_2/videos/vid_010/01_intake_spec.json",
+      "01_project_manifest.json": "channels/kenh_2/videos/vid_010/01_project_manifest.json"
+    },
+    "step_02": {
+      "02_topic_strategy.json": "channels/kenh_2/videos/vid_010/02_topic_strategy.json",
+      "status": "complete"
+    },
+    "step_03": {
+      "03_research_brief.json": "channels/kenh_2/videos/vid_010/03_research_brief.json",
+      "03_source_log.md": "channels/kenh_2/videos/vid_010/03_source_log.md",
+      "status": "complete"
+    },
+    "step_04": {
+      "04_policy_report.json": "channels/kenh_2/videos/vid_010/04_policy_report.json",
+      "status": "complete"
+    },
+    "step_05": {
+      "05_outline.json": "channels/kenh_2/videos/vid_010/05_outline.json",
+      "status": "complete"
+    },
+    "step_06": {
+      "06_script_canonical.json": "channels/kenh_2/videos/vid_010/06_script_canonical.json",
+      "06_script_full.md": "channels/kenh_2/videos/vid_010/06_script_full.md",
+      "06_script_metrics.json": "channels/kenh_2/videos/vid_010/06_script_metrics.json",
+      "status": "complete"
+    },
+    "step_06B": {
+      "06B_tts_surface_report.md": "channels/kenh_2/videos/vid_010/06B_tts_surface_report.md",
+      "status": "complete"
+    },
+    "step_07A": {
+      "07A_retention_visual_plan.json": "channels/kenh_2/videos/vid_010/07A_retention_visual_plan.json",
+      "status": "complete"
+    },
+    "step_07": {
+      "07_image_prompt_table.csv": "channels/kenh_2/videos/vid_010/07_image_prompt_table.csv",
+      "status": "complete"
+    },
+    "step_08": {
+      "08_video_prompt_table.csv": "channels/kenh_2/videos/vid_010/08_video_prompt_table.csv",
+      "status": "complete"
+    },
+    "step_09": {
+      "09_final_three_column.csv": "channels/kenh_2/videos/vid_010/09_final_three_column.csv",
+      "09_export_qc_report.md": "channels/kenh_2/videos/vid_010/09_export_qc_report.md",
+      "status": "complete"
+    },
+    "step_10": {
+      "10_publication_package.json": "channels/kenh_2/videos/vid_010/10_publication_package.json",
+      "10_publication_package.md": "channels/kenh_2/videos/vid_010/10_publication_package.md",
+      "status": "complete"
+    }
+  },
+  "next_step": {
+    "step": "operator_review",
+    "description": "Review final three-column CSV and publication package before production upload.",
+    "required_input": "09_final_three_column.csv"
+  },
+  "artifact_roles": {
+    "07_image_prompt_table.csv": "checkpoint",
+    "08_video_prompt_table.csv": "checkpoint",
+    "09_final_three_column.csv": "production",
+    "09_export_qc_report.md": "qc_report"
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "project_id": "kenh_2_vid_010",
+  "channel_id": "kenh_2",
+  "pipeline_step": "05_outline_builder",
+  "generated_at": "2026-05-04T16:42:12+07:00",
+  "effective_topic_angle": "通院の日の持ち物チェック5つ",
+  "hook_type": "self_check_question",
+  "viewer_question": "通院の日の朝、何を持てば受付から帰り道まで落ち着いて過ごせるのか？",
+  "opening_hook": {
+    "first_line_goal": "通院当日の朝、バッグの中を探して焦る場面を自分ごと化する。",
+    "daily_life_anchor": "玄関で診察券やお薬手帳を探す朝",
+    "payoff_by_line_6": "五つに分けた持ち物チェックで落ち着いて出かける、と明示する。"
+  },
+  "section_plan": [
+    {
+      "section_id": "S01",
+      "label": "オープニング — 通院バッグを前日に整えていますか",
+      "label_en": "Opening — Is your clinic bag ready the day before?",
+      "purpose": "relatable self-check question about searching for cards in the morning",
+      "estimated_duration_sec": 90,
+      "editorial_note": "mild concern only; no panic"
+    },
+    {
+      "section_id": "S02",
+      "label": "通院の日に忘れ物が不安になる理由",
+      "label_en": "Why forgotten items matter on hospital visit days",
+      "purpose": "connect rushing, fatigue, and fall/outing safety",
+      "estimated_duration_sec": 110,
+      "editorial_note": "use official fall-prevention context calmly"
+    },
+    {
+      "section_id": "S03",
+      "label": "確認一：受付で必要なカード類",
+      "label_en": "Check 1: reception cards and qualification documents",
+      "purpose": "マイナ保険証または資格確認書、診察券、予約票をまとめる",
+      "estimated_duration_sec": 155,
+      "evidence_need": "MHLW insurance qualification information"
+    },
+    {
+      "section_id": "S04",
+      "label": "確認二：お薬手帳と今飲んでいる薬",
+      "label_en": "Check 2: medication notebook and current medicines",
+      "purpose": "お薬手帳は一冊にまとめ、薬やサプリも伝える",
+      "estimated_duration_sec": 170,
+      "evidence_need": "MHLW medication notebook guidance"
+    },
+    {
+      "section_id": "S05",
+      "label": "確認三：医師に伝えるメモ",
+      "label_en": "Check 3: short memo for the doctor",
+      "purpose": "症状、質問、薬の気になる点を紙にして伝え忘れを防ぐ",
+      "estimated_duration_sec": 135,
+      "evidence_need": "medical communication and medication safety"
+    },
+    {
+      "section_id": "S06",
+      "label": "確認四：待ち時間を楽にするもの",
+      "label_en": "Check 4: items for waiting-room comfort",
+      "purpose": "水分、羽織もの、眼鏡・補聴器、必要な小物を準備",
+      "estimated_duration_sec": 170,
+      "evidence_need": "hydration and long sitting guidance"
+    },
+    {
+      "section_id": "S07",
+      "label": "確認五：帰り道まで安全にするもの",
+      "label_en": "Check 5: items that keep the return trip safe",
+      "purpose": "連絡先、交通費、携帯電話、両手が空くバッグ、歩きやすい靴",
+      "estimated_duration_sec": 170,
+      "evidence_need": "fall prevention and footwear"
+    },
+    {
+      "section_id": "S08",
+      "label": "前日の置き場所と当日の持ち出し方",
+      "label_en": "Where to place the set the night before",
+      "purpose": "玄関近くの決まった場所に置き、朝に落ち着いて確認",
+      "estimated_duration_sec": 105,
+      "editorial_note": "before-after contrast without exaggeration"
+    },
+    {
+      "section_id": "S09",
+      "label": "一人で不安な時の相談先",
+      "label_en": "When to ask for support",
+      "purpose": "地域包括支援センター、家族、医療機関への相談",
+      "estimated_duration_sec": 90,
+      "editorial_note": "do not shame independence"
+    },
+    {
+      "section_id": "S10",
+      "label": "まとめ — 次の通院前にひとつだけ整える",
+      "label_en": "Closing — prepare one item before the next visit",
+      "purpose": "repeat five checks and close calmly",
+      "estimated_duration_sec": 75,
+      "editorial_note": "gentle call to action"
+    }
+  ],
+  "narrative_flow": [
+    "self-check hook",
+    "why rushing and scattered items matter",
+    "five practical item groups",
+    "night-before placement",
+    "support and consult framing",
+    "gentle close"
+  ],
+  "evidence_integration_plan": [
+    {
+      "source_ids": [
+        "S3",
+        "S4"
+      ],
+      "where": "S03",
+      "use": "受付書類の現在形を注意深く説明"
+    },
+    {
+      "source_ids": [
+        "S2"
+      ],
+      "where": "S04",
+      "use": "お薬手帳を一冊にまとめる理由"
+    },
+    {
+      "source_ids": [
+        "S5",
+        "S6"
+      ],
+      "where": "S06",
+      "use": "水分と軽い足の運動を一般的な待ち時間対策として説明"
+    },
+    {
+      "source_ids": [
+        "S1",
+        "S7"
+      ],
+      "where": "S07",
+      "use": "歩きやすい靴と両手が空く荷物の安全確認"
+    }
+  ],
+  "canonical_script_targets": {
+    "target_units_min": 95,
+    "target_units_max": 120,
+    "target_chars_min": 3900,
+    "target_chars_max": 5400
+  },
+  "visual_plan_notes": [
+    "Opening rows may show a scattered clinic bag at the genkan.",
+    "Use object closeups for cards, pouch, medicine notebook, water bottle, cardigan, phone.",
+    "No readable text on cards or notes unless exact Japanese text is planned."
+  ],
+  "cta_plan": "次回の通院前に、五つのうち一つだけでも前日に整えるよう促す。",
+  "qc_checks": [
+    "Five checks appear clearly.",
+    "No guarantee phrasing.",
+    "Medication and hydration consult notes included.",
+    "Long-form only; no Shorts plan in outline output."
+  ]
+}

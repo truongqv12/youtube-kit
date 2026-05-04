@@ -1,0 +1,78 @@
+{
+  "project_id": "kenh_2_vid_010",
+  "channel_id": "kenh_2",
+  "pipeline_step": "04_policy_gate",
+  "generated_at": "2026-05-04T16:42:12+07:00",
+  "policy_dimensions_checked": [
+    "medical_misinformation",
+    "topic_scope",
+    "synthetic_visual_risk",
+    "title_thumbnail_overpromise",
+    "senior_audience_safety"
+  ],
+  "overall_status": "PASS_WITH_CONSTRAINTS",
+  "risk_assessment": [
+    {
+      "dimension": "medical_misinformation",
+      "risk_level": "low_to_moderate",
+      "finding": "Medication notebook and hydration guidance can become medical advice if phrased too strongly.",
+      "required_control": "Use preparation language; add consult clinician/pharmacist notes for medication, water restriction, and symptoms."
+    },
+    {
+      "dimension": "fall_prevention",
+      "risk_level": "moderate",
+      "finding": "Footwear and bag guidance must not promise fall prevention.",
+      "required_control": "Say '安全確認に役立つ' or 'つまずきにくくする助けになることがあります', never '転ばない'."
+    },
+    {
+      "dimension": "health_insurance_documents",
+      "risk_level": "moderate",
+      "finding": "Reception documents changed during MyNa insurance transition and may vary by viewer.",
+      "required_control": "Use 'マイナ保険証または資格確認書' and advise checking with insurance provider or clinic when unsure."
+    },
+    {
+      "dimension": "synthetic_visual",
+      "risk_level": "low",
+      "finding": "Illustrated domestic visuals are low risk if not presented as medical proof.",
+      "required_control": "Avoid realistic emergency scenes, fake hospital authority, or diagnostic visuals."
+    },
+    {
+      "dimension": "title_thumbnail",
+      "risk_level": "moderate",
+      "finding": "Forgotten-item and hospital framing could turn into panic clickbait.",
+      "required_control": "Use gentle concern, number checklist, and no words like '危険すぎる', '絶対', '命に関わる' unless evidence and context justify, which this script does not."
+    }
+  ],
+  "allowed_claims": [
+    "前日の夜に通院バッグをひとつの場所にまとめる。",
+    "受付書類、診察券、予約票、お薬手帳、薬の情報、質問メモを小分けポーチに入れる。",
+    "待ち時間のために水分、羽織もの、眼鏡・補聴器、携帯電話を確認する。",
+    "帰り道まで考えて、両手が空くバッグと歩きやすい靴を選ぶ。",
+    "水分制限や薬の不安がある場合は主治医・薬剤師へ確認する。"
+  ],
+  "forbidden_claims": [
+    "絶対に忘れない",
+    "事故ゼロ",
+    "通院が不要になる",
+    "医者は教えてくれない",
+    "これだけで十分"
+  ],
+  "script_controls": [
+    "Include soft consult note for medication and water restriction.",
+    "Keep all claims practical and preparatory.",
+    "Use five-item checklist structure.",
+    "Avoid panic, cure, hidden truth, or guarantee language."
+  ],
+  "visual_controls": [
+    "No falling body, emergency rescue, or hospital panic.",
+    "Use domestic genkan, clinic bag, cards without readable text, medicine notebook as generic object.",
+    "All people must look senior with gray hair, wrinkles, mature posture.",
+    "No fake labels or readable official documents."
+  ],
+  "publication_controls": [
+    "Title must match five checklist items.",
+    "Thumbnail text maximum four Japanese words.",
+    "No medical authority cosplay or fake before-after."
+  ],
+  "allowed_to_proceed": true
+}

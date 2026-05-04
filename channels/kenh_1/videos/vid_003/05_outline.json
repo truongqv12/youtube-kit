@@ -1,0 +1,92 @@
+{
+  "project_id": "kenh_1_vid_003",
+  "target_duration_mins": "10-15",
+  "target_chars_range": "3200-4800",
+  "hook_type": "self_check_question",
+  "viewer_question": "寝たつもりなのに、なぜ朝から体が重いのか？",
+  "hook_quality_reasoning": "The first lines show the exact morning feeling before any abstract explanation, and the payoff by line 6 is that there are three different review points beyond 'just age'.",
+  "promise_payoff": "Viewers get three non-duplicative review points: morning light, previous-night sleep environment, and symptom notes for clinician consultation.",
+  "tension_level": "gentle_concern_to_calm_informational",
+  "outline_sections": [
+    {
+      "section_number": 1,
+      "purpose": "Concrete opening hook",
+      "section_entry_hook": "朝起きた瞬間から体が重い、という体験を直接描く。",
+      "spoken_focus": "No generic greeting first. Start with body heaviness, then reassure that this does not always mean serious illness but should not be dismissed as age.",
+      "key_points": [
+        "relatable morning heaviness",
+        "not blame",
+        "three review points: light, night environment, symptom record"
+      ],
+      "estimated_chars_proportion": "350-450"
+    },
+    {
+      "section_number": 2,
+      "purpose": "Context: why morning dullness can linger",
+      "section_entry_hook": "体の目覚まし時計がまだ鳴りきっていない、という比喩。",
+      "spoken_focus": "Explain body clock and sleep quality in simple language; explicitly avoid repeating food/water/movement/schedule topics.",
+      "key_points": [
+        "body clock",
+        "sleep quality",
+        "hidden health or medication factors",
+        "observe calmly"
+      ],
+      "estimated_chars_proportion": "450-550"
+    },
+    {
+      "section_number": 3,
+      "purpose": "Review 1: morning light cue",
+      "section_entry_hook": "部屋が暗いまま朝を過ごしていないか。",
+      "spoken_focus": "Practical window/curtain daylight advice, stable rhythm, no forced early light for those already too early-shifted.",
+      "key_points": [
+        "open curtains",
+        "sit near window if unsafe to walk",
+        "morning light helps rhythm",
+        "avoid forcing 4am-style early routine"
+      ],
+      "estimated_chars_proportion": "600-700"
+    },
+    {
+      "section_number": 4,
+      "purpose": "Review 2: previous-night environment",
+      "section_entry_hook": "朝のだるさは、前夜の寝室から始まっていることがある。",
+      "spoken_focus": "Talk about smartphone/tablet in bed, bright light, room temperature, quietness, and overly hot late bathing in a calm way.",
+      "key_points": [
+        "reduce bright screen light",
+        "dark/quiet/comfortable bedroom",
+        "bath timing and too-hot bath caution",
+        "prepare sleep environment gently"
+      ],
+      "estimated_chars_proportion": "700-850"
+    },
+    {
+      "section_number": 5,
+      "purpose": "Review 3: record and consult",
+      "section_entry_hook": "生活の工夫だけで済ませない方がよいサインがある。",
+      "spoken_focus": "Symptom record, family observations, snoring/apnea, morning headache, daytime sleepiness, appetite/weight/mood, medication changes; clinician consultation.",
+      "key_points": [
+        "simple notes",
+        "snoring/apnea reports",
+        "morning headache",
+        "severe daytime sleepiness",
+        "appetite/weight/mood",
+        "medication timing",
+        "consult clinician"
+      ],
+      "estimated_chars_proportion": "850-1000"
+    },
+    {
+      "section_number": 6,
+      "purpose": "Calm close",
+      "section_entry_hook": "すべてを一度に変えなくてよい。",
+      "spoken_focus": "Recap the three review points and encourage one small adjustment plus notes.",
+      "key_points": [
+        "light",
+        "night environment",
+        "record/consult",
+        "gentle encouragement"
+      ],
+      "estimated_chars_proportion": "250-350"
+    }
+  ]
+}

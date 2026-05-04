@@ -1,0 +1,96 @@
+{
+  "effective_script_source": "06_script_canonical.json",
+  "opening_strategy": "self_check_visual_question",
+  "hook_type": "self_check_question",
+  "viewer_question": "通院の日の朝、何を持てば受付から帰り道まで落ち着いて過ごせるのか？",
+  "allowed_non_linear_rows": [
+    1,
+    2,
+    3
+  ],
+  "tension_curve": "gentle_concern_to_calm_preparation",
+  "daily_life_anchor": "Japanese senior at the genkan searching for clinic cards and medicine notebook before leaving for a hospital visit",
+  "thumbnail_emotion_hint": "gentle_concern",
+  "retention_beats": [
+    {
+      "unit_index": 1,
+      "script_alignment": "通院の日の朝、バッグの中を何度も探して、出発前から疲れてしまうことはありませんか。",
+      "beat_type": "hook_question",
+      "viewer_question": "Do I also get tired before even leaving for the clinic?",
+      "visual_goal": "Show a clearly senior Japanese person at the genkan looking through a clinic bag with scattered generic cards nearby.",
+      "motion_goal": "object_inspection_push",
+      "attention_target": "the open clinic bag and scattered cards",
+      "tension_level": "gentle_concern",
+      "safety_guardrail": "No panic, no fall, no medical emergency; everyday mild frustration only."
+    },
+    {
+      "unit_index": 2,
+      "script_alignment": "診察券は入れたはずなのに、いざ玄関に立つと見当たらない。",
+      "beat_type": "relatable_scenario",
+      "viewer_question": "Where did I put the clinic card?",
+      "visual_goal": "Close-up of wrinkled hands checking a small card case and pouch, with no readable text.",
+      "motion_goal": "daily_action_follow",
+      "attention_target": "wrinkled hands and card case",
+      "tension_level": "gentle_concern",
+      "safety_guardrail": "No official document text or fake personal information."
+    },
+    {
+      "unit_index": 3,
+      "script_alignment": "お薬手帳も、別の棚に置いたままだった。",
+      "beat_type": "missing_item_reveal",
+      "viewer_question": "What else did I forget?",
+      "visual_goal": "A medicine notebook-like object resting on a shelf away from the packed bag, implying forgotten placement without readable words.",
+      "motion_goal": "danger_reveal",
+      "attention_target": "the medicine notebook object left behind",
+      "tension_level": "mild_alert",
+      "safety_guardrail": "No diagnosis or medication alarm; object-only preparation cue."
+    }
+  ],
+  "row_visual_overrides": {
+    "1": {
+      "override_reason": "Make the first seconds visually answer the viewer question before the checklist begins.",
+      "override_visual": "Clinic bag at the genkan with cards and pouch spread out, gentle concern on a senior face."
+    },
+    "2": {
+      "override_reason": "Support the exact line about clinic card search with a tight hand-and-card-case visual.",
+      "override_visual": "Wrinkled hands opening a small card case near a genkan bench; no readable text."
+    },
+    "3": {
+      "override_reason": "Reveal the forgotten medicine notebook as a concrete missing-item cue.",
+      "override_visual": "Medicine notebook-like object on a shelf while the clinic bag sits near the door."
+    }
+  },
+  "motion_intents": [
+    "checklist",
+    "contrast",
+    "solution_demo"
+  ],
+  "title_thumbnail_angles": [
+    {
+      "ctr_psychology_angle": "number_anchor",
+      "viewer_question": "What five things should I check before a hospital visit?",
+      "script_alignment_reasoning": "The full script is built around five preparation groups.",
+      "safety_rationale": "Checklist frame avoids fear and medical overpromise.",
+      "ctr_prediction_reasoning": "The number anchor gives senior viewers a clear low-effort promise."
+    },
+    {
+      "ctr_psychology_angle": "self_relevance",
+      "viewer_question": "Why do I always search for things on clinic mornings?",
+      "script_alignment_reasoning": "Matches the opening scene of searching for cards and medicine notebook.",
+      "safety_rationale": "Frames concern as everyday organization, not emergency.",
+      "ctr_prediction_reasoning": "Directly reflects a familiar clinic-day frustration."
+    }
+  ],
+  "safety_guardrails": [
+    "No falling body, emergency rescue, hospital panic, or chest-clutching.",
+    "No readable fake document details.",
+    "No claim that carrying items prevents all accidents.",
+    "All human figures must show senior age cues: gray hair, wrinkles, mature posture."
+  ],
+  "qc_checks": [
+    "Opening rows remain within rows 1-3 only.",
+    "Visuals answer the clinic-bag viewer question.",
+    "No readable text appears in cards or medicine notebook.",
+    "Thumbnail concept stays gentle_concern rather than panic."
+  ]
+}
